@@ -48,16 +48,21 @@ def para_pcm(dados, entrada="pipe:0"):
     return r.stdout
 
 
+RECUSAS = {"429": 0, "erro": 0}          # so para o log de progresso
+
+
 def baixar_nativo(url):
     for n in range(4):
         try:
             r = requests.get(url, headers=comum.UA, timeout=60)
             if r.status_code == 429:
-                time.sleep(10 * (n + 1))
+                RECUSAS["429"] += 1
+                time.sleep(float(r.headers.get("Retry-After") or 10 * (n + 1)))
                 continue
             r.raise_for_status()
             return para_pcm(r.content)
         except Exception:
+            RECUSAS["erro"] += 1
             time.sleep(3 * (n + 1))
     return None
 
@@ -99,7 +104,8 @@ def anexar_audio(dados, lingua, sintetico=False):
             if r:
                 sons[pid] = r
             if n % 500 == 0:
-                comum.log(f"{lingua}: {n}/{len(escolha)} gravacoes processadas")
+                comum.log(f"{lingua}: {n}/{len(escolha)} gravacoes processadas, {len(sons)} ok, "
+                         f"recusas 429: {RECUSAS['429']}, erros: {RECUSAS['erro']}")
     comum.log(f"{lingua}: audio nativo para {len(sons)} de {len(palavras)} palavras")
     if sintetico:
         faltam = [p for p in palavras if p["id"] not in sons]
