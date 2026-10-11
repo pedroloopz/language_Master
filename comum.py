@@ -9,7 +9,7 @@ import requests
 
 CACHE = pathlib.Path(os.environ.get("CACHE", "cache"))
 SAIDA = pathlib.Path(os.environ.get("SAIDA", "saida"))
-UA = {"User-Agent": "language-master-dados/1.0 (github.com/pedroloopz/language-master-dados)"}
+UA = {"User-Agent": "LanguageMasterDados/1.1 (https://github.com/pedroloopz/language_Master) python-requests"}  # politica de UA da Wikimedia: nome/versao (URL de contato)
 LIMITE_JSON = 8 * 1024 * 1024        # 8 MB por arquivo JSON
 COMMONS = "https://commons.wikimedia.org/w/api.php"
 

@@ -16,7 +16,7 @@ PAUSA = 0.35                  # s de silencio entre palavras
 MAX_SEG = 4.0                 # corta gravacao longa
 POR_PACOTE = 300
 LIMITE_MP3 = 10 * 1024 * 1024
-MINUTOS_NATIVO = float(os.environ.get("MINUTOS_NATIVO", "120"))   # o que nao baixar nesse tempo fica sem gravacao
+MINUTOS_NATIVO = float(os.environ.get("MINUTOS_NATIVO", "200"))   # o que nao baixar nesse tempo fica sem gravacao
 MINUTOS_SINTETICO = float(os.environ.get("MINUTOS_SINTETICO", "120"))
 VOICEVOX = os.environ.get("VOICEVOX_URL", "http://localhost:50021")
 VOZ = int(os.environ.get("VOICEVOX_VOZ", "2"))           # 2 = 四国めたん (normal)
@@ -63,9 +63,10 @@ def baixar_nativo(url, prazo=float("inf")):
                 RECUSAS["429"] += 1
                 if RECUSAS["429"] == 1:
                     comum.log(f"primeira recusa 429: Retry-After={r.headers.get('Retry-After')} {url}")
-                time.sleep(min(30.0, float(r.headers.get("Retry-After") or 10 * (n + 1))))
+                time.sleep(min(120.0, float(r.headers.get("Retry-After") or 10 * (n + 1))))
                 continue
             r.raise_for_status()
+            time.sleep(1)                     # 1 arquivo por vez, com pausa: o Commons recusa (429) quem baixa rapido
             return para_pcm(r.content)
         except Exception as e:
             RECUSAS["erro"] += 1
@@ -111,7 +112,7 @@ def anexar_audio(dados, lingua, sintetico=False):
     comum.log(f"{lingua}: baixando {len(escolha)} gravacoes nativas (no maximo {MINUTOS_NATIVO:.0f} min)")
     t0 = time.time()
     prazo = t0 + MINUTOS_NATIVO * 60
-    with cf.ThreadPoolExecutor(4) as ex:
+    with cf.ThreadPoolExecutor(1) as ex:
         for n, (pid, r) in enumerate(ex.map(um, escolha.items()), 1):
             if r:
                 sons[pid] = r
