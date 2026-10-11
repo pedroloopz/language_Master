@@ -1,0 +1,68 @@
+name: gerar
+
+# Gera os dados do LANGUAGE MASTER (japones e alemao + audio) e publica numa Release.
+# Roda a mao (Actions -> gerar -> Run workflow) e no dia 3 de cada mes.
+on:
+  schedule:
+    - cron: "41 6 3 * *"     # dia 3, 03h41 de Brasilia
+  workflow_dispatch:
+    inputs:
+      linguas:
+        description: "Linguas (ja,de | ja | de)"
+        default: "ja,de"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gerar
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    services:
+      voicevox:                       # voz sintetica do japones (so onde nao ha audio nativo)
+        image: voicevox/voicevox_engine:cpu-0.25.2
+        ports:
+          - 50021:50021
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Dependencias
+        run: |
+          pip install -r requirements.txt
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+
+      - name: Esperar o VOICEVOX
+        run: |
+          for i in $(seq 1 60); do curl -sf localhost:50021/version && exit 0; sleep 5; done
+          echo "VOICEVOX nao subiu" && exit 1
+
+      - name: Gerar
+        env:
+          LINGUAS: ${{ inputs.linguas || 'ja,de' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: python gerar.py 2>&1 | tee gerar.log
+
+      - name: Publicar Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="dados-$(date -u +%Y-%m-%d-%H%M)"
+          RESUMO=$(grep '^RESUMO' gerar.log | sed 's/^RESUMO //')
+          gh release create "$TAG" saida/*.json saida/*.mp3 saida/LICENCAS.md \
+            --title "Dados $(date -u +%d/%m/%Y)" \
+            --notes "$(printf 'Gerado pelo workflow gerar.\n\n%s\n\nLicencas: LICENCAS.md' "$RESUMO")" \
+            --latest
+          cp saida/LICENCAS.md LICENCAS.md
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add LICENCAS.md
+          git diff --cached --quiet || (git commit -m "LICENCAS.md da release $TAG" && git push)

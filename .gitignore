@@ -1,0 +1,4 @@
+cache/
+saida/
+__pycache__/
+*.log
