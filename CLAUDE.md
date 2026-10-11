@@ -5,6 +5,7 @@ Gera os dados de dicionário + áudio do app LANGUAGE MASTER (um Artifact no Cla
 Release do GitHub. Não tem bot nem Telegram. Workflow `gerar`: à mão e dia 3 de cada mês (03h41 BRT).
 
 - `gerar.py` orquestra; `ja.py` (JMdict + Kanjidic + listas JLPT de Waller + wordfreq); `de.py` (kaikki.org/Wiktionary + wordfreq); `audio.py` (Commons/Lingua Libre, VOICEVOX, pacotes MP3 ≤ 10 MB + índice); `comum.py` (downloads, Commons, JSON ≤ 8 MB dividido por nível).
+- `montar_app.py` transforma a Release nos arquivos do app (`dados/` do Artifact: mapa de áudio, dicionários compactos, MP3).
 - Saída em `saida/`; `LICENCAS.md` é regravado na raiz a cada Release.
 
 ## Segredos e variáveis

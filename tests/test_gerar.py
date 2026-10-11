@@ -77,3 +77,26 @@ def test_japones_glosas_e_exemplo():
                     "examples": [{"sentences": [{"land": "jpn", "text": "猫がいる。"}, {"lang": "eng", "text": "There is a cat."}]}]}]}
     assert ja.glosas(w, "eng") == ["cat"] and ja.glosas(w, "ger") == ["Katze"]
     assert ja.exemplo(w)["ja"] == "猫がいる。" and ja.exemplo(w)["en"] == "There is a cat."
+
+
+def test_montar_app(tmp_path, monkeypatch):
+    import montar_app
+    monkeypatch.setattr(comum, "SAIDA", tmp_path)
+    ja_d = {"palavras": [{"id": "ja-1", "escrita": "猫", "leitura": "ねこ", "nivel": "N5", "en": ["cat"], "de": ["Katze"],
+                          "classe": ["noun"], "exemplo": {"ja": "猫がいる。", "en": "There is a cat."}},
+                         {"id": "ja-2", "escrita": "根子", "leitura": "ねこ", "nivel": "N2", "en": ["root"], "de": []}],
+            "kanji": [{"kanji": "猫", "on": ["ビョウ"], "kun": ["ねこ"], "en": ["cat"], "pt": []}]}
+    de_d = {"palavras": [{"id": "de-1", "palavra": "Haus", "artigo": "das", "plural": "Häuser", "nivel": "A1",
+                          "ipa": "/haʊ̯s/", "en": ["house"], "exemplo": None}]}
+    sons = {"ja-1": (tom(0.3), {"tipo": "nativo", "autor": "A", "licenca": "CC0", "arquivo": "f", "pagina": "p"}),
+            "ja-2": (tom(0.3), {"tipo": "sintetico", "autor": "V", "licenca": "x"})}
+    audio.empacotar(ja_d, "ja", sons)
+    audio.empacotar(de_d, "de", {"de-1": (tom(0.4), {"tipo": "nativo", "autor": "B", "licenca": "CC BY", "arquivo": "g", "pagina": "q"})})
+    comum.gravar_json("ja", ja_d)
+    comum.gravar_json("de", de_d)
+    mapa = montar_app.montar(tmp_path, tmp_path / "app")
+    assert mapa["pacotes"] == ["ja-audio-001.mp3", "de-audio-001.mp3"]
+    assert mapa["ja"]["ねこ"][3] == "n" and mapa["ja"]["根子"][3] == "s" and mapa["de"]["Haus"][0] == 1
+    dic = json.loads((tmp_path / "app" / "dic-ja.json").read_text())
+    assert dic["palavras"][0][:4] == ["猫", "ねこ", "N5", "cat"] and dic["kanji"][0][0] == "猫"
+    assert (tmp_path / "app" / "de-audio-001.mp3").exists()

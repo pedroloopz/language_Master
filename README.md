@@ -17,6 +17,11 @@ Cada palavra traz `audio: {pacote, ini_ms, fim_ms, tipo}` (`tipo` = `nativo` ou 
 Áudio nativo: Wikimedia Commons (Wiktionary e Lingua Libre). Japonês sem gravação: VOICEVOX
 (crédito obrigatório: VOICEVOX:四国めたん).
 
+## No app
+`python montar_app.py saida app` gera, a partir de uma Release baixada em `saida/`, os arquivos que o app usa
+(`audio-mapa.json`, `dic-ja.json`, `dic-de.json`, pacotes MP3 e `LICENCAS.md`); eles são publicados junto do
+Artifact, na pasta `dados/`.
+
 ## Como rodar
 Celular: **Actions → gerar → Run workflow**. Leva de 1 a 3 horas (o áudio sintético é a parte lenta).
 Local: `pip install -r requirements.txt && python gerar.py` (precisa de ffmpeg e do VOICEVOX em `localhost:50021`).
