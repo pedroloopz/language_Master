@@ -93,10 +93,13 @@ def anexar_audio(dados, lingua, sintetico=False):
         return pid, (pcm, {"tipo": "nativo", "arquivo": arq, "autor": m["autor"], "licenca": m["licenca"],
                            "pagina": m["pagina"]}) if pcm else None
 
+    comum.log(f"{lingua}: baixando {len(escolha)} gravacoes nativas")
     with cf.ThreadPoolExecutor(6) as ex:
-        for pid, r in ex.map(um, escolha.items()):
+        for n, (pid, r) in enumerate(ex.map(um, escolha.items()), 1):
             if r:
                 sons[pid] = r
+            if n % 500 == 0:
+                comum.log(f"{lingua}: {n}/{len(escolha)} gravacoes processadas")
     comum.log(f"{lingua}: audio nativo para {len(sons)} de {len(palavras)} palavras")
     if sintetico:
         faltam = [p for p in palavras if p["id"] not in sons]
@@ -106,6 +109,8 @@ def anexar_audio(dados, lingua, sintetico=False):
                 sons[p["id"]] = (sintetizar(p["escrita"] if p["escrita"] else p["leitura"]),
                                  {"tipo": "sintetico", "autor": CREDITO_VOZ, "licenca": "termos do VOICEVOX e da voz"})
                 feitos += 1
+                if feitos % 500 == 0:
+                    comum.log(f"{lingua}: {feitos}/{len(faltam)} sinteticos")
             except Exception as e:
                 comum.log(f"VOICEVOX falhou em {p['id']}: {e}")
         comum.log(f"{lingua}: audio sintetico para {feitos} palavras")

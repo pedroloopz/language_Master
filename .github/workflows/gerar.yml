@@ -2,13 +2,16 @@ name: gerar
 
 # Gera os dados do LANGUAGE MASTER (japones e alemao + audio) e publica numa Release.
 # Roda a mao (Actions -> gerar -> Run workflow) e no dia 3 de cada mes.
+# Uma lingua por job (em paralelo, cada um com ate 6 h); o job publicar junta tudo numa Release.
 on:
   schedule:
     - cron: "41 6 3 * *"     # dia 3, 03h41 de Brasilia
   workflow_dispatch:
     inputs:
       linguas:
-        description: "Linguas (ja,de | ja | de)"
+        description: "Linguas"
+        type: choice
+        options: ["ja,de", "ja", "de"]
         default: "ja,de"
 
 permissions:
@@ -21,7 +24,11 @@ concurrency:
 jobs:
   gerar:
     runs-on: ubuntu-24.04
-    timeout-minutes: 300
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        lingua: ${{ fromJSON(inputs.linguas == 'ja' && '["ja"]' || inputs.linguas == 'de' && '["de"]' || '["ja","de"]') }}
     services:
       voicevox:                       # voz sintetica do japones (so onde nao ha audio nativo)
         image: voicevox/voicevox_engine:cpu-0.25.2
@@ -40,16 +47,44 @@ jobs:
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
 
       - name: Esperar o VOICEVOX
+        if: matrix.lingua == 'ja'
         run: |
           for i in $(seq 1 60); do curl -sf localhost:50021/version && exit 0; sleep 5; done
           echo "VOICEVOX nao subiu" && exit 1
 
       - name: Gerar
         env:
-          LINGUAS: ${{ inputs.linguas || 'ja,de' }}
+          LINGUAS: ${{ matrix.lingua }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         run: python gerar.py 2>&1 | tee gerar.log
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: saida-${{ matrix.lingua }}
+          path: saida/
+          retention-days: 3
+
+  publicar:
+    needs: gerar
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: saida-*
+          path: saida
+          merge-multiple: true
+
+      - name: Juntar licencas e resumo
+        run: |
+          pip install -r requirements.txt
+          python gerar.py licencas | tee gerar.log
 
       - name: Publicar Release
         env:
@@ -57,7 +92,7 @@ jobs:
         run: |
           TAG="dados-$(date -u +%Y-%m-%d-%H%M)"
           RESUMO=$(grep '^RESUMO' gerar.log | sed 's/^RESUMO //')
-          gh release create "$TAG" saida/*.json saida/*.mp3 saida/LICENCAS.md \
+          gh release create "$TAG" $(ls saida/*.json | grep -v '/_') saida/*.mp3 saida/LICENCAS.md \
             --title "Dados $(date -u +%d/%m/%Y)" \
             --notes "$(printf 'Gerado pelo workflow gerar.\n\n%s\n\nLicencas: LICENCAS.md' "$RESUMO")" \
             --latest

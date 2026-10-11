@@ -2,10 +2,12 @@
 
 Uso: python gerar.py            (tudo)
      LINGUAS=de python gerar.py (so alemao)
-O workflow `gerar` roda isto e publica uma Release com os arquivos.
+     python gerar.py licencas   (so junta LICENCAS.md e _resumo.json das partes ja geradas)
+O workflow `gerar` roda uma lingua por job e publica uma Release com os arquivos.
 """
 import json
 import os
+import sys
 
 import audio
 import comum
@@ -38,16 +40,28 @@ def licencas(resumo, creditos):
 
 def main():
     linguas = os.environ.get("LINGUAS", "ja,de").split(",")
-    resumo, creditos, arquivos = {}, [], []
     for lingua in linguas:
         dados = ja.gerar() if lingua == "ja" else de.gerar()
         sons = audio.anexar_audio(dados, lingua, sintetico=(lingua == "ja"))
         pac = audio.empacotar(dados, lingua, sons)
         dados["audio"] = {"pacotes": pac["pacotes"], "indice": pac["indice"], "taxa_hz": audio.TAXA}
-        arquivos += comum.gravar_json(lingua, dados, dividir_por="nivel") + pac["pacotes"] + [pac["indice"]]
-        resumo[lingua] = {"palavras": len(dados["palavras"]), "nativos": pac["nativos"],
-                          "sinteticos": pac["sinteticos"], "pacotes": pac["pacotes"]}
-        creditos += pac["creditos"]
+        arquivos = comum.gravar_json(lingua, dados, dividir_por="nivel") + pac["pacotes"] + [pac["indice"]]
+        parte = {"resumo": {"palavras": len(dados["palavras"]), "nativos": pac["nativos"],
+                            "sinteticos": pac["sinteticos"], "pacotes": pac["pacotes"]},
+                 "arquivos": arquivos, "creditos": pac["creditos"]}
+        (comum.SAIDA / f"_parte-{lingua}.json").write_text(json.dumps(parte, ensure_ascii=False), encoding="utf-8")
+    juntar()
+
+
+def juntar():
+    """LICENCAS.md e _resumo.json a partir de saida/_parte-*.json (uma por lingua)."""
+    resumo, creditos, arquivos = {}, [], []
+    for f in sorted(comum.SAIDA.glob("_parte-*.json")):
+        parte = json.loads(f.read_text(encoding="utf-8"))
+        lingua = f.stem.split("-", 1)[1]
+        resumo[lingua] = parte["resumo"]
+        creditos += [tuple(c) for c in parte["creditos"]]
+        arquivos += parte["arquivos"]
     licencas(resumo, creditos)
     arquivos.append("LICENCAS.md")
     tamanhos = {a: (comum.SAIDA / a).stat().st_size for a in arquivos}
@@ -61,4 +75,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    juntar() if sys.argv[1:] == ["licencas"] else main()

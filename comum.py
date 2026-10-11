@@ -24,6 +24,7 @@ def baixar(url, nome=None, tentativas=4):
     destino = CACHE / (nome or urllib.parse.unquote(url.rsplit("/", 1)[-1]).split("?")[0])
     if destino.exists() and destino.stat().st_size > 0:
         return destino
+    log(f"baixando {url}")
     for n in range(tentativas):
         try:
             with requests.get(url, headers=UA, stream=True, timeout=120) as r:
