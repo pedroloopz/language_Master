@@ -16,6 +16,8 @@ PAUSA = 0.35                  # s de silencio entre palavras
 MAX_SEG = 4.0                 # corta gravacao longa
 POR_PACOTE = 300
 LIMITE_MP3 = 10 * 1024 * 1024
+MINUTOS_NATIVO = float(os.environ.get("MINUTOS_NATIVO", "120"))   # o que nao baixar nesse tempo fica sem gravacao
+MINUTOS_SINTETICO = float(os.environ.get("MINUTOS_SINTETICO", "120"))
 VOICEVOX = os.environ.get("VOICEVOX_URL", "http://localhost:50021")
 VOZ = int(os.environ.get("VOICEVOX_VOZ", "2"))           # 2 = 四国めたん (normal)
 CREDITO_VOZ = os.environ.get("VOICEVOX_CREDITO", "VOICEVOX:四国めたん")
@@ -51,18 +53,24 @@ def para_pcm(dados, entrada="pipe:0"):
 RECUSAS = {"429": 0, "erro": 0}          # so para o log de progresso
 
 
-def baixar_nativo(url):
-    for n in range(4):
+def baixar_nativo(url, prazo=float("inf")):
+    for n in range(3):
+        if time.time() > prazo:
+            return None
         try:
-            r = requests.get(url, headers=comum.UA, timeout=60)
+            r = requests.get(url, headers=comum.UA, timeout=(10, 30))
             if r.status_code == 429:
                 RECUSAS["429"] += 1
-                time.sleep(float(r.headers.get("Retry-After") or 10 * (n + 1)))
+                if RECUSAS["429"] == 1:
+                    comum.log(f"primeira recusa 429: Retry-After={r.headers.get('Retry-After')} {url}")
+                time.sleep(min(30.0, float(r.headers.get("Retry-After") or 10 * (n + 1))))
                 continue
             r.raise_for_status()
             return para_pcm(r.content)
-        except Exception:
+        except Exception as e:
             RECUSAS["erro"] += 1
+            if RECUSAS["erro"] == 1:
+                comum.log(f"primeiro erro de download: {e!r} {url}")
             time.sleep(3 * (n + 1))
     return None
 
@@ -89,33 +97,44 @@ def anexar_audio(dados, lingua, sintetico=False):
     meta = comum.metadados(sorted(set(escolha.values())))
     sons = {}
 
+    estado = {"desistir": False}
+
     def um(item):
         pid, arq = item
         m = meta.get(arq) or {}
-        if not m.get("url"):
+        if not m.get("url") or estado["desistir"]:
             return pid, None
-        pcm = baixar_nativo(m["url"])
+        pcm = baixar_nativo(m["url"], prazo)
         return pid, (pcm, {"tipo": "nativo", "arquivo": arq, "autor": m["autor"], "licenca": m["licenca"],
                            "pagina": m["pagina"]}) if pcm else None
 
-    comum.log(f"{lingua}: baixando {len(escolha)} gravacoes nativas")
-    with cf.ThreadPoolExecutor(6) as ex:
+    comum.log(f"{lingua}: baixando {len(escolha)} gravacoes nativas (no maximo {MINUTOS_NATIVO:.0f} min)")
+    t0 = time.time()
+    prazo = t0 + MINUTOS_NATIVO * 60
+    with cf.ThreadPoolExecutor(4) as ex:
         for n, (pid, r) in enumerate(ex.map(um, escolha.items()), 1):
             if r:
                 sons[pid] = r
-            if n % 500 == 0:
-                comum.log(f"{lingua}: {n}/{len(escolha)} gravacoes processadas, {len(sons)} ok, "
+            if n == 40 and not sons:          # o Commons nao esta entregando: segue sem audio nativo
+                estado["desistir"] = True
+                comum.log(f"{lingua}: 0 de 40 downloads deram certo; desisto do audio nativo nesta rodada")
+            if n % 50 == 0:
+                comum.log(f"{lingua}: {n}/{len(escolha)} gravacoes em {(time.time() - t0) / 60:.0f} min, {len(sons)} ok, "
                          f"recusas 429: {RECUSAS['429']}, erros: {RECUSAS['erro']}")
     comum.log(f"{lingua}: audio nativo para {len(sons)} de {len(palavras)} palavras")
     if sintetico:
         faltam = [p for p in palavras if p["id"] not in sons]
         feitos = 0
+        prazo = time.time() + MINUTOS_SINTETICO * 60
         for p in faltam:
+            if time.time() > prazo:
+                comum.log(f"{lingua}: tempo do VOICEVOX esgotado")
+                break
             try:
                 sons[p["id"]] = (sintetizar(p["escrita"] if p["escrita"] else p["leitura"]),
                                  {"tipo": "sintetico", "autor": CREDITO_VOZ, "licenca": "termos do VOICEVOX e da voz"})
                 feitos += 1
-                if feitos % 500 == 0:
+                if feitos % 200 == 0:
                     comum.log(f"{lingua}: {feitos}/{len(faltam)} sinteticos")
             except Exception as e:
                 comum.log(f"VOICEVOX falhou em {p['id']}: {e}")
