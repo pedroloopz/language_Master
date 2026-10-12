@@ -5317,7 +5317,7 @@ async function initStore(){
     try{ const aj=await store.root.collection("perfil").doc("ajustes").get(); if(aj.exists){ const x=thaw(aj.data()); delete x._k; Object.assign(settings, x); LS.set("lm-settings", settings); } }catch(e){}
     store.mode="db";
     Object.values(pendingWrites).forEach(w=>write(w.col,w.id,w.data));
-    store.root.collection("dias").orderBy("data","desc").limit(120).onSnapshot(q=>{
+    store.root.collection("dias").orderBy("data","desc").limit(800).onSnapshot(q=>{
       q.docs.forEach(d=>{ const x=thaw(d.data()); const k=x._k||d.id; if(!timers["dias"+k]) store.dias[k]=x; }); changed();
     }, ()=>{});
     store.root.collection("reportes").limit(500).onSnapshot(q=>{
@@ -5404,7 +5404,7 @@ function record(p, kind, ok, ms, opt){
     it.erros=(it.erros||0)+1;
     if(it.estado>=5) it.estado-=1;
   }
-  const wasDue = !!(it.S && it.vence<=TODAY && it.srsDia!==TODAY);
+  const wasDue = !!(it.estado>=2 && it.vence && it.vence<=TODAY && it.srsDia!==TODAY);
   if(it.srsDia!==TODAY){ schedule(it, ratingOf(kind, ok, grade)); it.srsDia=TODAY; }
   else if(!ok){ migrateItem(it); if(it.S) it.S=Math.round(clampS(fsrsShort(it.S,1))*100)/100; it.vence=addDays(TODAY,1); it.reps=0; it.intervalo=1; }
   it.ultima=TODAY; it.mod=Date.now();
@@ -5488,7 +5488,7 @@ function streakInfo(){
   if(!studiedOn(d)) d=addDays(d,-1);
   for(let i=0;i<800;i++){
     if(studiedOn(d)){ streak++; }
-    else if(streak>0 && (!lastFreeze || diffDays(d,lastFreeze)>=7) && studiedOn(addDays(d,-1))){ lastFreeze=d; freezes.push(d); }
+    else if((streak>0 || i===0) && (!lastFreeze || diffDays(d,lastFreeze)>=7) && studiedOn(addDays(d,-1))){ lastFreeze=d; freezes.push(d); }
     else break;
     d=addDays(d,-1);
   }
@@ -5510,13 +5510,13 @@ const GOALDEF={
 function dayHash(s){ let x=0; for(const ch of s) x=(x*31+ch.codePointAt(0))>>>0; return x; }
 function goalsFor(l){
   const pf=store.perfil[l]; if(!pf) return [];
-  if(!pf.metas || pf.metas.data!==TODAY){
+  if(!pf.metas || pf.metas.data!==TODAY || pf.metas.reset){
     const due=dueItems(l).length, list=[{id:"pomo", n:Math.max(1,Number(settings.metaPomos)||1)}];
     list.push(due>=5 ? {id:"rev", n:Math.min(due,40)} : {id:"ok", n:25});
     const pool=["prod","esc","leit","novos", ...(aiReady()?["conv"]:[])];
     const pick1=pool[dayHash(TODAY+l)%pool.length];
     list.push({id:pick1, n:{prod:3, esc:8, leit:1, novos:8, conv:6}[pick1]});
-    pf.metas={data:TODAY, lista:list, pagas:[]}; savePerfil(l);
+    pf.metas={data:TODAY, lista:list, pagas: pf.metas&&pf.metas.data===TODAY ? pf.metas.pagas||[] : []}; savePerfil(l);   // metas refeitas no mesmo dia não pagam XP de novo
   }
   const d=dayOf(l)||{};
   return pf.metas.lista.map(g=>({...g, t:GOALDEF[g.id].t(g.n), v:Math.min(g.n, d[GOALDEF[g.id].f]||0)}));
@@ -5588,13 +5588,16 @@ function playFrom(src, o, my, fail){
   if(a.getAttribute("src")!==src){ a.src=src; a.load(); }
   once();
 }
-/* frases não têm gravação: dependem da voz do navegador, que o app do Claude no Android não tem */
+/* há som para este texto? gravação/voz pronta ou voz do navegador (o app do Claude no Android não tem) */
+function temSom(text, l){ return ("speechSynthesis" in window) || !!audFor(text, l); }
+function temSomV(v){ return ("speechSynthesis" in window) || !!(audFor(v.w, v.lang) || audFor(vSay(v), v.lang)); }
+/* texto sem gravação (ex.: o que o professor gera) depende da voz do navegador, que o app do Claude no Android não tem */
 let avisouVoz=false;
-function semVoz(){ if(avisouVoz) return; avisouVoz=true; toast("Frases usam a voz do navegador, e este não tem. Abra o app no Chrome (claude.ai) para ouvir as frases."); }
+function semVoz(){ if(avisouVoz) return; avisouVoz=true; toast("Este texto não tem áudio gravado, e o app do Claude não tem voz do navegador. Para ouvir textos do professor, abra o app no Chrome (claude.ai)."); }
 function speak(text, l, o){
   o=o||{};
   stopClip();
-  const clip=audFor(text, l);
+  const clip=(o.key && audFor(o.key, l)) || audFor(text, l);
   if(clip){ try{ speechSynthesis.cancel(); }catch(e){} playClip(clip, text, l, o); return; }
   if(!("speechSynthesis" in window)){ semVoz(); o.onend && o.onend(false); return; }
   speechSynthesis.cancel();
@@ -5761,12 +5764,13 @@ function orderOk(l, chosen, parts){
   if(txt(chosen)===txt(ideal)) return true;
   if(l==="ja"){
     // blocos iniciais terminados em partícula (を, に, で, は…) podem trocar de lugar entre si; o resto fica fixo
-    let k=0; while(k<n-1 && !/[、,]$/.test(parts[k]) && (k===0 || /(を|に|で|は|が|へ|と|も|から|まで|より)$/.test(parts[k]))) k++;
+    let k=0; while(k<n-1 && !/[、,]$/.test(parts[k]) && /(を|に|で|は|が|へ|と|も|から|まで|より)$/.test(parts[k]) && !/(ために|せいで|おかげで|うちに|ように|ことに|までに)$/.test(parts[k]) && !/の$/.test(parts[k-1]||"")) k++;
     if(k<2) return false;
     const head=chosen.slice(0,k).slice().sort((a,b)=>a-b);
     return head.every((v,j)=>v===j) && chosen.slice(k).every((v,j)=>v===k+j);
   }
-  if(n>=3){ const inv=ideal.slice(); [inv[0],inv[2]]=[inv[2],inv[0]]; if(txt(chosen)===txt(inv) && !/[,?]/.test(parts[0]+parts[1]+parts[2])) return true; }
+  if(n>=4 && /^(ich|du|er|sie|es|wir|ihr|man)$/i.test(parts[0]) && !/^(mich|dich|sich|uns|euch|mir|dir|ihm|ihr|ihnen|es)$/i.test(parts[2]) && !/[,?.!]/.test(parts.slice(0,3).join(""))){
+    const inv=ideal.slice(); [inv[0],inv[2]]=[inv[2],inv[0]]; if(txt(chosen)===txt(inv)) return true; }
   return false;
 }
 
@@ -5903,7 +5907,7 @@ function stepsForNew(p){
     d=>exFeynman(p,d),
     d=>exOrder(p,xo,d),
     d=>exMC(p,p.q[1],d),
-    d=>exDictation(p,xd,d),
+    temSom(sayOf(p.lang,xd[0],xd[1]),p.lang) ? d=>exDictation(p,xd,d) : d=>exOrder(p,xd,d),
     d=>exProduce(p,d)
   ];
 }
@@ -5919,7 +5923,8 @@ function reviewStep(p){
     if(feynmanDue(p) && r<0.2) return exFeynman(p,d,{again:true});
     if(r<0.5) return grammarMCStep(p)(d);
     if(r<0.78) return exOrder(p,pick(okXs(p,true)),d);
-    return exDictation(p,pick(okXs(p)),d);
+    const x=pick(okXs(p));
+    return temSom(sayOf(p.lang,x[0],x[1]),p.lang) ? exDictation(p,x,d) : exOrder(p,pick(okXs(p,true)),d);
   });
   f.item=p;
   return f;
@@ -5931,11 +5936,13 @@ function reviewStep(p){
 const hasKanji = s => /[一-鿿]/.test(s||"");
 const meaningKey = m => String(m||"").split(/[;(,]/)[0].trim().toLowerCase();
 function vSay(v){ return v.say || v.r || v.w; }
+/* palavra: a gravação é procurada pela escrita (o kana pode ser de outra palavra homófona) */
+function speakV(v, l, o){ speak(vSay(v), l, Object.assign({key: v.kind==="vocab" ? v.w : ""}, o)); }
 function vocabItems(l){ return C[l].vocab.filter(v=>{ const it=getItem(v); return !(it && it.suspenso); }); }
 function kanjiItems(l){ return (C[l].kanji||[]).filter(v=>{ const it=getItem(v); return !(it && it.suspenso); }); }
 function nextNewOf(list, n){ return list.filter(v=>{ const it=getItem(v); return !it || it.estado<2; }).slice(0,n); }
 function seenOf(list){ return list.filter(v=>{ const it=getItem(v); return it && it.estado>=2; }); }
-function introducedToday(l, kind){ return Object.values(store.items[l]).filter(it=>it.criado===TODAY && it.estado>=2 && C[l].byId[it.id] && C[l].byId[it.id].kind===kind).length; }
+function introducedToday(l, kind){ return Object.values(store.items[l]).filter(it=>it.criado===TODAY && it.estado>=2 && !it.sabido && C[l].byId[it.id] && C[l].byId[it.id].kind===kind).length; }
 
 /* Quantas palavras novas hoje. Regra (ver Progresso > Como o app decide):
    base 8 palavras + 2 kanji (japonês) ou 10 palavras (alemão), no máximo 20 por dia;
@@ -5992,7 +5999,7 @@ function vocabFace(v, big){
     h("div",{class:"row small"}, h("span",{class:"chip",text:"on"}), h("span",{lang:"ja",text:v.on}), h("span",{class:"chip",text:"kun"}), h("span",{lang:"ja",text:v.kun})),
     h("div",{style:"font-size:1.1rem",text:v.m}));
   return h("div",{class:"stack",style:"gap:4px"},
-    h("div",{class:"row",style:"align-items:baseline;gap:10px"}, artChip(v), h("span",{class:big?"word-big":"word",lang:l,text:v.w}), iconBtn("play","Ouvir",()=>speak(vSay(v),l,{rate:0.9}))),
+    h("div",{class:"row",style:"align-items:baseline;gap:10px"}, artChip(v), h("span",{class:big?"word-big":"word",lang:l,text:v.w}), iconBtn("play","Ouvir",()=>speakV(v,l,{rate:0.9}))),
     l==="ja" ? h("div",{class:"kana",lang:"ja",text:v.r}) : (v.pl && v.pl!=="—" ? h("div",{class:"small muted",lang:"de",text:v.pl}) : null),
     h("div",{style:"font-size:1.1rem",text:v.m}));
 }
@@ -6035,7 +6042,7 @@ function exVChoice(v, cfg, done){
       if(!ok) [...grid.children].find(x=>x.textContent===opts[0]).classList.add("right");
       if(cfg.onAnswer) cfg.onAnswer(ok); else record(v, cfg.kind, ok, Date.now()-t0, ok?{}:{wrong:(cfg.wrongLabel?cfg.wrongLabel(opts[i]):opts[i]), right:(cfg.rightLabel||opts[0])});
       card.append(vocabReveal(v, ok));
-      speak(vSay(v), l, {rate:0.9});
+      speakV(v,l, {rate:0.9});
       card.append(contBtn(()=>done(ok)));
     });
     b.dataset.k=grid.children.length+1; grid.append(b);
@@ -6049,9 +6056,9 @@ const VEX = {
   reading:(v,d)=>exVChoice(v,{tag:"Qual a leitura?", kind:"vmc", optLang:"ja", prompt:h("div",{class:"prompt center"}, h("span",{class:"word-big",lang:"ja",text:v.w})),
     right:v.r, wrong:(()=>{ const same=distract(v,o=>o.r,6,o=>Math.abs(o.r.length-v.r.length)<=1); return same.length>=3?same.slice(0,3):distract(v,o=>o.r,3); })(),
     rightLabel:v.w+" = "+v.r, wrongLabel:r=>v.w+" ≠ "+r},d),
-  listen:(v,d)=>{ const el=exVChoice(v,{tag:"Ouça e escolha", kind:"vouvir", prompt:h("div",{class:"prompt center"}, h("button",{class:"btn primary",type:"button",text:"▶ Ouvir de novo",onclick:()=>speak(vSay(v),v.lang,{rate:0.85})})),
+  listen:(v,d)=>{ const el=exVChoice(v,{tag:"Ouça e escolha", kind:"vouvir", prompt:h("div",{class:"prompt center"}, h("button",{class:"btn primary",type:"button",text:"▶ Ouvir de novo",onclick:()=>speakV(v,v.lang,{rate:0.85})})),
     right:v.m, wrong:distract(v,o=>o.m,3,o=>vSay(o)!==vSay(v)), rightLabel:v.t+" = "+v.m, wrongLabel:m=>"ouvi "+v.t+" e escolhi "+m},d);
-    setTimeout(()=>speak(vSay(v),v.lang,{rate:0.85}),250); return el; },
+    setTimeout(()=>speakV(v,v.lang,{rate:0.85}),250); return el; },
   reverse:(v,d)=>exVChoice(v,{tag:"Qual palavra?", kind:"vmc", optLang:v.lang, prompt:h("div",{class:"prompt"}, h("div",{text:v.m}), h("div",{class:"small muted",text:v.ex[2]})),
     right:v.t, wrong:distract(v,o=>o.t,3), rightLabel:v.m+" = "+v.t, wrongLabel:t=>v.m+" ≠ "+t},d),
   article:(v,d)=>exVChoice(v,{tag:"Qual o artigo?", kind:"vmc", optLang:"de", prompt:h("div",{class:"prompt center"}, h("span",{class:"word-big",lang:"de",text:"___ "+v.w}), h("div",{class:"small muted",text:v.m})),
@@ -6089,7 +6096,7 @@ function exVTyped(v, done, cloze){
     }
     record(v,"vtyped",ok,Date.now()-t0,{grade: ok ? (msg?3:(Date.now()-t0<15000?5:4)) : (msg?2:1), wrong: ok?null:(val||"(não lembrou)"), right:v.t});
     card.append(vocabReveal(v, ok, ok?(msg?"Quase":"Certo"):(msg||"A palavra é:")));
-    speak(vSay(v), l, {rate:0.9});
+    speakV(v,l, {rate:0.9});
     card.append(contBtn(()=>done(ok)));
   }
   check.addEventListener("click",()=>{ if(!inp.value.trim()){ inp.focus(); return; } finish(inp.value.trim()); });
@@ -6118,6 +6125,7 @@ function vocabStep(v){
     else if(e===3) opts=["listen","reverse", ...(rd?["reading"]:[]), ...(noun?["article"]:[])];
     else if(e===4) opts=["typed","listen", ...(noun?["article"]:[]), ...(clozeOk(v)?["cloze"]:[])];
     else opts=["typed", ...(clozeOk(v)?["cloze","cloze"]:[]), "reverse"];
+    if(!temSomV(v)) opts=opts.filter(o=>o!=="listen");
     return VEX[pick(opts)](v,d);
   };
 }
@@ -6138,7 +6146,7 @@ function studyCards(box, list, onDone){
         i>0 ? h("button",{class:"btn",type:"button",text:"← Anterior",onclick:()=>{ i--; show(); }}) : null,
         h("button",{class:"btn primary",type:"button",text: i<list.length-1 ? "Próxima" : "Testar agora",onclick:()=>{ introduce(v); if(i<list.length-1){ i++; show(); } else { slot.remove(); onDone(); } }})));
     slot.append(card);
-    speak(vSay(v), v.lang, {rate:0.85});
+    speakV(v,v.lang, {rate:0.85});
   }
   show();
 }
@@ -6147,7 +6155,7 @@ function learnVocab(box, list, onDone){
   if(S) S.newWords=(S.newWords||[]).concat(list);
   studyCards(box, list, ()=>{
     const r1=shuffle(list).map(v=>d=> v.kind==="kanji" ? KEX.meaning(v,d) : VEX.meaning(v,d));
-    const r2=shuffle(list).map(v=>d=> v.kind==="kanji" ? KEX.word(v,d) : (v.lang==="ja"&&hasKanji(v.w)&&v.r&&v.r!==v.w ? VEX.reading(v,d) : (v.a ? VEX.article(v,d) : VEX.listen(v,d))));
+    const r2=shuffle(list).map(v=>d=> v.kind==="kanji" ? KEX.word(v,d) : (v.lang==="ja"&&hasKanji(v.w)&&v.r&&v.r!==v.w ? VEX.reading(v,d) : (v.a ? VEX.article(v,d) : temSomV(v) ? VEX.listen(v,d) : VEX.meaning(v,d))));
     runSeq(box, [...r1, ...r2], onDone);
   });
 }
@@ -6888,7 +6896,7 @@ function exListen(l, item, pool, done){
 }
 function listenSteps(l, n){
   const pool=listenPool(l); if(pool.length<4) return [];
-  return shuffle(pool).slice(0,n).map(it=>d=>exListen(l,it,pool,d));
+  return shuffle(pool.filter(it=>temSom(sayOf(l,it.text,it.kana),l))).slice(0,n).map(it=>d=>exListen(l,it,pool,d));
 }
 function blockEscuta(box){
   const l=S.lang, steps=listenSteps(l, 6);
@@ -6954,11 +6962,12 @@ function textsView(l){
 /* Modo trajeto: mãos livres, para ônibus/Uber. Frase no idioma → pausa → tradução → frase de novo, devagar. */
 function trajetoView(l){
   const wrap=h("div",{class:"stack"});
-  let pool=shuffle(listenPool(l)), i=0, playing=false, stop=null, withPt=true, rate=0.9, count=0;
+  const tts="speechSynthesis" in window;
+  let pool=shuffle(listenPool(l).filter(it=>temSom(sayOf(l,it.text,it.kana),l))), i=0, playing=false, stop=null, withPt=tts, rate=0.9, count=0;
   const now=h("div",{class:"listen-now",lang:l,text:"—"}), nowK=h("div",{class:"kana small",lang:"ja"}), nowPt=h("div",{class:"small muted"});
   const status=h("div",{class:"small muted",text: pool.length ? pool.length+" frases na fila." : "Faça algumas aulas para encher a fila."});
   const playBtn=h("button",{class:"btn primary",type:"button",text:"▶ Começar"});
-  const ptCb=h("input",{type:"checkbox",id:"tj-pt",checked:true,onchange:e=>withPt=e.target.checked});
+  const ptCb=h("input",{type:"checkbox",id:"tj-pt",checked:tts,disabled:!tts,onchange:e=>withPt=e.target.checked});
   const speeds=h("div",{class:"speeds",role:"group","aria-label":"Velocidade"});
   [["0.75","0,75×"],["0.9","0,9×"],["1","1×"]].forEach(([v,t])=>speeds.append(h("button",{type:"button","aria-pressed":String(Number(v)===rate),text:t,onclick:e=>{ rate=Number(v); speeds.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===e.currentTarget))); }})));
   function playOne(){
@@ -7216,7 +7225,7 @@ $("#startBtn").addEventListener("click",()=>{
   if(!audioCtx){ try{ audioCtx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
   if(state.finished){
     if(state.done>=MAX_POMOS) return;
-    if(settings.rotacao==="ambos") setLang(state.done%2 ? "ja" : "de", false);
+    if(settings.rotacao==="ambos") setLang(state.done%2 ? "de" : "ja", false);
     state.finished=false; state.short=false; state.lastPlan=null; state.elapsed=0; state.startedAt=Date.now(); keepAwake(true); syncPlan(); lastBlock=0; newSession(true); shownBlock=null;
   } else if(state.startedAt){ state.elapsed=elapsedNow(); state.startedAt=null; keepAwake(false); }
   else { if(!S || elapsedNow()===0) newSession(elapsedNow()===0); state.startedAt=Date.now(); keepAwake(true); lastBlock=blockAt(state.elapsed).i; }
@@ -7260,7 +7269,7 @@ setInterval(()=>{ if(isoDay(new Date())!==TODAY && !state.startedAt) banner("Com
 
 function minutesToday(){ return Object.values(store.sessoes).filter(s=>s.data===TODAY).reduce((a,s)=>a+(Number(s.minutos)||0),0); }
 function finishSession(key){
-  const n=state.done;
+  const n=Math.max(state.done, Object.values(store.sessoes).filter(s=>s.data===TODAY).length+1);   // não sobrescreve se o navegador perdeu o contador
   const s=S||{stats:{ok:0,no:0},touched:[],errs:[]};
   saveSessao(TODAY+"-"+n, {data:TODAY, idioma:state.lang, minutos:Math.round(TOTAL/60), numero:n, extra:!isMainPlan(key), curta:key==="curto",
     blocos:BLOCKS.filter(b=>!b.rest).map(b=>({bloco:b.id,minutos:b.min})),
@@ -7817,7 +7826,7 @@ function renderMarco(box, l, lvl){
   const ws=shuffle(vocabItems(l).filter(v=>v.lvl===lvl && !v.gen)).slice(0,10);
   const ks=l==="ja" ? shuffle(kanjiItems(l).filter(k=>k.lvl===lvl)).slice(0,5) : [];
   const pool=[]; C[l].points.filter(p=>p.lvl===lvl).forEach(p=>p.x.forEach(x=>pool.push({p,text:x[0],kana:x[1],pt:x[2]})));
-  const ls=shuffle(pool).slice(0,3);
+  const ls=shuffle(pool.filter(it=>temSom(sayOf(l,it.text,it.kana),l))).slice(0,3);
   const total=pts.length+ws.length+ks.length+ls.length;
   box.append(h("div",{class:"card stack"}, h("h2",{text:"Exame do nível "+lvl}),
     h("p",{class:"small",text:total+" questões: gramática, palavras"+(ks.length?", kanji":"")+" e escuta. Passando com 85 %, o nível inteiro fica concluído e os pontos entram na revisão aos poucos para confirmar. Use \"Não sei\" em vez de chutar."})));
@@ -7833,13 +7842,13 @@ function renderMarco(box, l, lvl){
   ];
   runSeq(area, steps, ()=>{
     const pct=Math.round(ok/total*100), pass=pct>=85;
-    const pf=store.perfil[l]; pf.marcos=pf.marcos||{}; pf.marcos[lvl]={data:TODAY, nota:pct, passou: pass || !!(pf.marcos[lvl]&&pf.marcos[lvl].passou)}; savePerfil(l);
+    const pf=store.perfil[l]; pf.marcos=pf.marcos||{}; const jaPassou=!!(pf.marcos[lvl]&&pf.marcos[lvl].passou); pf.marcos[lvl]={data:TODAY, nota:pct, passou: pass || !!(pf.marcos[lvl]&&pf.marcos[lvl].passou)}; savePerfil(l);
     let marked=0;
     if(pass){
       const all=C[l].points.filter(p=>p.lvl===lvl);
       all.forEach((p,i)=>{ if(markKnown(p, gOk.has(p.id)?4:3, Math.floor(i*27/Math.max(1,all.length)))) marked++; });
       ws.forEach((v,i)=>{ if(wOk.has(v.id)) markKnown(v,3,i%7); });
-      addXP(l,150);
+      if(!jaPassou) addXP(l,150);
     }
     area.innerHTML="";
     area.append(h("div",{class:"card stack"},
@@ -7877,7 +7886,7 @@ function renderWordTrack(box, l, seg){
       ul.append(h("li",{}, h("div",{class:"wrow"},
         h("span",{class:"pt-name"}, h("span",{lang:l}, artChip(v), " ", v.kind==="kanji"?v.k:v.w, v.gen?h("small",{style:"display:inline;margin-left:6px",text:"· gerada"}):null),
           h("small",{lang:l,text:(v.kind==="kanji" ? v.on+" · "+v.kun+" — " : (l==="ja" ? v.r+" — " : ""))+v.m})),
-        iconBtn("play","Ouvir",()=>speak(vSay(v),l,{rate:0.9})),
+        iconBtn("play","Ouvir",()=>speakV(v,l,{rate:0.9})),
         h("span",{class:"chip s"+e,text:ESTADO[e]})))); });
     card.append(h("div",{class:"unit"},
       h("div",{class:"unit-head"}, h("span",{class:"lvl",text:lvl}), h("h3",{text:(c[0]+c[1]+c[2])+" de "+n+" vistos"})),
@@ -7910,6 +7919,7 @@ function markKnown(p, level, offset){
   const it=ensureItem(p);
   if(it.estado>=level && it.S) return false;
   const fresh = it.estado<2 || !it.S;
+  if(it.estado<2) it.sabido=true;              // já sabia: não gasta o limite de palavras novas do dia
   it.estado=Math.max(it.estado, level);
   if(fresh){
     it.S = level>=4 ? 5 : 2.5; it.D = it.D || 5; it.fsrs=6; it.ultRev=TODAY; it.reps=Math.max(it.reps||0,1);
@@ -7996,10 +8006,12 @@ function renderUnitTest(box, u){
   });
 }
 /* teste rápido de palavras / kanji: próximo bloco de itens ainda novos de um nível */
+const askedWT=new Set();   // "Testar mais 20" avança para itens ainda não perguntados nesta visita
 function renderWordTest(box, l, seg, lvl){
   box.append(backBtn());
   const pool=(seg==="kanji"?kanjiItems(l):vocabItems(l)).filter(v=>v.lvl===lvl);
-  const list=pool.filter(v=>{ const it=getItem(v); return !it || it.estado<2; }).slice(0,20);
+  const list=pool.filter(v=>{ const it=getItem(v); return (!it || it.estado<2) && !askedWT.has(v.id); }).slice(0,20);
+  list.forEach(v=>askedWT.add(v.id));
   const head=h("div",{class:"card stack"},
     h("h2",{text:"Já sei estas "+(seg==="kanji"?"kanji":"palavras")+" · "+lvl}),
     h("p",{class:"small",text:"Até 20 itens ainda novos, na ordem da trilha. Acertou: o item fica como Reconhece e entra na revisão (lá ele é cobrado de formas mais difíceis). Não sabe: toque em \"Não sei\" em vez de chutar; ele continua como novo. Cada resposta é salva na hora."}));
@@ -8417,7 +8429,7 @@ function renderProgresso(){
   const provaInp=h("input",{type:"date",id:"provaData",value:(l==="ja"?settings.provaJa:settings.provaDe)||"",onchange:e=>{ if(l==="ja") settings.provaJa=e.target.value; else settings.provaDe=e.target.value; saveSettings(); scheduleUI(); }});
   box.append(h("div",{class:"card stack"}, h("h3",{text:"Ajustes"}),
     sel("rotSel","Idioma de cada dia",settings.rotacao,[["rodizio","Rodízio: japonês dom/seg/qua/sex, alemão ter/qui/sáb"],["ambos","Os dois todo dia (1º pomodoro japonês, 2º alemão)"],["ja","Só japonês"],["de","Só alemão"]],v=>{ settings.rotacao=v; }),
-    sel("metaSel","Meta de pomodoros por dia",settings.metaPomos,[["1","1 pomodoro (25 min)"],["2","2 pomodoros"],["3","3 pomodoros"]],v=>{ settings.metaPomos=Number(v); for(const x of ["ja","de"]) if(store.perfil[x]) store.perfil[x].metas=null; }),
+    sel("metaSel","Meta de pomodoros por dia",settings.metaPomos,[["1","1 pomodoro (25 min)"],["2","2 pomodoros"],["3","3 pomodoros"]],v=>{ settings.metaPomos=Number(v); for(const x of ["ja","de"]) if(store.perfil[x] && store.perfil[x].metas) store.perfil[x].metas.reset=true; }),
     sel("retSel","Retenção-alvo das revisões",settings.retencao,[["0.85","85 % (menos revisões, mais esquecimento)"],["0.9","90 % (recomendado)"],["0.95","95 % (mais revisões, para véspera de prova)"]],v=>{ settings.retencao=Number(v); }),
     h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:"Data da prova de "+LANGNAME[l]+" (opcional: mostra a contagem regressiva)"}), provaInp),
     h("p",{class:"small muted",text:"Datas de JLPT e Goethe mudam a cada ano: confira no site oficial antes de marcar."}),
