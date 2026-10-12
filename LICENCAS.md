@@ -11,12 +11,13 @@ Gerado automaticamente por `gerar.py`. Cada base mantem a licenca da fonte.
 | [wordfreq](https://github.com/rspeer/wordfreq) | frequencia (ordem e niveis estimados) | dados CC BY-SA 4.0 |
 | [Wiktionary](https://en.wiktionary.org) via [kaikki.org](https://kaikki.org) ([wiktextract](https://github.com/tatuylonen/wiktextract)) | alemao: artigo, plural, verbos, IPA, significado, exemplo | CC BY-SA 4.0 (e GFDL) |
 | [Wikimedia Commons](https://commons.wikimedia.org) (Wiktionary e [Lingua Libre](https://lingualibre.org)) | audio nativo | licenca de cada arquivo (lista abaixo) |
-| [VOICEVOX](https://voicevox.hiroshiba.jp/) | audio sintetico do japones sem gravacao nativa | termos do VOICEVOX; credito: VOICEVOX:四国めたん |
+| [VOICEVOX](https://voicevox.hiroshiba.jp/) | audio sintetico do japones sem gravacao nativa e das frases do app | termos do VOICEVOX; credito: VOICEVOX:四国めたん |
+| [Piper](https://github.com/OHF-Voice/piper1-gpl) + [Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice) | audio sintetico das frases em alemao do app | dados CC0; credito: Piper, voz de_DE-thorsten-medium (dados Thorsten-Voice, CC0) |
 
 ## Resumo desta versao
 
-- de: 4780 palavras | audio nativo 4620 | sintetico 0 | 16 pacotes MP3
-- ja: 8000 palavras | audio nativo 522 | sintetico 7478 | 27 pacotes MP3
+- de: 4780 palavras | audio nativo 4620 | sintetico 0 | 16 pacotes MP3 | frases do app com audio: 1818
+- ja: 8000 palavras | audio nativo 522 | sintetico 7478 | 27 pacotes MP3 | frases do app com audio: 2665
 
 ## Audios nativos (autor e licenca de cada arquivo)
 
