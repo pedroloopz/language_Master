@@ -262,7 +262,7 @@ def frases(lingua, lista, falar=None):
         buf += pcm + pausa
         pos += len(pcm) + len(pausa)
         saida.append([texto, kana, len(pacotes), round(ini), round(ini + len(pcm) / 2 / TAXA * 1000)])
-        if pos > TAXA * 2 * 600:              # ~10 min por pacote (~2,4 MB)
+        if pos > TAXA * 2 * 180:              # ~3 min por pacote (~0,7 MB): carrega rapido no celular
             fechar()
         if n % 200 == 0:
             comum.log(f"{lingua}: {n}/{len(lista)} frases em {(time.time() - t0) / 60:.0f} min")
