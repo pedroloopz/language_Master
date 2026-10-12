@@ -132,7 +132,7 @@ def anexar_audio(dados, lingua, sintetico=False):
                 comum.log(f"{lingua}: tempo do VOICEVOX esgotado")
                 break
             try:
-                sons[p["id"]] = (sintetizar(p["escrita"] if p["escrita"] else p["leitura"]),
+                sons[p["id"]] = (sintetizar(p["leitura"] or p["escrita"]),   # kana: o kanji sozinho pode ser lido errado
                                  {"tipo": "sintetico", "autor": CREDITO_VOZ, "licenca": "termos do VOICEVOX e da voz"})
                 feitos += 1
                 if feitos % 200 == 0:
