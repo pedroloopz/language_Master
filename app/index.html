@@ -598,6 +598,28 @@ body.lang-de .fab{color:#1B1E24}
   .rail .card,.rail .pomo{box-shadow:var(--shadow)}
 }
 @media (prefers-reduced-motion:reduce){ .btn:active,.opt:active,.tok:active,.fab:active{transform:none} .textlist button:hover{transform:none} }
+/* v5 — celular: alvos de toque ≥ 40px, contraste no escuro, abas que quebram linha, aviso no topo */
+.switch button{min-height:40px}
+.linkbtn{min-height:40px; padding:8px 4px}
+label.row{min-height:40px; align-items:center}
+input[type=checkbox]{width:20px; height:20px; accent-color:var(--accent); flex:none}
+.wrow .iconbtn{width:40px; height:40px}
+a{color:var(--accent); text-underline-offset:2px}
+.iconbtn.loading{opacity:.55; animation:pulse 1s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+@media (max-width:979px){
+  .segctl{flex-wrap:wrap; -webkit-mask-image:none; mask-image:none}
+  .segctl button{flex:1 1 auto}
+  .gtoast{top:calc(66px + env(safe-area-inset-top,0px)); bottom:auto}
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) body.lang-ja .btn.primary{background:#C9503A; border-color:#B4432F}
+  :root:not([data-theme="light"]) body.lang-ja .switch button[aria-pressed="true"]{background:#C9503A}
+  :root:not([data-theme="light"]) body.lang-de .switch button[aria-pressed="true"]{color:#1B1E24}
+}
+:root[data-theme="dark"] body.lang-ja .btn.primary{background:#C9503A; border-color:#B4432F}
+:root[data-theme="dark"] body.lang-ja .switch button[aria-pressed="true"]{background:#C9503A}
+:root[data-theme="dark"] body.lang-de .switch button[aria-pressed="true"]{color:#1B1E24}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -5116,6 +5138,7 @@ perguntas:[["Com quem o poeta fala no primeiro verso?","Com Deus","Com o verão"
 <script>
 (function(){
 "use strict";
+document.documentElement.lang="pt-BR";   // datas e hifenização em português
 
 /* =========================================================
    Utilidades
@@ -5576,9 +5599,11 @@ function wavUrl(buf, c){
 }
 function playClip(c, text, l, o){
   const my=++AUD.run, key=c.join();
-  const fail=()=>{ if(my!==AUD.run) return; settings.audioNativo=false; speak(text,l,o); settings.audioNativo=true; };
+  const btn=document.activeElement && document.activeElement.closest && document.activeElement.closest("button");   // mostra "carregando" se o pacote demora
+  const slow=setTimeout(()=>btn && btn.classList.add("loading"), 200), pronto=()=>{ clearTimeout(slow); btn && btn.classList.remove("loading"); };
+  const fail=()=>{ pronto(); if(my!==AUD.run) return; settings.audioNativo=false; speak(text,l,o); settings.audioNativo=true; };
   const url=AUD.clips[key] ? Promise.resolve(AUD.clips[key]) : packBuf(c[0]).then(buf=>AUD.clips[key]=wavUrl(buf,c));
-  url.then(src=>{ if(my===AUD.run) playFrom(src, o, my, fail); }, fail);
+  url.then(src=>{ pronto(); if(my===AUD.run) playFrom(src, o, my, fail); }, fail);
 }
 function playFrom(src, o, my, fail){
   const a=AUD.el||(AUD.el=new Audio()), times=o.times||1; let n=0;
@@ -5592,8 +5617,8 @@ function playFrom(src, o, my, fail){
 function temSom(text, l){ return ("speechSynthesis" in window) || !!audFor(text, l); }
 function temSomV(v){ return ("speechSynthesis" in window) || !!(audFor(v.w, v.lang) || audFor(vSay(v), v.lang)); }
 /* texto sem gravação (ex.: o que o professor gera) depende da voz do navegador, que o app do Claude no Android não tem */
-let avisouVoz=false;
-function semVoz(){ if(avisouVoz) return; avisouVoz=true; toast("Este texto não tem áudio gravado, e o app do Claude não tem voz do navegador. Para ouvir textos do professor, abra o app no Chrome (claude.ai)."); }
+let avisouVoz=0;
+function semVoz(){ if(Date.now()-avisouVoz<8000) return; avisouVoz=Date.now(); toast("Sem áudio para este texto: o app do Claude não tem voz do navegador. Textos gerados pelo professor só tocam no Chrome (claude.ai)."); }
 function speak(text, l, o){
   o=o||{};
   stopClip();
@@ -6894,13 +6919,14 @@ function exListen(l, item, pool, done){
   setTimeout(say,250);
   return card;
 }
+function semEscutaMsg(l, base){ return (listenPool(l).length>=4 && !("speechSynthesis" in window)) ? "As frases que você já viu ainda não têm áudio neste app (o app do Claude não tem voz do navegador)." : base; }
 function listenSteps(l, n){
   const pool=listenPool(l); if(pool.length<4) return [];
   return shuffle(pool.filter(it=>temSom(sayOf(l,it.text,it.kana),l))).slice(0,n).map(it=>d=>exListen(l,it,pool,d));
 }
 function blockEscuta(box){
   const l=S.lang, steps=listenSteps(l, 6);
-  if(!steps.length){ box.append(h("div",{class:"card"},h("p",{text:"Ainda há poucas frases para ouvir. Faça uma aula primeiro."}))); return; }
+  if(!steps.length){ box.append(h("div",{class:"card"},h("p",{text:semEscutaMsg(l,"Ainda há poucas frases para ouvir. Faça uma aula primeiro.")}))); return; }
   runSeq(box, steps, r=>{
     box.innerHTML="";
     const lvl=courseLevel(l), texts=C[l].readings.filter(t=>t.lvl===lvl||lvl==="concluído");
@@ -6965,7 +6991,7 @@ function trajetoView(l){
   const tts="speechSynthesis" in window;
   let pool=shuffle(listenPool(l).filter(it=>temSom(sayOf(l,it.text,it.kana),l))), i=0, playing=false, stop=null, withPt=tts, rate=0.9, count=0;
   const now=h("div",{class:"listen-now",lang:l,text:"—"}), nowK=h("div",{class:"kana small",lang:"ja"}), nowPt=h("div",{class:"small muted"});
-  const status=h("div",{class:"small muted",text: pool.length ? pool.length+" frases na fila." : "Faça algumas aulas para encher a fila."});
+  const status=h("div",{class:"small muted",text: pool.length ? pool.length+" frases na fila." : semEscutaMsg(l,"Faça algumas aulas para encher a fila.")});
   const playBtn=h("button",{class:"btn primary",type:"button",text:"▶ Começar"});
   const ptCb=h("input",{type:"checkbox",id:"tj-pt",checked:tts,disabled:!tts,onchange:e=>withPt=e.target.checked});
   const speeds=h("div",{class:"speeds",role:"group","aria-label":"Velocidade"});
@@ -7278,7 +7304,7 @@ function finishSession(key){
 }
 
 /* ---------- palco (o que fazer em cada bloco) ---------- */
-function toast(msg){ const t=$("#gtoast"); if(!t) return; t.textContent=msg||""; t.hidden=!msg; clearTimeout(toast.t); if(msg) toast.t=setTimeout(()=>t.hidden=true, 5000); }
+function toast(msg){ const t=$("#gtoast"); if(!t) return; t.onclick=()=>{ t.hidden=true; }; t.textContent=msg||""; t.hidden=!msg; clearTimeout(toast.t); if(msg) toast.t=setTimeout(()=>t.hidden=true, 5000); }
 function stageSet(...els){ const st=$("#stage"); st.innerHTML=""; exBusy=false; els.forEach(e=>e&&st.append(e)); }
 
 /* dias desde o último dia estudado (qualquer idioma); null se nunca estudou */
@@ -7697,7 +7723,9 @@ function blockShadow(box){
     h("p",{class:"small",text:"Toque em ×5: a frase toca 5 vezes com pausa. Fale junto, colado na voz, sem esperar terminar. Na 2ª rodada, esconda o texto."}),
     h("div",{class:"row"}, speeds, h("label",{class:"row small",style:"gap:6px"}, hideCb, "Esconder texto"), h("span",{class:"spacer"}), h("span",{class:"small"},"Repetições: ",counter))));
   let shId=0;
-  shadowList().forEach(({p,x})=>{
+  const lista=shadowList().filter(({x})=>temSom(sayOf(l,x[0],x[1]),l));
+  if(!lista.length) listBox.append(h("p",{class:"small",text:"Estas frases ainda não têm áudio aqui. Leia cada uma em voz alta 3 vezes, devagar e depois no ritmo normal."}));
+  (lista.length?lista:shadowList()).forEach(({p,x})=>{
     const say=sayOf(l,x[0],x[1]);
     const status=h("span",{class:"small muted"});
     listBox.append(h("div",{class:"sh-item"},
@@ -7707,7 +7735,7 @@ function blockShadow(box){
       h("div",{class:"row"},
         h("button",{class:"btn small",type:"button",text:"▶ 1×",onclick:()=>{ const my=++shId; speak(say,l,{rate,stop:()=>my!==shId,onrep:()=>{ if(my!==shId) return; S.shadowReps++; counter.textContent=S.shadowReps; }}); }}),
         h("button",{class:"btn small primary",type:"button",text:"× 5",onclick:()=>{ const my=++shId; speak(say,l,{rate,times:5,gap:1600,stop:()=>my!==shId,onrep:n=>{ if(my!==shId) return; S.shadowReps++; counter.textContent=S.shadowReps; status.textContent=n+"/5"; }}); }}),
-        h("button",{class:"btn small ghost",type:"button",text:"Parar",onclick:()=>{ shId++; status.textContent=""; try{ speechSynthesis.cancel(); }catch(e){} }}),
+        h("button",{class:"btn small ghost",type:"button",text:"Parar",onclick:()=>{ shId++; status.textContent=""; stopClip(); try{ speechSynthesis.cancel(); }catch(e){} }}),
         status)));
   });
   box.append(listBox, h("p",{class:"small muted",text:"Gravar a própria voz não funciona dentro do Claude (o navegador bloqueia o microfone aqui). Para se ouvir, use o gravador do celular em paralelo."}));
@@ -7804,16 +7832,18 @@ function renderTrilha(){
           h("span",{class:"chip s"+e,text:ESTADO[e]})))); });
       const wl=h("div",{class:"chips small",lang:l}, u.words.map(v=>{ const it=getItem(v), e=it?it.estado:1; return h("span",{class:"wchip s"+e,title:v.m+" · "+ESTADO[e],text:v.t}); }));
       const kl=u.kanjis.length ? h("div",{class:"chips",lang:"ja"}, u.kanjis.map(v=>{ const it=getItem(v), e=it?it.estado:1; return h("span",{class:"wchip s"+e,title:v.m+" · "+ESTADO[e],text:v.k}); })) : null;
-      list.append(h("div",{class:"unit"+(isCur?" current":"")+(ud?" done":started?" started":"")},
-        h("div",{class:"unit-head"}, h("span",{class:"dot",text:ud?"✓":String(ui+1)}),
-          h("div",{style:"flex:1;min-width:0"}, h("h3",{text:u.t}), h("div",{class:"small muted",lang:l,text:u.d})),
-          h("span",{class:"small muted num",text:Math.round(up*100)+"%"})),
-        h("div",{style:"margin:8px 0 0 52px"},
+      const aberto=isCur || (started && !ud);    // só o bloco atual (ou em andamento) vem aberto: a trilha fica curta no celular
+      const corpo=h("div",{style:aberto?"margin:8px 0 0 52px":"margin:6px 0 0"},
           meter("Gramática",bi.g,u.points.length), meter("Palavras",bi.w,u.words.length), meter("Kanji",bi.k,u.kanjis.length),
           ud ? null : h("button",{class:"btn small"+(isCur?" primary":""),type:"button",style:"margin:8px 0 4px",text:"Testar o bloco ("+u.points.length+" gramática + "+Math.min(5,u.words.length)+" palavras"+(u.kanjis.length?" + "+Math.min(3,u.kanjis.length)+" kanji":"")+")",onclick:()=>{ trilhaView={testUnit:u.id}; renderTrilha(); window.scrollTo(0,0); }}),
           h("details",{}, h("summary",{class:"small",text:"Ver conteúdo do bloco"}), ul,
             h("div",{class:"small muted",style:"margin:8px 0 4px",text:"Palavras (cor = já reconhecida)"}), wl,
-            kl ? h("div",{class:"small muted",style:"margin:8px 0 4px",text:"Kanji"}) : null, kl))));
+            kl ? h("div",{class:"small muted",style:"margin:8px 0 4px",text:"Kanji"}) : null, kl));
+      list.append(h("div",{class:"unit"+(isCur?" current":"")+(ud?" done":started?" started":"")},
+        h("div",{class:"unit-head"}, h("span",{class:"dot",text:ud?"✓":String(ui+1)}),
+          h("div",{style:"flex:1;min-width:0"}, h("h3",{text:u.t}), h("div",{class:"small muted",lang:l,text:u.d})),
+          h("span",{class:"small muted num",text:Math.round(up*100)+"%"})),
+        aberto ? corpo : h("details",{style:"margin:4px 0 0 52px"}, h("summary",{class:"small",text: ud ? "Ver bloco concluído" : "Abrir bloco"}), corpo)));
     });
     box.append(list);
   });
@@ -7829,7 +7859,7 @@ function renderMarco(box, l, lvl){
   const ls=shuffle(pool.filter(it=>temSom(sayOf(l,it.text,it.kana),l))).slice(0,3);
   const total=pts.length+ws.length+ks.length+ls.length;
   box.append(h("div",{class:"card stack"}, h("h2",{text:"Exame do nível "+lvl}),
-    h("p",{class:"small",text:total+" questões: gramática, palavras"+(ks.length?", kanji":"")+" e escuta. Passando com 85 %, o nível inteiro fica concluído e os pontos entram na revisão aos poucos para confirmar. Use \"Não sei\" em vez de chutar."})));
+    h("p",{class:"small",text:total+" questões: gramática, palavras"+(ks.length?", kanji":"")+(ls.length?" e escuta":"")+". Passando com 85 %, o nível inteiro fica concluído e os pontos entram na revisão aos poucos para confirmar. Use \"Não sei\" em vez de chutar."})));
   const area=h("div",{class:"stack"}); box.append(area);
   let ok=0, n=0; const gOk=new Set(), wOk=new Set();
   const tag=()=>"Exame "+lvl+" · "+Math.min(++n,total)+" de "+total;
@@ -8052,7 +8082,7 @@ function renderPraticar(){
     else if(praticarSeg==="leitura"){ const w=h("div",{class:"stack"}, textsView(l)); if(aiReady()) w.append(h("h3",{text:"Leitura nova com glossário (professor)"}), readerView(l)); praticarCache[key]=w; }
     else if(praticarSeg==="escuta"){
       const w=h("div",{class:"stack"}), run=h("div",{class:"stack"});
-      const start=()=>{ run.innerHTML=""; const st=listenSteps(l,10); if(!st.length){ run.append(h("p",{class:"small",text:"Faça algumas aulas para ter frases para ouvir."})); return; }
+      const start=()=>{ run.innerHTML=""; const st=listenSteps(l,10); if(!st.length){ run.append(h("p",{class:"small",text:semEscutaMsg(l,"Faça algumas aulas para ter frases para ouvir.")})); return; }
         runSeq(run, st, r=>{ run.innerHTML=""; run.append(h("div",{class:"card stack"}, h("p",{text:"Feito: "+r.ok+" certo(s), "+r.no+" erro(s)."}), h("button",{class:"btn primary",type:"button",text:"Mais 10",onclick:start}))); }); };
       w.append(h("div",{class:"card stack"}, h("h3",{text:"Ouça e entenda"}),
         h("p",{class:"small muted",text:"10 frases dos pontos e palavras que você já estudou, sem texto na tela. Toque em Devagar se precisar. Para textos inteiros, use Leitura > Só ouvir."}),
@@ -8088,12 +8118,12 @@ function dicSearch(l, d, q){
 function dicView(l){
   const wrap=h("div",{class:"stack"}), res=h("div",{class:"stack"}), st=h("p",{class:"small muted",text:"Carregando o dicionário…"});
   const inp=h("input",{type:"text",id:"dic-q-"+l,lang:l,autocomplete:"off",autocapitalize:"off",spellcheck:"false",
-    placeholder: l==="ja" ? "Palavra em kanji, kana ou inglês (ex.: 経験, けいけん, experience)" : "Wort oder inglês (ex.: Termin, gehen, house)"});
+    placeholder: l==="ja" ? "経験, けいけん ou experience" : "Termin, gehen ou house"});
   wrap.append(h("div",{class:"card stack"}, h("h3",{text:"Dicionário"}),
     h("p",{class:"small muted",text: (l==="ja" ? "Cerca de 8.000 palavras do N5 ao N2, com kanji." : "As cerca de 5.000 palavras mais frequentes do alemão, com artigo, plural e verbos.")+" Significados em inglês: não existe dicionário aberto desse tamanho para o português. ▶ toca a gravação nativa quando existe."}),
     inp, st), res,
     h("p",{class:"small muted"}, (l==="ja" ? "Fontes: JMdict e Kanjidic2 (EDRDG, CC BY-SA 4.0), exemplos do Tatoeba (CC BY 2.0 FR), listas JLPT de Jonathan Waller." : "Fonte: Wiktionary via kaikki.org (CC BY-SA 4.0)."),
-      " Áudio: Wikimedia Commons (Wiktionary e Lingua Libre)"+(l==="ja"?" e VOICEVOX:四国めたん (voz sintética, só onde não há gravação)":"")+". ", h("a",{href:"dados/LICENCAS.md",target:"_blank",rel:"noopener",text:"Autor e licença de cada áudio"}), "."));
+      " Áudio: Wikimedia Commons (Wiktionary e Lingua Libre); sem gravação, voz sintética "+(l==="ja"?"VOICEVOX:四国めたん":"Piper (dados Thorsten-Voice, CC0)")+". ", h("a",{href:"dados/LICENCAS.md",target:"_blank",rel:"noopener",text:"Autor e licença de cada áudio"}), "."));
   let data=null, timer=null;
   dicLoad(l).then(d=>{ data=d; st.textContent=d.palavras.length.toLocaleString("pt-BR")+" palavras. Digite para buscar."; if(inp.value) draw(); })
     .catch(()=>{ st.className="small status warn"; st.textContent="O dicionário ainda não foi publicado neste app."; });
@@ -8138,7 +8168,7 @@ function dicCard(l, e){
     ja && e[4] ? h("div",{class:"small muted",lang:"de",text:"alemão: "+e[4]}) : null,
     forms ? h("div",{class:"small",lang:"de",text:forms}) : null,
     ex[0] ? h("div",{class:"ex"}, playBtns(l,ex[0],""), h("div",{}, h("div",{class:"jp",lang:l,text:ex[0]}), ex[1]?h("div",{class:"pt",text:ex[1]}):null)) : null,
-    h("div",{class:"row"}, add, h("span",{class:"small muted",text: clip ? (clip[3]==="n" ? "gravação nativa" : "voz VOICEVOX:四国めたん") : "voz do navegador"})));
+    h("div",{class:"row"}, add, h("span",{class:"small muted",text: clip ? (clip[3]==="n" ? "gravação nativa" : ja ? "voz VOICEVOX:四国めたん" : "voz Piper (Thorsten)") : ("speechSynthesis" in window ? "voz do navegador" : "sem áudio aqui")})));
 }
 
 /* =========================================================
@@ -8304,11 +8334,12 @@ function forecastView(l){
 }
 function renderRevisar(){
   const box=$("#tab-revisar"); box.innerHTML="";
-  const l=state.lang, due=dueItems(l);
+  const l=state.lang, due=dueItems(l), o=l==="ja"?"de":"ja", dueO=(store.items[o]&&C[o]) ? dueItems(o).length : 0;
   const run=h("div",{class:"stack"});
   box.append(h("div",{class:"sechead"}, h("h1",{text:"Revisar"}), h("span",{class:"jp",text:"復習"})), h("div",{class:"card stack"},
     h("h2",{text:"Revisões de hoje"}),
     h("p",{text: due.length ? due.length+" ite"+(due.length>1?"ns":"m")+" de "+LANGNAME[l]+" vencido"+(due.length>1?"s":"")+" ("+due.filter(it=>C[l].byId[it.id] && !C[l].byId[it.id].kind).length+" de gramática)." : "Nada vencido em "+LANGNAME[l]+" hoje."}),
+    dueO ? h("p",{class:"small"}, "Em "+LANGNAME[o]+": "+dueO+" vencido"+(dueO>1?"s":"")+". ", h("button",{class:"linkbtn",type:"button",text:"Revisar "+LANGNAME[o],onclick:()=>setLang(o,true)})) : null,
     h("div",{class:"row"},
       due.length ? h("button",{class:"btn primary",type:"button",text:"Revisar agora",onclick:()=>{ run.innerHTML=""; loadFresh(due.map(it=>C[l].byId[it.id]).filter(p=>p&&!p.kind)); runSeq(run, reviewQueue(l, 40, 200).map(reviewStep), r=>{ renderRevisar(); const res=h("div",{class:"card"},h("p",{text:"Revisão feita: "+r.ok+" certo(s), "+r.no+" erro(s)."})); const tr=$("#tab-revisar"); tr.insertBefore(res, tr.children[1]||null); }, {requeue:true}); }}) : null,
       learned(l).length ? h("button",{class:"btn",type:"button",text:"Prática mista",onclick:()=>{ run.innerHTML=""; runSeq(run, shuffle(learned(l)).slice(0,8).map(reviewStep), r=>{ run.innerHTML=""; run.append(h("div",{class:"card"},h("p",{text:"Feito: "+r.ok+" certo(s), "+r.no+" erro(s)."}))); }); }}) : null)), run);
@@ -8428,15 +8459,15 @@ function renderProgresso(){
   const sel=(id,label,val,opts,onch)=>{ const s=h("select",{id,onchange:e=>{ onch(e.target.value); saveSettings(); scheduleUI(); }}, opts.map(([v,t])=>h("option",{value:v,text:t}))); s.value=String(val); return h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:label}), s); };
   const provaInp=h("input",{type:"date",id:"provaData",value:(l==="ja"?settings.provaJa:settings.provaDe)||"",onchange:e=>{ if(l==="ja") settings.provaJa=e.target.value; else settings.provaDe=e.target.value; saveSettings(); scheduleUI(); }});
   box.append(h("div",{class:"card stack"}, h("h3",{text:"Ajustes"}),
-    sel("rotSel","Idioma de cada dia",settings.rotacao,[["rodizio","Rodízio: japonês dom/seg/qua/sex, alemão ter/qui/sáb"],["ambos","Os dois todo dia (1º pomodoro japonês, 2º alemão)"],["ja","Só japonês"],["de","Só alemão"]],v=>{ settings.rotacao=v; }),
+    sel("rotSel","Idioma de cada dia",settings.rotacao,[["rodizio","Rodízio (JA dom/seg/qua/sex)"],["ambos","Os dois (1º JA, 2º DE)"],["ja","Só japonês"],["de","Só alemão"]],v=>{ settings.rotacao=v; }),
     sel("metaSel","Meta de pomodoros por dia",settings.metaPomos,[["1","1 pomodoro (25 min)"],["2","2 pomodoros"],["3","3 pomodoros"]],v=>{ settings.metaPomos=Number(v); for(const x of ["ja","de"]) if(store.perfil[x] && store.perfil[x].metas) store.perfil[x].metas.reset=true; }),
     sel("retSel","Retenção-alvo das revisões",settings.retencao,[["0.85","85 % (menos revisões, mais esquecimento)"],["0.9","90 % (recomendado)"],["0.95","95 % (mais revisões, para véspera de prova)"]],v=>{ settings.retencao=Number(v); }),
     h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:"Data da prova de "+LANGNAME[l]+" (opcional: mostra a contagem regressiva)"}), provaInp),
     h("p",{class:"small muted",text:"Datas de JLPT e Goethe mudam a cada ano: confira no site oficial antes de marcar."}),
     sel("vozSel","Voz do japonês",settings.voz,[["texto","Ler a frase com kanji (padrão)"],["kana","Ler pela leitura em kana"]],v=>{ settings.voz=v; }),
     h("p",{class:"small muted",text:"Se a voz ler algum kanji errado, troque para kana. A leitura em kana pode errar a partícula は."}),
-    sel("audSel","Palavras soltas",settings.audioNativo===false?"0":"1",[["1","Gravação de pessoas (Wikimedia Commons) quando existe"],["0","Sempre a voz do navegador"]],v=>{ settings.audioNativo=v==="1"; }),
-    h("p",{class:"small muted"}, "Gravações: Wikimedia Commons (Wiktionary e Lingua Libre), cada uma com autor e licença"+(l==="ja"?"; palavras sem gravação usam VOICEVOX:四国めたん":"")+". ", h("a",{href:"dados/LICENCAS.md",target:"_blank",rel:"noopener",text:"Créditos completos"}), "."),
+    sel("audSel","Áudio",settings.audioNativo===false?"0":"1",[["1","Gravações e vozes do app (recomendado)"],["0","Só a voz do navegador (Chrome)"]],v=>{ settings.audioNativo=v==="1"; }),
+    h("p",{class:"small muted"}, "Gravações: Wikimedia Commons (Wiktionary e Lingua Libre), cada uma com autor e licença. Frases e palavras sem gravação: voz sintética "+(l==="ja"?"VOICEVOX:四国めたん":"Piper (dados Thorsten-Voice, CC0)")+". ", h("a",{href:"dados/LICENCAS.md",target:"_blank",rel:"noopener",text:"Créditos completos"}), "."),
     h("div",{class:"row"},
       h("button",{class:"btn small",type:"button",text:"Testar japonês",onclick:()=>testVoice("ja",vs)}),
       h("button",{class:"btn small",type:"button",text:"Testar alemão",onclick:()=>testVoice("de",vs)}),
