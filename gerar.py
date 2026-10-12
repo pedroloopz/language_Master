@@ -7,6 +7,7 @@ O workflow `gerar` roda uma lingua por job e publica uma Release com os arquivos
 """
 import json
 import os
+import pathlib
 import sys
 
 import audio
@@ -26,16 +27,20 @@ def licencas(resumo, creditos):
          "| [wordfreq](https://github.com/rspeer/wordfreq) | frequencia (ordem e niveis estimados) | dados CC BY-SA 4.0 |",
          "| [Wiktionary](https://en.wiktionary.org) via [kaikki.org](https://kaikki.org) ([wiktextract](https://github.com/tatuylonen/wiktextract)) | alemao: artigo, plural, verbos, IPA, significado, exemplo | CC BY-SA 4.0 (e GFDL) |",
          "| [Wikimedia Commons](https://commons.wikimedia.org) (Wiktionary e [Lingua Libre](https://lingualibre.org)) | audio nativo | licenca de cada arquivo (lista abaixo) |",
-         f"| [VOICEVOX](https://voicevox.hiroshiba.jp/) | audio sintetico do japones sem gravacao nativa | termos do VOICEVOX; credito: {audio.CREDITO_VOZ} |",
+         f"| [VOICEVOX](https://voicevox.hiroshiba.jp/) | audio sintetico do japones sem gravacao nativa e das frases do app | termos do VOICEVOX; credito: {audio.CREDITO_VOZ} |",
+         f"| [Piper](https://github.com/OHF-Voice/piper1-gpl) + [Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice) | audio sintetico das frases em alemao do app | dados CC0; credito: {audio.CREDITO_PIPER} |",
          "", "## Resumo desta versao", ""]
     for lingua, r in resumo.items():
         L.append(f"- {lingua}: {r['palavras']} palavras | audio nativo {r['nativos']} | sintetico {r['sinteticos']} "
-                 f"| {len(r['pacotes'])} pacotes MP3")
+                 f"| {len(r['pacotes'])} pacotes MP3 | frases do app com audio: {r.get('frases', 0)}")
     L += ["", "## Audios nativos (autor e licenca de cada arquivo)", "",
           "| Palavra (id) | Arquivo no Commons | Autor | Licenca |", "|---|---|---|---|"]
     for pid, info in creditos:
         L.append(f"| {pid} | [{info['arquivo']}]({info['pagina']}) | {info['autor'].replace('|', '/')} | {info['licenca']} |")
     (comum.SAIDA / "LICENCAS.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+
+
+FRASES = pathlib.Path("frases.json")
 
 
 def main():
@@ -46,8 +51,12 @@ def main():
         pac = audio.empacotar(dados, lingua, sons)
         dados["audio"] = {"pacotes": pac["pacotes"], "indice": pac["indice"], "taxa_hz": audio.TAXA}
         arquivos = comum.gravar_json(lingua, dados, dividir_por="nivel") + pac["pacotes"] + [pac["indice"]]
+        fr = {"arquivos": [], "frases": 0}
+        if FRASES.exists():                   # frases fixas do app (node frases.js app/index.html > frases.json)
+            fr = audio.frases(lingua, json.loads(FRASES.read_text(encoding="utf-8"))[lingua])
+        arquivos += fr["arquivos"]
         parte = {"resumo": {"palavras": len(dados["palavras"]), "nativos": pac["nativos"],
-                            "sinteticos": pac["sinteticos"], "pacotes": pac["pacotes"]},
+                            "sinteticos": pac["sinteticos"], "pacotes": pac["pacotes"], "frases": fr["frases"]},
                  "arquivos": arquivos, "creditos": pac["creditos"]}
         (comum.SAIDA / f"_parte-{lingua}.json").write_text(json.dumps(parte, ensure_ascii=False), encoding="utf-8")
     juntar()
@@ -71,7 +80,7 @@ def juntar():
         comum.log(f"{a}: {t / 1024 / 1024:.2f} MB")
     for lingua, r in resumo.items():
         comum.log(f"RESUMO {lingua}: {r['palavras']} palavras, {r['nativos']} com audio nativo, "
-                  f"{r['sinteticos']} sinteticos, {len(r['pacotes'])} pacotes")
+                  f"{r['sinteticos']} sinteticos, {len(r['pacotes'])} pacotes, {r.get('frases', 0)} frases")
 
 
 if __name__ == "__main__":

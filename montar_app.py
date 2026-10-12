@@ -3,6 +3,7 @@
 Uso: python montar_app.py [saida] [destino]   (padrao: saida -> app)
 Gera em destino/:
   audio-mapa.json  {"pacotes":[...], "ja":{"猫":[pacote, ini_ms, fim_ms, "n"|"s"], "ねこ":...}, "de":{"Haus":[...]}}
+                   (inclui as frases fixas do app, de <lingua>-frases.json, com a chave no texto e no kana)
   dic-ja.json      {"palavras":[[escrita, leitura, nivel, en, de, classe, ex_ja, ex_en]], "kanji":[[k, on, kun, en, pt]]}
   dic-de.json      {"palavras":[[palavra, artigo, plural, nivel, ipa, en, ex_de, ex_en, praeteritum, partizip2, auxiliar]]}
 e copia os pacotes MP3 e o LICENCAS.md. O app so precisa destes arquivos (os JSON grandes da Release ficam de fora).
@@ -16,7 +17,7 @@ import sys
 def palavras(saida, lingua):
     out, kanji = [], []
     for f in sorted(saida.glob(f"{lingua}*.json")):
-        if "audio" in f.name:
+        if "audio" in f.name or "frases" in f.name:
             continue
         d = json.loads(f.read_text(encoding="utf-8"))
         out += d.get("palavras", [])
@@ -29,7 +30,7 @@ def montar(saida, destino):
     mapa, pacotes = {"pacotes": []}, {}
     for lingua in ("ja", "de"):
         ps, kanji = palavras(saida, lingua)
-        if not ps:
+        if not ps and not (saida / f"{lingua}-frases.json").exists():
             continue
         m = mapa.setdefault(lingua, {})
         linhas = []
@@ -51,6 +52,17 @@ def montar(saida, destino):
                 linhas.append([p["palavra"], p.get("artigo") or "", p.get("plural") or "", p["nivel"], p.get("ipa") or "",
                                "; ".join(p["en"]), ex.get("de") or "", ex.get("en") or "",
                                p.get("praeteritum") or "", p.get("partizip2") or "", p.get("auxiliar") or ""])
+        fr = saida / f"{lingua}-frases.json"           # frases fixas do app (voz sintetica)
+        if fr.exists():
+            d = json.loads(fr.read_text(encoding="utf-8"))
+            for texto, kana, i, ini, fim in d["frases"]:
+                nome = d["pacotes"][i]
+                if nome not in pacotes:
+                    pacotes[nome] = len(mapa["pacotes"])
+                    mapa["pacotes"].append(nome)
+                for k in (texto, kana):
+                    if k:
+                        m.setdefault(k, [pacotes[nome], ini, fim, "s"])
         dic = {"palavras": linhas}
         if lingua == "ja":
             dic["kanji"] = [[k["kanji"], "、".join(k["on"]), "、".join(k["kun"]), "; ".join(k["en"]), "; ".join(k["pt"])]

@@ -100,3 +100,24 @@ def test_montar_app(tmp_path, monkeypatch):
     dic = json.loads((tmp_path / "app" / "dic-ja.json").read_text())
     assert dic["palavras"][0][:4] == ["猫", "ねこ", "N5", "cat"] and dic["kanji"][0][0] == "猫"
     assert (tmp_path / "app" / "de-audio-001.mp3").exists()
+
+
+def test_leitura_comparavel():
+    assert audio.so_kana("ガッコー") == audio.so_kana("がっこう")
+    assert audio.so_kana("ワタシワ") == audio.so_kana("わたしは")
+    assert audio.so_kana("マイニチヤサイオタベル") == audio.so_kana("まいにち やさいを たべる。")
+    assert audio.so_kana("セーブツ") != audio.so_kana("なまもの")
+
+
+def test_frases_e_montar_app(tmp_path, monkeypatch):
+    import montar_app
+    monkeypatch.setattr(comum, "SAIDA", tmp_path)
+    wav = lambda t: subprocess.run(["ffmpeg", "-v", "error", "-f", "s16le", "-ar", str(audio.TAXA), "-ac", "1", "-i", "pipe:0",
+                                    "-f", "wav", "pipe:1"], input=tom(0.2 * len(t.split())), capture_output=True).stdout
+    r = audio.frases("de", [["Ich habe Zeit.", ""], ["Wir gehen jetzt nach Hause.", ""]], falar=wav)
+    assert r == {"arquivos": ["de-frases.json", "de-frases-001.mp3"], "frases": 2}
+    d = json.loads((tmp_path / "de-frases.json").read_text())
+    assert d["frases"][0][2:] == [0, 0, 600] and d["frases"][1][3] == round((0.6 + audio.PAUSA) * 1000)
+    mapa = montar_app.montar(tmp_path, tmp_path / "app")
+    assert mapa["pacotes"] == ["de-frases-001.mp3"] and mapa["de"]["Ich habe Zeit."] == [0, 0, 600, "s"]
+    assert (tmp_path / "app" / "de-frases-001.mp3").exists()

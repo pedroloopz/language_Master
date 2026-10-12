@@ -18,6 +18,9 @@ Cada palavra traz `audio: {pacote, ini_ms, fim_ms, tipo}` (`tipo` = `nativo` ou 
 (crédito obrigatório: VOICEVOX:四国めたん).
 
 ## No app
+O código do app está em `app/index.html`. `node frases.js app/index.html > frases.json` lista as frases fixas que ele fala;
+o `gerar` grava todas com voz sintética (VOICEVOX no japonês, Piper/Thorsten no alemão).
+
 `python montar_app.py saida app` gera, a partir de uma Release baixada em `saida/`, os arquivos que o app usa
 (`audio-mapa.json`, `dic-ja.json`, `dic-de.json`, pacotes MP3 e `LICENCAS.md`); eles são publicados junto do
 Artifact, na pasta `dados/`.

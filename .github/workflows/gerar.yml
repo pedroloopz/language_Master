@@ -45,6 +45,11 @@ jobs:
         run: |
           pip install -r requirements.txt
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          node frases.js app/index.html > frases.json       # frases fixas do app, para gravar com voz sintetica
+          if [ "${{ matrix.lingua }}" = de ]; then
+            pip install piper-tts==1.8.0
+            python -m piper.download_voices de_DE-thorsten-medium --data-dir voz
+          fi
 
       - name: Esperar o VOICEVOX
         if: matrix.lingua == 'ja'

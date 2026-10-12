@@ -42,10 +42,10 @@ def mapa_lingua_libre(lingua):
     return mapa
 
 
-def para_pcm(dados, entrada="pipe:0"):
-    """Qualquer audio -> PCM 16 bits mono 22050 Hz, sem silencio nas pontas, ate MAX_SEG."""
-    r = subprocess.run(["ffmpeg", "-v", "error", "-i", entrada, "-t", str(MAX_SEG + 1), "-af", FILTRO,
-                        "-t", str(MAX_SEG), "-ac", "1", "-ar", str(TAXA), "-f", "s16le", "pipe:1"],
+def para_pcm(dados, entrada="pipe:0", max_seg=MAX_SEG):
+    """Qualquer audio -> PCM 16 bits mono 22050 Hz, sem silencio nas pontas, ate max_seg."""
+    r = subprocess.run(["ffmpeg", "-v", "error", "-i", entrada, "-t", str(max_seg + 1), "-af", FILTRO,
+                        "-t", str(max_seg), "-ac", "1", "-ar", str(TAXA), "-f", "s16le", "pipe:1"],
                        input=dados, capture_output=True, check=True)
     return r.stdout
 
@@ -76,12 +76,44 @@ def baixar_nativo(url, prazo=float("inf")):
     return None
 
 
-def sintetizar(texto):
+def consulta(texto):
     q = requests.post(f"{VOICEVOX}/audio_query", params={"text": texto, "speaker": VOZ}, timeout=60)
     q.raise_for_status()
-    w = requests.post(f"{VOICEVOX}/synthesis", params={"speaker": VOZ}, json=q.json(), timeout=120)
+    return q.json()
+
+
+VOGAL = {c: v for v, linha in zip("AIUEO", ["アカサタナハマヤラワガザダバパァャ", "イキシチニヒミリギジヂビピィ",
+                                         "ウクスツヌフムユルグズヅブプゥュ", "エケセテネヘメレゲゼデベペェ",
+                                         "オコソトノホモヨロヲゴゾドボポォョ"]) for c in linha}
+
+
+def so_kana(s):
+    """Leitura comparavel: katakana sem espaco/pontuacao/ー; は/へ/を como soam; vogal longa (こう, けい, おお) = curta."""
+    s = "".join(chr(ord(c) + 0x60) if "ぁ" <= c <= "ゖ" else c for c in s)
+    s = "".join(c for c in s if "ァ" <= c <= "ヶ").translate(str.maketrans("ハヘヲヅヂ", "ワエオズジ"))
+    out = []
+    for c in s:
+        v = VOGAL.get(out[-1]) if out else None
+        if c in "アイウエオ" and v and (VOGAL[c] == v or (c, v) in (("ウ", "O"), ("イ", "E"))):
+            continue
+        out.append(c)
+    return "".join(out)
+
+
+TROCAS = {"kana": 0}
+
+
+def sintetizar(texto, kana="", max_seg=MAX_SEG):
+    """VOICEVOX le o texto com kanji (melhor entonacao); se a leitura dele nao bate com a do dicionario,
+    sintetiza a partir do kana (o kanji sozinho pode ser lido errado: 生物 せいぶつ/なまもの)."""
+    q = consulta(texto)
+    lida = "".join(m["text"] for ap in q["accent_phrases"] for m in ap["moras"])
+    if kana and so_kana(lida) != so_kana(kana):
+        TROCAS["kana"] += 1
+        q = consulta(kana.replace(" ", ""))
+    w = requests.post(f"{VOICEVOX}/synthesis", params={"speaker": VOZ}, json=q, timeout=120)
     w.raise_for_status()
-    return para_pcm(w.content)
+    return para_pcm(w.content, max_seg=max_seg)
 
 
 def anexar_audio(dados, lingua, sintetico=False):
@@ -132,11 +164,11 @@ def anexar_audio(dados, lingua, sintetico=False):
                 comum.log(f"{lingua}: tempo do VOICEVOX esgotado")
                 break
             try:
-                sons[p["id"]] = (sintetizar(p["leitura"] or p["escrita"]),   # kana: o kanji sozinho pode ser lido errado
+                sons[p["id"]] = (sintetizar(p["escrita"] or p["leitura"], p["leitura"]),
                                  {"tipo": "sintetico", "autor": CREDITO_VOZ, "licenca": "termos do VOICEVOX e da voz"})
                 feitos += 1
                 if feitos % 200 == 0:
-                    comum.log(f"{lingua}: {feitos}/{len(faltam)} sinteticos")
+                    comum.log(f"{lingua}: {feitos}/{len(faltam)} sinteticos ({TROCAS['kana']} lidos pelo kana)")
             except Exception as e:
                 comum.log(f"VOICEVOX falhou em {p['id']}: {e}")
         comum.log(f"{lingua}: audio sintetico para {feitos} palavras")
@@ -176,3 +208,68 @@ def empacotar(dados, lingua, sons):
     nativos = sum(1 for p in com_audio if p["audio"]["tipo"] == "nativo")
     return {"pacotes": [x["arquivo"] for x in indice["pacotes"]], "indice": nome_ind,
             "nativos": nativos, "sinteticos": len(com_audio) - nativos, "creditos": creditos}
+
+
+PIPER = os.environ.get("PIPER_VOZ", "voz/de_DE-thorsten-medium.onnx")
+CREDITO_PIPER = "Piper, voz de_DE-thorsten-medium (dados Thorsten-Voice, CC0)"
+
+
+def falar_de():
+    """Voz sintetica do alemao (Piper). Devolve texto -> bytes WAV."""
+    import io
+    import wave
+    from piper import PiperVoice
+    voz = PiperVoice.load(PIPER)
+
+    def f(texto):
+        b = io.BytesIO()
+        with wave.open(b, "wb") as w:
+            voz.synthesize_wav(texto, w)
+        return b.getvalue()
+    return f
+
+
+def frases(lingua, lista, falar=None):
+    """Audio das frases fixas do app (lista de [texto, kana], de frases.js) em pacotes
+    <lingua>-frases-NNN.mp3 (32 kbps). Grava saida/<lingua>-frases.json
+    {"pacotes": [...], "frases": [[texto, kana, pacote, ini_ms, fim_ms]]} e devolve os arquivos."""
+    import json
+    comum.SAIDA.mkdir(parents=True, exist_ok=True)
+    falar = falar or (falar_de() if lingua == "de" else None)
+    pausa = b"\x00\x00" * int(TAXA * PAUSA)
+    pacotes, saida, buf, pos = [], [], bytearray(), 0
+
+    def fechar():
+        nonlocal buf, pos
+        if not buf:
+            return
+        nome = f"{lingua}-frases-{len(pacotes) + 1:03d}.mp3"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", str(TAXA), "-ac", "1", "-i", "pipe:0",
+                        "-c:a", "libmp3lame", "-b:a", "32k", str(comum.SAIDA / nome)], input=bytes(buf), check=True)
+        pacotes.append(nome)
+        buf, pos = bytearray(), 0
+
+    t0, falhas = time.time(), 0
+    for n, (texto, kana) in enumerate(lista, 1):
+        try:
+            pcm = sintetizar(texto, kana, max_seg=30) if lingua == "ja" else para_pcm(falar(texto), max_seg=30)
+        except Exception as e:
+            falhas += 1
+            if falhas == 1:
+                comum.log(f"frase falhou: {e!r} {texto}")
+            continue
+        ini = pos / 2 / TAXA * 1000
+        buf += pcm + pausa
+        pos += len(pcm) + len(pausa)
+        saida.append([texto, kana, len(pacotes), round(ini), round(ini + len(pcm) / 2 / TAXA * 1000)])
+        if pos > TAXA * 2 * 600:              # ~10 min por pacote (~2,4 MB)
+            fechar()
+        if n % 200 == 0:
+            comum.log(f"{lingua}: {n}/{len(lista)} frases em {(time.time() - t0) / 60:.0f} min")
+    fechar()
+    nome = f"{lingua}-frases.json"
+    (comum.SAIDA / nome).write_text(json.dumps({"pacotes": pacotes, "frases": saida}, ensure_ascii=False,
+                                               separators=(",", ":")), encoding="utf-8")
+    comum.log(f"{lingua}: audio para {len(saida)} de {len(lista)} frases, {len(pacotes)} pacotes, {falhas} falhas"
+              + (f", {TROCAS['kana']} lidas pelo kana" if lingua == "ja" else ""))
+    return {"arquivos": [nome] + pacotes, "frases": len(saida)}
