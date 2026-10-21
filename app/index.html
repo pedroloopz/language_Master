@@ -5845,6 +5845,8 @@ function audFor(text, l){
   let k=clean(text).trim(); if(l==="de") k=k.replace(/^(der|die|das|sich)\s+/i,"");
   return m[l][k] || null;
 }
+/* japonês: escrita + leitura juntas acham a gravação certa entre homófonos (防止 × 帽子 = ぼうし) */
+function audPair(w, r){ const m=AUD.map; if(!m || !m.ja || !w || !r || settings.audioNativo===false) return null; return m.ja[clean(w).trim()+"\t"+String(r).trim()] || null; }
 function stopClip(){ AUD.run++; if(AUD.el) try{ AUD.el.pause(); }catch(e){} }
 /* cada pacote (~3 MB) é baixado e decodificado uma vez; a palavra vira um WAV curto próprio.
    Assim não depende do salto dentro do MP3, que no celular cai no lugar errado. */
@@ -5890,7 +5892,7 @@ function semVoz(){ if(Date.now()-avisouVoz<8000) return; avisouVoz=Date.now(); t
 function speak(text, l, o){
   o=o||{};
   stopClip();
-  const clip=(o.key && audFor(o.key, l)) || audFor(text, l);
+  const clip=(l==="ja" && o.pair && audPair(o.pair[0],o.pair[1])) || (o.key && audFor(o.key, l)) || audFor(text, l);
   if(clip){ try{ speechSynthesis.cancel(); }catch(e){} playClip(clip, text, l, o); return; }
   if(!("speechSynthesis" in window)){ semVoz(); o.onend && o.onend(false); return; }
   speechSynthesis.cancel();
@@ -5918,8 +5920,8 @@ function sayOf(l, text, kana){ return (l==="ja" && settings.voz==="kana" && kana
 function playBtns(l, text, kana){
   const t=sayOf(l,text,kana);
   return h("span",{class:"row",style:"gap:6px;flex-wrap:nowrap"},
-    iconBtn("play","Ouvir", ()=>speak(t,l,{rate:1})),
-    iconBtn("slow","Ouvir devagar", ()=>speak(t,l,{rate:0.7})));
+    iconBtn("play","Ouvir", ()=>speak(t,l,{rate:1, key:clean(text), pair:l==="ja"&&kana?[text,kana]:null})),
+    iconBtn("slow","Ouvir devagar", ()=>speak(t,l,{rate:0.7, key:clean(text), pair:l==="ja"&&kana?[text,kana]:null})));
 }
 
 /* =========================================================
@@ -6230,7 +6232,11 @@ const hasKanji = s => /[一-鿿]/.test(s||"");
 const meaningKey = m => String(m||"").split(/[;(,]/)[0].trim().toLowerCase();
 function vSay(v){ return v.say || v.r || v.w; }
 /* palavra: a gravação é procurada pela escrita (o kana pode ser de outra palavra homófona) */
-function speakV(v, l, o){ speak(vSay(v), l, Object.assign({key: v.kind==="vocab" ? v.w : ""}, o)); }
+/* kanji: o som é o da 1ª palavra de exemplo (o kanji sozinho tem várias leituras); a chave é a palavra escrita */
+function kanjiWord(v){ return (v.words && v.words[0]) || [v.k, v.say]; }
+function speakV(v, l, o){
+  if(v.kind==="kanji"){ const w=kanjiWord(v); speak(sayOf("ja",w[0],w[1]), "ja", Object.assign({key:w[0], pair:[w[0],w[1]]}, o)); return; }
+  speak(vSay(v), l, Object.assign({key: v.kind==="vocab" ? v.w : "", pair: l==="ja" && v.kind==="vocab" ? [v.w,v.r] : null}, o)); }
 function vocabItems(l){ return C[l].vocab.filter(v=>{ const it=getItem(v); return !(it && it.suspenso); }); }
 function kanjiItems(l){ return (C[l].kanji||[]).filter(v=>{ const it=getItem(v); return !(it && it.suspenso); }); }
 function nextNewOf(list, n){ return list.filter(v=>{ const it=getItem(v); return !it || it.estado<2; }).slice(0,n); }
@@ -6290,7 +6296,9 @@ function vocabFace(v, big){
   if(v.kind==="kanji") return h("div",{class:"stack",style:"gap:6px"},
     h("div",{class:"kanji-big",lang:"ja",text:v.k}),
     h("div",{class:"row small"}, h("span",{class:"chip",text:"on"}), h("span",{lang:"ja",text:v.on}), h("span",{class:"chip",text:"kun"}), h("span",{lang:"ja",text:v.kun})),
-    h("div",{style:"font-size:1.1rem",text:v.m}));
+    h("div",{style:"font-size:1.1rem",text:v.m}),
+    h("div",{class:"row small",style:"gap:8px"}, iconBtn("play","Ouvir a palavra de exemplo",()=>speakV(v,"ja",{rate:0.9})),
+      h("span",{class:"muted",text:"Áudio da palavra "}), h("b",{lang:"ja",text:kanjiWord(v)[0]}), h("span",{lang:"ja",text:"（"+kanjiWord(v)[1]+"）"})));
   return h("div",{class:"stack",style:"gap:4px"},
     h("div",{class:"row",style:"align-items:baseline;gap:10px"}, artChip(v), h("span",{class:big?"word-big":"word",lang:l,text:v.w}), iconBtn("play","Ouvir",()=>speakV(v,l,{rate:0.9}))),
     l==="ja" ? h("div",{class:"kana",lang:"ja",text:v.r}) : (v.pl && v.pl!=="—" ? h("div",{class:"small muted",lang:"de",text:v.pl}) : null),
@@ -6335,7 +6343,7 @@ function exVChoice(v, cfg, done){
       if(!ok) [...grid.children].find(x=>x.textContent===opts[0]).classList.add("right");
       if(cfg.onAnswer) cfg.onAnswer(ok); else record(v, cfg.kind, ok, Date.now()-t0, ok?{}:{wrong:(cfg.wrongLabel?cfg.wrongLabel(opts[i]):opts[i]), right:(cfg.rightLabel||opts[0])});
       card.append(vocabReveal(v, ok));
-      speakV(v,l, {rate:0.9});
+      if(cfg.say) speak(sayOf("ja",cfg.say[0],cfg.say[1]), "ja", {rate:0.9, key:cfg.say[0], pair:cfg.say}); else speakV(v,l, {rate:0.9});
       card.append(contBtn(()=>done(ok)));
     });
     b.dataset.k=grid.children.length+1; grid.append(b);
@@ -6402,7 +6410,7 @@ const KEX = {
   meaning:(k,d)=>exVChoice(k,{tag:"Kanji: significado", kind:"kmc", prompt:h("div",{class:"prompt center"}, h("span",{class:"kanji-big",lang:"ja",text:k.k})),
     right:k.m, wrong:distract(k,o=>o.m,3), rightLabel:k.k+" = "+k.m, wrongLabel:m=>k.k+" ≠ "+m},d),
   word:(k,d)=>{ const w=pick(k.words); return exVChoice(k,{tag:"Kanji: leitura da palavra", kind:"kmc", optLang:"ja", prompt:h("div",{class:"prompt center"}, h("span",{class:"word-big",lang:"ja",text:w[0]}), h("div",{class:"small muted",text:w[2]})),
-    right:w[1], wrong:distract(k,o=>pick(o.words)[1],3), rightLabel:w[0]+" = "+w[1], wrongLabel:r=>w[0]+" ≠ "+r},d); },
+    right:w[1], wrong:distract(k,o=>pick(o.words)[1],3), rightLabel:w[0]+" = "+w[1], wrongLabel:r=>w[0]+" ≠ "+r, say:[w[0],w[1]]},d); },
   which:(k,d)=>exVChoice(k,{tag:"Kanji: qual é?", kind:"kmc", optLang:"ja", prompt:h("div",{class:"prompt"}, h("div",{text:k.m}), h("div",{class:"small muted",text:"on: "+k.on+" · kun: "+k.kun})),
     right:k.k, wrong:distract(k,o=>o.k,3), rightLabel:k.m+" = "+k.k, wrongLabel:x=>k.m+" ≠ "+x},d)
 };

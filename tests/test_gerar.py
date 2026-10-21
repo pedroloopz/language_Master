@@ -97,6 +97,7 @@ def test_montar_app(tmp_path, monkeypatch):
     mapa = montar_app.montar(tmp_path, tmp_path / "app")
     assert mapa["pacotes"] == ["ja-audio-001.mp3", "de-audio-001.mp3"]
     assert mapa["ja"]["ねこ"][3] == "n" and mapa["ja"]["根子"][3] == "s" and mapa["de"]["Haus"][0] == 1
+    assert mapa["ja"]["根子\tねこ"][3] == "s" and mapa["ja"]["猫\tねこ"][3] == "n"   # homofono: o par acha o audio certo
     dic = json.loads((tmp_path / "app" / "dic-ja.json").read_text())
     assert dic["palavras"][0][:4] == ["猫", "ねこ", "N5", "cat"] and dic["kanji"][0][0] == "猫"
     assert (tmp_path / "app" / "de-audio-001.mp3").exists()

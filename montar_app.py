@@ -2,7 +2,7 @@
 
 Uso: python montar_app.py [saida] [destino]   (padrao: saida -> app)
 Gera em destino/:
-  audio-mapa.json  {"pacotes":[...], "ja":{"猫":[pacote, ini_ms, fim_ms, "n"|"s"], "ねこ":...}, "de":{"Haus":[...]}}
+  audio-mapa.json  {"pacotes":[...], "ja":{"猫":[pacote, ini_ms, fim_ms, "n"|"s"], "ねこ":..., "猫\tねこ":...}, "de":{"Haus":[...]}}
                    (inclui as frases fixas do app, de <lingua>-frases.json, com a chave no texto e no kana)
   dic-ja.json      {"palavras":[[escrita, leitura, nivel, en, de, classe, ex_ja, ex_en]], "kanji":[[k, on, kun, en, pt]]}
   dic-de.json      {"palavras":[[palavra, artigo, plural, nivel, ipa, en, ex_de, ex_en, praeteritum, partizip2, auxiliar]]}
@@ -44,6 +44,8 @@ def montar(saida, destino):
                 chaves = [p["escrita"], p["leitura"]] if lingua == "ja" else [p["palavra"]]
                 for k in chaves:              # a primeira (nivel mais facil) vence nos homofonos
                     m.setdefault(k, clip)
+                if lingua == "ja":            # escrita + leitura juntas: o app acha a palavra certa entre homofonos
+                    m.setdefault(p["escrita"] + "\t" + p["leitura"], clip)
             ex = p.get("exemplo") or {}
             if lingua == "ja":
                 linhas.append([p["escrita"], p["leitura"], p["nivel"], "; ".join(p["en"]), "; ".join(p.get("de", [])),
@@ -60,7 +62,7 @@ def montar(saida, destino):
                 if nome not in pacotes:
                     pacotes[nome] = len(mapa["pacotes"])
                     mapa["pacotes"].append(nome)
-                for k in (texto, kana):
+                for k in (texto, kana, texto + "\t" + kana if kana else ""):
                     if k:
                         m.setdefault(k, [pacotes[nome], ini, fim, "s"])
         dic = {"palavras": linhas}
