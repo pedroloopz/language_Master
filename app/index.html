@@ -7449,6 +7449,41 @@ function maratonaView(l){
   return wrap;
 }
 
+
+/* Pedir textos novos com áudio: grava um pedido no banco; uma tarefa agendada do Claude
+   escreve os textos, grava o áudio no GitHub (workflow gerar) e publica no app. */
+const PED_EST={pendente:["Na fila","s2"], escrevendo:["Escrevendo os textos","s2"], gravando:["Gravando o áudio","s4"], pronto:["Pronto","s6"], erro:["Deu erro","s2"]};
+function pedidosCard(l){
+  const card=h("div",{class:"card stack"}), st=h("div",{class:"stack"}), btn=h("button",{class:"btn primary",type:"button",text:"Pedir 6 textos novos com áudio"});
+  const qtdSel=h("select",{id:"ped-qtd-"+l}, [4,6,8].map(n=>h("option",{value:String(n),text:n+" textos"}))); qtdSel.value="6";
+  const temaIn=h("input",{id:"ped-tema-"+l,type:"text",placeholder:"Tema (opcional): trabalho, viagem, notícias…",style:"flex:1;min-width:0;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--surface)"});
+  card.append(h("h3",{text:"Textos novos com áudio"}),
+    h("p",{class:"small muted",text:"Peça e eu (Claude) escrevo textos novos do seu nível, com frases longas, e gravo o áudio. Uma tarefa agendada confere os pedidos a cada 6 horas; com a gravação, ficam prontos em cerca de 6 a 12 horas e aparecem aqui sozinhos."}),
+    h("div",{class:"row"}, qtdSel, temaIn), btn, st);
+  let pend=null, unsub=null;
+  const draw=list=>{
+    st.innerHTML=""; pend=list.find(x=>x.lang===l && ["pendente","escrevendo","gravando"].includes(x.estado))||null;
+    btn.disabled=!!pend; btn.textContent = pend ? "Já há um pedido em andamento" : "Pedir textos novos com áudio";
+    list.filter(x=>x.lang===l).slice(0,3).forEach(x=>{ const e=PED_EST[x.estado]||[x.estado,"s2"];
+      st.append(h("div",{class:"row small"}, h("span",{class:"chip "+e[1],text:e[0]}), h("span",{text:x.qtd+" textos "+x.nivel+(x.tema?" · "+x.tema:"")}), h("span",{class:"spacer"}), h("span",{class:"muted",text:brDate(String(x.criado).slice(0,10))})));
+      if(x.nota) st.append(h("p",{class:"small muted",text:x.nota})); });
+  };
+  const start=()=>{
+    if(store.mode==="loading"){ st.innerHTML=""; st.append(h("p",{class:"small muted",text:"Carregando…"})); setTimeout(start,800); return; }
+    if(store.mode!=="db" || !store.root){ btn.disabled=true; st.innerHTML=""; st.append(h("p",{class:"small",text:"Abra o app pelo link do Claude para fazer pedidos (eles ficam salvos na sua conta)."})); return; }
+    try{ unsub=store.root.collection("pedidos").orderBy("criado","desc").limit(10).onSnapshot(q=>{ const list=[]; q.forEach(d=>list.push(Object.assign({id:d.id},d.data()))); draw(list); }); }catch(e){ st.append(h("p",{class:"small",text:"Não consegui ler os pedidos agora."})); }
+  };
+  btn.addEventListener("click",async()=>{
+    if(pend || !store.root) return; btn.disabled=true;
+    const lv=courseLevel(l), id="p-"+l+"-"+Date.now();
+    const ped={lang:l, nivel: lv==="concluído" ? LVL_ORDER[l].slice(-1)[0] : lv, qtd:Number(qtdSel.value)||6, tema:temaIn.value.trim().slice(0,80), estado:"pendente", criado:new Date().toISOString()};
+    try{ await store.root.collection("pedidos").doc(id).set(ped); temaIn.value=""; toast("Pedido feito. Os textos chegam em cerca de 6 a 12 horas."); }
+    catch(e){ btn.disabled=false; toast("Não consegui salvar o pedido. Tente de novo."); }
+  });
+  start();
+  return card;
+}
+
 /* texto embutido: leitura (com kana e tradução) ou escuta (texto escondido até você pedir) */
 function textView(l, t, o){
   o=o||{};
@@ -8584,14 +8619,14 @@ function renderPraticar(){
   const key=l+"-"+praticarSeg+"-"+(aiReady()?1:0);
   if(!praticarCache[key]){
     if(praticarSeg==="conversa") praticarCache[key]=conversaView(l);
-    else if(praticarSeg==="leitura"){ const w=h("div",{class:"stack"}, textsView(l)); if(aiReady()) w.append(h("h3",{text:"Leitura nova com glossário (professor)"}), readerView(l)); praticarCache[key]=w; }
+    else if(praticarSeg==="leitura"){ const w=h("div",{class:"stack"}, textsView(l), pedidosCard(l)); if(aiReady()) w.append(h("h3",{text:"Leitura nova com glossário (professor)"}), readerView(l)); praticarCache[key]=w; }
     else if(praticarSeg==="escuta"){
       const w=h("div",{class:"stack"}), run=h("div",{class:"stack"}), tr=h("div",{class:"stack"});
       const start=()=>{ run.innerHTML=""; const st=listenSteps(l,10); if(!st.length){ run.append(h("p",{class:"small",text:semEscutaMsg(l,"Faça algumas aulas para ter frases para ouvir.")})); return; }
         runSeq(run, st, r=>{ run.innerHTML=""; run.append(h("div",{class:"card stack"}, h("p",{text:"Feito: "+r.ok+" certo(s), "+r.no+" erro(s)."}), h("button",{class:"btn primary",type:"button",text:"Mais 10",onclick:start}))); }); };
       const trecho=()=>{ tr.innerHTML=""; const pas=makePassage(l); if(!pas){ tr.append(h("p",{class:"small",text:semEscutaMsg(l,"Ainda há poucas frases com áudio para montar um trecho.")})); return; }
         tr.append(passageView(l,pas,end=>end.append(h("button",{class:"btn primary",type:"button",text:"Outro trecho",onclick:trecho})))); };
-      w.append(maratonaView(l),
+      w.append(maratonaView(l), pedidosCard(l),
         h("div",{class:"card stack"}, h("h3",{text:"Ouça e entenda"}),
           h("p",{class:"small muted",text:"10 frases do que você já estudou e dos textos do seu nível, a maioria longas, sem texto na tela. Toque em Devagar se precisar."}),
           h("button",{class:"btn primary",type:"button",text:"Começar",onclick:start})), run,

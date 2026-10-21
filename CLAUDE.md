@@ -7,6 +7,7 @@ Release do GitHub. Não tem bot nem Telegram. Workflow `gerar`: à mão e dia 3 
 - `gerar.py` orquestra; `ja.py` (JMdict + Kanjidic + listas JLPT de Waller + wordfreq); `de.py` (kaikki.org/Wiktionary + wordfreq); `audio.py` (Commons/Lingua Libre, VOICEVOX, pacotes MP3 ≤ 10 MB + índice); `comum.py` (downloads, Commons, JSON ≤ 8 MB dividido por nível).
 - `montar_app.py` transforma a Release nos arquivos do app (`dados/` do Artifact: mapa de áudio, dicionários compactos, MP3).
 - `app/index.html` é o código do app (o Artifact). Ao mudar o app, salve aqui. `frases.js` tira dele as frases fixas; o `gerar` grava cada uma com voz sintética (japonês: VOICEVOX; alemão: Piper/Thorsten, CC0) em `<lingua>-frases-NNN.mp3` (o app do Claude no Android não tem voz do navegador).
+- Botão "Textos novos com áudio" do app: pedidos no banco do Artifact, atendidos por uma tarefa agendada que segue `PEDIDOS.md`.
 - Saída em `saida/`; `LICENCAS.md` é regravado na raiz a cada Release.
 
 ## Segredos e variáveis
