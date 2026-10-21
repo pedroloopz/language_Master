@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Language Master</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -620,6 +619,18 @@ a{color:var(--accent); text-underline-offset:2px}
 :root[data-theme="dark"] body.lang-ja .btn.primary{background:#C9503A; border-color:#B4432F}
 :root[data-theme="dark"] body.lang-ja .switch button[aria-pressed="true"]{background:#C9503A}
 :root[data-theme="dark"] body.lang-de .switch button[aria-pressed="true"]{color:#1B1E24}
+
+/* escuta em 3 passadas */
+.pas-steps{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:.78rem; color:var(--muted)}
+.pas-steps .now{color:var(--accent); font-weight:700}
+.pas-steps .done{text-decoration:line-through; opacity:.6}
+.pas-line{border-radius:10px; padding:6px 8px; transition:background .2s}
+.pas-line.now{background:var(--accent-soft)}
+.wordchips{display:flex; flex-wrap:wrap; gap:6px}
+.wordchip{border:1px solid var(--line); background:var(--surface); border-radius:999px; padding:5px 12px; font-size:.88rem; text-align:left}
+.wordchip[aria-pressed="true"]{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.fixtry{display:flex; flex-direction:column; gap:6px; margin-top:4px}
+.fixtry textarea{width:100%; border:1px solid var(--line); border-radius:10px; padding:8px 10px; background:var(--surface)}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -5031,7 +5042,249 @@ frases:[
 ["An der Kasse musste ich zwanzig Minuten warten.","","No caixa tive que esperar vinte minutos."],
 ["Danach bin ich mit dem Fahrrad nach Hause gefahren.","","Depois voltei para casa de bicicleta."]],
 perguntas:[["Por que o supermercado estava cheio?","Porque segunda era feriado","Porque havia promoção","Porque estava chovendo","Porque abriu uma loja nova"],
-["Como o narrador voltou para casa?","De bicicleta","De ônibus","A pé","De carro"]]}
+["Como o narrador voltou para casa?","De bicicleta","De ônibus","A pé","De carro"]]},
+/* ---------- textos novos (21/10/2026): frases mais longas, para a escuta em 3 passadas ---------- */
+{id:"r-ja-7",lang:"ja",lvl:"N3",titulo:"引っ越しの準備",
+frases:[
+["来月、会社の近くのアパートに引っ越すことになりました。","らいげつ、かいしゃの ちかくの アパートに ひっこす ことに なりました。","No mês que vem vou me mudar para um apartamento perto da empresa."],
+["今の部屋は駅から遠くて、毎朝一時間以上かかっていたからです。","いまの へやは えきから とおくて、まいあさ いちじかん いじょう かかって いた から です。","É que o quarto atual fica longe da estação e eu levava mais de uma hora toda manhã."],
+["週末に荷物を整理してみたら、使っていない物がたくさん出てきました。","しゅうまつに にもつを せいり して みたら、つかって いない ものが たくさん でて きました。","No fim de semana, quando fui organizar as coisas, apareceram muitas coisas que eu não uso."],
+["古い服や本は、捨てるより、必要な人にあげたほうがいいと思います。","ふるい ふくや ほんは、すてる より、ひつような ひとに あげた ほうが いいと おもいます。","Acho melhor dar as roupas e os livros velhos a quem precisa do que jogar fora."],
+["それで、近所のリサイクルショップに持っていくことにしました。","それで、きんじょの リサイクル ショップに もって いく ことに しました。","Por isso decidi levá-los a um brechó do bairro."],
+["新しい部屋は狭いですが、日当たりがよくて、とても気に入っています。","あたらしい へやは せまい ですが、ひあたりが よくて、とても きに いって います。","O quarto novo é pequeno, mas bate bastante sol e gostei muito dele."]],
+perguntas:[["Por que o autor vai se mudar?","Porque o lugar atual fica longe da estação","Porque o aluguel subiu","Porque vai se casar","Porque mudou de empresa"],
+["O que ele vai fazer com as roupas e os livros velhos?","Levar a um brechó do bairro","Jogar no lixo","Vender pela internet","Guardar no quarto novo"]]},
+
+{id:"r-ja-8",lang:"ja",lvl:"N3",titulo:"雨の日の約束",
+frases:[
+["土曜日に友だちと海へ行く約束をしていましたが、朝から強い雨が降っていました。","どようびに ともだちと うみへ いく やくそくを して いましたが、あさから つよい あめが ふって いました。","Eu tinha combinado de ir à praia com um amigo no sábado, mas chovia forte desde a manhã."],
+["天気予報によると、雨は夜まで続くということでした。","てんき よほうに よると、あめは よるまで つづく という こと でした。","Segundo a previsão do tempo, a chuva continuaria até a noite."],
+["仕方がないので、海はやめて、駅前の映画館で映画を見ることにしました。","しかたが ないので、うみは やめて、えきまえの えいがかんで えいがを みる ことに しました。","Sem jeito, desistimos da praia e decidimos ver um filme no cinema em frente à estação."],
+["映画は思っていたよりずっとおもしろくて、二人とも最後まで笑っていました。","えいがは おもって いた より ずっと おもしろくて、ふたりとも さいごまで わらって いました。","O filme foi muito mais engraçado do que esperávamos, e nós dois rimos até o fim."],
+["そのあと、近くの喫茶店で、次はいつ海へ行くか相談しました。","その あと、ちかくの きっさてんで、つぎは いつ うみへ いくか そうだん しました。","Depois, num café ali perto, conversamos sobre quando iríamos à praia."],
+["予定どおりにいかなくても、楽しい一日になることもあるんですね。","よてい どおりに いかなくても、たのしい いちにちに なる ことも あるんですね。","Mesmo quando as coisas não saem como planejado, o dia pode acabar sendo divertido."]],
+perguntas:[["O que eles fizeram em vez de ir à praia?","Viram um filme no cinema","Ficaram em casa","Foram a um museu","Foram às compras"],
+["Como foi o filme?","Mais divertido do que esperavam","Muito triste","Chato","Eles saíram no meio"]]},
+
+{id:"r-ja-9",lang:"ja",lvl:"N3",titulo:"健康診断の結果",
+frases:[
+["先月受けた健康診断で、少し血圧が高いと言われました。","せんげつ うけた けんこう しんだんで、すこし けつあつが たかいと いわれました。","No check-up do mês passado me disseram que minha pressão estava um pouco alta."],
+["医者によると、塩分の多い食事と運動不足が原因かもしれないそうです。","いしゃに よると、えんぶんの おおい しょくじと うんどう ぶそくが げんいん かも しれない そうです。","Segundo o médico, a causa talvez seja comida com muito sal e falta de exercício."],
+["そこで、ラーメンを食べるのは週に一回だけにすることにしました。","そこで、ラーメンを たべる のは しゅうに いっかい だけに する ことに しました。","Então decidi comer lámen só uma vez por semana."],
+["それに、エレベーターを使わずに、なるべく階段を使うようにしています。","それに、エレベーターを つかわずに、なるべく かいだんを つかう ように して います。","Além disso, procuro usar a escada em vez do elevador sempre que possível."],
+["初めのうちは大変でしたが、二か月たって、体が軽くなった気がします。","はじめの うちは たいへん でしたが、にかげつ たって、からだが かるく なった きが します。","No começo foi difícil, mas depois de dois meses sinto o corpo mais leve."],
+["次の検査で、数字がよくなっているといいなと思っています。","つぎの けんさで、すうじが よく なって いると いいなと おもって います。","Espero que no próximo exame os números tenham melhorado."]],
+perguntas:[["O que o médico apontou como possível causa?","Comida com muito sal e falta de exercício","Pouco sono","Estresse no trabalho","Café demais"],
+["O que o autor faz agora?","Usa a escada em vez do elevador","Corre todas as manhãs","Parou de comer lámen","Toma remédio todo dia"]]},
+
+{id:"r-ja-10",lang:"ja",lvl:"N3",titulo:"初めてのアルバイト",
+frases:[
+["大学に入ってすぐ、駅の近くのパン屋でアルバイトを始めました。","だいがくに はいって すぐ、えきの ちかくの パンやで アルバイトを はじめました。","Logo que entrei na faculdade, comecei um bico numa padaria perto da estação."],
+["朝六時から働かなければならないので、前の晩は早く寝るようにしていました。","あさ ろくじから はたらかなければ ならないので、まえの ばんは はやく ねる ように して いました。","Como precisava trabalhar a partir das seis da manhã, procurava dormir cedo na noite anterior."],
+["最初の週は、パンの名前も値段も覚えられなくて、何度も店長に聞きました。","さいしょの しゅうは、パンの なまえも ねだんも おぼえられなくて、なんども てんちょうに ききました。","Na primeira semana não conseguia decorar nem os nomes nem os preços dos pães e perguntei várias vezes ao gerente."],
+["それでも店長は嫌な顔をしないで、いつもていねいに教えてくれました。","それでも てんちょうは いやな かおを しないで、いつも ていねいに おしえて くれました。","Mesmo assim o gerente nunca fez cara feia e sempre me ensinou com paciência."],
+["一か月ほどたつと、常連のお客さんに名前で呼ばれるようになりました。","いっかげつ ほど たつと、じょうれんの おきゃくさんに なまえで よばれる ように なりました。","Depois de cerca de um mês, os clientes fixos passaram a me chamar pelo nome."],
+["あの店で働いた経験は、今の仕事にも役に立っていると思います。","あの みせで はたらいた けいけんは、いまの しごとにも やくに たって いると おもいます。","Acho que a experiência naquela loja me ajuda até no trabalho de hoje."]],
+perguntas:[["Por que o autor dormia cedo?","Porque começava a trabalhar às seis","Porque estudava de manhã","Porque estava doente","Porque o gerente pediu"],
+["O que aconteceu depois de um mês?","Os clientes fixos passaram a chamá-lo pelo nome","Ele foi promovido","Ele saiu da padaria","O gerente mudou"]]},
+
+{id:"r-ja-11",lang:"ja",lvl:"N2",titulo:"コンビニの深夜営業",
+frases:[
+["最近、人手不足を理由に、深夜営業をやめるコンビニが増えている。","さいきん、ひとで ぶそくを りゆうに、しんや えいぎょうを やめる コンビニが ふえて いる。","Ultimamente, cada vez mais lojas de conveniência deixam de abrir de madrugada, alegando falta de pessoal."],
+["二十四時間開いているのが当たり前だと思っていた客にとっては、不便に感じられるかもしれない。","にじゅうよじかん あいて いる のが あたりまえだと おもって いた きゃくに とっては、ふべんに かんじられる かも しれない。","Para os clientes que achavam natural a loja ficar aberta 24 horas, isso pode parecer incômodo."],
+["しかし、夜中の客は少なく、店にとっては電気代や人件費のほうが負担になっているという。","しかし、よなかの きゃくは すくなく、みせに とっては でんきだいや じんけんひの ほうが ふたんに なって いる という。","Porém, dizem que os clientes da madrugada são poucos e, para a loja, a conta de luz e os salários pesam mais."],
+["また、深夜に一人で働く店員の安全を心配する声も少なくない。","また、しんやに ひとりで はたらく てんいんの あんぜんを しんぱい する こえも すくなく ない。","Também não são poucas as vozes preocupadas com a segurança de quem trabalha sozinho de madrugada."],
+["一方で、夜勤の多い病院や工場の近くでは、営業を続けてほしいという要望も強い。","いっぽうで、やきんの おおい びょういんや こうじょうの ちかくでは、えいぎょうを つづけて ほしい という ようぼうも つよい。","Por outro lado, perto de hospitais e fábricas com muitos turnos noturnos, é forte o pedido para que continuem abertas."],
+["地域によって必要とされるサービスは違うのだから、一律に決めるべきではないだろう。","ちいきに よって ひつようと される サービスは ちがう のだから、いちりつに きめる べき では ない だろう。","Como os serviços necessários variam de região para região, provavelmente não se deve decidir isso de forma uniforme."]],
+perguntas:[["Por que as lojas deixam de abrir de madrugada?","Falta de pessoal e poucos clientes à noite","Uma lei nova proibiu","Os vizinhos reclamaram do barulho","Os preços subiram"],
+["Qual é a opinião do texto?","A decisão deve depender de cada região","Todas devem fechar de madrugada","Todas devem abrir 24 horas","O governo deve pagar a conta de luz"]]},
+
+{id:"r-ja-12",lang:"ja",lvl:"N2",titulo:"若者と読書",
+frases:[
+["若者の読書離れが言われて久しいが、実際には本を読む若者が減っているとは限らない。","わかものの どくしょ ばなれが いわれて ひさしいが、じっさいには ほんを よむ わかものが へって いるとは かぎらない。","Há tempos se diz que os jovens abandonaram a leitura, mas não é certo que os jovens leitores tenham diminuído."],
+["ある調査によれば、紙の本を買う人は減ったものの、スマートフォンで小説を読む人はむしろ増えているそうだ。","ある ちょうさに よれば、かみの ほんを かう ひとは へった ものの、スマートフォンで しょうせつを よむ ひとは むしろ ふえて いる そうだ。","Segundo uma pesquisa, embora menos pessoas comprem livros de papel, as que leem romances no celular até aumentaram."],
+["通勤電車の中や寝る前のちょっとした時間に、気軽に読めるのが人気の理由だという。","つうきん でんしゃの なかや ねる まえの ちょっと した じかんに、きがるに よめる のが にんきの りゆう だ という。","Dizem que o motivo é poder ler à vontade no trem para o trabalho ou nos minutinhos antes de dormir."],
+["実際、通勤時間だけで月に三冊以上読むという人もいる。","じっさい、つうきん じかん だけで つきに さんさつ いじょう よむ という ひとも いる。","De fato, há quem leia mais de três livros por mês só no tempo de deslocamento."],
+["ただ、画面で読むと、内容が頭に残りにくいと感じる人も多い。","ただ、がめんで よむと、ないようが あたまに のこりにくいと かんじる ひとも おおい。","Mas muita gente sente que, lendo na tela, o conteúdo fica menos na cabeça."],
+["大切なのは紙か画面かということより、自分に合った読み方を見つけることではないだろうか。","たいせつ なのは かみか がめんか という こと より、じぶんに あった よみかたを みつける こと では ない だろうか。","Mais do que a escolha entre papel e tela, o importante não seria encontrar o jeito de ler que combina com você?"]],
+perguntas:[["O que a pesquisa mostrou?","Menos livros de papel, mais leitura no celular","Os jovens pararam de ler","Os livros de papel voltaram a vender","Ninguém lê no trem"],
+["Qual é a conclusão do texto?","Encontrar o jeito de ler que combina com você","O papel é sempre melhor","A tela é sempre melhor","Ler no trem faz mal"]]},
+
+{id:"r-ja-13",lang:"ja",lvl:"N2",titulo:"観光客と地元の暮らし",
+frases:[
+["外国人観光客が戻ってきたことで、京都などの観光地はふたたびにぎわいを見せている。","がいこくじん かんこうきゃくが もどって きた ことで、きょうと などの かんこうちは ふたたび にぎわいを みせて いる。","Com a volta dos turistas estrangeiros, lugares como Quioto voltaram a ficar movimentados."],
+["店やホテルにとっては喜ばしいことだが、地元の住民の中には困っている人もいる。","みせや ホテルに とっては よろこばしい こと だが、じもとの じゅうみんの なかには こまって いる ひとも いる。","Para lojas e hotéis é motivo de alegria, mas entre os moradores há quem esteja tendo problemas."],
+["バスが観光客でいっぱいになり、通勤や通学に使えないという声も聞かれる。","バスが かんこうきゃくで いっぱいに なり、つうきんや つうがくに つかえない という こえも きかれる。","Ouve-se gente dizendo que os ônibus lotam de turistas e não dá para usá-los para ir ao trabalho ou à escola."],
+["そこで市は、観光客向けの急行バスを走らせ、住民の生活への影響を減らそうとしている。","そこで しは、かんこうきゃく むけの きゅうこう バスを はしらせ、じゅうみんの せいかつへの えいきょうを へらそうと して いる。","Por isso a cidade colocou ônibus expressos para turistas, tentando reduzir o impacto na vida dos moradores."],
+["観光による収入を守りながら、住みやすさも失わないようにするのは簡単なことではない。","かんこうに よる しゅうにゅうを まもりながら、すみやすさも うしなわない ように する のは かんたんな こと では ない。","Proteger a renda do turismo sem perder a qualidade de vida não é nada simples."],
+["観光客の側にも、地元のルールを尊重する姿勢が求められている。","かんこうきゃくの がわにも、じもとの ルールを そんちょう する しせいが もとめられて いる。","Dos turistas também se espera uma atitude de respeito às regras locais."]],
+perguntas:[["Qual problema os moradores relatam?","Ônibus lotados de turistas","Hotéis fechando","Falta de turistas","Preço da gasolina"],
+["O que a cidade fez?","Criou ônibus expressos para turistas","Proibiu a entrada de turistas","Aumentou o preço dos templos","Fechou as linhas de ônibus"]]},
+
+{id:"r-ja-14",lang:"ja",lvl:"N2",titulo:"副業を始める人々",
+frases:[
+["給料がなかなか上がらない中、会社員の間で副業を始める人が増えている。","きゅうりょうが なかなか あがらない なか、かいしゃいんの あいだで ふくぎょうを はじめる ひとが ふえて いる。","Com os salários que quase não sobem, cresce o número de assalariados que começam um trabalho paralelo."],
+["以前は副業を禁止する会社が多かったが、最近は認める会社も珍しくなくなった。","いぜんは ふくぎょうを きんし する かいしゃが おおかったが、さいきんは みとめる かいしゃも めずらしく なく なった。","Antes muitas empresas proibiam, mas hoje já não é raro que permitam."],
+["中には、本業で身につけた技術を生かして、週末に翻訳やデザインの仕事を受ける人もいる。","なかには、ほんぎょうで みに つけた ぎじゅつを いかして、しゅうまつに ほんやくや デザインの しごとを うける ひとも いる。","Há quem aproveite as habilidades do emprego principal para pegar trabalhos de tradução ou design nos fins de semana."],
+["収入が増えるだけでなく、新しい人とのつながりができるのも魅力だという。","しゅうにゅうが ふえる だけ で なく、あたらしい ひととの つながりが できる のも みりょく だ という。","Dizem que, além de aumentar a renda, conhecer gente nova também é um atrativo."],
+["ただし、働きすぎて体を壊しては、元も子もない。","ただし、はたらき すぎて からだを こわしては、もとも こも ない。","Mas, se a pessoa trabalhar demais e adoecer, perde-se tudo."],
+["自分の時間と体力を考えたうえで、無理のない範囲で続けることが大切だ。","じぶんの じかんと たいりょくを かんがえた うえで、むりの ない はんいで つづける ことが たいせつ だ。","O importante é pensar no próprio tempo e na própria energia e continuar dentro de um limite razoável."]],
+perguntas:[["Por que mais pessoas começam um trabalho paralelo?","Porque os salários quase não sobem","Porque perderam o emprego","Porque o governo obrigou","Porque têm muito tempo livre"],
+["Qual é o alerta do texto?","Não trabalhar a ponto de adoecer","Não contar nada à empresa","Escolher só trabalhos de design","Largar o emprego principal"]]},
+
+{id:"r-ja-15",lang:"ja",lvl:"N2",titulo:"防災の日",
+frases:[
+["九月一日は防災の日で、全国の学校や会社で避難訓練が行われる。","くがつ ついたちは ぼうさいの ひで、ぜんこくの がっこうや かいしゃで ひなん くんれんが おこなわれる。","1º de setembro é o Dia da Prevenção de Desastres, com simulações de evacuação em escolas e empresas do país todo."],
+["日本は地震が多い国なので、ふだんから備えておくことが欠かせない。","にほんは じしんが おおい くに なので、ふだんから そなえて おく ことが かかせない。","Como o Japão tem muitos terremotos, estar sempre preparado é indispensável."],
+["専門家によれば、水や食料は少なくとも三日分、できれば一週間分用意しておくべきだという。","せんもんかに よれば、みずや しょくりょうは すくなく とも みっかぶん、できれば いっしゅうかんぶん ようい して おく べき だ という。","Segundo especialistas, deve-se ter água e comida para pelo menos três dias e, se possível, para uma semana."],
+["また、家族が別々の場所にいるときに地震が起きた場合に備えて、集まる場所を決めておくことも大切だ。","また、かぞくが べつべつの ばしょに いる ときに じしんが おきた ばあいに そなえて、あつまる ばしょを きめて おく ことも たいせつ だ。","Também é importante combinar um ponto de encontro, caso o terremoto aconteça com a família em lugares diferentes."],
+["訓練は面倒だと感じる人もいるが、実際に体を動かしてみて初めてわかることも多い。","くんれんは めんどうだと かんじる ひとも いるが、じっさいに からだを うごかして みて はじめて わかる ことも おおい。","Há quem ache a simulação chata, mas muita coisa só se entende quando se pratica de verdade."],
+["いざというときに慌てないためには、日ごろの準備がものを言うのである。","いざ という ときに あわてない ためには、ひごろの じゅんびが ものを いう の である。","Para não entrar em pânico na hora H, é o preparo do dia a dia que faz a diferença."]],
+perguntas:[["Para quantos dias os especialistas recomendam ter água e comida?","Pelo menos três dias, de preferência uma semana","Um dia","Um mês","Eles não recomendam estoque"],
+["O que mais é importante combinar com a família?","Um ponto de encontro","O horário da simulação","Um hotel","Uma rota de carro"]]},
+
+{id:"r-ja-16",lang:"ja",lvl:"N2",titulo:"AIと仕事",
+frases:[
+["人工知能の発達によって、これまで人間がしてきた仕事の一部が機械に置き換えられつつある。","じんこう ちのうの はったつに よって、これまで にんげんが して きた しごとの いちぶが きかいに おきかえられ つつ ある。","Com o avanço da inteligência artificial, parte do trabalho feito por pessoas vem sendo substituída por máquinas."],
+["書類の確認や簡単な翻訳など、決まった手順で行う作業は特に影響を受けやすい。","しょるいの かくにんや かんたんな ほんやく など、きまった てじゅんで おこなう さぎょうは とくに えいきょうを うけやすい。","Tarefas com procedimento fixo, como conferir documentos ou fazer traduções simples, são as mais afetadas."],
+["その一方で、人の気持ちをくみ取ったり、相手に合わせて説明したりする力は、まだ機械には難しいとされる。","その いっぽうで、ひとの きもちを くみとったり、あいてに あわせて せつめい したり する ちからは、まだ きかいには むずかしい と される。","Por outro lado, perceber o que a pessoa sente ou explicar algo de acordo com quem ouve ainda é considerado difícil para as máquinas."],
+["教育の現場でも、AIを使って生徒一人一人に合った問題を出す試みが始まっている。","きょういくの げんばでも、エーアイを つかって せいと ひとり ひとりに あった もんだいを だす こころみが はじまって いる。","Nas escolas também começaram iniciativas que usam IA para dar a cada aluno exercícios adequados a ele."],
+["大事なのは、AIに仕事を奪われると恐れることではなく、どう使いこなすかを考えることだ。","だいじ なのは、エーアイに しごとを うばわれると おそれる こと では なく、どう つかい こなすかを かんがえる こと だ。","O importante não é ter medo de que a IA tire nosso trabalho, e sim pensar em como usá-la bem."],
+["道具は使う人次第で、役にも立てば、害にもなるのである。","どうぐは つかう ひと しだいで、やくにも たてば、がいにも なる の である。","Uma ferramenta pode ser útil ou prejudicial, dependendo de quem a usa."]],
+perguntas:[["Que tarefas são as mais afetadas?","As de procedimento fixo, como conferir documentos","As que exigem perceber sentimentos","As aulas em sala","Nenhuma"],
+["O que o texto recomenda?","Pensar em como usar bem a IA","Proibir a IA","Ter medo da IA","Parar de estudar"]]},
+
+{id:"r-de-7",lang:"de",lvl:"A2",titulo:"Mein neuer Job",
+frases:[
+["Seit zwei Wochen arbeite ich in einem kleinen Café in der Nähe vom Bahnhof.","","Há duas semanas trabalho num pequeno café perto da estação."],
+["Ich stehe jeden Morgen um halb sechs auf, weil das Café schon um sieben Uhr öffnet.","","Acordo todo dia às cinco e meia, porque o café já abre às sete."],
+["Am Anfang war alles neu für mich, aber meine Kollegen haben mir viel geholfen.","","No começo tudo era novo para mim, mas meus colegas me ajudaram muito."],
+["Am liebsten mache ich Kaffee, denn dabei kann ich mit den Gästen sprechen.","","O que eu mais gosto é de fazer café, porque assim posso conversar com os clientes."],
+["Manche Gäste kommen jeden Tag und bestellen immer dasselbe.","","Alguns clientes vêm todo dia e pedem sempre a mesma coisa."],
+["Nach der Arbeit bin ich oft müde, aber ich bin trotzdem sehr zufrieden.","","Depois do trabalho fico cansado muitas vezes, mas mesmo assim estou muito satisfeito."]],
+perguntas:[["Por que o narrador acorda às cinco e meia?","Porque o café abre às sete","Porque mora longe","Porque estuda de manhã","Porque faz esporte"],
+["O que ele mais gosta de fazer?","Fazer café e conversar com os clientes","Limpar as mesas","Fazer bolos","Trabalhar no caixa"]]},
+
+{id:"r-de-8",lang:"de",lvl:"A2",titulo:"Omas Geburtstag",
+frases:[
+["Am Sonntag hatte meine Oma Geburtstag, und die ganze Familie ist zu ihr gefahren.","","No domingo foi aniversário da minha avó, e a família toda foi até a casa dela."],
+["Sie wohnt in einem kleinen Dorf, ungefähr zwei Stunden mit dem Auto von uns entfernt.","","Ela mora numa vila pequena, a umas duas horas de carro da nossa casa."],
+["Meine Mutter hat einen großen Kuchen gebacken, und ich habe ein Fotoalbum gemacht.","","Minha mãe fez um bolo grande e eu fiz um álbum de fotos."],
+["Als Oma das Album gesehen hat, hat sie sich sehr gefreut und ein bisschen geweint.","","Quando a avó viu o álbum, ficou muito feliz e chorou um pouco."],
+["Nach dem Essen sind wir zusammen spazieren gegangen, weil das Wetter so schön war.","","Depois de comer, fomos passear juntos, porque o tempo estava muito bonito."],
+["Am Abend sind wir müde, aber glücklich nach Hause zurückgefahren.","","À noite voltamos para casa cansados, mas felizes."]],
+perguntas:[["O que o narrador deu à avó?","Um álbum de fotos","Um bolo","Flores","Um livro"],
+["Por que foram passear?","Porque o tempo estava bonito","Porque a avó pediu","Porque o carro quebrou","Porque não havia comida"]]},
+
+{id:"r-de-9",lang:"de",lvl:"A2",titulo:"Mit dem Zug nach Hamburg",
+frases:[
+["Letzten Freitag wollte ich mit dem Zug nach Hamburg fahren, um eine Freundin zu besuchen.","","Na sexta passada eu queria ir de trem a Hamburgo para visitar uma amiga."],
+["Leider hatte der Zug fast eine Stunde Verspätung, weil es ein Problem mit den Gleisen gab.","","Infelizmente o trem atrasou quase uma hora, porque houve um problema nos trilhos."],
+["Ich habe am Bahnhof einen Kaffee getrunken und meiner Freundin eine Nachricht geschrieben.","","Tomei um café na estação e mandei uma mensagem para minha amiga."],
+["Im Zug war es sehr voll, aber ich habe zum Glück noch einen Platz am Fenster gefunden.","","O trem estava muito cheio, mas por sorte ainda achei um lugar na janela."],
+["Meine Freundin hat mich in Hamburg am Bahnhof abgeholt, und wir sind direkt zum Hafen gegangen.","","Minha amiga me buscou na estação de Hamburgo e fomos direto ao porto."],
+["Trotz der Verspätung war es ein wunderschönes Wochenende.","","Apesar do atraso, foi um fim de semana maravilhoso."]],
+perguntas:[["Por que o trem atrasou?","Houve um problema nos trilhos","Houve uma greve","Nevou muito","Houve um acidente na estação"],
+["Para onde foram primeiro em Hamburgo?","Ao porto","A um museu","Ao apartamento da amiga","A um restaurante"]]},
+
+{id:"r-de-10",lang:"de",lvl:"A2",titulo:"Ein neues Hobby",
+frases:[
+["Seit diesem Sommer gehe ich zweimal pro Woche schwimmen.","","Desde este verão vou nadar duas vezes por semana."],
+["Früher habe ich keinen Sport gemacht, weil ich nach der Arbeit immer zu müde war.","","Antes eu não fazia esporte, porque depois do trabalho estava sempre cansado demais."],
+["Mein Arzt hat gesagt, dass Schwimmen gut für den Rücken ist.","","Meu médico disse que nadar é bom para as costas."],
+["Das Schwimmbad ist nur zehn Minuten von meiner Wohnung entfernt, deshalb kann ich auch abends hingehen.","","A piscina fica só a dez minutos do meu apartamento, por isso posso ir também à noite."],
+["Jetzt habe ich weniger Rückenschmerzen und schlafe viel besser als vorher.","","Agora tenho menos dor nas costas e durmo muito melhor do que antes."],
+["Nächstes Jahr möchte ich vielleicht einen Kurs machen und richtig kraulen lernen.","","No ano que vem talvez eu faça um curso para aprender o nado crawl direito."]],
+perguntas:[["Por que o narrador não fazia esporte antes?","Estava cansado demais depois do trabalho","Não tinha dinheiro","O médico proibiu","Não sabia nadar"],
+["O que melhorou?","Menos dor nas costas e sono melhor","Ele emagreceu dez quilos","Ele ganhou uma competição","Ele mudou de trabalho"]]},
+
+{id:"r-de-11",lang:"de",lvl:"B1",titulo:"Wohnungssuche in München",
+frases:[
+["Wer in München eine Wohnung sucht, braucht viel Geduld und manchmal auch ein bisschen Glück.","","Quem procura apartamento em Munique precisa de muita paciência e, às vezes, de um pouco de sorte."],
+["Zu jeder Besichtigung kommen oft mehr als dreißig Leute, obwohl die Mieten sehr hoch sind.","","Em cada visita aparecem muitas vezes mais de trinta pessoas, embora os aluguéis sejam muito altos."],
+["Viele Vermieter wollen einen Nachweis über das Einkommen und Informationen über frühere Mietverhältnisse sehen.","","Muitos proprietários querem ver um comprovante de renda e informações sobre aluguéis anteriores."],
+["Meine Kollegin hat fast ein halbes Jahr gesucht, bevor sie endlich eine Zusage bekommen hat.","","Minha colega procurou quase meio ano antes de finalmente ser aceita."],
+["Deshalb ziehen immer mehr Menschen in kleinere Städte in der Umgebung und pendeln jeden Tag.","","Por isso cada vez mais gente se muda para cidades menores da região e se desloca todo dia."],
+["Das kostet zwar Zeit, aber die Wohnungen sind dort deutlich günstiger.","","Isso custa tempo, é verdade, mas lá os apartamentos são bem mais baratos."]],
+perguntas:[["Quanto tempo a colega procurou?","Quase meio ano","Duas semanas","Dois anos","Um mês"],
+["O que muitas pessoas fazem?","Mudam para cidades menores e se deslocam","Moram em hotéis","Voltam para a casa dos pais","Compram casas no centro"]]},
+
+{id:"r-de-12",lang:"de",lvl:"B1",titulo:"Ehrenamt im Tierheim",
+frases:[
+["Seit einem Jahr helfe ich jeden Samstag ehrenamtlich in einem Tierheim am Stadtrand.","","Há um ano ajudo como voluntário todo sábado num abrigo de animais na periferia da cidade."],
+["Meine Aufgabe ist es, mit den Hunden spazieren zu gehen und die Zwinger sauber zu machen.","","Minha tarefa é passear com os cães e limpar os canis."],
+["Die Arbeit ist manchmal anstrengend, besonders wenn es regnet und die Hunde voller Schlamm sind.","","O trabalho às vezes é cansativo, principalmente quando chove e os cães ficam cheios de lama."],
+["Trotzdem freue ich mich jede Woche darauf, weil ich sehe, wie die Tiere langsam Vertrauen fassen.","","Mesmo assim espero por isso toda semana, porque vejo os animais ganhando confiança aos poucos."],
+["Am schönsten ist es, wenn ein Hund, den ich lange betreut habe, eine neue Familie findet.","","O melhor é quando um cão de quem cuidei por muito tempo encontra uma nova família."],
+["Wer Zeit hat und Tiere mag, sollte sich unbedingt bei einem Tierheim in der Nähe melden.","","Quem tem tempo e gosta de animais deveria com certeza procurar um abrigo perto de casa."]],
+perguntas:[["O que o narrador faz no abrigo?","Passeia com os cães e limpa os canis","Cuida da contabilidade","Vacina os animais","Vende ração"],
+["Qual é o melhor momento para ele?","Quando um cão encontra uma nova família","Quando para de chover","Quando recebe o salário","Quando o abrigo fecha"]]},
+
+{id:"r-de-13",lang:"de",lvl:"B1",titulo:"Einkaufen im Internet",
+frases:[
+["Immer mehr Menschen kaufen ihre Kleidung, Bücher und sogar Lebensmittel im Internet.","","Cada vez mais pessoas compram roupas, livros e até alimentos pela internet."],
+["Das ist praktisch, weil man nicht in die Stadt fahren muss und die Preise leicht vergleichen kann.","","É prático, porque não é preciso ir até a cidade e dá para comparar os preços facilmente."],
+["Allerdings schicken viele Kunden einen großen Teil der Waren wieder zurück, was für die Umwelt problematisch ist.","","Porém muitos clientes devolvem boa parte dos produtos, o que é um problema para o meio ambiente."],
+["Außerdem leiden kleine Geschäfte in den Innenstädten darunter, dass weniger Leute vorbeikommen.","","Além disso, as lojinhas do centro sofrem porque passa menos gente por lá."],
+["Einige Städte versuchen deshalb, die Innenstadt mit Märkten und Festen wieder attraktiver zu machen.","","Por isso algumas cidades tentam deixar o centro mais atraente de novo com feiras e festas."],
+["Am Ende entscheiden aber die Kunden selbst, wo sie ihr Geld ausgeben.","","No fim, porém, são os próprios clientes que decidem onde gastar o dinheiro."]],
+perguntas:[["Que problema ambiental o texto cita?","Muitas devoluções de produtos","Embalagens de vidro","Carros elétricos","Lojas abertas à noite"],
+["O que algumas cidades fazem?","Organizam feiras e festas no centro","Proíbem compras pela internet","Fecham as lojas pequenas","Cobram imposto das compras online"]]},
+
+{id:"r-de-14",lang:"de",lvl:"B1",titulo:"Mein erstes Vorstellungsgespräch",
+frases:[
+["Gestern hatte ich mein erstes Vorstellungsgespräch auf Deutsch, und ich war ziemlich nervös.","","Ontem tive minha primeira entrevista de emprego em alemão e estava bem nervoso."],
+["Ich hatte mich eine Woche lang vorbereitet und typische Fragen mit einer Freundin geübt.","","Eu tinha me preparado durante uma semana e treinado perguntas típicas com uma amiga."],
+["Die Personalchefin war sehr freundlich und hat zuerst nach meinen Erfahrungen in Brasilien gefragt.","","A chefe de RH foi muito simpática e perguntou primeiro sobre minhas experiências no Brasil."],
+["Bei einer Frage habe ich ein Wort nicht verstanden, also habe ich höflich nachgefragt.","","Numa das perguntas não entendi uma palavra, então pedi educadamente que repetisse."],
+["Am Ende hat sie gesagt, dass sie sich bis Ende der Woche bei mir melden wird.","","No final ela disse que vai entrar em contato comigo até o fim da semana."],
+["Egal, wie es ausgeht, habe ich viel gelernt und fühle mich für das nächste Gespräch sicherer.","","Seja qual for o resultado, aprendi muito e me sinto mais seguro para a próxima entrevista."]],
+perguntas:[["Como o narrador se preparou?","Treinou perguntas com uma amiga","Leu um livro de gramática","Fez um curso online","Não se preparou"],
+["O que ele fez quando não entendeu uma palavra?","Pediu educadamente que repetisse","Ficou em silêncio","Respondeu em português","Saiu da sala"]]},
+
+{id:"r-de-15",lang:"de",lvl:"B2",titulo:"Homeoffice auf dem Land",
+frases:[
+["Seit die Arbeit im Homeoffice selbstverständlicher geworden ist, ziehen manche Familien bewusst aufs Land.","","Desde que o home office ficou mais comum, algumas famílias se mudam de propósito para o interior."],
+["Sie versprechen sich davon mehr Platz, niedrigere Kosten und eine ruhigere Umgebung für die Kinder.","","Esperam ter mais espaço, custos menores e um ambiente mais tranquilo para as crianças."],
+["In der Praxis stoßen sie jedoch häufig auf Probleme, mit denen sie nicht gerechnet hatten.","","Na prática, porém, muitas vezes encontram problemas com que não contavam."],
+["So ist das Internet in vielen Dörfern noch immer zu langsam für regelmäßige Videokonferenzen.","","Em muitos vilarejos, por exemplo, a internet ainda é lenta demais para videoconferências frequentes."],
+["Hinzu kommt, dass ohne Auto kaum etwas erreichbar ist, weil Busse oft nur zweimal am Tag fahren.","","Além disso, sem carro quase nada é acessível, porque os ônibus muitas vezes passam só duas vezes por dia."],
+["Ob sich der Umzug lohnt, hängt also stark davon ab, wie gut die Infrastruktur vor Ort ausgebaut ist.","","Se a mudança vale a pena depende muito, portanto, de quão desenvolvida é a infraestrutura do lugar."]],
+perguntas:[["Que problema a internet causa?","É lenta demais para videoconferências","É cara demais","É proibida no interior","Só funciona à noite"],
+["Do que depende a decisão de se mudar?","Da infraestrutura do lugar","Do clima","Do salário do chefe","Da idade das crianças"]]},
+
+{id:"r-de-16",lang:"de",lvl:"B2",titulo:"Kantine ohne Fleisch?",
+frases:[
+["In einem großen Unternehmen in Köln gibt es seit Kurzem an zwei Tagen pro Woche nur vegetarische Gerichte in der Kantine.","","Numa grande empresa de Colônia, há pouco tempo o refeitório serve só pratos vegetarianos dois dias por semana."],
+["Die Geschäftsführung begründet die Entscheidung mit dem Klimaschutz und der Gesundheit der Mitarbeitenden.","","A direção justifica a decisão com a proteção do clima e a saúde dos funcionários."],
+["Während viele jüngere Angestellte die Idee begrüßen, fühlen sich andere bevormundet.","","Enquanto muitos funcionários mais jovens aprovam a ideia, outros se sentem tutelados."],
+["Sie kritisieren, dass man ihnen vorschreibe, was sie essen sollen, anstatt die Wahl jedem Einzelnen zu überlassen.","","Eles criticam que lhes digam o que comer, em vez de deixar a escolha a cada um."],
+["Eine Umfrage nach drei Monaten ergab allerdings, dass die Zufriedenheit mit dem Essen insgesamt gestiegen ist.","","Uma pesquisa feita depois de três meses mostrou, porém, que a satisfação com a comida subiu no geral."],
+["Ob das Modell auch in anderen Firmen funktionieren würde, bleibt dennoch umstritten.","","Se o modelo funcionaria em outras empresas, continua sendo controverso."]],
+perguntas:[["Como a direção justifica a decisão?","Proteção do clima e saúde dos funcionários","Economia de dinheiro","Falta de cozinheiros","Pedido dos fornecedores"],
+["O que a pesquisa mostrou?","A satisfação com a comida subiu","Todos odiaram a ideia","O refeitório fechou","Ninguém respondeu"]]},
+
+{id:"r-de-17",lang:"de",lvl:"B2",titulo:"Die Rückkehr der Nachtzüge",
+frases:[
+["Lange Zeit galten Nachtzüge in Europa als veraltet, doch in den letzten Jahren erleben sie ein überraschendes Comeback.","","Por muito tempo os trens noturnos na Europa foram vistos como ultrapassados, mas nos últimos anos eles voltaram com força."],
+["Immer mehr Reisende verzichten bewusst auf das Flugzeug, weil sie dem Klima weniger schaden wollen.","","Cada vez mais viajantes abrem mão do avião de propósito, porque querem prejudicar menos o clima."],
+["Ein weiterer Vorteil besteht darin, dass man abends einsteigt und morgens ausgeruht im Stadtzentrum ankommt.","","Outra vantagem é embarcar à noite e chegar descansado ao centro da cidade de manhã."],
+["Allerdings sind die Tickets oft teurer als ein Billigflug, und die Plätze sind schnell ausgebucht.","","Porém as passagens costumam ser mais caras que um voo barato, e os lugares esgotam rápido."],
+["Fachleute fordern deshalb, dass die Politik den Bahnverkehr stärker fördert, statt Flüge steuerlich zu begünstigen.","","Por isso especialistas pedem que o governo incentive mais as ferrovias, em vez de dar vantagens fiscais aos voos."],
+["Nur so könne der Nachtzug langfristig eine echte Alternative werden.","","Só assim, dizem, o trem noturno poderia se tornar uma alternativa real a longo prazo."]],
+perguntas:[["Por que muitos viajantes escolhem o trem noturno?","Para prejudicar menos o clima do que de avião","Porque é sempre mais barato","Porque os aviões foram proibidos","Porque é mais rápido"],
+["O que os especialistas pedem?","Mais incentivo do governo às ferrovias","O fim dos trens noturnos","Passagens aéreas mais baratas","Mais aeroportos"]]},
+
+{id:"r-de-18",lang:"de",lvl:"B2",titulo:"Lesezeit in der Grundschule",
+frases:[
+["Lehrkräfte beklagen zunehmend, dass Kinder Schwierigkeiten haben, längere Texte konzentriert zu lesen.","","Professores reclamam cada vez mais que as crianças têm dificuldade de ler textos longos com concentração."],
+["Als eine Ursache wird häufig die ständige Nutzung von Smartphones und kurzen Videos genannt.","","Uma das causas citadas com frequência é o uso constante de celulares e vídeos curtos."],
+["Einige Grundschulen haben deshalb eine tägliche Lesezeit von zwanzig Minuten eingeführt, in der alle still lesen.","","Por isso algumas escolas de ensino fundamental criaram vinte minutos diários de leitura em que todos leem em silêncio."],
+["Auch die Lehrerinnen und Lehrer lesen in dieser Zeit, damit die Kinder ein Vorbild haben.","","Os professores também leem nesse tempo, para que as crianças tenham um exemplo."],
+["Die ersten Erfahrungen sind vielversprechend, denn selbst Kinder, die zuvor kaum gelesen haben, greifen nun freiwillig zu Büchern.","","As primeiras experiências são promissoras: até crianças que antes quase não liam agora pegam livros por vontade própria."],
+["Entscheidend sei, so die Lehrkräfte, dass die Kinder ihre Bücher selbst auswählen dürfen.","","O decisivo, segundo os professores, é que as próprias crianças escolham seus livros."]],
+perguntas:[["O que algumas escolas criaram?","Vinte minutos diários de leitura silenciosa","Proibição de celular em casa","Provas de leitura toda semana","Aulas só com vídeos"],
+["O que é decisivo, segundo os professores?","As crianças escolherem os próprios livros","Ler só clássicos","Ler em voz alta para a turma","Ler no celular"]]}
 ];
 
 /* Poemas (domínio público). versos: [texto, leitura em kana (só japonês), tradução]
@@ -5314,7 +5567,8 @@ function addDay(l, inc){
   if(inc.xp) addXP(l, inc.xp);
   goalsChanged();
 }
-function saveItem(it){ store.items[it.lang][it.id]=it; write("itens", it.id, it); }
+function saveItem(it){ store.items[it.lang][it.id]=it; if(progressLoading()) return; write("itens", it.id, it); }
+function progressLoading(){ return store.mode==="loading" || (store.mode==="db" && !store.loaded.itens); }
 function saveErro(id, e){ store.erros[id]=e; write("erros", id, e); }
 function saveSessao(id, s){ store.sessoes[id]=s; write("sessoes", id, s); }
 function savePerfil(l){ write("perfil", l, store.perfil[l]); }
@@ -5346,16 +5600,30 @@ async function initStore(){
     store.root.collection("reportes").limit(500).onSnapshot(q=>{
       q.docs.forEach(d=>{ const r=thaw(d.data()); if(r && r.chave) store.reportes[r.chave]=r; }); changed();
     }, ()=>{});
-    store.root.collection("vocabExtra").limit(2000).onSnapshot(q=>{
+    store.root.collection("vocabExtra").limit(1000).onSnapshot(q=>{
       const docs=q.docs.map(d=>{ const x=thaw(d.data()); return Object.assign({}, x, {id:x.id||x._k||d.id}); }); docs.forEach(d=>store.vocabExtra[d.id]=d); addExtraVocab(docs); changed();
     }, ()=>{});
-    store.root.collection("itens").limit(5000).onSnapshot(q=>{
+    /* o banco entrega no máximo 1000 documentos por consulta (limit acima disso é recusado
+       e o progresso nunca carregava). Os itens vêm em fatias por idioma e tipo, cada uma < 1000. */
+    const FATIAS=[["ja","gramatica"],["ja","vocab"],["ja","kanji"],["de","gramatica"],["de","vocab"],["de","kanji"]];
+    const parts={}; let partsOk=0;
+    const mergeItens=()=>{
       const next={ja:{},de:{}};
-      q.docs.forEach(d=>{ const it=thaw(d.data()); if(!it || !next[it.lang]) return; const k=it.id||it._k||d.id; const prev=next[it.lang][k]; if(!prev || (it.mod||0)>=(prev.mod||0)) next[it.lang][k]=it; });
-      // mantém versões locais mais novas ainda não gravadas
+      Object.values(parts).forEach(docs=>docs.forEach(it=>{ if(!it || !next[it.lang]) return; const k=it.id||it._k; const prev=next[it.lang][k]; if(!prev || (it.mod||0)>=(prev.mod||0)) next[it.lang][k]=it; }));
       for(const l of ["ja","de"]) for(const id in store.items[l]){ const a=store.items[l][id], b=next[l][id]; if(!b || (a.mod||0)>(b.mod||0)) next[l][id]=a; }
-      store.items=next; store.loaded.itens=true; changed();
-    }, ()=>{});
+      store.items=next;
+    };
+    FATIAS.forEach(([l,t])=>{
+      const key=l+"/"+t;
+      store.root.collection("itens").where("lang","==",l).where("tipo","==",t).limit(1000).onSnapshot(q=>{
+        parts[key]=q.docs.map(d=>{ const it=thaw(d.data()); if(it && !it.id) it.id=it._k||d.id; return it; });
+        if(q.docs.length>=1000) console.warn("itens: fatia cheia", key);
+        if(!store.loaded["it:"+key]){ store.loaded["it:"+key]=true; partsOk++; }
+        mergeItens();
+        if(partsOk>=FATIAS.length && !store.loaded.itens){ store.loaded.itens=true; banner(""); }
+        changed();
+      }, e=>{ console.warn("itens",key,e); banner("Não consegui carregar seu progresso ("+((e&&e.code)||"erro")+"). Recarregue a página antes de estudar."); });
+    });
     store.root.collection("erros").orderBy("ultima","desc").limit(200).onSnapshot(q=>{
       const next={}; q.docs.forEach(d=>{ const x=thaw(d.data()); next[x._k||d.id]=x; }); store.erros=Object.assign(next, pendingOnly("erros")); changed();
     }, ()=>{});
@@ -6566,7 +6834,7 @@ function conversaView(l, onEnd){
     return wrap;
   }
   const pickCard=h("div",{class:"card stack"}, h("h3",{text:"Escolha a situação"}),
-    h("p",{class:"small muted",text:"O professor faz o papel do outro lado. Depois de cada fala sua, ele mostra a versão correta e natural. Dica: use o microfone do teclado do celular para ditar suas falas e treinar a fala."}));
+    h("p",{class:"small muted",text:"O professor faz o papel do outro lado. Quando sua fala tiver erro, ele dá uma pista para você tentar corrigir sozinho; depois mostra a versão natural. Dica: use o microfone do teclado do celular para ditar suas falas e treinar a fala."}));
   const grid=h("div",{class:"opts"});
   SCENES[l].forEach(sc=>grid.append(h("button",{class:"opt",type:"button",text:sc[1],onclick:()=>start(sc)})));
   pickCard.append(grid); wrap.append(pickCard);
@@ -6577,8 +6845,8 @@ function conversaView(l, onEnd){
     const RULES=`Você é um parceiro de conversa e professor de ${LANGNAME[l]} para um aluno brasileiro (${levelLine(l)}).
 Cena: ${sc[2]}
 Regras: fale SOMENTE ${l==="ja"?"japonês":"alemão"} na sua fala, no nível do aluno (frases curtas, ${aiLevel(l)}), uma ou duas frases por turno, e sempre termine com algo que peça resposta. Mantenha o papel.
-Se a última fala do aluno tiver erro de gramática, vocabulário, registro (${l==="ja"?"敬語/丁寧語":"Sie/du"}) ou naturalidade, corrija. Se o aluno escrever em português, dê a versão em ${LANGNAME[l]} em "corrigida" e continue.
-Responda SEMPRE só com JSON: {"fala":"sua fala","leitura":"${l==="ja"?"fala em hiragana com espaços":""}","traducao":"tradução da sua fala","correcao":{"ok":true,"corrigida":"versão correta e natural da fala do aluno (vazio no primeiro turno)","explicacao":"1 frase em português, vazio se ok"},"dica":"sugestão curta, em português, do que o aluno pode responder"}`;
+Se a última fala do aluno tiver erro de gramática, vocabulário, registro (${l==="ja"?"敬語/丁寧語":"Sie/du"}) ou naturalidade, corrija. Em "pista", dê em português uma dica curta que aponte o tipo e o lugar do erro SEM escrever a forma correta (o aluno vai tentar se corrigir sozinho antes de ver "corrigida"). Se o aluno escrever em português, dê a versão em ${LANGNAME[l]} em "corrigida" e continue.
+Responda SEMPRE só com JSON: {"fala":"sua fala","leitura":"${l==="ja"?"fala em hiragana com espaços":""}","traducao":"tradução da sua fala","correcao":{"ok":true,"pista":"dica sem a resposta, vazio se ok","corrigida":"versão correta e natural da fala do aluno (vazio no primeiro turno)","explicacao":"1 frase em português, vazio se ok"},"dica":"sugestão curta, em português, do que o aluno pode responder"}`;
     const head=h("div",{class:"row"}, h("h3",{text:sc[1]}), h("span",{class:"spacer"}),
       h("label",{class:"row small",style:"gap:6px"}, h("input",{type:"checkbox",id:"conv-auto",checked:true,onchange:e=>autoplay=e.target.checked}),"Voz automática"));
     const inp=h("textarea",{id:"conv-in",lang:l,rows:"2",placeholder: l==="ja"?"Sua fala em japonês (ou em português, se travar)":"Deine Antwort auf Deutsch (oder auf Portugiesisch)"});
@@ -6626,7 +6894,24 @@ Responda SEMPRE só com JSON: {"fala":"sua fala","leitura":"${l==="ja"?"fala em 
           const ok = c.ok!==false || !corr;
           if(!ok){
             mine.classList.add("bad");
-            mine.after(h("div",{class:"msg fix"}, h("div",{class:"small",text:"Mais natural:"}), h("div",{class:"row",style:"flex-wrap:nowrap"}, h("b",{lang:l,style:"flex:1",text:corr}), playBtns(l,corr,"")), c.explicacao?h("div",{class:"small",text:String(c.explicacao)}):null));
+            // primeiro uma chance de se autocorrigir (dica sem a resposta); a versão natural vem depois
+            const pista = typeof c.pista==="string" ? c.pista.trim() : "";
+            const fix=h("div",{class:"msg fix"}); mine.after(fix);
+            const answer=tent=>{
+              fix.innerHTML="";
+              if(tent!=null){
+                const sim=similarity(l,tent,[corr]);
+                fix.append(h("div",{class:"small",style:"font-weight:700",text: sim>=0.9 ? "Isso! Você mesmo corrigiu." : "Compare a sua tentativa com a versão natural:"}));
+                if(sim<0.9) fix.append(h("div",{class:"small",lang:l,text:"Sua tentativa: "+tent}));
+              }
+              fix.append(h("div",{class:"small",text:"Mais natural:"}), h("div",{class:"row",style:"flex-wrap:nowrap"}, h("b",{lang:l,style:"flex:1",text:corr}), playBtns(l,corr,"")), c.explicacao?h("div",{class:"small",text:String(c.explicacao)}):null);
+            };
+            const tryIn=h("textarea",{rows:"1",lang:l,placeholder:"Reescreva a sua fala corrigida"});
+            fix.append(h("div",{class:"small",style:"font-weight:700",text:"Quase. Tente corrigir sozinho antes de ver a resposta."}),
+              pista?h("div",{class:"small",text:"Pista: "+pista}):null,
+              h("div",{class:"fixtry"}, tryIn, h("div",{class:"row"},
+                h("button",{class:"btn small primary",type:"button",text:"Conferir",onclick:()=>{ const t=tryIn.value.trim(); if(t) answer(t); }}),
+                h("button",{class:"btn small ghost",type:"button",text:"Ver resposta",onclick:()=>answer(null)}))));
             corrections.push({wrong:userText, right:corr, why:String(c.explicacao||"")});
             try{ saveErro(l+"-conversa-"+fnv(corr), {idioma:l,competencia:"escrita",conteudo:"conversa",ponto:sc[1],erro:userText,correta:corr,causaProvavel:String(c.explicacao||""),ocorrencias:1,primeira:TODAY,ultima:TODAY,corrigido:false,acertosDepois:0}); }catch(e){}
           }
@@ -6873,13 +7158,6 @@ function placementView(l, onDone){
 /* =========================================================
    Escuta, modo trajeto e textos embutidos
    ========================================================= */
-/* frases para ouvir: exemplos dos pontos e palavras já vistos (ou do começo da trilha) */
-function listenPool(l){
-  const pool=[];
-  const pts=learned(l); (pts.length?pts:C[l].points.slice(0,5)).forEach(p=>okXs(p).forEach(x=>pool.push({p, text:x[0], kana:x[1], pt:x[2]})));
-  seenOf(vocabItems(l)).forEach(v=>{ if(v.ex && v.ex[0] && v.ex[2]) pool.push({p:v, text:v.ex[0], kana:v.ex[1], pt:v.ex[2]}); });
-  return pool;
-}
 function compQuestion(l, q, onAnswer){
   const c=h("div",{class:"ex-card"}, h("div",{class:"ex-meta"},h("span",{class:"chip s2",text:"Compreensão"})), h("p",{style:"font-weight:500",text:q[0]}));
   const g=h("div",{class:"opts"}); const opts=q.slice(1);
@@ -6893,7 +7171,10 @@ function compQuestion(l, q, onAnswer){
 /* Ouça e escolha a tradução (sem ver o texto). Não mexe na agenda do item: é treino de ouvido. */
 function exListen(l, item, pool, done){
   const card=h("div",{class:"ex-card"});
-  const wrong=shuffle(pool.filter(o=>o.pt && o.pt!==item.pt)).map(o=>o.pt).filter((x,i,a)=>a.indexOf(x)===i).slice(0,3);
+  const n0=item.n||sLen(l,item.text);
+  // distratores de tamanho parecido: o comprimento da tradução não entrega a resposta
+  const near=shuffle(pool.filter(o=>o.pt && o.pt!==item.pt)).sort((a,b)=>Math.abs((a.n||sLen(l,a.text))-n0)-Math.abs((b.n||sLen(l,b.text))-n0)).slice(0,10);
+  const wrong=shuffle(near).map(o=>o.pt).filter((x,i,a)=>a.indexOf(x)===i).slice(0,3);
   const opts=[item.pt, ...wrong];
   let plays=0;
   const say=()=>{ plays++; speak(sayOf(l,item.text,item.kana), l, {rate: plays>2?0.75:settings.rate}); };
@@ -6922,19 +7203,250 @@ function exListen(l, item, pool, done){
 function semEscutaMsg(l, base){ return (listenPool(l).length>=4 && !("speechSynthesis" in window)) ? "As frases que você já viu ainda não têm áudio neste app (o app do Claude não tem voz do navegador)." : base; }
 function listenSteps(l, n){
   const pool=listenPool(l); if(pool.length<4) return [];
-  return shuffle(pool.filter(it=>temSom(sayOf(l,it.text,it.kana),l))).slice(0,n).map(it=>d=>exListen(l,it,pool,d));
+  return pickListen(l,n,pool).map(it=>d=>exListen(l,it,pool,d));
 }
-function blockEscuta(box){
-  const l=S.lang, steps=listenSteps(l, 6);
-  if(!steps.length){ box.append(h("div",{class:"card"},h("p",{text:semEscutaMsg(l,"Ainda há poucas frases para ouvir. Faça uma aula primeiro.")}))); return; }
-  runSeq(box, steps, r=>{
-    box.innerHTML="";
-    const lvl=courseLevel(l), texts=C[l].readings.filter(t=>t.lvl===lvl||lvl==="concluído");
-    const t=pick(texts.length?texts:C[l].readings);
-    box.append(h("div",{class:"card stack"}, h("h3",{text:"Escuta feita"}), h("p",{text:r.ok+" certo(s), "+r.no+" erro(s)."}),
-      t ? h("button",{class:"btn primary",type:"button",text:"Ouvir um texto: "+t.titulo,onclick:()=>{ box.innerHTML=""; box.append(textView(l,t,{listen:true})); }}) : null,
-      h("button",{class:"btn ghost",type:"button",text:"Próximo bloco",onclick:skipBlock})));
+/* frases para ouvir: exemplos e frases-resposta dos pontos já vistos, exemplos das palavras vistas
+   e frases dos textos prontos do seu nível. Frases longas têm prioridade (pedido do Pedro, 21/10/2026). */
+const LONG_MIN={ja:20, de:9};
+function sLen(l, t){ t=clean(t).trim(); return l==="ja" ? t.replace(/[\s。、！？「」]/g,"").length : t.split(/\s+/).filter(Boolean).length; }
+function levelReadings(l){
+  const order=LVL_ORDER[l], lv=courseLevel(l), cap = lv==="concluído" ? order.length : order.indexOf(lv)+1;
+  const rs=C[l].readings.filter(t=>order.indexOf(t.lvl)>=0 && order.indexOf(t.lvl)<cap);
+  return rs.length ? rs : C[l].readings.filter(t=>t.lvl===order[0]);
+}
+function listenPool(l){
+  const pool=[], seen=new Set();
+  const add=(p,text,kana,pt)=>{ if(!text || !pt) return; const k=clean(text).trim(); if(!k || seen.has(k)) return; seen.add(k); pool.push({p, text, kana:kana||"", pt, n:sLen(l,text)}); };
+  const pts=learned(l), base=pts.length?pts:C[l].points.slice(0,5);
+  base.forEach(p=>{
+    okXs(p).forEach(x=>add(p, x[0], x[1], x[2]));
+    (p.q||[]).forEach(q=>{ if(q && q[3] && Array.isArray(q[1])) add(p, fullSentence(q), l==="ja"?q[2]:"", q[3]); });
   });
+  seenOf(vocabItems(l)).forEach(v=>{ if(v.ex && v.ex[0] && v.ex[2]) add(v, v.ex[0], v.ex[1], v.ex[2]); });
+  levelReadings(l).forEach(t=>{ const p={lang:l, lvl:t.lvl, kind:"texto", t:t.titulo}; t.frases.forEach(f=>add(p, f[0], f[1], f[2])); });
+  return pool;
+}
+/* sorteia n frases com som, ~70 % delas longas */
+function pickListen(l, n, pool){
+  pool=(pool||listenPool(l)).filter(it=>temSom(sayOf(l,it.text,it.kana),l));
+  const long=shuffle(pool.filter(it=>it.n>=LONG_MIN[l])), rest=shuffle(pool.filter(it=>it.n<LONG_MIN[l]));
+  const nl=Math.min(long.length, Math.ceil(n*0.7));
+  let take=long.slice(0,nl).concat(rest.slice(0,n-nl));
+  if(take.length<n) take=take.concat(long.slice(nl, nl+(n-take.length)));
+  return shuffle(take);
+}
+
+/* ---------- cobertura estimada (palavras do app que você já estudou, dentro de um trecho) ---------- */
+const COVIX={};
+const HASKANJI=/[一-鿿]/;
+function covIndex(l){
+  if(COVIX[l]) return COVIX[l];
+  const ix={first:new Map(), map:new Map()};
+  const put=(w,v)=>{ const c=w[0]; if(!ix.first.has(c)) ix.first.set(c,[]); ix.first.get(c).push([w,v]); };
+  C[l].vocab.forEach(v=>{
+    if(l==="ja"){
+      const w=v.w; if(!w) return;
+      if(!HASKANJI.test(w) && w.length<3) return;          // palavras curtas só em kana dariam falso positivo
+      put(w,v);
+      // verbo/adjetivo conjugado: casa também pelo radical (勉強する → 勉強す, 忙しい → 忙し)
+      if(HASKANJI.test(w) && /[うくぐすつぬぶむるい]$/.test(w) && w.length>=3) put(w.slice(0,-1),v);
+    } else {
+      const k=v.w.replace(/\s*\(sich\)/,"").trim().toLowerCase(); if(k) ix.map.set(k,v);
+      if(v.pl){ const p=v.pl.replace(/^(die|der|das)\s+/i,"").trim().toLowerCase(); if(p && p!=="-" && !ix.map.has(p)) ix.map.set(p,v); }
+    }
+  });
+  ix.first.forEach(list=>list.sort((a,b)=>b[0].length-a[0].length));
+  return COVIX[l]=ix;
+}
+function wordsIn(l, text){
+  const ix=covIndex(l), found=new Map(), s=clean(text);
+  if(l==="ja"){
+    let i=0;
+    while(i<s.length){
+      const list=ix.first.get(s[i]); let hit=null;
+      if(list) for(const e of list){ if(s.startsWith(e[0],i)){ hit=e; break; } }
+      if(hit){ found.set(hit[1].id,hit[1]); i+=hit[0].length; } else i++;
+    }
+  } else {
+    (s.match(/\p{L}+/gu)||[]).forEach(tok=>{
+      const t=tok.toLowerCase(); let v=ix.map.get(t);
+      if(!v){ for(const suf of ["en","em","er","es","e","n","s","t","st"]){ if(t.length>suf.length+3 && t.endsWith(suf)){ v=ix.map.get(t.slice(0,-suf.length)); if(v) break; } } }
+      if(v) found.set(v.id,v);
+    });
+  }
+  return [...found.values()];
+}
+function isStudied(v){ const it=getItem(v); return !!(it && (it.estado>=2 || it.sabido)); }
+function coverage(l, text){
+  const ws=wordsIn(l,text), known=ws.filter(isStudied), unknown=ws.filter(v=>!isStudied(v));
+  return {pct: ws.length ? known.length/ws.length : null, known, unknown, total:ws.length};
+}
+
+/* ---------- trecho para a escuta em 3 passadas ---------- */
+function passageCands(l){
+  const out=[];
+  levelReadings(l).forEach(t=>{
+    const fs=t.frases.filter(f=>temSom(sayOf(l,f[0],f[1]),l));
+    if(fs.length<=3){ if(fs.length) out.push({titulo:t.titulo, lvl:t.lvl, frases:fs}); return; }
+    for(let i=0;i+3<=fs.length;i++) out.push({titulo:t.titulo+" ("+(i+1)+"–"+(i+3)+")", lvl:t.lvl, frases:fs.slice(i,i+3)});
+  });
+  return out;
+}
+function makePassage(l){
+  const join=fs=>fs.map(f=>f[0]).join(l==="ja"?"":" ");
+  const cands=passageCands(l).map(c=>Object.assign(c,{cov:coverage(l,join(c.frases))}));
+  const good=cands.filter(c=>c.cov.pct==null || c.cov.pct>=0.95);
+  const pool=listenPool(l).filter(it=>it.p.kind!=="texto" && temSom(sayOf(l,it.text,it.kana),l));
+  const longs=shuffle(pool.filter(it=>it.n>=LONG_MIN[l]));
+  const fromStudied=()=>{
+    const today = (S && S.newPoint) ? longs.filter(it=>it.p===S.newPoint).slice(0,1) : [];
+    const chosen=today.concat(longs.filter(it=>!today.includes(it))).slice(0,3);
+    if(chosen.length<2) return null;
+    const frases=chosen.map(it=>[it.text,it.kana,it.pt]);
+    return {titulo:"Frases longas do que você já estudou", lvl:"", frases, cov:coverage(l,join(frases))};
+  };
+  if(good.length && (longs.length<3 || Math.random()<0.5)) return pick(good);
+  const st=fromStudied(); if(st) return st;
+  if(good.length) return pick(good);
+  if(cands.length) return cands.sort((a,b)=>(b.cov.pct||0)-(a.cov.pct||0))[0];
+  return null;
+}
+function rateCtl(get, set){
+  const g=h("div",{class:"speeds",role:"group","aria-label":"Velocidade"});
+  [[0.8,"0,8×"],[0.9,"0,9×"],[1,"1×"]].forEach(([v,t])=>g.append(h("button",{type:"button","aria-pressed":String(get()===v),text:t,onclick:e=>{ set(v); g.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===e.currentTarget))); }})));
+  return g;
+}
+const NOTA={tudo:"quase tudo", parte:"uma parte", pouco:"pouco"};
+/* Passada 1 só áudio → 2 com legenda no idioma → 3 só áudio → shadowing do mesmo trecho com o texto */
+function passageView(l, pas, onDone){
+  const wrap=h("div",{class:"card stack pas"});
+  const fr=pas.frases, say=f=>sayOf(l,f[0],f[1]);
+  let stop=null, rate=[0.8,0.9,1].includes(settings.rate)?settings.rate:0.9, step=0;
+  const notas=[];
+  const halt=()=>{ stop&&stop(); stop=null; stopClip(); try{ speechSynthesis.cancel(); }catch(e){} };
+  const playAll=o=>{ halt(); stop=speakSeq(fr.map((f,i)=>({text:say(f), l, rate:o.rate||rate, gap:700, onstart:()=>o.onLine&&o.onLine(i)})), ()=>{ stop=null; o.onDone&&o.onDone(); }); };
+  const cov=pas.cov||{};
+  const covChip = cov.pct!=null ? h("span",{class:"chip "+(cov.pct>=0.95?"s6":"s2"),title:"Das palavras do app que aparecem no trecho, quantas você já estudou",text:"cobertura "+Math.round(cov.pct*100)+" %"}) : null;
+  const STEPS=["Só áudio","Com legenda","Só áudio","Shadowing"];
+  const stepLine=h("div",{class:"pas-steps"});
+  const draw=()=>{ stepLine.innerHTML=""; STEPS.forEach((t,i)=>stepLine.append(h("span",{class:i<step?"done":i===step?"now":"",text:(i+1)+". "+t}))); };
+  const body=h("div",{class:"stack"});
+  wrap.append(h("div",{class:"row"}, h("span",{class:"chip s2",text:"Trecho"}), h("h3",{lang:l,text:pas.titulo}), h("span",{class:"spacer"}), covChip), stepLine, body);
+  const rateRow=onPick=>{ const g=h("div",{class:"opts"}); [["tudo","Entendi quase tudo"],["parte","Entendi uma parte"],["pouco","Entendi pouco"]].forEach(([k,t])=>{ const b=h("button",{class:"opt",type:"button",text:t,onclick:()=>{ g.querySelectorAll("button").forEach(x=>x.disabled=true); b.classList.add("right"); setTimeout(()=>onPick(k),250); }}); g.append(b); }); return g; };
+  function audioOnly(n, onRated){
+    body.innerHTML="";
+    const go=h("button",{class:"btn primary",type:"button",text:"▶ Ouvir o trecho"});
+    const ask=h("div",{class:"stack",hidden:true}, h("p",{class:"small",text:"Sem ver o texto: quanto você entendeu?"}), rateRow(onRated));
+    go.addEventListener("click",()=>{ go.disabled=true; go.textContent="Tocando…"; playAll({onDone:()=>{ go.disabled=false; go.textContent="▶ Ouvir de novo"; ask.hidden=false; reveal(ask); }}); });
+    body.append(h("p",{class:"small muted",text: n===1 ? "Passada 1: só o áudio. Pegue a ideia geral, sem se prender a cada palavra." : "Passada 3: só o áudio de novo, agora que você viu o texto."}),
+      n===1 && cov.pct!=null && cov.pct<0.95 ? h("p",{class:"small tip",text:"Este trecho tem menos de 95 % de palavras que você já estudou. Use a legenda da passada 2 sem culpa."}) : null,
+      h("div",{class:"row"}, go, rateCtl(()=>rate,v=>rate=v)), ask);
+    setTimeout(()=>go.click(), 300);
+  }
+  function pass1(){ step=0; draw(); audioOnly(1, k=>{ notas[0]=k; pass2(); }); }
+  function pass2(){
+    step=1; draw(); body.innerHTML="";
+    const lines=h("div",{class:"stack hide-pt"});
+    const rows=fr.map(f=>{ const r=h("div",{class:"ex pas-line"}, playBtns(l,f[0],f[1]),
+      h("div",{}, h("div",{class:"jp",lang:l,text:clean(f[0])}), l==="ja"?h("div",{class:"kana",lang:"ja",text:f[1]}):null, h("div",{class:"pt",text:f[2]}))); lines.append(r); return r; });
+    const mark=i=>rows.forEach((r,j)=>r.classList.toggle("now",j===i));
+    const tg=h("div",{class:"toggles"},
+      l==="ja" ? h("label",{}, h("input",{type:"checkbox",checked:true,onchange:e=>lines.classList.toggle("hide-kana",!e.target.checked)}),"Kana") : null,
+      h("label",{}, h("input",{type:"checkbox",onchange:e=>lines.classList.toggle("hide-pt",!e.target.checked)}),"Tradução"));
+    const go=h("button",{class:"btn primary",type:"button",text:"▶ Ouvir com legenda",onclick:()=>playAll({onLine:mark,onDone:()=>mark(-1)})});
+    const next=h("button",{class:"btn",type:"button",text:"Passada 3 →",onclick:()=>{ halt(); pass3(); }});
+    body.append(h("p",{class:"small muted",text:"Passada 2: o mesmo áudio com a legenda no idioma. Acompanhe a frase destacada; a tradução fica escondida até você pedir."}),
+      h("div",{class:"row"}, go, rateCtl(()=>rate,v=>rate=v)), tg, lines);
+    const unk=(cov.unknown||[]).slice(0,8);
+    if(unk.length){
+      const chips=h("div",{class:"wordchips"});
+      unk.forEach(v=>{ const b=h("button",{class:"wordchip",type:"button","aria-pressed":"false",lang:l,text:v.t+" · "+v.m}); b.addEventListener("click",()=>{ if(b.getAttribute("aria-pressed")==="true") return; introduce(v); if(S) S.newWords=(S.newWords||[]).concat([v]); b.setAttribute("aria-pressed","true"); b.textContent="✓ "+v.t+" · volta na revisão"; }); chips.append(b); });
+      body.append(h("div",{class:"stack"}, h("p",{class:"small",text:"Palavras do trecho que você ainda não estudou. Toque para mandar para a revisão:"}), chips));
+    }
+    body.append(h("div",{class:"row"}, next));
+    setTimeout(()=>go.click(), 300);
+  }
+  function pass3(){ step=2; draw(); audioOnly(3, k=>{ notas[2]=k; check(); }); }
+  function check(){
+    body.innerHTML="";
+    const pool=listenPool(l), f=pick(fr), item={p:{lang:l,lvl:pas.lvl||courseLevel(l)}, text:f[0], kana:f[1], pt:f[2]};
+    body.append(h("p",{class:"small muted",text:"Confira: uma frase do trecho, só no áudio."}), exListen(l,item,pool.length>=4?pool:pool.concat(fr.map(x=>({text:x[0],kana:x[1],pt:x[2]}))),()=>pass4()));
+  }
+  function pass4(){
+    step=3; draw(); body.innerHTML="";
+    let hidden=false, shId=0, srate=0.8;
+    const counter=h("b",{text:String(S?S.shadowReps||0:0)});
+    const bump=()=>{ if(S){ S.shadowReps=(S.shadowReps||0)+1; counter.textContent=S.shadowReps; } else counter.textContent=String(Number(counter.textContent)+1); };
+    const list=h("div",{class:"stack"});
+    fr.forEach(f=>{
+      const st=h("span",{class:"small muted"});
+      list.append(h("div",{class:"sh-item"}, h("div",{class:"sh-text",lang:l,text:clean(f[0])}), l==="ja"?h("div",{class:"kana small",lang:"ja",text:f[1]}):null, h("div",{class:"pt small",text:f[2]}),
+        h("div",{class:"row"},
+          h("button",{class:"btn small primary",type:"button",text:"× 3",onclick:()=>{ halt(); const my=++shId; speak(say(f),l,{rate:srate,times:3,gap:1800,stop:()=>my!==shId,onrep:n=>{ if(my!==shId) return; bump(); st.textContent=n+"/3"; }}); }}),
+          h("button",{class:"btn small ghost",type:"button",text:"Parar",onclick:()=>{ shId++; st.textContent=""; halt(); }}), st)));
+    });
+    const all=h("button",{class:"btn",type:"button",text:"▶ Trecho todo junto",onclick:()=>{ shId++; playAll({rate:srate,onDone:bump}); }});
+    const hide=h("label",{class:"row small",style:"gap:6px"}, h("input",{type:"checkbox",onchange:e=>{ hidden=e.target.checked; list.classList.toggle("sh-hidden",hidden); }}),"Esconder texto");
+    body.append(h("p",{class:"small muted",text:"Shadowing do trecho: fale colado na voz, sem esperar terminar. Primeiro com o texto; na segunda rodada, marque Esconder texto."}),
+      h("div",{class:"row"}, rateCtl(()=>srate,v=>srate=v), hide, h("span",{class:"spacer"}), h("span",{class:"small"},"Repetições: ",counter)),
+      list, h("div",{class:"row"}, all, h("button",{class:"btn primary",type:"button",text:"Concluir trecho",onclick:finish})));
+  }
+  function finish(){
+    halt(); step=4; draw(); body.innerHTML="";
+    addDay(l,{esc:1, xp:10}); if(S) S.xp=(S.xp||0)+10;
+    const a=notas[0], b=notas[2], ord={pouco:0,parte:1,tudo:2};
+    const msg = a && b ? (ord[b]>ord[a] ? "Na 1ª passada você entendeu "+NOTA[a]+"; na 3ª, "+NOTA[b]+"." : "Entendeu "+NOTA[b]+" na 3ª passada.") : "Trecho concluído.";
+    body.append(h("div",{class:"feedback ok"}, h("div",{class:"verdict",text:"Trecho concluído (+10 XP)"}), h("p",{class:"small",text:msg})));
+    onDone && onDone(body);
+  }
+  pass1();
+  return wrap;
+}
+/* Escuta do pomodoro: 3 frases longas (ouvir e escolher) + um trecho em 3 passadas */
+function blockEscuta(box){
+  const l=S.lang, pool=listenPool(l), steps = pool.length>=4 ? pickListen(l,3,pool).map(it=>d=>exListen(l,it,pool,d)) : [];
+  const trecho=()=>{
+    box.innerHTML="";
+    const pas=makePassage(l);
+    if(!pas){ box.append(h("div",{class:"card"},h("p",{text:semEscutaMsg(l,"Ainda há poucas frases com áudio para montar um trecho. Faça uma aula primeiro.")}))); return; }
+    box.append(passageView(l,pas,end=>end.append(h("div",{class:"row"},
+      h("button",{class:"btn",type:"button",text:"Outro trecho",onclick:trecho}),
+      h("button",{class:"btn primary",type:"button",text:"Próximo bloco",onclick:skipBlock})))));
+  };
+  if(!steps.length){ trecho(); return; }
+  box.append(h("p",{class:"small muted",text:"Primeiro 3 frases longas, só no áudio. Depois um trecho em 3 passadas e shadowing."}));
+  runSeq(box, steps, ()=>trecho());
+}
+/* Maratona: escuta sem limite de tempo, fora do pomodoro. 5 frases + 1 trecho, em ciclo, até você parar. */
+function maratonaView(l){
+  const wrap=h("div",{class:"stack"}), run=h("div",{class:"stack"}), stat=h("p",{class:"small muted"});
+  let t0=0, timer=null, alive=false; const tot={ok:0,no:0,trechos:0};
+  const upd=()=>{ const m=Math.floor((Date.now()-t0)/60000); stat.textContent="⏱ "+m+" min · "+tot.ok+" certa(s), "+tot.no+" errada(s) · "+tot.trechos+" trecho(s)"; };
+  const startBtn=h("button",{class:"btn primary",type:"button",text:"▶ Começar maratona"});
+  const stopBtn=h("button",{class:"btn ghost",type:"button",text:"Parar",hidden:true});
+  function trecho(){
+    if(!alive) return; run.innerHTML="";
+    const pas=makePassage(l); if(!pas){ round(true); return; }
+    run.append(passageView(l,pas,end=>{ tot.trechos++; upd(); end.append(h("button",{class:"btn primary",type:"button",text:"Continuar →",onclick:()=>round()})); }));
+  }
+  function round(noPassage){
+    if(!alive) return; run.innerHTML="";
+    const pool=listenPool(l), st = pool.length>=4 ? pickListen(l,5,pool).map(it=>d=>exListen(l,it,pool,d)) : [];
+    if(!st.length && (noPassage || !makePassage(l))){ run.append(h("p",{class:"small",text:semEscutaMsg(l,"Faça algumas aulas para ter frases para ouvir.")})); end(); return; }
+    if(!st.length){ trecho(); return; }
+    runSeq(run, st, r=>{ tot.ok+=r.ok; tot.no+=r.no; upd(); if(noPassage) round(true); else trecho(); });
+  }
+  function end(){
+    alive=false; clearInterval(timer); keepAwake(false); stopClip(); try{ speechSynthesis.cancel(); }catch(e){}
+    startBtn.hidden=false; stopBtn.hidden=true; startBtn.textContent="▶ Recomeçar";
+    if(t0){ upd(); run.innerHTML=""; run.append(h("div",{class:"card stack"}, h("h3",{text:"Maratona encerrada"}), h("p",{text:stat.textContent.replace("⏱ ","")}))); }
+  }
+  startBtn.addEventListener("click",()=>{ alive=true; t0=Date.now(); tot.ok=tot.no=tot.trechos=0; upd(); timer=setInterval(upd,15000); keepAwake(true); startBtn.hidden=true; stopBtn.hidden=false; round(); });
+  stopBtn.addEventListener("click",end);
+  wrap.append(h("div",{class:"card stack"}, h("h3",{text:"Maratona de escuta"}),
+    h("p",{class:"small muted",text:"Sem limite de tempo: 5 frases (a maioria longas) e um trecho em 3 passadas, em ciclo, até você parar. As palavras novas que você marcar vão para a revisão."}),
+    h("div",{class:"row"}, startBtn, stopBtn), stat), run);
+  return wrap;
 }
 
 /* texto embutido: leitura (com kana e tradução) ou escuta (texto escondido até você pedir) */
@@ -7093,34 +7605,26 @@ function quickKnown(p, box, onKnown){
    Pomodoro
    ========================================================= */
 /* Planos de 25 min. O principal traz o ponto novo do dia; os extras alternam
-   leitura, escuta e conversa para o estudo não ficar repetitivo. */
+   leitura, escuta e conversa para o estudo não ficar repetitivo.
+   21/10/2026: plano principal único, Escuta de 6 min com o shadowing dentro dela. */
 const PLANS = {
   main:[
-    {id:"revisao",name:"Revisão",min:7},
+    {id:"revisao",name:"Revisão",min:6},
     {id:"aula",name:"Aula",min:3},
-    {id:"pratica",name:"Prática",min:6},
-    {id:"vocab",name:"Palavras",min:5},
-    {id:"shadow",name:"Shadowing",min:2},
-    {id:"fecha",name:"Relâmpago",min:2}],
-  mainB:[
-    {id:"revisao",name:"Revisão",min:7},
-    {id:"aula",name:"Aula",min:3},
-    {id:"pratica",name:"Prática",min:6},
-    {id:"vocab",name:"Palavras",min:5},
-    {id:"escuta",name:"Escuta",min:2},
+    {id:"pratica",name:"Prática",min:4},
+    {id:"vocab",name:"Palavras",min:4},
+    {id:"escuta",name:"Escuta",min:6},
     {id:"fecha",name:"Relâmpago",min:2}],
   extraA:[
     {id:"pausa",name:"Pausa",min:5,rest:true},
     {id:"input",name:"Leitura",min:7},
-    {id:"vocab",name:"Palavras",min:5},
-    {id:"conversa",name:"Conversa",min:8},
-    {id:"shadow",name:"Shadowing",min:2},
-    {id:"fecha",name:"Relâmpago",min:3}],
+    {id:"vocab",name:"Palavras",min:4},
+    {id:"conversa",name:"Conversa",min:7},
+    {id:"fecha",name:"Relâmpago",min:2}],
   extraB:[
     {id:"pausa",name:"Pausa",min:5,rest:true},
-    {id:"escuta",name:"Escuta",min:7},
+    {id:"escuta",name:"Escuta",min:10},
     {id:"pratica2",name:"Prática mista",min:7},
-    {id:"shadow",name:"Shadowing",min:3},
     {id:"fecha",name:"Relâmpago",min:3}],
   extraC:[
     {id:"pausa",name:"Pausa",min:5,rest:true},
@@ -7138,7 +7642,7 @@ const WHY = {
   aula:["Aula","Um ponto novo da trilha: regra em português, contraste com o que confunde e 3 exemplos com áudio. Já sabe? Faça o teste rápido e pule."],
   pratica:["Prática","Exercícios do ponto de hoje: explicar a regra com suas palavras (método Feynman), montar a frase, ditado e uma frase sua corrigida."],
   shadow:["Shadowing","Repetir junto com a voz os exemplos do dia. Treina ouvido, ritmo e pronúncia."],
-  escuta:["Escuta","Só áudio: você ouve frases e textos do seu nível e responde sem ver o texto."],
+  escuta:["Escuta","Frases longas só no áudio e um trecho em 3 passadas: só áudio, com legenda no idioma e só áudio de novo; depois shadowing do mesmo trecho com o texto. Trechos em que você já estudou pelo menos 95 % das palavras têm prioridade."],
   fecha:["Revisão relâmpago","Teste rápido do que você aprendeu há 15 minutos: a primeira queda da curva do esquecimento é a mais forte, e lembrar agora já achata a curva. Depois, o resumo."],
   conversa:["Conversa","Diálogo com o professor numa situação real. Ele corrige cada fala sua com a versão natural."],
   pausa:["Pausa","Levante, beba água. Pode pular."],
@@ -7152,7 +7656,7 @@ function dayNum(){ return Math.floor(new Date(TODAY+"T12:00").getTime()/864e5); 
 function planKey(){
   if(state.finished && state.lastPlan && PLANS[state.lastPlan]) return state.lastPlan;
   if(state.short) return "curto";
-  if(!state.mainDone) return dayNum()%2 ? "mainB" : "main";
+  if(!state.mainDone) return "main";
   return ["extraA","extraB","extraC"][(dayNum()+state.done)%3];
 }
 function planFor(){ return PLANS[planKey()]; }
@@ -7248,6 +7752,7 @@ async function keepAwake(on){ try{ if(on && "wakeLock" in navigator && !wakeLock
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible" && state.startedAt) keepAwake(true); });
 
 $("#startBtn").addEventListener("click",()=>{
+  if(progressLoading() && !state.startedAt){ toast("Carregando seu progresso… tente de novo em alguns segundos."); return; }
   if(!audioCtx){ try{ audioCtx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
   if(state.finished){
     if(state.done>=MAX_POMOS) return;
@@ -8081,12 +8586,18 @@ function renderPraticar(){
     if(praticarSeg==="conversa") praticarCache[key]=conversaView(l);
     else if(praticarSeg==="leitura"){ const w=h("div",{class:"stack"}, textsView(l)); if(aiReady()) w.append(h("h3",{text:"Leitura nova com glossário (professor)"}), readerView(l)); praticarCache[key]=w; }
     else if(praticarSeg==="escuta"){
-      const w=h("div",{class:"stack"}), run=h("div",{class:"stack"});
+      const w=h("div",{class:"stack"}), run=h("div",{class:"stack"}), tr=h("div",{class:"stack"});
       const start=()=>{ run.innerHTML=""; const st=listenSteps(l,10); if(!st.length){ run.append(h("p",{class:"small",text:semEscutaMsg(l,"Faça algumas aulas para ter frases para ouvir.")})); return; }
         runSeq(run, st, r=>{ run.innerHTML=""; run.append(h("div",{class:"card stack"}, h("p",{text:"Feito: "+r.ok+" certo(s), "+r.no+" erro(s)."}), h("button",{class:"btn primary",type:"button",text:"Mais 10",onclick:start}))); }); };
-      w.append(h("div",{class:"card stack"}, h("h3",{text:"Ouça e entenda"}),
-        h("p",{class:"small muted",text:"10 frases dos pontos e palavras que você já estudou, sem texto na tela. Toque em Devagar se precisar. Para textos inteiros, use Leitura > Só ouvir."}),
-        h("button",{class:"btn primary",type:"button",text:"Começar",onclick:start})), run);
+      const trecho=()=>{ tr.innerHTML=""; const pas=makePassage(l); if(!pas){ tr.append(h("p",{class:"small",text:semEscutaMsg(l,"Ainda há poucas frases com áudio para montar um trecho.")})); return; }
+        tr.append(passageView(l,pas,end=>end.append(h("button",{class:"btn primary",type:"button",text:"Outro trecho",onclick:trecho})))); };
+      w.append(maratonaView(l),
+        h("div",{class:"card stack"}, h("h3",{text:"Ouça e entenda"}),
+          h("p",{class:"small muted",text:"10 frases do que você já estudou e dos textos do seu nível, a maioria longas, sem texto na tela. Toque em Devagar se precisar."}),
+          h("button",{class:"btn primary",type:"button",text:"Começar",onclick:start})), run,
+        h("div",{class:"card stack"}, h("h3",{text:"Trecho em 3 passadas"}),
+          h("p",{class:"small muted",text:"Só áudio → com legenda no idioma → só áudio de novo → shadowing do mesmo trecho."}),
+          h("button",{class:"btn",type:"button",text:"Abrir um trecho",onclick:trecho})), tr);
       praticarCache[key]=w;
     }
     else if(praticarSeg==="dicionario") praticarCache[key]=dicView(l);
@@ -8636,4 +9147,3 @@ initStore();
 })();
 </script>
 
-</body></html>
