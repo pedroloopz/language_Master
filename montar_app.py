@@ -6,6 +6,8 @@ Gera em destino/:
                    (inclui as frases fixas do app, de <lingua>-frases.json, com a chave no texto e no kana)
   dic-ja.json      {"palavras":[[escrita, leitura, nivel, en, de, classe, ex_ja, ex_en]], "kanji":[[k, on, kun, en, pt]]}
   dic-de.json      {"palavras":[[palavra, artigo, plural, nivel, ipa, en, ex_de, ex_en, praeteritum, partizip2, auxiliar]]}
+  tatoeba-ja.json / tatoeba-de.json  [[frase, traducao, "pt"|"en"]] (frases reais com gravacao nativa; audio no mapa)
+  furigana-ja.json {frase: "{漢字|かんじ}..."} (kuroshiro)
 e copia os pacotes MP3 e o LICENCAS.md. O app so precisa destes arquivos (os JSON grandes da Release ficam de fora).
 """
 import json
@@ -17,7 +19,7 @@ import sys
 def palavras(saida, lingua):
     out, kanji = [], []
     for f in sorted(saida.glob(f"{lingua}*.json")):
-        if "audio" in f.name or "frases" in f.name:
+        if "audio" in f.name or "frases" in f.name or "tatoeba" in f.name or "furigana" in f.name:
             continue
         d = json.loads(f.read_text(encoding="utf-8"))
         out += d.get("palavras", [])
@@ -30,7 +32,7 @@ def montar(saida, destino):
     mapa, pacotes = {"pacotes": []}, {}
     for lingua in ("ja", "de"):
         ps, kanji = palavras(saida, lingua)
-        if not ps and not (saida / f"{lingua}-frases.json").exists():
+        if not ps and not any((saida / f"{lingua}-{x}.json").exists() for x in ("frases", "tatoeba")):
             continue
         m = mapa.setdefault(lingua, {})
         linhas = []
@@ -65,6 +67,18 @@ def montar(saida, destino):
                 for k in (texto, kana, texto + "\t" + kana if kana else ""):
                     if k:
                         m.setdefault(k, [pacotes[nome], ini, fim, "s"])
+        tt = saida / f"{lingua}-tatoeba.json"          # frases reais do Tatoeba (gravacao nativa)
+        if tt.exists():
+            d = json.loads(tt.read_text(encoding="utf-8"))
+            for texto, trad, cod, i, ini, fim, _sid in d["frases"]:
+                nome = d["pacotes"][i]
+                if nome not in pacotes:
+                    pacotes[nome] = len(mapa["pacotes"])
+                    mapa["pacotes"].append(nome)
+                m.setdefault(texto, [pacotes[nome], ini, fim, "n"])
+            (destino / f"tatoeba-{lingua}.json").write_text(
+                json.dumps([[f[0], f[1], f[2]] for f in d["frases"]], ensure_ascii=False, separators=(",", ":")),
+                encoding="utf-8")
         dic = {"palavras": linhas}
         if lingua == "ja":
             dic["kanji"] = [[k["kanji"], "、".join(k["on"]), "、".join(k["kun"]), "; ".join(k["en"]), "; ".join(k["pt"])]
@@ -73,6 +87,8 @@ def montar(saida, destino):
                                                     encoding="utf-8")
     (destino / "audio-mapa.json").write_text(json.dumps(mapa, ensure_ascii=False, separators=(",", ":")),
                                              encoding="utf-8")
+    if (saida / "ja-furigana.json").exists():
+        shutil.copy2(saida / "ja-furigana.json", destino / "furigana-ja.json")
     for nome in mapa["pacotes"] + ["LICENCAS.md"]:
         if (saida / nome).exists():
             shutil.copy2(saida / nome, destino / nome)

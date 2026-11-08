@@ -1,11 +1,14 @@
 name: gerar
 
 # Gera os dados do LANGUAGE MASTER (japones e alemao + audio) e publica numa Release.
-# Roda a mao (Actions -> gerar -> Run workflow) e no dia 3 de cada mes.
+# Roda a mao (Actions -> gerar -> Run workflow), no dia 3 de cada mes e quando tatoeba.py ou furigana.js mudam.
 # Uma lingua por job (em paralelo, cada um com ate 6 h); o job publicar junta tudo numa Release.
 on:
   schedule:
     - cron: "41 6 3 * *"     # dia 3, 03h41 de Brasilia
+  push:
+    branches: [main]
+    paths: ["tatoeba.py", "furigana.js"]
   workflow_dispatch:
     inputs:
       linguas:
@@ -46,6 +49,7 @@ jobs:
           pip install -r requirements.txt
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           node frases.js app/index.html > frases.json       # frases fixas do app, para gravar com voz sintetica
+          if [ "${{ matrix.lingua }}" = ja ]; then npm install --omit=dev --no-audit --no-fund; fi   # kuroshiro (furigana)
           if [ "${{ matrix.lingua }}" = de ]; then
             pip install piper-tts==1.8.0
             python -m piper.download_voices de_DE-thorsten-medium --data-dir voz

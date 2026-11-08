@@ -11,6 +11,8 @@ O workflow **gerar** monta tudo e publica numa **Release** (no dia 3 de cada mê
 | `de.json` (ou `de-a1.json`…) | ~6.000 palavras mais frequentes: artigo, plural, Präteritum, Partizip II, IPA, significado em inglês, exemplo |
 | `ja-audio-001.mp3`… / `de-audio-001.mp3`… | Pacotes MP3 de até 10 MB (~300 palavras cada) |
 | `ja-audio-indice.json` / `de-audio-indice.json` | Início e fim (ms) de cada palavra dentro do pacote |
+| `ja-tatoeba.json` / `de-tatoeba.json` + `*-tatoeba-NNN.mp3` | Frases reais do Tatoeba com gravação nativa (licença aberta) e tradução em português |
+| `ja-furigana.json` | Furigana (kuroshiro) das frases do app e do Tatoeba |
 | `LICENCAS.md` | Origem e licença de cada base e de cada áudio |
 
 Cada palavra traz `audio: {pacote, ini_ms, fim_ms, tipo}` (`tipo` = `nativo` ou `sintetico`).

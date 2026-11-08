@@ -243,6 +243,8 @@ body.lang-ja .ex .jp{font-size:1.3rem}
 .ex .kana{color:var(--muted); font-size:.92rem}
 .ex .pt{font-size:.95rem}
 .hide-kana .kana, .hide-pt .pt{display:none}
+.furig{line-height:2.05} .furig ruby rt{font-size:.55em; font-weight:500; color:var(--muted); visibility:visible} .hide-kana .furig ruby rt{visibility:hidden}
+.fb-s{font-size:1.15rem; font-weight:500}
 .toggles{display:flex; gap:14px; flex-wrap:wrap; font-size:.9rem}
 .toggles label{display:flex; align-items:center; gap:6px}
 .ask textarea{min-height:56px}
@@ -408,14 +410,6 @@ body.lang-de .reader .rline{font-size:1.1rem; line-height:1.8}
   background:var(--ink); color:var(--bg); padding:10px 16px; border-radius:12px; font-size:.92rem; box-shadow:0 6px 24px rgba(0,0,0,.2)}
 @media (min-width:980px){ .gtoast{bottom:24px} }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important; animation:none!important} }
-/* Poemas: o japonês aparece em tategaki (vertical, da direita para a esquerda) */
-.poem-wrap{display:flex; justify-content:center; overflow-x:auto; padding:10px 0 6px}
-.poem-face{font-family:var(--display); font-weight:600; color:var(--ink)}
-.poem-face .pv{display:block}
-.poem-face.tate{writing-mode:vertical-rl; text-orientation:mixed; font-size:clamp(1.35rem,4.8vw,1.8rem); line-height:2.1; letter-spacing:.16em; max-block-size:20em}
-.poem-face.tate .pgap{display:block; block-size:.9em}
-.poem-face.yoko{font-size:1.18rem; line-height:1.75; border-left:3px solid var(--accent); padding-left:16px; width:100%; max-width:34em}
-.poem-face.yoko .pgap{display:block; height:.85em}
 .pnote{display:grid; grid-template-columns:minmax(6em,auto) 1fr; gap:4px 12px; padding:8px 0; border-top:1px solid var(--line); font-size:.95rem}
 @media (max-width:420px){ .pnote{grid-template-columns:1fr} }
 .memo{display:flex; flex-direction:column; gap:6px}
@@ -5287,106 +5281,6 @@ perguntas:[["O que algumas escolas criaram?","Vinte minutos diários de leitura 
 ["O que é decisivo, segundo os professores?","As crianças escolherem os próprios livros","Ler só clássicos","Ler em voz alta para a turma","Ler no celular"]]}
 ];
 
-/* Poemas (domínio público). versos: [texto, leitura em kana (só japonês), tradução]
-   quebras: índices depois dos quais começa nova estrofe. notas: [termo, explicação]
-   perguntas: [pergunta, certa, errada, errada, errada] */
-window.LM_POEM = [
-{id:"p-ja-furuike",lang:"ja",lvl:"N3",forma:"Haiku",titulo:"古池や",autor:"Matsuo Bashō",ano:"1686",
-contexto:"Haiku em 5-7-5 moras. O som da água mostra, por contraste, o silêncio do lugar.",
-versos:[["古池や","ふるいけや","Ah, um velho lago —"],["蛙飛び込む","かわず とびこむ","uma rã salta dentro:"],["水の音","みずの おと","o som da água."]],
-notas:[["や","Kireji (palavra de corte): faz uma pausa e dá ênfase, como um travessão."],["蛙 (かわず)","Leitura clássica de rã; hoje se diz かえる. É o kigo (palavra de estação): primavera."],["飛び込む (とびこむ)","Pular para dentro. 飛ぶ (pular) + 込む (para dentro)."]],
-perguntas:[["Qual é o kigo (palavra de estação) e que estação indica?","蛙 (かわず): primavera","古池: inverno","水の音: verão","飛び込む: outono"]]},
-
-{id:"p-ja-shizukasa",lang:"ja",lvl:"N3",forma:"Haiku",titulo:"閑さや",autor:"Matsuo Bashō",ano:"1689",
-contexto:"Escrito no templo Risshaku-ji (Yamadera), na viagem narrada em 奥の細道 (おくのほそみち).",
-versos:[["閑さや","しずかさや","Que silêncio —"],["岩にしみ入る","いわに しみいる","penetrando nas rochas,"],["蝉の声","せみの こえ","o canto das cigarras."]],
-notas:[["閑さ (しずかさ)","Mesmo sentido de 静かさ: silêncio, quietude."],["しみ入る (しみいる)","Infiltrar-se, entranhar. Hoje é mais comum しみ込む (しみこむ)."],["蝉 (せみ)","Cigarra. Kigo de verão."]],
-perguntas:[["O que \"penetra nas rochas\"?","O canto das cigarras","A chuva de verão","O som do sino","O vento da montanha"]]},
-
-{id:"p-ja-natsukusa",lang:"ja",lvl:"N3",forma:"Haiku",titulo:"夏草や",autor:"Matsuo Bashō",ano:"1689",
-contexto:"Em Hiraizumi, campo onde guerreiros morreram séculos antes. Também de 奥の細道 (おくのほそみち).",
-versos:[["夏草や","なつくさや","Capim de verão —"],["兵どもが","つわものどもが","dos guerreiros"],["夢の跡","ゆめの あと","o que restou dos sonhos."]],
-notas:[["兵 (つわもの)","Guerreiro, soldado (leitura antiga)."],["ども","Sufixo de plural, aqui com tom de distância."],["跡 (あと)","Vestígio, ruína. 足跡 (あしあと) = pegada."]],
-perguntas:[["O que o capim de verão cobre?","O lugar onde guerreiros lutaram e sonharam","Um jardim de templo","O túmulo do próprio poeta","Um campo de arroz recém-plantado"]]},
-
-{id:"p-ja-nanohana",lang:"ja",lvl:"N3",forma:"Haiku",titulo:"菜の花や",autor:"Yosa Buson",ano:"1774",
-contexto:"Buson era pintor e poeta: o haiku é um quadro do campo amarelo entre a lua e o sol.",
-versos:[["菜の花や","なのはなや","Flores de colza —"],["月は東に","つきは ひがしに","a lua no leste,"],["日は西に","ひは にしに","o sol no oeste."]],
-notas:[["菜の花 (なのはな)","Flor de colza, amarela. Kigo de primavera."],["日 (ひ)","Aqui é o sol, não o dia."],["(verbo omitido)","Depois de に falta ある/出る. Cortar o verbo é típico do haiku."]],
-perguntas:[["Que momento do dia o haiku mostra?","Fim de tarde: a lua nasce e o sol se põe","Meio-dia de sol forte","Madrugada sem lua","Uma noite de chuva"]]},
-
-{id:"p-ja-yasegaeru",lang:"ja",lvl:"N3",forma:"Haiku",titulo:"やせ蛙",autor:"Kobayashi Issa",ano:"1816",
-contexto:"Vendo rãs brigarem na primavera, Issa torce pela mais fraca.",
-versos:[["やせ蛙","やせがえる","Rãzinha magra,"],["まけるな一茶","まけるな いっさ","não perca! Issa"],["これにあり","これに あり","está aqui."]],
-notas:[["まけるな","負けるな (まけるな): imperativo negativo com 〜な. Ex.: 走るな (はしるな) = não corra."],["これにあり","Clássico para ここにいる (estou aqui)."],["やせ","De やせる (emagrecer): magro."]],
-perguntas:[["Quem torce pela rã magra?","O próprio poeta, Issa","Uma criança da vila","Outra rã","Um monge do templo"]]},
-
-{id:"p-ja-kaki",lang:"ja",lvl:"N3",forma:"Haiku",titulo:"柿食へば",autor:"Masaoka Shiki",ano:"1895",
-contexto:"Shiki renovou o haiku moderno. Junta um gesto banal ao sino de um templo antigo de Nara.",
-versos:[["柿食へば","かき くえば","Ao comer um caqui,"],["鐘が鳴るなり","かねが なるなり","o sino toca —"],["法隆寺","ほうりゅうじ","templo Hōryū-ji."]],
-notas:[["食へば (くえば)","Grafia antiga: へ se lê え. 〜ば clássico aqui = \"quando / ao\"."],["なり","Clássico para です / である."],["柿 (かき)","Caqui. Kigo de outono."]],
-perguntas:[["O que acontece enquanto o poeta come o caqui?","O sino do templo toca","Começa a chover","Um monge o chama","As folhas caem no prato"]]},
-
-{id:"p-ja-hatarakedo",lang:"ja",lvl:"N3",forma:"Tanka",titulo:"はたらけど",autor:"Ishikawa Takuboku",ano:"1910",
-contexto:"Do livro 一握の砂 (いちあくのすな). Takuboku escrevia o tanka em três linhas, em linguagem quase moderna.",
-versos:[["はたらけど","はたらけど","Trabalho,"],["はたらけど猶わが生活楽にならざり","はたらけど なお わが くらし らくに ならざり","trabalho, e mesmo assim minha vida não fica mais fácil;"],["ぢつと手を見る","じっと てを みる","fico olhando fixo para as mãos."]],
-notas:[["〜けど","Mesmo que / embora. Igual ao moderno."],["猶 (なお)","Ainda, mesmo assim."],["生活 (くらし)","O autor pede a leitura くらし (vida, sustento), não せいかつ."],["ならざり","Negação clássica: = ならない."],["ぢつと","Grafia antiga de じっと: fixamente, sem se mexer."]],
-perguntas:[["Qual é o sentimento do poema?","Frustração: trabalha muito e a vida não melhora","Alegria pelo salário novo","Saudade da terra natal","Cansaço depois de uma festa"],["O que significa ならざり?","ならない (não fica)","なった (ficou)","なりたい (quer ficar)","なるだろう (vai ficar)"]]},
-
-{id:"p-ja-hananoiro",lang:"ja",lvl:"N2",forma:"Tanka",titulo:"花の色は",autor:"Ono no Komachi",ano:"séc. IX",
-contexto:"Poema 9 do 百人一首 (ひゃくにんいっしゅ). Tanka 5-7-5-7-7 com palavras de duplo sentido.",
-versos:[["花の色は","はなの いろは","A cor das flores"],["うつりにけりな","うつりにけりな","desbotou, ah,"],["いたづらに","いたずらに","em vão,"],["我が身世にふる","わがみ よに ふる","enquanto eu passava pelo mundo"],["ながめせしまに","ながめ せしまに","perdida em pensamentos, sob a longa chuva."]],
-notas:[["けりな","けり = passado clássico de \"percebi agora\"; な = exclamação."],["ふる","Duplo sentido (kakekotoba): 経る (ふる, passar o tempo) e 降る (ふる, chover)."],["ながめ","Duplo sentido: 眺め (contemplar, cismar) e 長雨 (ながあめ, chuva longa)."],["せし","し = passado clássico: せし = した."],["いたづらに","Grafia antiga de いたずらに: em vão."]],
-perguntas:[["Quais palavras têm duplo sentido?","ふる e ながめ","花 e 色","我が身 e 世","うつり e いたづら"]]},
-
-{id:"p-ja-hatsukoi",lang:"ja",lvl:"N2",forma:"Poema (1ª estrofe)",titulo:"初恋",autor:"Shimazaki Tōson",ano:"1897",
-contexto:"Primeira estrofe de 初恋 (はつこい), do livro 若菜集 (わかなしゅう). Poesia moderna em ritmo 7-5.",
-versos:[["まだあげ初めし前髪の","まだ あげそめし まえがみの","A franja, que mal começavas a prender,"],["林檎のもとに見えしとき","りんごの もとに みえしとき","quando te vi junto à macieira,"],["前にさしたる花櫛の","まえに さしたる はなぐしの","e o pente de flores preso à frente,"],["花ある君と思ひけり","はな ある きみと おもいけり","pensei: és alguém em flor."]],
-notas:[["初めし (そめし)","〜初める = começar a; し = passado clássico: = 始めた."],["見えし (みえし)","= 見えた: quando apareceu / quando te vi."],["さしたる","= さしている: que estava preso (o pente)."],["思ひけり (おもいけり)","Grafia antiga ひ → い; けり = passado: = 思った."]],
-perguntas:[["Onde o poeta viu a moça?","Junto à macieira","Na estação de trem","No templo","À beira do rio"]]},
-
-{id:"p-de-nachtlied",lang:"de",lvl:"A2",forma:"Lied",titulo:"Wandrers Nachtlied",autor:"Johann Wolfgang von Goethe",ano:"1780",
-contexto:"Escrito a lápis na parede de uma cabana de caça no monte Kickelhahn, perto de Ilmenau.",
-versos:[["Über allen Gipfeln","","Sobre todos os cumes"],["Ist Ruh,","","há calma;"],["In allen Wipfeln","","em todas as copas"],["Spürest du","","você sente"],["Kaum einen Hauch;","","quase nenhum sopro;"],["Die Vögelein schweigen im Walde.","","os passarinhos calam no bosque."],["Warte nur, balde","","Espere só: logo"],["Ruhest du auch.","","você também descansa."]],
-quebras:[5],
-notas:[["Ruh","= Ruhe. O -e cai pela métrica."],["Gipfel / Wipfel","Cume / copa da árvore. A rima liga a montanha às árvores."],["spürest, ruhest","Formas antigas de spürst, ruhst."],["Vögelein","Diminutivo antigo de Vogel (= Vöglein)."],["balde","= bald (logo). O -e entra pela rima com Walde."]],
-perguntas:[["O que o último verso sugere?","Que quem lê também vai encontrar repouso (talvez a morte)","Que vai chover em breve","Que os pássaros vão voltar a cantar","Que é hora de acordar"]]},
-
-{id:"p-de-heidenroeslein",lang:"de",lvl:"A2",forma:"Lied (1ª estrofe)",titulo:"Heidenröslein",autor:"Johann Wolfgang von Goethe",ano:"1771",
-contexto:"Imita a canção popular. Schubert musicou em 1815.",
-versos:[["Sah ein Knab' ein Röslein stehn,","","Um menino viu uma rosinha,"],["Röslein auf der Heiden,","","rosinha na charneca;"],["War so jung und morgenschön,","","era tão jovem e bela como a manhã,"],["Lief er schnell, es nah zu sehn,","","ele correu para vê-la de perto,"],["Sah's mit vielen Freuden.","","olhou-a com muita alegria."],["Röslein, Röslein, Röslein rot,","","Rosinha, rosinha, rosinha vermelha,"],["Röslein auf der Heiden.","","rosinha na charneca."]],
-quebras:[5],
-notas:[["Knab'","= Knabe: menino (antigo)."],["Röslein","Rose + -lein: diminutivo, como -chen. Neutro: das Röslein (por isso \"es\")."],["stehn, sehn","= stehen, sehen, encurtados pelo ritmo."],["Heiden","= Heide (charneca), com -n do dativo antigo."],["Sah's","= sah es."],["Lief er","Verbo antes do sujeito: estilo de canção popular."]],
-perguntas:[["O que o menino fez ao ver a rosa?","Correu para vê-la de perto","Colheu e levou para casa","Passou sem olhar","Chamou a mãe"]]},
-
-{id:"p-de-fichtenbaum",lang:"de",lvl:"B1",forma:"Poema",titulo:"Ein Fichtenbaum steht einsam",autor:"Heinrich Heine",ano:"1827",
-contexto:"Do Buch der Lieder. Duas árvores separadas pelo mundo, cada uma sozinha.",
-versos:[["Ein Fichtenbaum steht einsam","","Um abeto está sozinho"],["Im Norden auf kahler Höh'.","","no norte, numa altura nua."],["Ihn schläfert; mit weißer Decke","","Ele sente sono; com um manto branco"],["Umhüllen ihn Eis und Schnee.","","o gelo e a neve o envolvem."],["Er träumt von einer Palme,","","Ele sonha com uma palmeira"],["Die, fern im Morgenland,","","que, longe, no Oriente,"],["Einsam und schweigend trauert","","sozinha e calada, está de luto"],["Auf brennender Felsenwand.","","sobre um penhasco ardente."]],
-quebras:[4],
-notas:[["Ihn schläfert","Verbo impessoal com acusativo: \"ele está com sono\"."],["Umhüllen ihn Eis und Schnee","Sujeito (Eis und Schnee) depois do verbo: inversão poética."],["Höh'","= Höhe: altura."],["Morgenland","Oriente (literalmente \"terra da manhã\")."],["trauern","Estar de luto, entristecer-se."]],
-perguntas:[["Com o que o abeto sonha?","Com uma palmeira no Oriente","Com a primavera","Com outro abeto","Com o mar do norte"],["O que os dois têm em comum?","Os dois estão sozinhos","Os dois estão no norte","Os dois estão cobertos de neve","Os dois estão felizes"]]},
-
-{id:"p-de-wuenschelrute",lang:"de",lvl:"B1",forma:"Poema",titulo:"Wünschelrute",autor:"Joseph von Eichendorff",ano:"1835",
-contexto:"Para Eichendorff, a natureza esconde uma canção de Deus que a palavra certa desperta.",
-versos:[["Schläft ein Lied in allen Dingen,","","Dorme uma canção em todas as coisas"],["Die da träumen fort und fort,","","que sonham sem parar,"],["Und die Welt hebt an zu singen,","","e o mundo começa a cantar,"],["Triffst du nur das Zauberwort.","","se você acerta a palavra mágica."]],
-notas:[["Schläft ein Lied","= Es schläft ein Lied: verbo no início, tom poético."],["fort und fort","Sem parar, continuamente."],["hebt an","De anheben (começar), verbo separável, hoje literário."],["Triffst du nur…","Condicional sem wenn: verbo no início = Wenn du nur das Zauberwort triffst."],["Wünschelrute","Varinha de rabdomante, que \"encontra\" água escondida."]],
-perguntas:[["O que faz o mundo cantar?","Acertar a palavra mágica","O nascer do sol","O silêncio da noite","Uma canção popular"]]},
-
-{id:"p-de-mondnacht",lang:"de",lvl:"B1",forma:"Poema",titulo:"Mondnacht",autor:"Joseph von Eichendorff",ano:"1837",
-contexto:"Schumann musicou no Liederkreis op. 39. A alma voa \"para casa\": o céu como lar.",
-versos:[["Es war, als hätt' der Himmel","","Era como se o céu"],["Die Erde still geküßt,","","tivesse beijado a terra em silêncio,"],["Daß sie im Blütenschimmer","","de modo que ela, no brilho das flores,"],["Von ihm nur träumen müßt'.","","só pudesse sonhar com ele."],["Die Luft ging durch die Felder,","","O ar passava pelos campos,"],["Die Ähren wogten sacht,","","as espigas ondulavam de leve,"],["Es rauschten leis die Wälder,","","os bosques sussurravam baixinho,"],["So sternklar war die Nacht.","","tão estrelada era a noite."],["Und meine Seele spannte","","E minha alma estendeu"],["Weit ihre Flügel aus,","","bem longe as suas asas,"],["Flog durch die stillen Lande,","","voou pelas terras silenciosas"],["Als flöge sie nach Haus.","","como se voasse para casa."]],
-quebras:[4,8],
-notas:[["als hätt'","= als hätte: Konjunktiv II, \"como se tivesse\"."],["geküßt, Daß, müßt'","Grafia antiga de geküsst, dass, müsste."],["sacht, leis","Suavemente; = leise (baixinho)."],["spannte … aus","Verbo separável ausspannen: estender, abrir."],["als flöge sie","Konjunktiv II de fliegen: \"como se voasse\"."],["Lande","Plural poético de Land."]],
-perguntas:[["Para onde a alma parece voar?","Para casa","Para o mar","Para o passado","Para a cidade"],["Que forma verbal aparece em \"als hätt'\" e \"als flöge\"?","Konjunktiv II (como se…)","Imperativo","Futur I","Passiv"]]},
-
-{id:"p-de-herbsttag",lang:"de",lvl:"B2",forma:"Poema",titulo:"Herbsttag",autor:"Rainer Maria Rilke",ano:"1902",
-contexto:"Do Buch der Bilder. Uma oração a Deus no fim do verão.",
-versos:[["Herr: es ist Zeit. Der Sommer war sehr groß.","","Senhor: é hora. O verão foi imenso."],["Leg deinen Schatten auf die Sonnenuhren,","","Põe tua sombra sobre os relógios de sol"],["und auf den Fluren laß die Winde los.","","e solta os ventos sobre os campos."],["Befiehl den letzten Früchten voll zu sein;","","Ordena aos últimos frutos que fiquem plenos;"],["gib ihnen noch zwei südlichere Tage,","","dá-lhes mais dois dias de sol do sul,"],["dränge sie zur Vollendung hin und jage","","impele-os à perfeição e lança"],["die letzte Süße in den schweren Wein.","","a última doçura no vinho pesado."],["Wer jetzt kein Haus hat, baut sich keines mehr.","","Quem agora não tem casa não construirá mais nenhuma."],["Wer jetzt allein ist, wird es lange bleiben,","","Quem agora está só assim ficará por muito tempo,"],["wird wachen, lesen, lange Briefe schreiben","","vai velar, ler, escrever longas cartas"],["und wird in den Alleen hin und her","","e pelas alamedas, de um lado a outro,"],["unruhig wandern, wenn die Blätter treiben.","","vai vagar inquieto, quando as folhas voarem."]],
-quebras:[3,7],
-notas:[["Leg, laß, befiehl, gib, dränge, jage","Imperativo de du. laß = lass (grafia antiga)."],["befehlen + dativo","Befiehl den letzten Früchten: ordenar a alguém (dativo)."],["keines","Pronome: \"nenhuma\" (casa). Ein Haus → keins/keines."],["wird … bleiben / wachen / wandern","Futur I: werden + infinitivo."],["hin und her","De um lado para o outro."],["treiben","Aqui: ser levado pelo vento."]],
-perguntas:[["Com quem o poeta fala no primeiro verso?","Com Deus","Com o verão","Com um amigo","Com o leitor"],["O que acontece com quem está sozinho agora?","Vai continuar só por muito tempo","Vai encontrar companhia no inverno","Vai construir uma casa","Vai viajar para o sul"]]}
-];
-
 </script>
 <script>
 (function(){
@@ -5804,7 +5698,7 @@ function goalsFor(l){
   if(!pf.metas || pf.metas.data!==TODAY || pf.metas.reset){
     const due=dueItems(l).length, list=[{id:"pomo", n:Math.max(1,Number(settings.metaPomos)||1)}];
     list.push(due>=5 ? {id:"rev", n:Math.min(due,40)} : {id:"ok", n:25});
-    const pool=["prod","esc","leit","novos", ...(aiReady()?["conv"]:[])];
+    const pool=["prod","esc","leit","novos"];
     const pick1=pool[dayHash(TODAY+l)%pool.length];
     list.push({id:pick1, n:{prod:3, esc:8, leit:1, novos:8, conv:6}[pick1]});
     pf.metas={data:TODAY, lista:list, pagas: pf.metas&&pf.metas.data===TODAY ? pf.metas.pagas||[] : []}; savePerfil(l);   // metas refeitas no mesmo dia não pagam XP de novo
@@ -5830,7 +5724,7 @@ function goalsChanged(){
 /* =========================================================
    Voz
    ========================================================= */
-let voices=[], settings=Object.assign({voz:"texto", rate:0.9, retencao:0.9, metaPomos:1, rotacao:"rodizio", provaJa:"", provaDe:"", novasPalavras:"auto"}, LS.get("lm-settings")||{});
+let voices=[], settings=Object.assign({furigana:true, voz:"texto", rate:0.9, retencao:0.9, metaPomos:1, rotacao:"rodizio", provaJa:"", provaDe:"", novasPalavras:"auto"}, LS.get("lm-settings")||{});
 function saveSettings(){ LS.set("lm-settings", settings); if(store.mode==="db") write("perfil","ajustes",Object.assign({},settings)); }
 function loadVoices(){ try{ voices=speechSynthesis.getVoices(); }catch(e){ voices=[]; } }
 if("speechSynthesis" in window){ loadVoices(); speechSynthesis.onvoiceschanged=loadVoices; }
@@ -5840,6 +5734,10 @@ function voiceFor(l){ const pre=l==="ja"?"ja":l==="de"?"de":"pt"; const vs=voice
    repositório language_master). Nativo = Wikimedia Commons; "s" = VOICEVOX:四国めたん. Sem gravação: voz do navegador. */
 const AUD={map:null, el:null, run:0};
 fetch("dados/audio-mapa.json").then(r=>r.ok?r.json():null).then(j=>{ AUD.map=j; }).catch(()=>{});
+/* furigana (kuroshiro + kuromoji, gerada no workflow gerar) e frases reais do Tatoeba com gravação nativa */
+const FURI={map:null}, TATO={ja:[],de:[]}, TATO_C={};
+fetch("dados/furigana-ja.json").then(r=>r.ok?r.json():null).then(j=>{ FURI.map=j; for(const k in praticarCache) delete praticarCache[k]; }).catch(()=>{});
+["ja","de"].forEach(l=>fetch("dados/tatoeba-"+l+".json").then(r=>r.ok?r.json():[]).then(j=>{ TATO[l]=Array.isArray(j)?j:[]; }).catch(()=>{}));
 function audFor(text, l){
   const m=AUD.map; if(!m || !m[l] || settings.audioNativo===false) return null;
   let k=clean(text).trim(); if(l==="de") k=k.replace(/^(der|die|das|sich)\s+/i,"");
@@ -5917,6 +5815,15 @@ function speakSeq(list, onDone){
   return ()=>{ stopped=true; stopClip(); try{ speechSynthesis.cancel(); }catch(e){} };
 }
 function sayOf(l, text, kana){ return (l==="ja" && settings.voz==="kana" && kana) ? kana : clean(text); }
+/* frase em japonês com furigana sobre os kanji; sem furigana para ela, a leitura em kana fica embaixo como antes */
+function furiOf(l, text){ return l==="ja" && settings.furigana!==false && FURI.map ? FURI.map[clean(text).trim()]||null : null; }
+function jpEl(l, text, cls){
+  const f=furiOf(l,text), el=h("div",{class:(cls||"")+(f?" furig":""),lang:l});
+  if(!f){ el.textContent=clean(text); return el; }
+  f.split(/(\{[^{}|]+\|[^{}]+\})/).forEach(p=>{ const m=/^\{([^|]+)\|(.+)\}$/.exec(p); if(m) el.append(h("ruby",{}, m[1], h("rt",{text:m[2]}))); else if(p) el.append(p); });
+  return el;
+}
+function jpLine(l, text, kana, cls, kcls){ const el=jpEl(l,text,cls); return [el, l==="ja" && kana && !el.classList.contains("furig") ? h("div",{class:kcls||"kana",lang:"ja",text:kana}) : null]; }
 function playBtns(l, text, kana){
   const t=sayOf(l,text,kana);
   return h("span",{class:"row",style:"gap:6px;flex-wrap:nowrap"},
@@ -5946,7 +5853,6 @@ function levelLine(l){
   if(l==="ja") return "nível JLPT "+(cur==="N3"?"N3 indo para N2 (já chegou ao N2 no passado)":"N2 (consolidando até o fim do N2)");
   return "nível CEFR "+(cur==="A2"?"A2 indo para B1":cur==="B1"?"B1 indo para B2":"B2");
 }
-function aiLevel(l){ const cur=courseLevel(l); return l==="ja" ? (cur==="N3"?"N3–N2":"N2") : (cur==="A2"?"A2–B1":cur==="B1"?"B1–B2":"B2"); }
 
 /* =========================================================
    Comparação de texto (ditado)
@@ -5977,8 +5883,7 @@ function feedbackBox(ok, l, sentence, kana, pt, why, verdict){
     h("div",{class:"verdict",text: verdict || (ok?"Certo":"Não foi dessa vez")}),
     h("div",{class:"row",style:"flex-wrap:nowrap;align-items:flex-start"},
       h("div",{style:"flex:1;min-width:0"},
-        h("div",{lang:l,style:"font-size:1.15rem;font-weight:500",text:clean(sentence)}),
-        l==="ja"&&kana ? h("div",{class:"small muted",lang:"ja",text:kana}) : null,
+        jpLine(l,sentence,kana,"fb-s","small muted"),
         pt ? h("div",{class:"small",text:pt}) : null),
       playBtns(l, sentence, kana)),
     why ? h("div",{class:"small",text:why}) : null);
@@ -6308,7 +6213,7 @@ function exampleRows(v){
   const l=v.lang;
   if(v.kind==="kanji") return v.words.map(w=>h("div",{class:"ex"}, playBtns("ja",w[0],w[1]), h("div",{}, h("div",{class:"jp",lang:"ja",text:w[0]}), h("div",{class:"kana",lang:"ja",text:w[1]}), h("div",{class:"pt",text:w[2]}))));
   const x=v.ex;
-  return [h("div",{class:"ex"}, playBtns(l,x[0],x[1]), h("div",{}, h("div",{class:"jp",lang:l,text:x[0]}), l==="ja"&&x[1]?h("div",{class:"kana",lang:"ja",text:x[1]}):null, h("div",{class:"pt",text:x[2]})))];
+  return [h("div",{class:"ex"}, playBtns(l,x[0],x[1]), h("div",{}, jpLine(l,x[0],x[1],"jp"), h("div",{class:"pt",text:x[2]})))];
 }
 function vocabReveal(v, ok, verdict){
   return h("div",{class:"feedback "+(ok?"ok":"no")},
@@ -6624,11 +6529,6 @@ function fsrsForget(S, D, R){ return Math.min(W[11]*Math.pow(D,-W[12])*(Math.pow
 function fsrsShort(S, r){ let inc=Math.exp(W[17]*(r-3+W[18]))*Math.pow(S,-W[19]); if(r>=3) inc=Math.max(inc,1); return S*inc; }
 function desiredR(){ const r=Number(settings.retencao); return r>=0.8 && r<=0.97 ? r : R_TARGET; }
 function fsrsInterval(S){ const r=desiredR(); return Math.min(MAX_IVL, Math.max(1, Math.round(S/FACTOR*(Math.pow(r,1/DECAY)-1)))); }
-function retentionOf(it, day){
-  if(!it || !it.S || !it.ultRev) return null;
-  const t=Math.max(0, diffDays(it.ultRev, day||TODAY));
-  return fsrsR(t, it.S);
-}
 /* itens salvos pelo agendador antigo ganham dificuldade e continuam da estabilidade que tinham */
 function migrateItem(it){
   if(!it) return it;
@@ -6661,62 +6561,12 @@ function schedule(it, rating){
     it.D=fsrsNextD(it.D, r);
   }
   if(r===1){ it.lapsos=(it.lapsos||0)+1; it.reps=0; } else it.reps=(it.reps||0)+1;
-  it.S=Math.round(it.S*100)/100; it.D=Math.round(it.D*100)/100;
+  it.S=Math.round(it.S*1e4)/1e4; it.D=Math.round(it.D*1e4)/1e4;
   it.ultRev=TODAY;
   it.intervalo=fsrsInterval(it.S);
   it.vence=addDays(TODAY, it.intervalo);
   it.fsrs=6;
 }
-/* média prevista de retenção dos itens vistos, daqui a d dias sem estudar */
-function forgettingSeries(l, days){
-  const its=Object.values(store.items[l]).filter(it=>it.estado>=2 && !it.suspenso && C[l].byId[it.id]).map(it=>migrateItem(Object.assign({},it)));
-  const out=[];
-  for(let d=0; d<=days; d++){
-    const day=addDays(TODAY,d);
-    const rs=its.map(it=>retentionOf(it,day)).filter(r=>r!=null);
-    out.push(rs.length ? rs.reduce((a,b)=>a+b,0)/rs.length : null);
-  }
-  return {mine:out, n:its.length, below: its.filter(it=>(retentionOf(it)??1)<R_TARGET+1e-9 && it.vence<=TODAY).length};
-}
-function forgettingChart(l){
-  const days=30, CW=340, H=190, P={l:36,r:12,t:12,b:28};
-  const {mine,n,below}=forgettingSeries(l,days);
-  const novo=[...Array(days+1)].map((_,d)=>fsrsR(d, W[2]));
-  const x=d=>P.l+(CW-P.l-P.r)*d/days, y=r=>P.t+(H-P.t-P.b)*(1-r);
-  const path=arr=>arr.map((r,d)=>r==null?"":(d&&arr[d-1]!=null?"L":"M")+x(d).toFixed(1)+" "+y(r).toFixed(1)).join(" ");
-  const ns="http://www.w3.org/2000/svg";
-  const svg=document.createElementNS(ns,"svg");
-  svg.setAttribute("viewBox",`0 0 ${CW} ${H}`); svg.setAttribute("class","fchart"); svg.setAttribute("role","img");
-  svg.setAttribute("aria-label","Retenção prevista nos próximos 30 dias sem estudar");
-  let g="";
-  [0,0.25,0.5,0.75,1].forEach(r=>{ g+=`<line x1="${P.l}" x2="${CW-P.r}" y1="${y(r)}" y2="${y(r)}" class="grid"/><text x="${P.l-6}" y="${y(r)+4}" class="tick" text-anchor="end">${Math.round(r*100)}%</text>`; });
-  [0,7,14,21,30].forEach(d=>{ g+=`<text x="${x(d)}" y="${H-8}" class="tick" text-anchor="middle">${d===0?"hoje":d+"d"}</text>`; });
-  g+=`<line x1="${P.l}" x2="${CW-P.r}" y1="${y(desiredR())}" y2="${y(desiredR())}" class="target"/><text x="${CW-P.r}" y="${y(desiredR())-4}" class="tick" text-anchor="end">${Math.round(desiredR()*100)} %: dia de revisar</text>`;
-  g+=`<path d="${path(novo)}" class="ref"/>`;
-  if(n) g+=`<path d="${path(mine)}" class="mine"/><circle cx="${x(0)}" cy="${y(mine[0])}" r="4" class="mine-dot"/>`;
-  g+=`<line class="cross" x1="0" x2="0" y1="${P.t}" y2="${H-P.b}" visibility="hidden"/><rect class="hit" x="${P.l}" y="${P.t}" width="${CW-P.l-P.r}" height="${H-P.t-P.b}" fill="transparent"/>`;
-  svg.innerHTML=g;
-  const tip=h("div",{class:"ftip",hidden:true});
-  const wrap=h("div",{class:"fwrap"}, svg, tip);
-  const hit=svg.querySelector(".hit"), cross=svg.querySelector(".cross");
-  function move(ev){
-    const r=svg.getBoundingClientRect(); const px=(ev.clientX-r.left)*CW/r.width;
-    const d=Math.max(0,Math.min(days,Math.round((px-P.l)/(CW-P.l-P.r)*days)));
-    cross.setAttribute("x1",x(d)); cross.setAttribute("x2",x(d)); cross.setAttribute("visibility","visible");
-    tip.hidden=false; tip.style.left=Math.min(r.width-150, Math.max(0,(x(d)/CW)*r.width-60))+"px";
-    tip.textContent=(d===0?"Hoje":"Em "+d+" dia"+(d>1?"s":""))+": "+(n&&mine[d]!=null?"seus itens "+Math.round(mine[d]*100)+"% · ":"")+"item novo sem revisão "+Math.round(novo[d]*100)+"%";
-  }
-  hit.addEventListener("pointermove",move); hit.addEventListener("pointerdown",move);
-  hit.addEventListener("pointerleave",()=>{ tip.hidden=true; cross.setAttribute("visibility","hidden"); });
-  const legend=h("div",{class:"row small",style:"gap:14px"},
-    h("span",{}, h("span",{class:"lg lg-mine"}), " seus itens (média)"),
-    h("span",{}, h("span",{class:"lg lg-ref"}), " item novo sem revisão"));
-  const lead = n ? "Hoje você lembraria em média "+Math.round((mine[0]||0)*100)+"% dos "+n+" itens já estudados. "+(below?below+" chegaram ao ponto de revisão: são as revisões de hoje.":"Nenhum no ponto de revisão agora.")
-                 : "Estude alguns itens para ver a sua curva.";
-  return h("div",{class:"stack"}, h("p",{class:"small",text:lead}), wrap, legend,
-    h("p",{class:"small muted",text:"Sem revisão, a lembrança cai rápido nos primeiros dias. Cada revisão feita no ponto certo deixa a curva mais achatada (a estabilidade cresce) e o intervalo seguinte fica maior."}));
-}
-
 /* =========================================================
    Método Feynman: explicar com as próprias palavras
    ========================================================= */
@@ -6812,145 +6662,6 @@ Responda só com JSON: {"nota":0-4,"claro":"o que ficou certo, 1 frase","lacunas
     }catch(e){ w.remove(); const m=aiError(e); if(m) out.append(h("p",{class:"status warn",text:m})); aiBtn.disabled=false; selfBtn.disabled=false; inp.disabled=false; exIn.disabled=false; hook(); }
   });
   return card;
-}
-
-/* =========================================================
-   Conversa com o professor (situações)
-   ========================================================= */
-const SCENES={
-  ja:[["konbini","Na loja de conveniência (コンビニ)","Você é o atendente de uma コンビニ no Japão."],
-      ["hospital","Recepção do hospital (病院の受付)","Você é a recepcionista de uma clínica; o aluno é um paciente novo."],
-      ["joushi","Com o chefe (上司と) · keigo","Você é o 部長 do aluno; a conversa exige 敬語 do aluno."],
-      ["douryou","Papo com colega (同僚と雑談)","Você é um colega de trabalho simpático, conversa informal (タメ口 permitido)."],
-      ["mensetsu","Entrevista de emprego (面接)","Você é o entrevistador de uma empresa japonesa."],
-      ["denwa","Reserva por telefone (電話で予約)","Você atende o telefone de um restaurante."],
-      ["fudousan","Imobiliária (不動産屋)","Você é o corretor de uma imobiliária; o aluno procura apartamento."],
-      ["livre","Conversa livre","Você é um amigo japonês curioso sobre a vida do aluno no Brasil."]],
-  de:[["arzt","Beim Arzt","Du bist Arzthelferin in einer Praxis; der Schüler ist Patient."],
-      ["baeckerei","In der Bäckerei","Du bist Verkäufer in einer Bäckerei."],
-      ["wohnung","Wohnungssuche","Du bist Vermieter und zeigst eine Wohnung."],
-      ["bewerbung","Vorstellungsgespräch","Du führst ein Vorstellungsgespräch."],
-      ["kollegen","Mit Kollegen","Du bist ein freundlicher Kollege in der Kaffeepause."],
-      ["amt","Beim Bürgeramt (Anmeldung)","Du arbeitest im Bürgeramt; der Schüler meldet seine Wohnung an."],
-      ["restaurant","Im Restaurant","Du bist Kellner in einem Restaurant."],
-      ["frei","Freies Gespräch","Du bist ein deutscher Freund, neugierig auf das Leben des Schülers in Brasilien."]]
-};
-function conversaView(l, onEnd){
-  const wrap=h("div",{class:"stack"});
-  if(!aiReady()){
-    wrap.append(h("div",{class:"card"}, h("p",{text:"A conversa precisa do professor (Claude) liberado nesta visualização. Abra o app pelo link do Claude e permita o uso quando ele pedir."})));
-    return wrap;
-  }
-  const pickCard=h("div",{class:"card stack"}, h("h3",{text:"Escolha a situação"}),
-    h("p",{class:"small muted",text:"O professor faz o papel do outro lado. Quando sua fala tiver erro, ele dá uma pista para você tentar corrigir sozinho; depois mostra a versão natural. Dica: use o microfone do teclado do celular para ditar suas falas e treinar a fala."}));
-  const grid=h("div",{class:"opts"});
-  SCENES[l].forEach(sc=>grid.append(h("button",{class:"opt",type:"button",text:sc[1],onclick:()=>start(sc)})));
-  pickCard.append(grid); wrap.append(pickCard);
-  function start(sc){
-    wrap.innerHTML="";
-    const turns=[], log=h("div",{class:"chat"}), corrections=[];
-    let autoplay=true, busy=false;
-    const RULES=`Você é um parceiro de conversa e professor de ${LANGNAME[l]} para um aluno brasileiro (${levelLine(l)}).
-Cena: ${sc[2]}
-Regras: fale SOMENTE ${l==="ja"?"japonês":"alemão"} na sua fala, no nível do aluno (frases curtas, ${aiLevel(l)}), uma ou duas frases por turno, e sempre termine com algo que peça resposta. Mantenha o papel.
-Se a última fala do aluno tiver erro de gramática, vocabulário, registro (${l==="ja"?"敬語/丁寧語":"Sie/du"}) ou naturalidade, corrija. Em "pista", dê em português uma dica curta que aponte o tipo e o lugar do erro SEM escrever a forma correta (o aluno vai tentar se corrigir sozinho antes de ver "corrigida"). Se o aluno escrever em português, dê a versão em ${LANGNAME[l]} em "corrigida" e continue.
-Responda SEMPRE só com JSON: {"fala":"sua fala","leitura":"${l==="ja"?"fala em hiragana com espaços":""}","traducao":"tradução da sua fala","correcao":{"ok":true,"pista":"dica sem a resposta, vazio se ok","corrigida":"versão correta e natural da fala do aluno (vazio no primeiro turno)","explicacao":"1 frase em português, vazio se ok"},"dica":"sugestão curta, em português, do que o aluno pode responder"}`;
-    const head=h("div",{class:"row"}, h("h3",{text:sc[1]}), h("span",{class:"spacer"}),
-      h("label",{class:"row small",style:"gap:6px"}, h("input",{type:"checkbox",id:"conv-auto",checked:true,onchange:e=>autoplay=e.target.checked}),"Voz automática"));
-    const inp=h("textarea",{id:"conv-in",lang:l,rows:"2",placeholder: l==="ja"?"Sua fala em japonês (ou em português, se travar)":"Deine Antwort auf Deutsch (oder auf Portugiesisch)"});
-    const send=h("button",{class:"btn primary",type:"button",text:"Enviar"});
-    const endBtn=h("button",{class:"btn ghost",type:"button",text:"Encerrar"});
-    const status=h("p",{class:"small muted"});
-    wrap.append(h("div",{class:"card stack"}, head, log, status, inp, h("div",{class:"row"}, send, endBtn)));
-    function bubbleProf(r){
-      const tBox=h("div",{class:"small",hidden:true,text:r.traducao||""});
-      const dica=r.dica ? h("details",{class:"small"}, h("summary",{text:"Dica"}), h("p",{text:r.dica})) : null;
-      log.append(h("div",{class:"msg prof"},
-        h("div",{class:"row",style:"flex-wrap:nowrap;align-items:flex-start"}, h("div",{style:"flex:1;min-width:0"},
-          h("div",{lang:l,style:"font-size:1.1rem",text:r.fala}),
-          l==="ja"&&r.leitura ? h("div",{class:"kana small",lang:"ja",text:r.leitura}) : null, tBox),
-          playBtns(l, r.fala, r.leitura||"")),
-        h("div",{class:"row"}, h("button",{class:"linkbtn",type:"button",text:"Tradução",onclick:()=>tBox.hidden=!tBox.hidden}), dica)));
-      if(autoplay) speak(sayOf(l,r.fala,r.leitura||""), l, {rate:0.9});
-      reveal(log.lastChild);
-    }
-    let ctl=null;
-    const stopBtn=h("button",{class:"btn ghost",type:"button",text:"Parar",hidden:true,onclick:()=>{ ctl && ctl.abort(); }});
-    send.after(stopBtn);
-    function scrollEnd(el){ reveal(el); }
-    async function turn(userText){
-      if(busy) return; busy=true; send.disabled=true; stopBtn.hidden=false; status.textContent="";
-      let mine=null;
-      if(userText){ mine=h("div",{class:"msg me",lang:l,text:userText}); log.append(mine); }
-      const typing=h("div",{class:"msg prof typing",text:"digitando…"}); log.append(typing); scrollEnd(typing);
-      // histórico sempre alternado: regras (user) → fala do professor (assistant) → fala do aluno (user) …
-      const hist=turns.slice(-14); while(hist.length && hist[0].role!=="assistant") hist.shift();
-      const msgs=[{role:"user",content:RULES+"\n\nComece a cena agora com a sua primeira fala."}, ...hist];
-      if(userText) msgs.push({role:"user",content:userText});
-      ctl=new AbortController();
-      try{
-        const r=await sampleFn.json(msgs,{cache:false, signal:ctl.signal});
-        const fala = r && (typeof r.fala==="string" ? r.fala : Array.isArray(r.fala) ? r.fala.join(" ") : null);
-        if(!fala) throw {code:"invalid_json"};
-        r.fala=fala;
-        typing.remove();
-        if(userText) turns.push({role:"user",content:userText});
-        turns.push({role:"assistant",content:JSON.stringify({fala:r.fala, leitura:r.leitura||"", traducao:r.traducao||""})});
-        const c=(r.correcao && typeof r.correcao==="object") ? r.correcao : {};
-        if(userText){
-          const corr = typeof c.corrigida==="string" ? c.corrigida.trim() : "";
-          const ok = c.ok!==false || !corr;
-          if(!ok){
-            mine.classList.add("bad");
-            // primeiro uma chance de se autocorrigir (dica sem a resposta); a versão natural vem depois
-            const pista = typeof c.pista==="string" ? c.pista.trim() : "";
-            const fix=h("div",{class:"msg fix"}); mine.after(fix);
-            const answer=tent=>{
-              fix.innerHTML="";
-              if(tent!=null){
-                const sim=similarity(l,tent,[corr]);
-                fix.append(h("div",{class:"small",style:"font-weight:700",text: sim>=0.9 ? "Isso! Você mesmo corrigiu." : "Compare a sua tentativa com a versão natural:"}));
-                if(sim<0.9) fix.append(h("div",{class:"small",lang:l,text:"Sua tentativa: "+tent}));
-              }
-              fix.append(h("div",{class:"small",text:"Mais natural:"}), h("div",{class:"row",style:"flex-wrap:nowrap"}, h("b",{lang:l,style:"flex:1",text:corr}), playBtns(l,corr,"")), c.explicacao?h("div",{class:"small",text:String(c.explicacao)}):null);
-            };
-            const tryIn=h("textarea",{rows:"1",lang:l,placeholder:"Reescreva a sua fala corrigida"});
-            fix.append(h("div",{class:"small",style:"font-weight:700",text:"Quase. Tente corrigir sozinho antes de ver a resposta."}),
-              pista?h("div",{class:"small",text:"Pista: "+pista}):null,
-              h("div",{class:"fixtry"}, tryIn, h("div",{class:"row"},
-                h("button",{class:"btn small primary",type:"button",text:"Conferir",onclick:()=>{ const t=tryIn.value.trim(); if(t) answer(t); }}),
-                h("button",{class:"btn small ghost",type:"button",text:"Ver resposta",onclick:()=>answer(null)}))));
-            corrections.push({wrong:userText, right:corr, why:String(c.explicacao||"")});
-            try{ saveErro(l+"-conversa-"+fnv(corr), {idioma:l,competencia:"escrita",conteudo:"conversa",ponto:sc[1],erro:userText,correta:corr,causaProvavel:String(c.explicacao||""),ocorrencias:1,primeira:TODAY,ultima:TODAY,corrigido:false,acertosDepois:0}); }catch(e){}
-          }
-          try{ eloUpdate(l,"escrita",l==="ja"?300:200,ok,"conversa"); }catch(e){}
-          if(S){ S.stats[ok?"ok":"no"]++; S.convTurns=(S.convTurns||0)+1; }
-        }
-        bubbleProf(r);
-      }catch(e){
-        typing.remove();
-        const msg = (e && e.code==="cancelled") ? "Resposta interrompida." : (aiError(e) || "Não consegui a resposta do professor.");
-        const retry=h("div",{class:"msg prof err"}, h("div",{class:"small",text:msg}),
-          h("button",{class:"btn small",type:"button",text:"Tentar de novo",onclick:()=>{ retry.remove(); if(mine) mine.remove(); turn(userText); }}));
-        log.append(retry); scrollEnd(retry);
-      }
-      busy=false; send.disabled=false; stopBtn.hidden=true; ctl=null;
-    }
-    send.addEventListener("click",()=>{ const t=inp.value.trim(); if(!t || busy) return; inp.value=""; turn(t); });
-    inp.addEventListener("keydown",e=>{ if(e.isComposing || e.keyCode===229) return; if(e.key==="Enter" && !e.shiftKey){ e.preventDefault(); send.click(); } });
-    endBtn.addEventListener("click",()=>{
-      wrap.innerHTML="";
-      const n=turns.filter(t=>t.role==="user").length;
-      wrap.append(h("div",{class:"card stack"}, h("h3",{text:"Conversa encerrada"}),
-        h("p",{text:n+" fala"+(n!==1?"s":"")+" suas, "+corrections.length+" corrigida"+(corrections.length!==1?"s":"")+"."}),
-        corrections.length ? h("ul",{class:"errlist"}, corrections.map(c=>h("li",{}, h("span",{class:"wrong",lang:l,text:c.wrong}), h("br"), h("strong",{lang:l,text:c.right}), c.why?h("div",{class:"small muted",text:c.why}):null))) : null,
-        h("p",{class:"small muted",text:"As correções foram para o banco de erros. Leia cada versão correta em voz alta."}),
-        h("button",{class:"btn",type:"button",text:"Outra situação",onclick:()=>{ const v=conversaView(l,onEnd); wrap.replaceWith(v); }})));
-      onEnd && onEnd();
-    });
-    turn(null);
-  }
-  return wrap;
 }
 
 /* =========================================================
@@ -7232,7 +6943,19 @@ function listenPool(l){
   });
   seenOf(vocabItems(l)).forEach(v=>{ if(v.ex && v.ex[0] && v.ex[2]) add(v, v.ex[0], v.ex[1], v.ex[2]); });
   levelReadings(l).forEach(t=>{ const p={lang:l, lvl:t.lvl, kind:"texto", t:t.titulo}; t.frases.forEach(f=>add(p, f[0], f[1], f[2])); });
+  const pt={lang:l, lvl:courseLevel(l), kind:"tatoeba"}; tatoebaFor(l).forEach(f=>add(pt, f[0], "", f[1]));
   return pool;
+}
+/* frases reais do Tatoeba no seu nível: ≥ 80 % das palavras do curso que aparecem nelas você já estudou;
+   no começo (menos de 100 palavras vistas), as que só têm palavras do curso do nível atual ou abaixo */
+function tatoebaFor(l){
+  const seen=seenOf(vocabItems(l)).length, key=l+":"+seen+":"+TATO[l].length;
+  if(TATO_C[l] && TATO_C[l].key===key) return TATO_C[l].list;
+  const cur=LVL_ORDER[l].indexOf(courseLevel(l));
+  const list=TATO[l].filter(f=>{ const ws=wordsIn(l,f[0]); if(!ws.length) return false;
+    if(ws.filter(isStudied).length/ws.length>=0.8) return true;
+    return seen<100 && ws.every(v=>{ const i=LVL_ORDER[l].indexOf(v.lvl); return i>=0 && i<=cur; }); });
+  TATO_C[l]={key, list}; return list;
 }
 /* sorteia n frases com som, ~70 % delas longas */
 function pickListen(l, n, pool){
@@ -7344,11 +7067,14 @@ function passageView(l, pas, onDone){
   function audioOnly(n, onRated){
     body.innerHTML="";
     const go=h("button",{class:"btn primary",type:"button",text:"▶ Ouvir o trecho"});
+    const pare=h("button",{class:"btn ghost",type:"button",text:"Parar",hidden:true});
     const ask=h("div",{class:"stack",hidden:true}, h("p",{class:"small",text:"Sem ver o texto: quanto você entendeu?"}), rateRow(onRated));
-    go.addEventListener("click",()=>{ go.disabled=true; go.textContent="Tocando…"; playAll({onDone:()=>{ go.disabled=false; go.textContent="▶ Ouvir de novo"; ask.hidden=false; reveal(ask); }}); });
+    const volta=()=>{ pare.hidden=true; go.disabled=false; go.textContent="▶ Ouvir de novo"; ask.hidden=false; reveal(ask); };
+    go.addEventListener("click",()=>{ go.disabled=true; go.textContent="Tocando…"; pare.hidden=false; playAll({onDone:volta}); });
+    pare.addEventListener("click",()=>{ halt(); volta(); });
     body.append(h("p",{class:"small muted",text: n===1 ? "Passada 1: só o áudio. Pegue a ideia geral, sem se prender a cada palavra." : "Passada 3: só o áudio de novo, agora que você viu o texto."}),
       n===1 && cov.pct!=null && cov.pct<0.95 ? h("p",{class:"small tip",text:"Este trecho tem menos de 95 % de palavras que você já estudou. Use a legenda da passada 2 sem culpa."}) : null,
-      h("div",{class:"row"}, go, rateCtl(()=>rate,v=>rate=v)), ask);
+      h("div",{class:"row"}, go, pare, rateCtl(()=>rate,v=>rate=v)), ask);
     setTimeout(()=>go.click(), 300);
   }
   function pass1(){ step=0; draw(); audioOnly(1, k=>{ notas[0]=k; pass2(); }); }
@@ -7356,7 +7082,7 @@ function passageView(l, pas, onDone){
     step=1; draw(); body.innerHTML="";
     const lines=h("div",{class:"stack hide-pt"});
     const rows=fr.map(f=>{ const r=h("div",{class:"ex pas-line"}, playBtns(l,f[0],f[1]),
-      h("div",{}, h("div",{class:"jp",lang:l,text:clean(f[0])}), l==="ja"?h("div",{class:"kana",lang:"ja",text:f[1]}):null, h("div",{class:"pt",text:f[2]}))); lines.append(r); return r; });
+      h("div",{}, jpLine(l,f[0],f[1],"jp"), h("div",{class:"pt",text:f[2]}))); lines.append(r); return r; });
     const mark=i=>rows.forEach((r,j)=>r.classList.toggle("now",j===i));
     const tg=h("div",{class:"toggles"},
       l==="ja" ? h("label",{}, h("input",{type:"checkbox",checked:true,onchange:e=>lines.classList.toggle("hide-kana",!e.target.checked)}),"Kana") : null,
@@ -7388,7 +7114,7 @@ function passageView(l, pas, onDone){
     const list=h("div",{class:"stack"});
     fr.forEach(f=>{
       const st=h("span",{class:"small muted"});
-      list.append(h("div",{class:"sh-item"}, h("div",{class:"sh-text",lang:l,text:clean(f[0])}), l==="ja"?h("div",{class:"kana small",lang:"ja",text:f[1]}):null, h("div",{class:"pt small",text:f[2]}),
+      list.append(h("div",{class:"sh-item"}, jpLine(l,f[0],f[1],"sh-text","kana small"), h("div",{class:"pt small",text:f[2]}),
         h("div",{class:"row"},
           h("button",{class:"btn small primary",type:"button",text:"× 3",onclick:()=>{ halt(); const my=++shId; speak(say(f),l,{rate:srate,times:3,gap:1800,stop:()=>my!==shId,onrep:n=>{ if(my!==shId) return; bump(); st.textContent=n+"/3"; }}); }}),
           h("button",{class:"btn small ghost",type:"button",text:"Parar",onclick:()=>{ shId++; st.textContent=""; halt(); }}), st)));
@@ -7458,41 +7184,6 @@ function maratonaView(l){
 }
 
 
-/* Pedir textos novos com áudio: grava um pedido no banco; uma tarefa agendada do Claude
-   escreve os textos, grava o áudio no GitHub (workflow gerar) e publica no app. */
-const PED_EST={pendente:["Na fila","s2"], escrevendo:["Escrevendo os textos","s2"], gravando:["Gravando o áudio","s4"], pronto:["Pronto","s6"], erro:["Deu erro","s2"]};
-function pedidosCard(l){
-  const card=h("div",{class:"card stack"}), st=h("div",{class:"stack"}), btn=h("button",{class:"btn primary",type:"button",text:"Pedir 6 textos novos com áudio"});
-  const qtdSel=h("select",{id:"ped-qtd-"+l}, [4,6,8].map(n=>h("option",{value:String(n),text:n+" textos"}))); qtdSel.value="6";
-  const temaIn=h("input",{id:"ped-tema-"+l,type:"text",placeholder:"Tema (opcional): trabalho, viagem, notícias…",style:"flex:1;min-width:0;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--surface)"});
-  card.append(h("h3",{text:"Textos novos com áudio"}),
-    h("p",{class:"small muted",text:"Peça e eu (Claude) escrevo textos novos do seu nível, com frases longas, e gravo o áudio. Uma tarefa agendada confere os pedidos a cada 6 horas; com a gravação, ficam prontos em cerca de 6 a 12 horas e aparecem aqui sozinhos."}),
-    h("div",{class:"row"}, qtdSel, temaIn), btn, st);
-  let pend=null, unsub=null;
-  const draw=list=>{
-    st.innerHTML=""; pend=list.find(x=>x.lang===l && ["pendente","escrevendo","gravando"].includes(x.estado))||null;
-    btn.disabled=!!pend; btn.textContent = pend ? "Já há um pedido em andamento" : "Pedir textos novos com áudio";
-    list.filter(x=>x.lang===l).slice(0,3).forEach(x=>{ const e=PED_EST[x.estado]||[x.estado,"s2"];
-      st.append(h("div",{class:"row small"}, h("span",{class:"chip "+e[1],text:e[0]}), h("span",{text:x.qtd+" textos "+x.nivel+(x.tema?" · "+x.tema:"")}), h("span",{class:"spacer"}), h("span",{class:"muted",text:brDate(String(x.criado).slice(0,10))})));
-      if(x.nota) st.append(h("p",{class:"small muted",text:x.nota})); });
-  };
-  const start=()=>{
-    if(store.mode==="loading"){ st.innerHTML=""; st.append(h("p",{class:"small muted",text:"Carregando…"})); setTimeout(start,800); return; }
-    if(store.mode!=="db" || !store.root){ btn.disabled=true; st.innerHTML=""; st.append(h("p",{class:"small",text:"Abra o app pelo link do Claude para fazer pedidos (eles ficam salvos na sua conta)."})); return; }
-    try{ unsub=store.root.collection("pedidos").orderBy("criado","desc").limit(10).onSnapshot(q=>{ const list=[]; q.forEach(d=>list.push(Object.assign({id:d.id},d.data()))); draw(list); }); }catch(e){ st.append(h("p",{class:"small",text:"Não consegui ler os pedidos agora."})); }
-  };
-  btn.addEventListener("click",async()=>{
-    if(pend || !store.root) return; btn.disabled=true;
-    const lv=courseLevel(l), id="p-"+l+"-"+Date.now();
-    const ped={lang:l, nivel: lv==="concluído" ? LVL_ORDER[l].slice(-1)[0] : lv, qtd:Number(qtdSel.value)||6, tema:temaIn.value.trim().slice(0,80), estado:"pendente", criado:new Date().toISOString()};
-    try{ await store.root.collection("pedidos").doc(id).set(ped); temaIn.value=""; toast("Pedido feito. Os textos chegam em cerca de 6 a 12 horas."); }
-    catch(e){ btn.disabled=false; toast("Não consegui salvar o pedido. Tente de novo."); }
-  });
-  start();
-  return card;
-}
-
-/* texto embutido: leitura (com kana e tradução) ou escuta (texto escondido até você pedir) */
 function textView(l, t, o){
   o=o||{};
   const card=h("div",{class:"card stack reader"+(o.listen?" sh-hidden":"")});
@@ -7500,7 +7191,7 @@ function textView(l, t, o){
   let stop=null;
   const playAll=h("button",{class:"btn small primary",type:"button",text:"▶ Texto todo",onclick:()=>{ stop&&stop(); stop=speakSeq(t.frases.map(f=>({text:sayOf(l,f[0],f[1]), l, rate:settings.rate, gap:700}))); }});
   const body=h("div",{class:"hide-pt"+(l==="ja"?"":"")});
-  t.frases.forEach(f=>body.append(h("div",{class:"ex"}, playBtns(l,f[0],f[1]), h("div",{}, h("div",{class:"jp sh-text",lang:l,text:f[0]}), l==="ja"?h("div",{class:"kana",lang:"ja",text:f[1]}):null, h("div",{class:"pt",text:f[2]})))));
+  t.frases.forEach(f=>body.append(h("div",{class:"ex"}, playBtns(l,f[0],f[1]), h("div",{}, jpLine(l,f[0],f[1],"jp sh-text"), h("div",{class:"pt",text:f[2]})))));
   const tg=h("div",{class:"toggles"},
     o.listen ? h("label",{}, h("input",{type:"checkbox",id:"tv-show-"+t.id,onchange:e=>card.classList.toggle("sh-hidden",!e.target.checked)}),"Mostrar texto") : null,
     l==="ja" ? h("label",{}, h("input",{type:"checkbox",id:"tv-kana-"+t.id,checked:true,onchange:e=>body.classList.toggle("hide-kana",!e.target.checked)}),"Kana") : null,
@@ -7535,7 +7226,6 @@ function textsView(l){
     h("span",{class:"tt",lang:l,text:t.titulo}), h("span",{class:"small muted",text:t.frases.length+" frases · "+t.perguntas.length+" perguntas"}))));
   const modeSel=h("select",{id:"tx-mode"}, h("option",{value:"leitura",text:"Ler"}), h("option",{value:"escuta",text:"Só ouvir (texto escondido)"}));
   wrap.append(h("div",{class:"card stack"}, h("h3",{text:"Textos prontos"}),
-    h("p",{class:"small muted",text:"Textos curtos do seu nível com áudio e perguntas. Funcionam mesmo sem o professor."+(aiReady()?" Para textos novos a cada dia, use \"Gerar leitura\" abaixo.":"")}),
     h("div",{class:"row"}, h("label",{class:"small",for:"tx-mode",text:"Modo"}), modeSel), list), area);
   return wrap;
 }
@@ -7554,7 +7244,7 @@ function trajetoView(l){
   function playOne(){
     if(!playing || !pool.length) return;
     const it=pool[i%pool.length]; i++;
-    now.textContent=clean(it.text); nowK.textContent= l==="ja" ? (it.kana||"") : ""; nowPt.textContent=it.pt;
+    const fe=jpEl(l,it.text,""); now.replaceChildren(...fe.childNodes); nowK.textContent= l==="ja" && !fe.classList.contains("furig") ? (it.kana||"") : ""; nowPt.textContent=it.pt;
     const seq=[{text:sayOf(l,it.text,it.kana), l, rate, gap:900}];
     if(withPt) seq.push({text:it.pt, l:"pt", rate:1.05, gap:700});
     seq.push({text:sayOf(l,it.text,it.kana), l, rate:Math.max(0.6,rate-0.15), gap:1400});
@@ -7596,7 +7286,7 @@ function lessonView(p, o){
     h("label",{}, h("input",{type:"checkbox",id:"tg-pt-"+p.id,checked:true,onchange:e=>exBox.classList.toggle("hide-pt",!e.target.checked)}),"Tradução"));
   p.x.forEach(x=>exBox.append(h("div",{class:"ex"},
     playBtns(l,x[0],x[1]),
-    h("div",{}, h("div",{class:"jp",lang:l,text:clean(x[0])}), l==="ja"?h("div",{class:"kana",lang:"ja",text:x[1]}):null, h("div",{class:"pt",text:x[2]})))));
+    h("div",{}, jpLine(l,x[0],x[1],"jp"), h("div",{class:"pt",text:x[2]})))));
   wrap.append(h("div",{class:"row"}, h("h3",{text:"Exemplos"}), h("span",{class:"spacer"}), toggles), exBox);
   wrap.append(h("p",{class:"small muted",text:"Toque ▶ e repita em voz alta. A 2ª seta toca devagar."}));
 
@@ -7648,7 +7338,7 @@ function quickKnown(p, box, onKnown){
    Pomodoro
    ========================================================= */
 /* Planos de 25 min. O principal traz o ponto novo do dia; os extras alternam
-   leitura, escuta e conversa para o estudo não ficar repetitivo.
+   leitura, escuta e prática para o estudo não ficar repetitivo.
    21/10/2026: plano principal único, Escuta de 6 min com o shadowing dentro dela. */
 const PLANS = {
   main:[
@@ -7662,7 +7352,7 @@ const PLANS = {
     {id:"pausa",name:"Pausa",min:5,rest:true},
     {id:"input",name:"Leitura",min:7},
     {id:"vocab",name:"Palavras",min:4},
-    {id:"conversa",name:"Conversa",min:7},
+    {id:"escuta",name:"Escuta",min:7},
     {id:"fecha",name:"Relâmpago",min:2}],
   extraB:[
     {id:"pausa",name:"Pausa",min:5,rest:true},
@@ -7671,7 +7361,7 @@ const PLANS = {
     {id:"fecha",name:"Relâmpago",min:3}],
   extraC:[
     {id:"pausa",name:"Pausa",min:5,rest:true},
-    {id:"conversa",name:"Conversa",min:8},
+    {id:"pratica2",name:"Prática mista",min:8},
     {id:"input",name:"Leitura",min:7},
     {id:"vocab",name:"Palavras",min:5}],
   curto:[
@@ -7856,86 +7546,6 @@ function toast(msg){ const t=$("#gtoast"); if(!t) return; t.onclick=()=>{ t.hidd
 function stageSet(...els){ const st=$("#stage"); st.innerHTML=""; exBusy=false; els.forEach(e=>e&&st.append(e)); }
 
 /* dias desde o último dia estudado (qualquer idioma); null se nunca estudou */
-/* ---------- plano se-então (implementation intentions) ----------
-   "Se for [hora], depois de [gatilho], então abro o app" liga o estudo a uma pista do dia;
-   metanálise: efeito médio-grande na execução de metas (Gollwitzer e Sheeran, 2006).
-   O plano B ("se eu estiver cansado, então…") é o plano para o obstáculo. */
-const WD=["dom","seg","ter","qua","qui","sex","sáb"], ICS_DAY=["SU","MO","TU","WE","TH","FR","SA"];
-const PLANO_B={curta:"faço a sessão curta de 10 min", revisao:"faço só as revisões vencidas", poema:"ouço e leio um poema em voz alta"};
-function plano(){ const p=settings.plano; return p && p.hora && Array.isArray(p.dias) && p.dias.length ? p : null; }
-function planoText(p){ return "Se for "+p.hora+(p.gatilho?", "+p.gatilho:"")+", então abro o Language Master e começo o pomodoro."; }
-function planoNow(){
-  const p=plano(); if(!p || studiedOn(TODAY)) return null;
-  const now=new Date(), wd=now.getDay(); if(!p.dias.includes(wd)) return null;
-  const [hh,mm]=p.hora.split(":").map(Number), min=now.getHours()*60+now.getMinutes(), at=hh*60+(mm||0);
-  if(min<at-10) return null;
-  return min>at+120 ? "tarde" : "hora";
-}
-function planoForm(onSave){
-  const p=Object.assign({hora:"20:00", gatilho:"", dias:[0,1,2,3,4,5,6], b:"curta"}, settings.plano||{});
-  const hora=h("input",{type:"time",id:"pl-hora",value:p.hora});
-  const gat=h("input",{type:"text",id:"pl-gat",value:p.gatilho||"",placeholder:"Ex.: depois do jantar, no ônibus, ao chegar do trabalho",autocomplete:"off"});
-  const dias=new Set(p.dias);
-  const dayBox=h("div",{class:"segctl daypick",role:"group","aria-label":"Dias"});
-  WD.forEach((t,i)=>dayBox.append(h("button",{type:"button","aria-pressed":String(dias.has(i)),text:t,onclick:e=>{ dias.has(i)?dias.delete(i):dias.add(i); e.currentTarget.setAttribute("aria-pressed",String(dias.has(i))); }})));
-  const bSel=h("select",{id:"pl-b"}, Object.entries(PLANO_B).map(([v,t])=>h("option",{value:v,text:t}))); bSel.value=p.b||"curta";
-  const st=h("p",{class:"small muted"});
-  return h("div",{class:"stack"},
-    h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:"Se for (hora)"}), hora),
-    h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:"…e logo depois de (uma coisa que você já faz todo dia)"}), gat),
-    h("div",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:"Nos dias"}), dayBox),
-    h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:"Plano B: se eu estiver cansado ou sem tempo, então…"}), bSel),
-    h("div",{class:"row"}, h("button",{class:"btn primary",type:"button",text:"Salvar plano",onclick:()=>{
-      if(!hora.value || !dias.size){ st.textContent="Escolha a hora e pelo menos um dia."; return; }
-      settings.plano={hora:hora.value, gatilho:gat.value.trim(), dias:[...dias].sort(), b:bSel.value, criado:(settings.plano&&settings.plano.criado)||TODAY};
-      saveSettings(); onSave && onSave(); }})), st);
-}
-function icsFor(p){
-  const z=n=>String(n).padStart(2,"0"), now=new Date();
-  const stamp=now.getUTCFullYear()+z(now.getUTCMonth()+1)+z(now.getUTCDate())+"T"+z(now.getUTCHours())+z(now.getUTCMinutes())+"00Z";
-  // primeiro dia do plano a partir de amanhã (hora local "flutuante": a agenda usa o fuso dela)
-  let d=addDays(TODAY,1); for(let k=0;k<7 && !p.dias.includes(new Date(d+"T12:00").getDay());k++) d=addDays(d,1);
-  const [hh,mm]=p.hora.split(":");
-  const esc=s=>String(s).replace(/[\;,]/g,m=>"\\"+m).replace(/\n/g,"\\n");
-  const desc=planoText(p)+"\nPlano B: se estiver cansado ou sem tempo, "+PLANO_B[p.b||"curta"]+".\nhttps://claude.ai/artifact/GPoEsdsqijkeoYm6TjcHcJ";
-  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Language Master//PT-BR","CALSCALE:GREGORIAN","BEGIN:VEVENT",
-    "UID:lm-plano-"+Date.now()+"@language-master","DTSTAMP:"+stamp,"DTSTART:"+d.replace(/-/g,"")+"T"+hh+mm+"00","DURATION:PT25M",
-    "RRULE:FREQ=WEEKLY;BYDAY="+p.dias.map(i=>ICS_DAY[i]).join(","),
-    "SUMMARY:"+esc("語 Language Master: pomodoro de idiomas"),"DESCRIPTION:"+esc(desc),
-    "BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:"+esc(p.gatilho?"Depois de "+p.gatilho+": hora do pomodoro":"Hora do pomodoro"),"TRIGGER:PT0M","END:VALARM",
-    "END:VEVENT","END:VCALENDAR"].join("\r\n");
-}
-async function planoICS(st){
-  const p=plano(); if(!p) return;
-  st.className="status"; st.textContent="Gerando o evento…";
-  try{
-    const dl=await claude.use("downloads");
-    if(!dl){ st.className="status warn"; st.textContent="Download indisponível nesta visualização. Abra pelo link do app."; return; }
-    await dl.save({filename:"language-master-plano.ics", data:icsFor(p)});
-    st.className="status ok"; st.textContent="Abra o arquivo .ics: o Google Agenda, o Calendário do iPhone e o Outlook criam o evento semanal com alerta.";
-  }catch(e){ st.className="status warn"; st.textContent= e && e.code==="declined" ? "Download cancelado." : "Não consegui gerar o arquivo."; }
-}
-/* cartão do plano: no Hoje (compacto) e no Progresso (completo) */
-function planoCard(compact, rerender, onB){
-  const p=plano(), card=h("div",{class:compact?"plano stack":"card stack"}), st=h("div",{class:"status",role:"status"});
-  const edit=()=>{ card.innerHTML=""; card.append(h("h3",{text:"Seu plano se-então"}), planoForm(()=>{ (rerender||(()=>{}))(); })); };
-  if(!p){
-    card.append(h("div",{}, h("b",{text:"Monte seu plano se-então (1 min). "}), h("span",{class:"small",text:"Decidir hora e gatilho antes aumenta a chance de estudar de verdade (Gollwitzer e Sheeran, 2006)."})),
-      h("div",{class:"row"}, h("button",{class:"btn small primary",type:"button",text:"Montar plano",onclick:edit})));
-    return card;
-  }
-  const when=planoNow();
-  card.append(
-    when==="hora" ? h("div",{class:"small",style:"font-weight:700;color:var(--accent)",text:"É a sua hora"+(p.gatilho?": "+p.gatilho:"")+"."}) : null,
-    when==="tarde" ? h("div",{class:"row small"}, h("span",{style:"font-weight:700;color:var(--warn)",text:"Passou da hora do plano. Vale o plano B: "+PLANO_B[p.b||"curta"]+"."}),
-      onB ? h("button",{class:"btn small",type:"button",text:"Fazer o plano B",onclick:()=>onB(p.b||"curta")}) : null) : null,
-    h("div",{class:"small"}, h("b",{text:"Plano: "}), planoText(p)+" ", h("span",{class:"muted",text:"Plano B: "+PLANO_B[p.b||"curta"]+". Dias: "+p.dias.map(i=>WD[i]).join(", ")+"."})),
-    h("div",{class:"row"},
-      h("button",{class:"linkbtn",type:"button",text:"Adicionar à agenda (.ics)",onclick:()=>planoICS(st)}),
-      h("button",{class:"linkbtn",type:"button",text:"editar",onclick:edit})), st);
-  return card;
-}
-
 /* ---------- sanguessugas: palavras que você erra sempre ----------
    Depois de 3 esquecimentos no FSRS (ou 4 erros com mais erros que acertos) a palavra
    ganha um gancho de memória pelo método da palavra-chave: um som parecido em português
@@ -8027,96 +7637,6 @@ function errorDrill(l, errs, box){
   }).catch(e=>{ w.textContent=aiError(e)||""; });
 }
 
-/* ---------- diário de 3 frases ----------
-   Escrever sobre o próprio dia e receber correção logo em seguida: produção livre +
-   retorno imediato (Lyster e Saito, 2010). Cada correção entra no banco de erros. */
-function diarioLog(l){ const pf=store.perfil[l]; if(!Array.isArray(pf.diario)) pf.diario=[]; return pf.diario; }
-function diarioView(l){
-  const wrap=h("div",{class:"stack"});
-  const lr=learned(l), desafio=lr.length ? pick(lr.slice(-8)) : null;
-  const ta=h("textarea",{id:"diario-"+l,rows:"5",lang:l,placeholder: l==="ja" ? "例：今日は仕事が忙しかった。…" : "Z. B.: Heute war ich sehr müde. …"});
-  const st=h("p",{class:"small muted"}), out=h("div",{class:"stack"});
-  const hoje=diarioLog(l).find(x=>x.data===TODAY);
-  const btn=h("button",{class:"btn primary",type:"button",text: aiReady() ? "Corrigir com o professor" : "Salvar no diário"});
-  wrap.append(h("div",{class:"card stack"},
-    h("div",{class:"row"}, h("h3",{text:"Diário · 3 frases"}), h("span",{class:"spacer"}), h("span",{class:"jp small muted",text:"日記"})),
-    h("p",{class:"small",text:"Escreva 3 frases sobre o seu dia em "+LANGNAME[l]+". Sem dicionário primeiro: tente com o que sabe. "+(aiReady()?"O professor corrige e cada erro vai para o seu banco de erros.":"")}),
-    desafio ? h("p",{class:"small tip"}, h("b",{text:"Desafio de hoje: "}), "use ", h("span",{lang:l,text:desafio.t}), " ("+desafio.m+")") : null,
-    hoje ? h("p",{class:"small muted",text:"Você já escreveu hoje. Pode escrever de novo: a nova entrada também conta."}) : null,
-    ta, h("div",{class:"row"}, btn), st), out);
-  btn.addEventListener("click", async ()=>{
-    const txt=ta.value.trim(); if(txt.length<4){ ta.focus(); return; }
-    const entry={data:TODAY, texto:txt.slice(0,1200)};
-    if(!aiReady()){ diarioSave(l, entry, null); st.textContent="Salvo no diário."; ta.value=""; renderHist(); return; }
-    btn.disabled=true; out.innerHTML=""; st.textContent="O professor está corrigindo… (10 a 40 segundos)";
-    const ids=lr.slice(-30).map(p=>p.id+": "+p.t).join("; ");
-    const prompt=`Você é professor de ${LANGNAME[l]} de um aluno brasileiro, ${levelLine(l)}. Corrija o diário dele, frase por frase, sem mudar o que ele quis dizer.
-${desafio?`Desafio do dia: usar ${desafio.t} (${desafio.m}).`:""}
-Texto do aluno:
-"""${txt.slice(0,1200)}"""
-Para cada frase: "original"; "corrigida" (igual à original se estiver certa)${l==="ja"?'; "leitura" (a corrigida em hiragana, com espaços)':""}; "ok" (true se não tinha erro de gramática, vocabulário ou ortografia); "erros": lista de {"errado":"trecho exato do aluno","certo":"trecho corrigido","porque":"1 frase em português","ponto":"id do ponto da lista abaixo se o erro for sobre ele, senão vazio"}.
-Pontos já estudados (id: nome): ${ids||"nenhum"}
-Depois: "natural" (o texto todo como um nativo diria, curto), "desafioOk" (usou o ponto do desafio corretamente?), "comentario" (1 frase em português: o que melhorou ou o que observar).
-Responda só com JSON: {"frases":[{"original":"","corrigida":"",${l==="ja"?'"leitura":"",':""}"ok":true,"erros":[]}],"natural":"","desafioOk":false,"comentario":""}`;
-    try{
-      const r=await sampleFn.json(prompt,{cache:false});
-      if(!r || !Array.isArray(r.frases) || !r.frases.length) throw {code:"invalid_json"};
-      st.textContent=""; ta.value="";
-      diarioSave(l, entry, r); renderDiario(out, l, r); renderHist();
-    }catch(e){ st.textContent=aiError(e)||""; }
-    btn.disabled=false;
-  });
-  const hist=h("div"); wrap.append(hist);
-  function renderHist(){
-    hist.innerHTML=""; const log=diarioLog(l).slice(-6).reverse(); if(!log.length) return;
-    hist.append(h("details",{class:"card"}, h("summary",{text:"Entradas anteriores ("+diarioLog(l).length+")"}),
-      h("ul",{class:"errlist",style:"margin-top:8px"}, log.map(x=>h("li",{}, h("div",{class:"small muted",text:brDate(x.data)+(x.erros!=null?" · "+x.erros+" erro"+(x.erros!==1?"s":""):"")}),
-        h("div",{lang:l,text:x.texto}), x.natural ? h("div",{class:"small",lang:l}, h("b",{text:"Natural: "}), x.natural) : null)))));
-  }
-  renderHist();
-  return wrap;
-}
-function diarioSave(l, entry, r){
-  let nErr=0;
-  if(r){
-    r.frases.forEach(f=>{
-      const errs=Array.isArray(f.erros)?f.erros.filter(e=>e && e.errado && e.certo):[];
-      const ok=f.ok!==false && !errs.length;
-      eloUpdate(l,"escrita",DIFF[courseLevel(l)]||300,ok,"diario");
-      errs.forEach(e=>{
-        nErr++;
-        const p=e.ponto && C[l].byId[e.ponto] && !C[l].byId[e.ponto].kind ? C[l].byId[e.ponto] : null;
-        const id=l+"-escrita-"+(p?p.id:"diario")+"-"+slug(e.certo).slice(0,30);
-        const old=store.erros[id];
-        saveErro(id, old ? Object.assign({}, old, {erro:f.original||e.errado, ocorrencias:(old.ocorrencias||1)+1, ultima:TODAY, corrigido:false, acertosDepois:0})
-          : {idioma:l, competencia:"escrita", conteudo:p?p.id:"diario", ponto:p?p.t:"Diário", erro:f.original||e.errado, correta:f.corrigida||e.certo, causaProvavel:e.porque||"", ocorrencias:1, primeira:TODAY, ultima:TODAY, corrigido:false, acertosDepois:0});
-      });
-    });
-    entry.natural=String(r.natural||"").slice(0,1200); entry.erros=nErr;
-  }
-  const log=diarioLog(l); log.push(entry); if(log.length>40) log.splice(0, log.length-40);
-  savePerfil(l);
-  addDay(l, {prod:1, xp:r?15:8});
-}
-function renderDiario(out, l, r){
-  const card=h("div",{class:"card stack"}, h("h3",{text:"Correção"}));
-  r.frases.forEach(f=>{
-    const errs=Array.isArray(f.erros)?f.erros.filter(e=>e && e.errado):[];
-    const ok=f.ok!==false && !errs.length;
-    card.append(h("div",{class:"feedback "+(ok?"ok":"no")},
-      ok ? h("div",{class:"verdict",text:"Certo"}) : h("div",{class:"small"}, h("span",{class:"muted",text:"Você escreveu: "}), h("s",{lang:l,text:f.original||""})),
-      h("div",{class:"row",style:"flex-wrap:nowrap;align-items:flex-start"},
-        h("div",{style:"flex:1;min-width:0"}, h("div",{lang:l,style:"font-size:1.1rem;font-weight:500",text:f.corrigida||f.original||""}),
-          l==="ja"&&f.leitura ? h("div",{class:"small muted",lang:"ja",text:f.leitura}) : null),
-        playBtns(l, f.corrigida||f.original||"", f.leitura||"")),
-      errs.map(e=>h("div",{class:"small"}, h("span",{class:"wrong",lang:l,text:e.errado}), " → ", h("b",{lang:l,text:e.certo||""}), e.porque?" · "+e.porque:""))));
-  });
-  if(r.natural) card.append(h("div",{class:"stack",style:"gap:4px"}, h("div",{class:"row"}, h("span",{class:"eyebrow",text:"Como um nativo diria"}), h("span",{class:"spacer"}), playBtns(l, r.natural, "")), h("div",{lang:l,text:r.natural})));
-  if(r.comentario) card.append(h("p",{class:"small tip",text:(r.desafioOk?"Desafio cumprido. ":"")+r.comentario}));
-  card.append(h("p",{class:"small muted",text:"Leia a versão corrigida em voz alta duas vezes. Os erros já estão no banco de erros (aba Revisar)."}));
-  out.append(card);
-}
-
 function daysAway(){
   if(studiedOn(TODAY)) return 0;
   for(let k=1;k<=120;k++) if(studiedOn(addDays(TODAY,-k))) return k;
@@ -8125,28 +7645,23 @@ function daysAway(){
 function showIdle(){
   shownBlock="idle"; S=null;
   const l=state.lang, key=planKey(), short=key==="curto", main=isMainPlan(key);
-  const np=main?nextNew(l):null, due=dueItems(l).length, plan=planFor();
-  const away=daysAway(), first=!Object.keys(store.sessoes).length;
+  const np=main?nextNew(l):null, due=dueItems(l).length;
+  const away=daysAway();
   const other=l==="ja"?"de":"ja", dueOther=dueItems(other).length;
   const pl=newVocabPlan(l,null), nNew=pl.words.length+pl.kanji.length;
   const toggleShort=on=>{ state.short=on; persist(); syncPlan(); renderTimer(); showIdle(); };
-  const onB=b=>{ if(b==="curta") toggleShort(true); else if(b==="revisao"){ selectTab("revisar"); window.scrollTo(0,0); } else { praticarSeg="poemas"; selectTab("praticar"); window.scrollTo(0,0); } };
   const card=h("div",{class:"card stack"},
-    state.finished && studiedOn(TODAY) ? null : planoCard(true, showIdle, onB),
     h("div",{class:"row"}, h("span",{class:"eyebrow",text: short ? "Sessão curta · 10 min" : main ? "Seu pomodoro de hoje" : "Próximo pomodoro"}), h("span",{class:"spacer"}),
       state.finished ? null : h("button",{class:"linkbtn",type:"button",text: short ? "Prefiro o pomodoro completo" : "Só tenho 10 min",onclick:()=>toggleShort(!short)})),
     away!=null && away>=3 ? h("div",{class:"tip small"}, h("b",{text:"Bem-vindo de volta. "}), "Faz "+away+" dias. Sem problema: a revisão de hoje vem limitada e os itens mais antigos primeiro"+(due>35?"; palavras novas ficam em pausa até a fila baixar":"")+". "+(short?"":"Se o dia estiver corrido, a sessão curta de 10 min já conta para a sequência.")) : null,
     np ? h("div",{}, h("div",{class:"small muted",text:"Ponto novo de hoje"}), h("div",{class:"lesson-title",lang:l,style:"font-size:1.5rem",text:np.t}), h("div",{text:np.m}))
        : short ? h("p",{text:"Revisão, algumas palavras novas e um teste relâmpago. Sem aula nova: ela fica para o pomodoro completo."})
-       : !main ? h("p",{text:"Pomodoro extra: sem ponto novo. Leitura, escuta, conversa e prática com o que você já viu."})
+       : !main ? h("p",{text:"Pomodoro extra: sem ponto novo. Leitura, escuta e prática com o que você já viu."})
        : h("p",{text:"Você já viu todos os pontos da trilha. Os pomodoros agora focam em revisão, leitura e produção."}),
     h("div",{class:"row small"},
       h("span",{class:"chip"+(due?" s2":""),text: due ? due+" revis"+(due>1?"ões":"ão") : "sem revisões vencidas"}),
       h("span",{class:"chip",text: nNew ? nNew+" ite"+(nNew>1?"ns":"m")+" novo"+(nNew>1?"s":"") : "sem palavras novas hoje"})),
     (!learned(l).length && !(store.perfil[l]&&store.perfil[l].diagnostico)) ? h("div",{class:"tip small"}, "Primeira vez em "+LANGNAME[l]+"? Faça antes o ", h("button",{class:"linkbtn",type:"button",text:"teste de nível",onclick:()=>{ selectTab("progresso"); setTimeout(()=>{ const b=[...document.querySelectorAll("#tab-progresso button")].find(x=>/teste de nível/i.test(x.textContent)); b&&b.click(); window.scrollTo(0,0); },50); }}), " (10 min) para pular o que você já sabe.") : null,
-    h("details",{open:first||null}, h("summary",{class:"small",text:"O que acontece em cada bloco"}),
-      h("ul",{class:"plan"}, plan.map(b=>h("li",{}, h("span",{class:"min",text:b.min+" min"}), h("span",{}, h("b",{text:WHY[b.id][0]}), h("span",{class:"small muted",text:WHY[b.id][1]}))))),
-      h("p",{class:"small muted",text:"Cada bloco abre a atividade certa aqui embaixo e o tempo muda de bloco sozinho; se terminar antes, use Próximo bloco."})),
     dueOther && !state.startedAt ? h("div",{class:"row small muted"}, h("span",{lang:other,text:(other==="ja"?"日本語":"Deutsch")+": "+dueOther+" revis"+(dueOther>1?"ões":"ão")+" esperando."}),
       h("button",{class:"linkbtn",type:"button",text:"Revisar agora",onclick:()=>{ setLang(other,true); selectTab("revisar"); window.scrollTo(0,0); }})) : null);
   stageSet(card);
@@ -8158,7 +7673,7 @@ function showDone(){
     h("h2",{text: short ? "Sessão curta concluída" : "Pomodoro concluído"}),
     summaryView(S),
     h("p",{class:"small muted",text: state.done>=MAX_POMOS ? "Limite de "+MAX_POMOS+" sessões por dia. O que você estudou fixa melhor com intervalo."
-      : short ? "Já conta para a sequência. Se sobrar tempo hoje, o pomodoro completo traz a aula nova." : "Quer mais? O próximo pomodoro tem leitura, escuta ou conversa com o que você já viu."}));
+      : short ? "Já conta para a sequência. Se sobrar tempo hoje, o pomodoro completo traz a aula nova." : "Quer mais? O próximo pomodoro tem leitura, escuta ou prática com o que você já viu."}));
   stageSet(card);
 }
 function showBlock(i, auto){
@@ -8168,10 +7683,9 @@ function showBlock(i, auto){
   if(auto && !manualSkip) toast("Tempo do bloco acabou. Agora: "+b.name+"."); else toast("");
   manualSkip=false;
   const head=h("div",{class:"row"}, h("h2",{text:WHY[b.id][0]}), h("span",{class:"spacer"}), h("span",{class:"small muted",text:b.min+" min"}));
-  const intro=h("p",{class:"small muted",text:WHY[b.id][1]});
   const body=h("div",{class:"stack"});
-  stageSet(head, intro, body);
-  ({revisao:blockReview, aula:blockLesson, pratica:blockPractice, vocab:blockVocab, shadow:blockShadow, escuta:blockEscuta, fecha:blockClose, pausa:blockPause, input:blockReading, pratica2:blockMixed, conversa:blockConversa})[b.id](body);
+  stageSet(head, body);
+  ({revisao:blockReview, aula:blockLesson, pratica:blockPractice, vocab:blockVocab, shadow:blockShadow, escuta:blockEscuta, fecha:blockClose, pausa:blockPause, input:blockReading, pratica2:blockMixed, conversa:blockMixed})[b.id](body);
 }
 
 function blockVocab(box){
@@ -8315,7 +7829,6 @@ function blockClose(box){
   box.append(h("p",{class:"small",text:items.length+" ite"+(items.length>1?"ns":"m")+" de hoje, uma pergunta cada."}));
   runSeq(box, shuffle(items).map(p=> p.kind ? (d=> p.kind==="kanji" ? KEX.meaning(p,d) : (Math.random()<0.5 ? VEX.listen(p,d) : VEX.reverse(p,d))) : grammarMCStep(p,"Relâmpago")), summary);
 }
-function blockConversa(box){ box.append(conversaView(S.lang)); }
 function blockMixed(box){
   const l=S.lang, lr=learned(l);
   if(!lr.length){ box.append(h("div",{class:"card"},h("p",{text:"Ainda não há pontos estudados para misturar. Faça primeiro um pomodoro com aula."}))); return; }
@@ -8356,7 +7869,6 @@ function renderTrilha(){
   const tot=C[l].points.length, seen=learned(l).length, cur=courseLevel(l);
   box.append(h("div",{class:"card stack"},
     h("h2",{text: l==="ja" ? "N3 (revisão) → fim do N2" : "A2 → B1 → B2"}),
-    h("p",{class:"small",text:"Cada bloco tem 5 pontos de gramática e as palavras"+(l==="ja"?" e kanji":"")+" do mesmo nível. Um bloco fica concluído quando os pontos foram vistos e o conjunto chega a 75 % de domínio (memória estável por cerca de 3 semanas). Já sabe? Teste o bloco ou o nível inteiro e pule."}),
     h("div",{class:"small muted",text:seen+" de "+tot+" pontos de gramática já vistos · nível atual: "+cur})));
   const np=nextNew(l);
   LVL_ORDER[l].forEach(lvl=>{
@@ -8622,19 +8134,18 @@ function renderPraticar(){
   box.innerHTML="";
   box.append(h("div",{class:"sechead"}, h("h1",{text:"Praticar"}), h("span",{class:"jp",text:"稽古"})));
   const bar=h("div",{class:"segctl",role:"tablist","aria-label":"Praticar"});
-  [["leitura","Leitura"],["dicionario","Dicionário"],["diario","Diário"],["poemas","Poemas"],["escuta","Escuta"],["trajeto","Trajeto"],["conversa","Conversa"]].forEach(([k,t])=>bar.append(h("button",{type:"button",role:"tab","aria-selected":String(praticarSeg===k),text:t,onclick:()=>{ praticarSeg=k; renderPraticar(); }})));
+  [["leitura","Leitura"],["escuta","Escuta"],["trajeto","Trajeto"],["dicionario","Dicionário"]].forEach(([k,t])=>bar.append(h("button",{type:"button",role:"tab","aria-selected":String(praticarSeg===k),text:t,onclick:()=>{ praticarSeg=k; renderPraticar(); }})));
   box.append(bar);
   const key=l+"-"+praticarSeg+"-"+(aiReady()?1:0);
   if(!praticarCache[key]){
-    if(praticarSeg==="conversa") praticarCache[key]=conversaView(l);
-    else if(praticarSeg==="leitura"){ const w=h("div",{class:"stack"}, textsView(l), pedidosCard(l)); if(aiReady()) w.append(h("h3",{text:"Leitura nova com glossário (professor)"}), readerView(l)); praticarCache[key]=w; }
+    if(praticarSeg==="leitura"){ const w=h("div",{class:"stack"}, textsView(l)); if(aiReady()) w.append(h("h3",{text:"Leitura nova com glossário (professor)"}), readerView(l)); praticarCache[key]=w; }
     else if(praticarSeg==="escuta"){
       const w=h("div",{class:"stack"}), run=h("div",{class:"stack"}), tr=h("div",{class:"stack"});
       const start=()=>{ run.innerHTML=""; const st=listenSteps(l,10); if(!st.length){ run.append(h("p",{class:"small",text:semEscutaMsg(l,"Faça algumas aulas para ter frases para ouvir.")})); return; }
         runSeq(run, st, r=>{ run.innerHTML=""; run.append(h("div",{class:"card stack"}, h("p",{text:"Feito: "+r.ok+" certo(s), "+r.no+" erro(s)."}), h("button",{class:"btn primary",type:"button",text:"Mais 10",onclick:start}))); }); };
       const trecho=()=>{ tr.innerHTML=""; const pas=makePassage(l); if(!pas){ tr.append(h("p",{class:"small",text:semEscutaMsg(l,"Ainda há poucas frases com áudio para montar um trecho.")})); return; }
         tr.append(passageView(l,pas,end=>end.append(h("button",{class:"btn primary",type:"button",text:"Outro trecho",onclick:trecho})))); };
-      w.append(maratonaView(l), pedidosCard(l),
+      w.append(maratonaView(l),
         h("div",{class:"card stack"}, h("h3",{text:"Ouça e entenda"}),
           h("p",{class:"small muted",text:"10 frases do que você já estudou e dos textos do seu nível, a maioria longas, sem texto na tela. Toque em Devagar se precisar."}),
           h("button",{class:"btn primary",type:"button",text:"Começar",onclick:start})), run,
@@ -8644,8 +8155,6 @@ function renderPraticar(){
       praticarCache[key]=w;
     }
     else if(praticarSeg==="dicionario") praticarCache[key]=dicView(l);
-    else if(praticarSeg==="poemas") praticarCache[key]=poemsView(l);
-    else if(praticarSeg==="diario") praticarCache[key]=diarioView(l);
     else praticarCache[key]=trajetoView(l);
   }
   box.append(praticarCache[key]);
@@ -8726,150 +8235,6 @@ function dicCard(l, e){
 }
 
 /* =========================================================
-   Poemas: ler, ouvir, decorar, ordenar e entender
-   ========================================================= */
-const POEMS={ja:[],de:[]}; (window.LM_POEM||[]).forEach(p=>{ if(POEMS[p.lang]) POEMS[p.lang].push(p); });
-function poemSay(l, v){ return l==="ja" ? String(v[1]||v[0]).replace(/\s+/g,"") : clean(v[0]); }
-function poemLog(l){ const pf=store.perfil[l]; if(!pf.poemas) pf.poemas={}; return pf.poemas; }
-function poemMark(l, p, k, val){ const g=poemLog(l); g[p.id]=Object.assign({}, g[p.id]||{}, {[k]:val, data:TODAY}); savePerfil(l); }
-function poemPlayAll(l, p, rate){ return speakSeq(p.versos.map(v=>({text:poemSay(l,v), l, rate:rate||0.8, gap:l==="ja"?900:600}))); }
-function poemFace(l, p){
-  const face=h("div",{class:"poem-face "+(l==="ja"?"tate":"yoko"),lang:l});
-  p.versos.forEach((v,i)=>{ face.append(h("span",{class:"pv",text:v[0]})); if((p.quebras||[]).includes(i+1)) face.append(h("span",{class:"pgap","aria-hidden":"true"})); });
-  return h("div",{class:"poem-wrap"}, face);
-}
-function poemsView(l){
-  const wrap=h("div",{class:"stack"}), area=h("div",{class:"stack"}), list=h("div",{class:"textlist"});
-  const log=poemLog(l);
-  POEMS[l].forEach(p=>{ const g=log[p.id]||{};
-    list.append(h("button",{type:"button",onclick:()=>{ area.innerHTML=""; area.append(poemView(l,p,()=>{ area.innerHTML=""; window.scrollTo(0,0); })); reveal(area.firstChild); }},
-      h("span",{class:"row"}, h("span",{class:"chip",text:p.lvl}), g.decorado ? h("span",{class:"chip s6",text:"✓ decorado"}) : g.lido ? h("span",{class:"chip s2",text:"lido"}) : null),
-      h("span",{class:"tt",lang:l,text:p.titulo}), h("span",{class:"small muted",text:p.forma+" · "+p.autor+", "+p.ano})));
-  });
-  wrap.append(h("div",{class:"card stack"}, h("h3",{text:"Poemas"}),
-    h("p",{class:"small muted",text: l==="ja"
-      ? "Haiku, tanka e poesia clássica com leitura em kana, tradução e notas de gramática clássica. Ouça, leia, decore e coloque os versos em ordem."
-      : "Poesia alemã clássica e romântica com tradução e notas. Ouça, leia, decore e coloque os versos em ordem."}), list), area);
-  return wrap;
-}
-function poemView(l, p, after){
-  const out=h("div",{class:"stack"}), seg=h("div",{class:"segctl",role:"tablist","aria-label":"Estudo do poema"}), body=h("div",{class:"stack"});
-  let mode="ler";
-  const quiet=()=>{ try{ speechSynthesis.cancel(); }catch(e){} };
-  const modes=[["ler","Ler"],["decorar","Decorar"],["ordenar","Ordenar"]];
-  if(p.perguntas && p.perguntas.length) modes.push(["entender","Entender"]);
-  const draw=()=>{ quiet(); body.innerHTML="";
-    seg.querySelectorAll("button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.m===mode)));
-    body.append(mode==="ler" ? poemRead(l,p) : mode==="decorar" ? poemMemo(l,p) : mode==="ordenar" ? poemOrder(l,p) : poemQuiz(l,p));
-  };
-  modes.forEach(([k,t])=>seg.append(h("button",{type:"button",role:"tab","data-m":k,text:t,onclick:()=>{ mode=k; draw(); }})));
-  out.append(h("div",{class:"card stack"},
-      h("div",{class:"row"}, h("span",{class:"chip",text:p.forma}), h("span",{class:"small muted",text:p.autor+", "+p.ano}), h("span",{class:"spacer"}),
-        after ? h("button",{class:"linkbtn",type:"button",text:"fechar",onclick:()=>{ quiet(); after(); }}) : null),
-      h("h2",{lang:l,text:p.titulo}), poemFace(l,p), p.contexto ? h("p",{class:"small tip",text:p.contexto}) : null),
-    seg, body);
-  draw();
-  return out;
-}
-function poemRead(l, p){
-  const card=h("div",{class:"card stack"}), body=h("div",{class:"hide-pt"});
-  let stop=null;
-  const playAll=h("button",{class:"btn small primary",type:"button",text:"▶ Poema todo",onclick:()=>{ stop&&stop(); stop=poemPlayAll(l,p,0.8); }});
-  p.versos.forEach(v=>{ const t=poemSay(l,v);
-    body.append(h("div",{class:"ex"},
-      h("span",{class:"row",style:"gap:6px;flex-wrap:nowrap"}, iconBtn("play","Ouvir",()=>speak(t,l,{rate:0.9})), iconBtn("slow","Ouvir devagar",()=>speak(t,l,{rate:0.65}))),
-      h("div",{}, h("div",{class:"jp",lang:l,text:v[0]}), l==="ja"&&v[1] ? h("div",{class:"kana",lang:"ja",text:v[1]}) : null, h("div",{class:"pt",text:v[2]})))); });
-  const tg=h("div",{class:"toggles"},
-    l==="ja" ? h("label",{}, h("input",{type:"checkbox",id:"pm-kana-"+p.id,checked:true,onchange:e=>body.classList.toggle("hide-kana",!e.target.checked)}),"Kana") : null,
-    h("label",{}, h("input",{type:"checkbox",id:"pm-pt-"+p.id,onchange:e=>body.classList.toggle("hide-pt",!e.target.checked)}),"Tradução"));
-  const done=h("button",{class:"btn",type:"button",text:"Marcar como lido"});
-  const isRead=()=>!!(poemLog(l)[p.id]||{}).lido;
-  if(isRead()){ done.disabled=true; done.textContent="Lido"; }
-  done.addEventListener("click",()=>{ if(!isRead()){ addDay(l,{leit:1, xp:10}); poemMark(l,p,"lido",true); } done.disabled=true; done.textContent="Lido"; });
-  card.append(h("div",{class:"row"}, playAll, h("span",{class:"spacer"}), tg),
-    h("p",{class:"small muted",text:"Leia primeiro sem tradução. Ouça cada verso e repita em voz alta, no ritmo do áudio."}), body,
-    (p.notas&&p.notas.length) ? h("div",{class:"stack"}, h("h3",{text:"Notas"}), p.notas.map(n=>h("div",{class:"pnote"}, h("b",{lang:l,text:n[0]}), h("span",{text:n[1]})))) : null,
-    h("div",{class:"row"}, done));
-  const wrap=h("div",{class:"stack"}, card);
-  if(aiReady()) wrap.append(poemAsk(l,p));
-  return wrap;
-}
-function poemAsk(l, p){
-  const a=h("textarea",{id:"pmq-"+p.id,rows:"2",placeholder: l==="ja" ? "Ex.: por que けり e não た? Como ficaria em japonês moderno?" : "Ex.: por que hätt' e não hat? Como ficaria em alemão moderno?"});
-  const ans=h("div",{class:"answer",hidden:true}), send=h("button",{class:"btn small",type:"button",text:"Perguntar"});
-  send.addEventListener("click", async ()=>{
-    const q=a.value.trim(); if(!q) return; send.disabled=true; ans.hidden=false; ans.textContent="Pensando…";
-    const txt=p.versos.map(v=>v[0]).join("\n");
-    try{ await sampleFn(`Você é professor de ${LANGNAME[l]} de um aluno brasileiro, ${levelLine(l)}. Ele está estudando este poema (${p.titulo}, de ${p.autor}, ${p.ano}):\n${txt}\nPergunta do aluno: ${q}\nResponda em português, em até 6 frases, direto ao ponto. ${l==="ja"?"Todo exemplo em japonês vem com leitura em kana entre parênteses e tradução.":"Todo exemplo em alemão vem com tradução."}`,
-      {cache:false, onText:({text})=>{ ans.textContent=text; }}); }
-    catch(e){ ans.textContent=aiError(e)||""; }
-    send.disabled=false;
-  });
-  return h("div",{class:"card stack"}, h("h3",{text:"Perguntar ao professor sobre o poema"}), a, h("div",{class:"row"}, send), ans);
-}
-function poemMemo(l, p){
-  const card=h("div",{class:"card stack"});
-  const steps=["Leia o poema em voz alta duas vezes, junto com o áudio.",
-    "Metade de cada verso sumiu. Recite o poema todo; toque num verso só se travar.",
-    "Só sobrou o começo de cada verso. Recite de novo.",
-    "Agora de cor. Recite tudo e depois confira."];
-  let r=0, stop=null;
-  const hint=(t,lv)=>{ if(lv===0) return t; if(lv===3) return "";
-    if(l==="de"){ const w=t.split(" "); return w.slice(0, lv===1 ? Math.ceil(w.length/2) : 1).join(" "); }
-    const ch=[...t]; return ch.slice(0, lv===1 ? Math.ceil(ch.length/2) : Math.min(2,ch.length)).join(""); };
-  const listen=()=>h("button",{class:"btn small",type:"button",text:"▶ Ouvir",onclick:()=>{ stop&&stop(); stop=poemPlayAll(l,p,0.8); }});
-  const draw=()=>{ card.innerHTML="";
-    const list=h("div",{class:"memo",lang:l});
-    p.versos.forEach((v,i)=>{ const hv=hint(v[0],r), full=hv===v[0];
-      const line=h("button",{type:"button",class:"mline"+(full?" full":""),disabled:full||null,"aria-label":full?null:"Mostrar verso "+(i+1)}, h("span",{text:hv}), full ? null : h("span",{class:"mgap",text:"……"}));
-      if(!full) line.addEventListener("click",()=>{ line.replaceChildren(h("span",{text:v[0]})); line.classList.add("peek"); line.disabled=true; });
-      list.append(line);
-      if((p.quebras||[]).includes(i+1)) list.append(h("div",{class:"pgap-h"}));
-    });
-    card.append(h("div",{class:"row"}, h("span",{class:"chip s2",text:"Etapa "+(r+1)+" de 4"}), h("span",{class:"spacer"}), listen()),
-      h("p",{text:steps[r]}), list,
-      h("div",{class:"row"}, h("button",{class:"btn primary",type:"button",text: r<3 ? "Próxima etapa" : "Conferir",onclick:()=>{ stop&&stop(); if(r<3){ r++; draw(); } else finish(); }})));
-  };
-  const finish=()=>{ card.innerHTML="";
-    const list=h("div",{class:"memo",lang:l}); p.versos.forEach(v=>list.append(h("div",{class:"mline full",text:v[0]})));
-    card.append(h("h3",{text:"Confira"}), list, h("p",{class:"small muted",text:"Recitou tudo sem travar?"}),
-      h("div",{class:"row"},
-        h("button",{class:"btn primary",type:"button",text:"Sim, decorei",onclick:()=>{
-          eloUpdate(l,"speaking",DIFF[p.lvl]||250,true,"poema"); if(S) S.stats.ok++; addDay(l,{ok:1, xp:20}); poemMark(l,p,"decorado",true);
-          card.innerHTML=""; card.append(h("p",{text:"Poema decorado. Recite de novo amanhã, sem olhar, para fixar."}), listen()); }}),
-        h("button",{class:"btn",type:"button",text:"Ainda não",onclick:()=>{ addDay(l,{xp:5}); r=1; draw(); }})));
-  };
-  draw();
-  return card;
-}
-function poemOrder(l, p){
-  const card=h("div",{class:"card stack"});
-  const start=()=>{ card.innerHTML="";
-    const n=p.versos.length, picked=[], ans=h("div",{class:"memo",lang:l}), pool=h("div",{class:"stack",lang:l});
-    let order=shuffle(p.versos.map((_,i)=>i)), errs=0;
-    for(let k=0; n>1 && k<5 && order.every((x,i)=>x===i); k++) order=shuffle(order);
-    const end=()=>{ const ok=errs===0;
-      eloUpdate(l,"leitura",DIFF[p.lvl]||250,ok,"poema"); if(S) S.stats[ok?"ok":"no"]++; addDay(l,{[ok?"ok":"no"]:1, xp: ok?12:4});
-      card.append(h("p",{text: ok ? "Ordem perfeita." : "Concluído com "+errs+" erro(s)."}), h("div",{class:"row"}, h("button",{class:"btn",type:"button",text:"De novo",onclick:start}))); };
-    order.forEach(i=>{ const b=h("button",{type:"button",class:"opt",text:p.versos[i][0]});
-      b.addEventListener("click",()=>{ const want=picked.length;
-        if(i===want || p.versos[i][0]===p.versos[want][0]){ picked.push(i); b.remove(); ans.append(h("div",{class:"mline full",text:p.versos[want][0]})); speak(poemSay(l,p.versos[want]),l,{rate:0.9}); if(picked.length===n) end(); }
-        else { errs++; b.classList.add("wrong"); setTimeout(()=>b.classList.remove("wrong"),600); } });
-      pool.append(b); });
-    card.append(h("p",{text:"Toque nos versos na ordem do poema."}), ans, pool);
-  };
-  start();
-  return card;
-}
-function poemQuiz(l, p){
-  const out=h("div",{class:"stack"}); let n=0, right=0;
-  p.perguntas.forEach(q=>out.append(compQuestion(l,q,ok=>{ n++; if(ok) right++;
-    eloUpdate(l,"leitura",DIFF[p.lvl]||250,ok,"poema"); if(S) S.stats[ok?"ok":"no"]++; addDay(l,{[ok?"ok":"no"]:1, xp: ok?8:2});
-    if(n===p.perguntas.length) out.append(h("p",{class:"small",text:right+" de "+n+" certas."})); })));
-  return out;
-}
-
-/* =========================================================
    Aba Revisar
    ========================================================= */
 function forecast(l, days){
@@ -8899,7 +8264,6 @@ function renderRevisar(){
       learned(l).length ? h("button",{class:"btn",type:"button",text:"Prática mista",onclick:()=>{ run.innerHTML=""; runSeq(run, shuffle(learned(l)).slice(0,8).map(reviewStep), r=>{ run.innerHTML=""; run.append(h("div",{class:"card"},h("p",{text:"Feito: "+r.ok+" certo(s), "+r.no+" erro(s)."}))); }); }}) : null)), run);
   const acc=accuracy(l,7);
   box.append(h("div",{class:"card stack"}, h("h3",{text:"Próximos 7 dias"}), forecastView(l),
-    h("p",{class:"small muted",text:"Dias apagados não são dias de "+LANGNAME[l]+" no seu rodízio (mude em Progresso > Ajustes). Revisar um dia depois quase não muda a memória no FSRS, mas fila grande cansa: use o trajeto para esvaziar a fila aqui."}),
     h("p",{class:"small",text: acc.pct==null ? "Acerto dos últimos 7 dias: sem dados ainda." : "Acerto dos últimos 7 dias: "+acc.pct+"% ("+(acc.ok+acc.no)+" respostas). "+(acc.pct>95?"Muito fácil: pode aumentar o ritmo de palavras novas.":acc.pct<75?"Abaixo do ideal: o app já reduz as palavras novas até você firmar o que viu.":"Na faixa boa (75–95%): difícil o bastante para fixar, fácil o bastante para não desanimar.")})));
   const listBox=h("div",{class:"card stack"}); box.append(listBox);
   renderRevisarList(listBox);
@@ -8908,8 +8272,7 @@ function renderRevisar(){
 function renderRevisarList(listBox){
   const l=state.lang; listBox.innerHTML="";
   const errs=Object.entries(store.erros).filter(([,e])=>e.idioma===l && !e.corrigido).sort((a,b)=>a[1].ultima<b[1].ultima?1:-1);
-  listBox.append(h("h3",{text:"Banco de erros"}),
-    h("p",{class:"small muted",text:"Cada erro sai daqui depois de 3 acertos do mesmo item em dias seguintes. Um ponto errado 3 vezes em 2 semanas ganha uma sequência de correção no início da próxima revisão."}));
+  listBox.append(h("h3",{text:"Banco de erros"}));
   if(!errs.length){ listBox.append(h("p",{class:"small",text:"Nenhum erro em aberto."})); return; }
   if(aiReady()){ const drill=h("div",{class:"stack"});
     listBox.append(h("div",{class:"row"}, h("button",{class:"btn primary",type:"button",text:"Treinar meus erros (Claude)",onclick:()=>errorDrill(l, errs.map(([,e])=>e), drill)}),
@@ -8952,8 +8315,7 @@ function renderProgresso(){
   { const sg=box.lastChild; if(sg.children.length%2) sg.firstChild.classList.add("wide"); }
   // objetivo do curso
   const goal=h("div",{class:"card stack"}, h("h3",{text:"Objetivo: "+(l==="ja"?"concluir o N2":"chegar ao B2")}),
-    ...LVL_ORDER[l].map(x=>{ const pr=levelProgress(l,x); return h("div",{class:"lvlmeter"}, h("b",{text:x}), h("div",{class:"bar"}, h("i",{style:`width:${pr*100}%;background:${levelDone(l,x)?"var(--ok)":"var(--accent)"}`})), h("span",{class:"v",text:levelDone(l,x)?"concluído":Math.round(pr*100)+"%"})); }),
-    h("p",{class:"small muted",text:"O nível só conta como concluído com domínio real (itens com memória estável) ou com o exame do nível na Trilha. Assim o número não sobe só por clicar."}));
+    ...LVL_ORDER[l].map(x=>{ const pr=levelProgress(l,x); return h("div",{class:"lvlmeter"}, h("b",{text:x}), h("div",{class:"bar"}, h("i",{style:`width:${pr*100}%;background:${levelDone(l,x)?"var(--ok)":"var(--accent)"}`})), h("span",{class:"v",text:levelDone(l,x)?"concluído":Math.round(pr*100)+"%"})); }));
   const prova = l==="ja" ? settings.provaJa : settings.provaDe;
   if(prova){ const dd=diffDays(TODAY,prova); if(dd>=0) goal.append(h("p",{}, h("span",{class:"countdown",text:dd+" dias"}), " até a prova em "+brDate(prova)+"/"+prova.slice(0,4)+".")); }
   box.append(goal);
@@ -8967,47 +8329,12 @@ function renderProgresso(){
     const cls = oj&&od ? "both" : oj ? "ja" : od ? "de" : (st.freezes.includes(iso)?"freeze":"");
     days.append(h("div",{class:"day "+cls,title:brDate(iso)})); }
   box.append(h("div",{class:"card"}, h("h3",{text:"Últimos 14 dias"}), days,
-    h("div",{class:"row small muted",style:"margin-top:8px;gap:14px"}, h("span",{}, h("span",{style:"color:var(--ja)",text:"■"})," japonês"), h("span",{}, h("span",{style:"color:var(--de)",text:"■"})," alemão"), h("span",{text:"▢ dia protegido"})),
-    h("p",{class:"small muted",style:"margin-top:6px",text:"Dia estudado = 10 respostas, uma sessão curta ou um pomodoro. Um dia perdido por semana não quebra a sequência."})));
-  box.append(h("div",{class:"card stack"}, h("h3",{text:"Sua curva do esquecimento (FSRS)"}), forgettingChart(l)));
+    h("div",{class:"row small muted",style:"margin-top:8px;gap:14px"}, h("span",{}, h("span",{style:"color:var(--ja)",text:"■"})," japonês"), h("span",{}, h("span",{style:"color:var(--de)",text:"■"})," alemão"), h("span",{text:"▢ dia protegido"}))));
   const diag=pf.diagnostico;
   const dg=h("div",{class:"card stack"}, h("h3",{text:"Teste de nível"}),
     h("p",{class:"small",text: diag ? "Último teste em "+brDate(diag.data)+": gramática até a unidade "+diag.unidade+"; vocabulário "+Object.entries(diag.vocab||{}).map(([k,v])=>k+" ≈ "+v+"%").join(" · ")+"." : "Cerca de 10 minutos. Coloca você no ponto certo da trilha e marca como conhecido o que você já domina."}),
     h("button",{class:"btn "+(diag?"":"primary"),type:"button",style:"align-self:flex-start",text: diag?"Refazer teste":"Fazer teste de nível",onclick:()=>{ placementActive=true; dg.replaceWith(placementView(l,()=>updateBadge())); }}));
   box.append(dg);
-  // competências
-  if(pf.competencias){
-    const cp=h("div",{class:"card stack"}, h("h3",{text:"Estimativa por competência"}),
-      h("p",{class:"small",text:"Gramática: "+levelText(l)+" (estimativa, escala interna 0–600)."}));
-    const marks = l==="ja" ? ["N5","N4","N3","N2","N1","+"] : ["A1","A2","B1","B2","C1","C2"];
-    COMPS[l].forEach(([k,name])=>{
-      const c=pf.competencias[k]; if(!c) return;
-      const ev=c.evidencias||0;
-      const lo=Math.max(0,c.rating-c.margem), hi=Math.min(600,c.rating+c.margem);
-      cp.append(h("div",{class:"comp"}, h("span",{text:name}),
-        h("div",{class:"scale"}, h("i",{style:`left:${lo/6}%;width:${(hi-lo)/6}%`}), ev?h("b",{style:`left:${c.rating/6}%`}):null),
-        h("span",{class:"val",text: ev ? marks[Math.min(5,Math.floor(c.rating/100))]+" · "+c.rating : "não avaliado"})));
-    });
-    cp.append(h("p",{class:"small muted",text:"A faixa clara é a margem de erro: ela encolhe a cada resposta. Fala é estimada pela conversa escrita (o microfone é bloqueado dentro do Claude)."}));
-    box.append(cp);
-  }
-  box.append(h("details",{class:"card"}, h("summary",{text:"Como o app decide o que você estuda (e por quê)"}),
-    h("ul",{class:"small",style:"padding-left:18px;margin:8px 0 0;display:flex;flex-direction:column;gap:6px"},
-      h("li",{}, "Repetição espaçada com FSRS-6: cada item tem estabilidade S e dificuldade D; a lembrança cai numa curva de potência e o item volta quando a chance prevista chega à sua retenção-alvo (padrão 90 %). Parâmetros padrão do ", h("a",{href:"https://github.com/open-spaced-repetition/py-fsrs",target:"_blank",rel:"noopener",text:"py-fsrs"}), "; algoritmo descrito por ", h("a",{href:"https://doi.org/10.1145/3534678.3539081",target:"_blank",rel:"noopener",text:"Ye, Su e Cao (2022)"}), "."),
-      h("li",{}, "Espaçar é melhor que concentrar: ", h("a",{href:"https://doi.org/10.1037/0033-2909.132.3.354",target:"_blank",rel:"noopener",text:"Cepeda et al. (2006)"}), ", metanálise de prática distribuída."),
-      h("li",{}, "Lembrar sem pista fixa mais que reler (efeito de testagem): ", h("a",{href:"https://doi.org/10.1126/science.1152408",target:"_blank",rel:"noopener",text:"Karpicke e Roediger (2008)"}), ". Por isso o formato vai de reconhecer → ouvir → escrever sem ajuda."),
-      h("li",{}, "Misturar tipos na mesma sessão ajuda a distinguir o que é parecido: ", h("a",{href:"https://doi.org/10.1111/j.1467-9280.2008.02127.x",target:"_blank",rel:"noopener",text:"Kornell e Bjork (2008)"}), "."),
-      h("li",{}, "Ler bastante no seu nível melhora a leitura: ", h("a",{href:"https://doi.org/10.1002/tesq.157",target:"_blank",rel:"noopener",text:"Nakanishi (2015)"}), ", metanálise de leitura extensiva."),
-      h("li",{}, "Correção logo depois da sua produção tem efeito duradouro, maior em respostas livres: ", h("a",{href:"https://doi.org/10.1017/S0272263109990520",target:"_blank",rel:"noopener",text:"Lyster e Saito (2010)"}), ". É o que a conversa e a \"frase sua\" fazem."),
-      h("li",{}, "Metas, XP e níveis têm efeito pequeno mas real na motivação e no aprendizado: ", h("a",{href:"https://doi.org/10.1007/s10648-019-09498-w",target:"_blank",rel:"noopener",text:"Sailer e Homner (2020)"}), ". Aqui o nível do curso depende do domínio, não do XP, para o jogo não substituir o estudo."),
-      h("li",{}, "Hábito se forma repetindo todo dia no mesmo contexto, e perder um dia isolado quase não atrapalha: ", h("a",{href:"https://doi.org/10.1002/ejsp.674",target:"_blank",rel:"noopener",text:"Lally et al. (2010)"}), ". Por isso existem a sessão curta de 10 min e o dia protegido na sequência."),
-      h("li",{}, "Plano se-então (\"se for 20h, depois do jantar, então estudo\") aumenta a chance de cumprir a meta: ", h("a",{href:"https://www.socmot.uni-konstanz.de/publications/implementation-intentions-and-goal-achievement-meta-analysis-effects-and-processes",target:"_blank",rel:"noopener",text:"Gollwitzer e Sheeran (2006)"}), ", metanálise de 94 testes."),
-      h("li",{}, "Leitura i+1: com cerca de 98 % das palavras conhecidas a compreensão sem ajuda fica adequada; com 95 %, mínima: ", h("a",{href:"https://nflrc.hawaii.edu/rfl/item/43",target:"_blank",rel:"noopener",text:"Hu e Nation (2000)"}), ". Por isso a leitura gerada usa as suas palavras e marca só poucas novas."),
-      h("li",{}, "Chutar antes da aula, mesmo errando, fixa mais que só estudar: ", h("a",{href:"https://doi.org/10.1037/a0016496",target:"_blank",rel:"noopener",text:"Richland, Kornell e Kao (2009)"}), ". É o pré-teste antes de cada ponto novo."),
-      h("li",{}, "Palavra que você erra sempre ganha um gancho pelo método da palavra-chave (som parecido + imagem): ", h("a",{href:"https://doi.org/10.1037/0278-7393.1.2.126",target:"_blank",rel:"noopener",text:"Atkinson e Raugh (1975)"}), "."),
-      h("li",{text:"Erro recorrente (3 vezes em 2 semanas) abre uma sequência de correção: contraste, reconhecimento, montagem e produção."}),
-      h("li",{text:"Carga controlada: 8–10 palavras novas por dia (máx. 20), metade se houver mais de 35 revisões vencidas ou acerto abaixo de 70 %, zero acima de 60 vencidas. Esses números são escolhas de desenho, não resultados de pesquisa."}))));
-  box.append(planoCard(false, renderProgresso));
   // ajustes
   const vs=h("div",{class:"status",role:"status"}), bs=h("div",{class:"status",role:"status"});
   const sel=(id,label,val,opts,onch)=>{ const s=h("select",{id,onchange:e=>{ onch(e.target.value); saveSettings(); scheduleUI(); }}, opts.map(([v,t])=>h("option",{value:v,text:t}))); s.value=String(val); return h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:label}), s); };
@@ -9017,9 +8344,8 @@ function renderProgresso(){
     sel("metaSel","Meta de pomodoros por dia",settings.metaPomos,[["1","1 pomodoro (25 min)"],["2","2 pomodoros"],["3","3 pomodoros"]],v=>{ settings.metaPomos=Number(v); for(const x of ["ja","de"]) if(store.perfil[x] && store.perfil[x].metas) store.perfil[x].metas.reset=true; }),
     sel("retSel","Retenção-alvo das revisões",settings.retencao,[["0.85","85 % (menos revisões, mais esquecimento)"],["0.9","90 % (recomendado)"],["0.95","95 % (mais revisões, para véspera de prova)"]],v=>{ settings.retencao=Number(v); }),
     h("label",{class:"stack",style:"gap:4px"}, h("span",{class:"small",text:"Data da prova de "+LANGNAME[l]+" (opcional: mostra a contagem regressiva)"}), provaInp),
-    h("p",{class:"small muted",text:"Datas de JLPT e Goethe mudam a cada ano: confira no site oficial antes de marcar."}),
+    sel("furiSel","Leitura do japonês",settings.furigana===false?"0":"1",[["1","Furigana sobre os kanji"],["0","Kana embaixo da frase"]],v=>{ settings.furigana=v==="1"; for(const k in praticarCache) delete praticarCache[k]; }),
     sel("vozSel","Voz do japonês",settings.voz,[["texto","Ler a frase com kanji (padrão)"],["kana","Ler pela leitura em kana"]],v=>{ settings.voz=v; }),
-    h("p",{class:"small muted",text:"Se a voz ler algum kanji errado, troque para kana. A leitura em kana pode errar a partícula は."}),
     sel("audSel","Áudio",settings.audioNativo===false?"0":"1",[["1","Gravações e vozes do app (recomendado)"],["0","Só a voz do navegador (Chrome)"]],v=>{ settings.audioNativo=v==="1"; }),
     h("p",{class:"small muted"}, "Gravações: Wikimedia Commons (Wiktionary e Lingua Libre), cada uma com autor e licença. Frases e palavras sem gravação: voz sintética "+(l==="ja"?"VOICEVOX:四国めたん":"Piper (dados Thorsten-Voice, CC0)")+". ", h("a",{href:"dados/LICENCAS.md",target:"_blank",rel:"noopener",text:"Créditos completos"}), "."),
     h("div",{class:"row"},
@@ -9189,4 +8515,6 @@ try{ const t=sessionStorage.getItem("lm-tab"); if(t && t!=="hoje") selectTab(t);
 initStore();
 })();
 </script>
+
+
 
