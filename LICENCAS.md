@@ -12,12 +12,15 @@ Gerado automaticamente por `gerar.py`. Cada base mantem a licenca da fonte.
 | [Wiktionary](https://en.wiktionary.org) via [kaikki.org](https://kaikki.org) ([wiktextract](https://github.com/tatuylonen/wiktextract)) | alemao: artigo, plural, verbos, IPA, significado, exemplo | CC BY-SA 4.0 (e GFDL) |
 | [Wikimedia Commons](https://commons.wikimedia.org) (Wiktionary e [Lingua Libre](https://lingualibre.org)) | audio nativo | licenca de cada arquivo (lista abaixo) |
 | [VOICEVOX](https://voicevox.hiroshiba.jp/) | audio sintetico do japones sem gravacao nativa e das frases do app | termos do VOICEVOX; credito: VOICEVOX:四国めたん |
+| [Tatoeba](https://tatoeba.org) (frases reais da Escuta) | texto das frases e traducoes | CC BY 2.0 FR (autor de cada frase abaixo) |
+| Gravacoes do [Tatoeba](https://tatoeba.org) | audio nativo das frases da Escuta | licenca escolhida por quem gravou (so CC BY, CC BY-SA, CC0; lista abaixo) |
+| [kuroshiro](https://github.com/hexenq/kuroshiro) + [kuromoji.js](https://github.com/takuyaa/kuromoji.js) (dicionario IPADIC) | furigana automatica | MIT / Apache 2.0 |
 | [Piper](https://github.com/OHF-Voice/piper1-gpl) + [Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice) | audio sintetico das frases em alemao do app | dados CC0; credito: Piper, voz de_DE-thorsten-medium (dados Thorsten-Voice, CC0) |
 
 ## Resumo desta versao
 
-- de: 4782 palavras | audio nativo 4626 | sintetico 0 | 16 pacotes MP3 | frases do app com audio: 1890
-- ja: 8000 palavras | audio nativo 1496 | sintetico 6504 | 27 pacotes MP3 | frases do app com audio: 2725
+- de: 4782 palavras | audio nativo 4626 | sintetico 0 | 16 pacotes MP3 | frases do app com audio: 1839 | frases do Tatoeba: 10
+- ja: 8000 palavras | audio nativo 2206 | sintetico 5794 | 27 pacotes MP3 | frases do app com audio: 2695 | frases do Tatoeba: 0
 
 ## Audios nativos (autor e licenca de cada arquivo)
 
@@ -4764,12 +4767,12 @@ Recorder: Sebastian Wallroth | CC0 |
 | de-05997 | [De-Charaktere.ogg](https://commons.wikimedia.org/wiki/File%3ADe-Charaktere.ogg) | Jeuwre | CC BY-SA 4.0 |
 | de-05998 | [De-eingebaut.ogg](https://commons.wikimedia.org/wiki/File%3ADe-eingebaut.ogg) | Jeuwre | CC BY-SA 4.0 |
 | de-05999 | [De-Eishockey.ogg](https://commons.wikimedia.org/wiki/File%3ADe-Eishockey.ogg) | Kampy | CC BY-SA 3.0 |
-| ja-1580640 | [LL-Q5287 (jpn)-I JethroBT-人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E4%BA%BA.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1580640 | [LL-Q5287 (jpn)-Fukujinzuke-人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2820690 | [LL-Q5287 (jpn)-Fukujinzuke-いい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2216120 | [LL-Q5287 (jpn)-Wiktionairy-これ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Wiktionairy-%E3%81%93%E3%82%8C.wav) | Speaker: Wiktionairy
-Recorder: Wiktionairy | CC0 |
+| ja-2216120 | [LL-Q5287 (jpn)-Fukujinzuke-これ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1468060 | [LL-Q5287 (jpn)-Fukujinzuke-年.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1375610 | [LL-Q5287 (jpn)-Fukujinzuke-なる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%82%8B.wav) | Speaker: Fukujinzuke
@@ -4788,13 +4791,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1311110 | [LL-Q5287 (jpn)-Fukujinzuke-私.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%81.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1160790 | [LL-Q5287 (jpn)-Zsrtrgh-一.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E4%B8%80.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
-| ja-1288850 | [LL-Q5287 (jpn)-I JethroBT-今.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E4%BB%8A.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1160790 | [LL-Q5287 (jpn)-Fukujinzuke-一.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1288850 | [LL-Q5287 (jpn)-Fukujinzuke-今.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1516925 | [LL-Q5287 (jpn)-Fukujinzuke-方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1516930 | [LL-Q5287 (jpn)-Fukujinzuke-方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1582300 | [LL-Q5287 (jpn)-Fukujinzuke-など.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%81%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1318610 | [LL-Q5287 (jpn)-Fukujinzuke-自分.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%AA%E5%88%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1013190 | [LL-Q5287 (jpn)-Fukujinzuke-より.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%88%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1392580 | [LL-Q5287 (jpn)-Fukujinzuke-前.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%89%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -4802,37 +4811,45 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1315920 | [LL-Q5287 (jpn)-Fukujinzuke-時間.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%99%82%E9%96%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1604890 | [LL-Q5287 (jpn)-葵心-目.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%9B%AE.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1012480 | [LL-Q5287 (jpn)-Fukujinzuke-もう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%82%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1604890 | [LL-Q5287 (jpn)-Fukujinzuke-目.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9B%AE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1576260 | [LL-Q5287 (jpn)-Fukujinzuke-一日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2225040 | [LL-Q5287 (jpn)-Fukujinzuke-一日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1600900 | [LL-Q5287 (jpn)-Fukujinzuke-話.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A9%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1191730 | [LL-Q5287 (jpn)-Zsrtrgh-家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%AE%B6.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
-| ja-1269320 | [LL-Q5287 (jpn)-Zsrtrgh-後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%BE%8C.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1191730 | [LL-Q5287 (jpn)-Fukujinzuke-家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1269320 | [LL-Q5287 (jpn)-Fukujinzuke-後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1605820 | [LL-Q5287 (jpn)-Fukujinzuke-良い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%89%AF%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1184270 | [LL-Q5287 (jpn)-Fukujinzuke-ください.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1461140 | [LL-Q5287 (jpn)-I JethroBT-二.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E4%BA%8C.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
-| ja-1352130 | [LL-Q5287 (jpn)-葵心-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%B8%8A.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1352130 | [LL-Q5287 (jpn)-Fukujinzuke-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1584460 | [LL-Q5287 (jpn)-Fukujinzuke-万.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%87.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1416830 | [LL-Q5287 (jpn)-Fukujinzuke-誰.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AA%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1522150 | [LL-Q5287 (jpn)-Fukujinzuke-本.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2847612 | [LL-Q5287 (jpn)-Zsrtrgh-あれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%82%E3%82%8C.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
-| ja-1587040 | [LL-Q5287 (jpn)-Zsrtrgh-言う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E8%A8%80%E3%81%86.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-2847612 | [LL-Q5287 (jpn)-Fukujinzuke-あれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1587040 | [LL-Q5287 (jpn)-Fukujinzuke-言う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%80%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1304970 | [LL-Q5287 (jpn)-Fukujinzuke-仕事.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%95%E4%BA%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1451750 | [LL-Q5287 (jpn)-Fukujinzuke-同じ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%8C%E3%81%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1536010 | [LL-Q5287 (jpn)-Fukujinzuke-問題.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%95%8F%E9%A1%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1527110 | [LL-Q5287 (jpn)-Fukujinzuke-まだ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BE%E3%81%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1327190 | [LL-Q5287 (jpn)-Fukujinzuke-手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -4840,7 +4857,7 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1579350 | [LL-Q5287 (jpn)-Fukujinzuke-三.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1592250 | [LL-Q5287 (jpn)-Fukujinzuke-くに.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8F%E3%81%AB.wav) | Speaker: Fukujinzuke
+| ja-1592250 | [LL-Q5287 (jpn)-Fukujinzuke-国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1579110 | [LL-Q5287 (jpn)-Fukujinzuke-今日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -4858,11 +4875,15 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1344930 | [LL-Q5287 (jpn)-Fukujinzuke-女.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A5%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1578850 | [LL-Q5287 (jpn)-Zsrtrgh-行く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E8%A1%8C%E3%81%8F.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1578850 | [LL-Q5287 (jpn)-Fukujinzuke-行く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%8C%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1316380 | [LL-Q5287 (jpn)-Fukujinzuke-次.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AC%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1259290 | [LL-Q5287 (jpn)-Fukujinzuke-見る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A6%8B%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1156800 | [LL-Q5287 (jpn)-Fukujinzuke-意味.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%8F%E5%91%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1163400 | [LL-Q5287 (jpn)-Fukujinzuke-一緒.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E7%B7%92.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1582120 | [LL-Q5287 (jpn)-葵心-店.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%BA%97.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -4874,18 +4895,22 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1502390 | [LL-Q5287 (jpn)-Fukujinzuke-物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%89%A9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1198550 | [LL-Q5287 (jpn)-I JethroBT-会社.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E4%BC%9A%E7%A4%BE.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1198550 | [LL-Q5287 (jpn)-Fukujinzuke-会社.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%9A%E7%A4%BE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1380440 | [LL-Q5287 (jpn)-Fukujinzuke-声.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A3%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1582310 | [LL-Q5287 (jpn)-Zsrtrgh-頭.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E9%A0%AD.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1582310 | [LL-Q5287 (jpn)-Fukujinzuke-頭.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A0%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1579840 | [LL-Q5287 (jpn)-I JethroBT-十.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%8D%81.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1348870 | [LL-Q5287 (jpn)-Fukujinzuke-少し.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%91%E3%81%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1188890 | [LL-Q5287 (jpn)-Fukujinzuke-いつも.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A4%E3%82%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1307850 | [LL-Q5287 (jpn)-葵心-子供.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%AD%90%E4%BE%9B.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1307850 | [LL-Q5287 (jpn)-Fukujinzuke-子供.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%90%E4%BE%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1004500 | [LL-Q5287 (jpn)-Fukujinzuke-こちら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%A1%E3%82%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1531710 | [LL-Q5287 (jpn)-Fukujinzuke-名前.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%8D%E5%89%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1184140 | [LL-Q5287 (jpn)-Fukujinzuke-下.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8B.wav) | Speaker: Fukujinzuke
@@ -4916,10 +4941,12 @@ Recorder: 葵心 | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1254790 | [LL-Q5287 (jpn)-Fukujinzuke-結婚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%90%E5%A9%9A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1203250 | [LL-Q5287 (jpn)-Fukujinzuke-外.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1080510 | [LL-Q5287 (jpn)-CKali-テレビ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%83%86%E3%83%AC%E3%83%93.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1357600 | [LL-Q5287 (jpn)-葵心-色.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E8%89%B2.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1357600 | [LL-Q5287 (jpn)-Fukujinzuke-色.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%89%B2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1340450 | [LL-Q5287 (jpn)-CKali-出来る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%87%BA%E6%9D%A5%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1540170 | [LL-Q5287 (jpn)-葵心-友達.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%8F%8B%E9%81%94.wav) | Speaker: 葵心
@@ -4934,24 +4961,26 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1499720 | [LL-Q5287 (jpn)-Fukujinzuke-風.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A2%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1454080 | [LL-Q5287 (jpn)-I JethroBT-道.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E9%81%93.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1454080 | [LL-Q5287 (jpn)-Fukujinzuke-道.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1001820 | [LL-Q5287 (jpn)-Fukujinzuke-お金.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E9%87%91.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1443840 | [LL-Q5287 (jpn)-Fukujinzuke-電話.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%BB%E8%A9%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1584660 | [LL-Q5287 (jpn)-I JethroBT-明日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E6%98%8E%E6%97%A5.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY 4.0 |
+| ja-1584660 | [LL-Q5287 (jpn)-Fukujinzuke-明日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%8E%E6%97%A5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1275640 | [LL-Q5287 (jpn)-Fukujinzuke-口.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1091500 | [LL-Q5287 (jpn)-Fukujinzuke-ニュース.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1194500 | [LL-Q5287 (jpn)-フィリピン人-花.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E4%BA%BA-%E8%8A%B1.wav) | Speaker: フィリピン人
-Recorder: フィリピン人 | CC0 |
+| ja-1194500 | [LL-Q5287 (jpn)-Fukujinzuke-花.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8A%B1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1605870 | [LL-Q5287 (jpn)-Fukujinzuke-よく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%88%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1428280 | [LL-Q5287 (jpn)-I JethroBT-朝.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E6%9C%9D.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY 4.0 |
+| ja-1428280 | [LL-Q5287 (jpn)-Fukujinzuke-朝.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%9D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1577200 | [LL-Q5287 (jpn)-Fukujinzuke-かわいい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1547720 | [LL-Q5287 (jpn)-Fukujinzuke-来る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9D%A5%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1305990 | [LL-Q5287 (jpn)-Fukujinzuke-使う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%BF%E3%81%86.wav) | Speaker: Fukujinzuke
@@ -4968,25 +4997,33 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1413240 | [LL-Q5287 (jpn)-Fukujinzuke-大学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1404630 | [LL-Q5287 (jpn)-I JethroBT-足.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E8%B6%B3.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY 4.0 |
-| ja-1183720 | [LL-Q5287 (jpn)-葵心-音楽.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%9F%B3%E6%A5%BD.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1404630 | [LL-Q5287 (jpn)-Fukujinzuke-足.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B6%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1412890 | [LL-Q5287 (jpn)-Fukujinzuke-大きな.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E3%81%8D%E3%81%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1183720 | [LL-Q5287 (jpn)-Fukujinzuke-音楽.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9F%B3%E6%A5%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1010080 | [LL-Q5287 (jpn)-Fukujinzuke-はい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AF%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1524720 | [LL-Q5287 (jpn)-Fukujinzuke-毎日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AF%8E%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1490220 | [LL-Q5287 (jpn)-Fukujinzuke-病院.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%97%85%E9%99%A2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1584930 | [LL-Q5287 (jpn)-Zsrtrgh-あまり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%82%E3%81%BE%E3%82%8A.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
-| ja-1258330 | [LL-Q5287 (jpn)-葵心-犬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%8A%AC.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
-| ja-1201190 | [LL-Q5287 (jpn)-葵心-海.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E6%B5%B7.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1584930 | [LL-Q5287 (jpn)-Fukujinzuke-あまり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%BE%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1258330 | [LL-Q5287 (jpn)-Fukujinzuke-犬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8A%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1201190 | [LL-Q5287 (jpn)-Fukujinzuke-海.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B5%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1597890 | [LL-Q5287 (jpn)-Fukujinzuke-作る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%9C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1388740 | [LL-Q5287 (jpn)-Fukujinzuke-千.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%83.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1242160 | [LL-Q5287 (jpn)-Fukujinzuke-近く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BF%91%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1587610 | [LL-Q5287 (jpn)-Fukujinzuke-嫌.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AB%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001140 | [LL-Q5287 (jpn)-Fukujinzuke-ええ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%88%E3%81%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1310730 | [LL-Q5287 (jpn)-Fukujinzuke-死ぬ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%BB%E3%81%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -4996,14 +5033,18 @@ Recorder: CKali | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1523060 | [LL-Q5287 (jpn)-Fukujinzuke-本当.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%AC%E5%BD%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1202270 | [LL-Q5287 (jpn)-葵心-絵.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%B5%B5.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1202270 | [LL-Q5287 (jpn)-Fukujinzuke-絵.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%B5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1579260 | [LL-Q5287 (jpn)-Fukujinzuke-昨日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%A8%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1579130 | [LL-Q5287 (jpn)-Fukujinzuke-今年.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E5%B9%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1407980 | [LL-Q5287 (jpn)-Fukujinzuke-多分.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%9A%E5%88%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1467640 | [LL-Q5287 (jpn)-葵心-猫.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%8C%AB.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1460850 | [LL-Q5287 (jpn)-Fukujinzuke-難しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%A3%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1260720 | [LL-Q5287 (jpn)-Fukujinzuke-元気.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%83%E6%B0%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1474900 | [LL-Q5287 (jpn)-Fukujinzuke-白.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%99%BD.wav) | Speaker: Fukujinzuke
@@ -5014,10 +5055,14 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1488000 | [LL-Q5287 (jpn)-Fukujinzuke-百.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%99%BE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1329015 | [LL-Q5287 (jpn)-Fukujinzuke-お酒.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E9%85%92.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1500940 | [LL-Q5287 (jpn)-Fukujinzuke-服.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1512670 | [LL-Q5287 (jpn)-葵心-勉強.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%8B%89%E5%BC%B7.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1257240 | [LL-Q5287 (jpn)-Fukujinzuke-嫌い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AB%8C%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1073210 | [LL-Q5287 (jpn)-Fukujinzuke-スポーツ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1534520 | [LL-Q5287 (jpn)-Fukujinzuke-木.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%A8.wav) | Speaker: Fukujinzuke
@@ -5038,12 +5083,18 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1538160 | [LL-Q5287 (jpn)-Fukujinzuke-薬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%96%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1203260 | [LL-Q5287 (jpn)-Fukujinzuke-ほか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BB%E3%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1587850 | [LL-Q5287 (jpn)-Fukujinzuke-いろいろ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%82%8D%E3%81%84%E3%82%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1171010 | [LL-Q5287 (jpn)-Fukujinzuke-右.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1554310 | [LL-Q5287 (jpn)-Fukujinzuke-料理.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%99%E7%90%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1038350 | [LL-Q5287 (jpn)-葵心-カメラ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%AB%E3%83%A1%E3%83%A9.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1038350 | [LL-Q5287 (jpn)-Fukujinzuke-カメラ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AB%E3%83%A1%E3%83%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1338180 | [LL-Q5287 (jpn)-Fukujinzuke-出す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%87%BA%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1451470 | [LL-Q5287 (jpn)-CKali-動物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%8B%95%E7%89%A9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1341000 | [LL-Q5287 (jpn)-Fukujinzuke-春.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%A5.wav) | Speaker: Fukujinzuke
@@ -5066,6 +5117,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1579470 | [LL-Q5287 (jpn)-Fukujinzuke-四.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%9B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1189130 | [LL-Q5287 (jpn)-Fukujinzuke-どうぞ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A9%E3%81%86%E3%81%9E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1463520 | [LL-Q5287 (jpn)-Fukujinzuke-肉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1406820 | [LL-Q5287 (jpn)-Fukujinzuke-村.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9D%91.wav) | Speaker: Fukujinzuke
@@ -5078,16 +5131,22 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1122650 | [LL-Q5287 (jpn)-Higa4-ホテル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Higa4-%E3%83%9B%E3%83%86%E3%83%AB.wav) | Speaker: Higa4
 Recorder: Higa4 | CC0 |
-| ja-1171900 | [LL-Q5287 (jpn)-Zsrtrgh-雨.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E9%9B%A8.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1465610 | [LL-Q5287 (jpn)-Fukujinzuke-入れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%A5%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1171900 | [LL-Q5287 (jpn)-Fukujinzuke-雨.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1203620 | [LL-Q5287 (jpn)-CKali-外国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%A4%96%E5%9B%BD.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1520670 | [LL-Q5287 (jpn)-Fukujinzuke-北.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8C%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1478750 | [LL-Q5287 (jpn)-Fukujinzuke-半.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1290800 | [LL-Q5287 (jpn)-Fukujinzuke-左.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B7%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2013900 | [LL-Q5287 (jpn)-I JethroBT-赤.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E8%B5%A4.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-2013900 | [LL-Q5287 (jpn)-Fukujinzuke-赤.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B5%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1203650 | [LL-Q5287 (jpn)-Fukujinzuke-外国人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%96%E5%9B%BD%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1585650 | [LL-Q5287 (jpn)-Fukujinzuke-箱.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AE%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1324300 | [LL-Q5287 (jpn)-Fukujinzuke-若い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8B%A5%E3%81%84.wav) | Speaker: Fukujinzuke
@@ -5100,8 +5159,8 @@ Recorder: 葵心 | CC0 |
 Recorder: I JethroBT | CC BY-SA 4.0 |
 | ja-1456360 | [LL-Q5287 (jpn)-Fukujinzuke-読む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AA%AD%E3%82%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1524590 | [LL-Q5287 (jpn)-I JethroBT-妹.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%A6%B9.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1524590 | [LL-Q5287 (jpn)-Fukujinzuke-妹.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A6%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1588880 | [LL-Q5287 (jpn)-Fukujinzuke-大きい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E3%81%8D%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1037670 | [LL-Q5287 (jpn)-Fukujinzuke-カップ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AB%E3%83%83%E3%83%97.wav) | Speaker: Fukujinzuke
@@ -5110,44 +5169,48 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1317170 | [LL-Q5287 (jpn)-Fukujinzuke-耳.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%80%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1268570 | [LL-Q5287 (jpn)-Fukujinzuke-いつか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A4%E3%81%8B.wav) | Speaker: Fukujinzuke
+| ja-1268570 | [LL-Q5287 (jpn)-Fukujinzuke-五日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%94%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1219960 | [LL-Q5287 (jpn)-Zsrtrgh-いくつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%84%E3%81%8F%E3%81%A4.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1219960 | [LL-Q5287 (jpn)-Fukujinzuke-いくつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%8F%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1169870 | [LL-Q5287 (jpn)-Fukujinzuke-飲む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%B2%E3%82%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1553170 | [LL-Q5287 (jpn)-Fukujinzuke-旅行.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%85%E8%A1%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1332650 | [LL-Q5287 (jpn)-I JethroBT-秋.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E7%A7%8B.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1332650 | [LL-Q5287 (jpn)-Fukujinzuke-秋.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1049180 | [LL-Q5287 (jpn)-Fukujinzuke-コーヒー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1084810 | [LL-Q5287 (jpn)-葵心-トイレ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%83%88%E3%82%A4%E3%83%AC.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1404975 | [LL-Q5287 (jpn)-Fukujinzuke-早い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%A9%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1311530 | [LL-Q5287 (jpn)-Fukujinzuke-かみ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%BF.wav) | Speaker: Fukujinzuke
+| ja-1311530 | [LL-Q5287 (jpn)-Fukujinzuke-紙.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B4%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1379380 | [LL-Q5287 (jpn)-Fukujinzuke-生徒.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E5%BE%92.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1559160 | [LL-Q5287 (jpn)-Fukujinzuke-練習.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B7%B4%E7%BF%92.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1581930 | [LL-Q5287 (jpn)-Fukujinzuke-弟.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BC%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1443000 | [LL-Q5287 (jpn)-Fukujinzuke-電気.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%BB%E6%B0%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1219980 | [LL-Q5287 (jpn)-Zsrtrgh-いくら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%84%E3%81%8F%E3%82%89.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1219980 | [LL-Q5287 (jpn)-Fukujinzuke-いくら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%8F%E3%82%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1390020 | [LL-Q5287 (jpn)-Fukujinzuke-川.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B7%9D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1347750 | [LL-Q5287 (jpn)-Fukujinzuke-小さい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%8F%E3%81%95%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1249900 | [LL-Q5287 (jpn)-Zsrtrgh-兄.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%85%84.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1249900 | [LL-Q5287 (jpn)-Fukujinzuke-兄.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1583090 | [LL-Q5287 (jpn)-Fukujinzuke-八.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1446070 | [LL-Q5287 (jpn)-Fukujinzuke-冬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%86%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1381380 | [LL-Q5287 (jpn)-I JethroBT-青.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E9%9D%92.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1153670 | [LL-Q5287 (jpn)-Fukujinzuke-安い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%89%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1381380 | [LL-Q5287 (jpn)-Fukujinzuke-青.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%92.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1299400 | [LL-Q5287 (jpn)-Fukujinzuke-雑誌.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%91%E8%AA%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1380840 | [LL-Q5287 (jpn)-Fukujinzuke-西.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A5%BF.wav) | Speaker: Fukujinzuke
@@ -5156,26 +5219,32 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1447440 | [LL-Q5287 (jpn)-Fukujinzuke-東.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9D%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1269410 | [LL-Q5287 (jpn)-Fukujinzuke-後ろ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%8C%E3%82%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1192280 | [LL-Q5287 (jpn)-Fukujinzuke-家庭.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%B6%E5%BA%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1265070 | [LL-Q5287 (jpn)-Fukujinzuke-古い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%A4%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1386500 | [LL-Q5287 (jpn)-Higa4-雪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Higa4-%E9%9B%AA.wav) | Speaker: Higa4
-Recorder: Higa4 | CC0 |
+| ja-1386500 | [LL-Q5287 (jpn)-Fukujinzuke-雪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1257540 | [LL-Q5287 (jpn)-葵心-建物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%BB%BA%E7%89%A9.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1138860 | [LL-Q5287 (jpn)-Fukujinzuke-ラジオ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%A9%E3%82%B8%E3%82%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1432680 | [LL-Q5287 (jpn)-Zsrtrgh-痛い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E7%97%9B%E3%81%84.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1432680 | [LL-Q5287 (jpn)-Fukujinzuke-痛い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%97%9B%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1434180 | [LL-Q5287 (jpn)-Fukujinzuke-低い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%8E%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1490230 | [LL-Q5287 (jpn)-Fukujinzuke-病気.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%97%85%E6%B0%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1591900 | [LL-Q5287 (jpn)-Fukujinzuke-きれい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%8C%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1326980 | [LL-Q5287 (jpn)-Fukujinzuke-取る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%96%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1227500 | [LL-Q5287 (jpn)-CKali-休み.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E4%BC%91%E3%81%BF.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1307630 | [LL-Q5287 (jpn)-Zsrtrgh-姉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%A7%89.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1307630 | [LL-Q5287 (jpn)-Fukujinzuke-姉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A7%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1268990 | [LL-Q5287 (jpn)-Fukujinzuke-午後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%88%E5%BE%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1061520 | [LL-Q5287 (jpn)-葵心-シャツ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%B7%E3%83%A3%E3%83%84.wav) | Speaker: 葵心
@@ -5188,41 +5257,49 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1249960 | [LL-Q5287 (jpn)-Fukujinzuke-兄弟.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%84%E5%BC%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1578010 | [LL-Q5287 (jpn)-葵心-魚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%AD%9A.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1578010 | [LL-Q5287 (jpn)-Fukujinzuke-魚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%AD%9A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1330290 | [LL-Q5287 (jpn)-Fukujinzuke-授業.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8E%88%E6%A5%AD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1430250 | [LL-Q5287 (jpn)-Fukujinzuke-鳥.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%B3%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1307500 | [LL-Q5287 (jpn)-Fukujinzuke-始まる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A7%8B%E3%81%BE%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1577980 | [LL-Q5287 (jpn)-Fukujinzuke-いる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1577980 | [LL-Q5287 (jpn)-Fukujinzuke-居る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B1%85%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2220600 | [LL-Q5287 (jpn)-Fukujinzuke-お風呂.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E9%A2%A8%E5%91%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1318400 | [LL-Q5287 (jpn)-Fukujinzuke-自動車.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%AA%E5%8B%95%E8%BB%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1182880 | [LL-Q5287 (jpn)-CKali-ボタン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%83%9C%E3%82%BF%E3%83%B3.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1555300 | [LL-Q5287 (jpn)-葵心-緑.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%B7%91.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1555300 | [LL-Q5287 (jpn)-Fukujinzuke-緑.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B7%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1486650 | [LL-Q5287 (jpn)-Fukujinzuke-おいしい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%84%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1343950 | [LL-Q5287 (jpn)-Fukujinzuke-書く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9B%B8%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1318290 | [LL-Q5287 (jpn)-Fukujinzuke-自転車.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%AA%E8%BB%A2%E8%BB%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1401400 | [LL-Q5287 (jpn)-葵心-窓.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%AA%93.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1365850 | [LL-Q5287 (jpn)-Fukujinzuke-辛い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%9B%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1319210 | [LL-Q5287 (jpn)-Fukujinzuke-七.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1585310 | [LL-Q5287 (jpn)-Fukujinzuke-六.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%AD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1173750 | [LL-Q5287 (jpn)-葵心-映画館.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E6%98%A0%E7%94%BB%E9%A4%A8.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1173750 | [LL-Q5287 (jpn)-Fukujinzuke-映画館.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%A0%E7%94%BB%E9%A4%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2261490 | [LL-Q5287 (jpn)-Fukujinzuke-おじさん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%98%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1246700 | [LL-Q5287 (jpn)-葵心-靴.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%9D%B4.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1246700 | [LL-Q5287 (jpn)-Fukujinzuke-靴.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1360010 | [LL-Q5287 (jpn)-Fukujinzuke-寝る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AF%9D%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1221270 | [LL-Q5287 (jpn)-Fukujinzuke-帰る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%B0%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1042610 | [LL-Q5287 (jpn)-Fukujinzuke-キロ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AD%E3%83%AD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1206110 | [LL-Q5287 (jpn)-Fukujinzuke-角.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A7%92.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5232,10 +5309,12 @@ Recorder: AureaCapra | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1324520 | [LL-Q5287 (jpn)-Fukujinzuke-弱い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BC%B1%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1039140 | [LL-Q5287 (jpn)-葵心-カレー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%AB%E3%83%AC%E3%83%BC.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1039140 | [LL-Q5287 (jpn)-Fukujinzuke-カレー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AB%E3%83%AC%E3%83%BC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1269060 | [LL-Q5287 (jpn)-葵心-午前.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%8D%88%E5%89%8D.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1008450 | [LL-Q5287 (jpn)-Fukujinzuke-では.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A7%E3%81%AF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1451150 | [LL-Q5287 (jpn)-Fukujinzuke-働く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%83%8D%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1486720 | [LL-Q5287 (jpn)-Fukujinzuke-鼻.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%BC%BB.wav) | Speaker: Fukujinzuke
@@ -5246,10 +5325,10 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1223615 | [LL-Q5287 (jpn)-CKali-貴方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%B2%B4%E6%96%B9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1002650 | [LL-Q5287 (jpn)-葵心-お母さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%81%8A%E6%AF%8D%E3%81%95%E3%82%93.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
-| ja-1576630 | [LL-Q5287 (jpn)-I JethroBT-塩.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%A1%A9.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1002650 | [LL-Q5287 (jpn)-Fukujinzuke-お母さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E6%AF%8D%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1576630 | [LL-Q5287 (jpn)-Fukujinzuke-塩.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A1%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1087820 | [LL-Q5287 (jpn)-Fukujinzuke-ドア.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%89%E3%82%A2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1313000 | [LL-Q5287 (jpn)-Fukujinzuke-歯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%AF.wav) | Speaker: Fukujinzuke
@@ -5272,10 +5351,10 @@ Recorder: フィリピン人 | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1577280 | [LL-Q5287 (jpn)-Fukujinzuke-暇.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9A%87.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1383240 | [LL-Q5287 (jpn)-I JethroBT-赤い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E8%B5%A4%E3%81%84.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
-| ja-1223640 | [LL-Q5287 (jpn)-Higa4-起きる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Higa4-%E8%B5%B7%E3%81%8D%E3%82%8B.wav) | Speaker: Higa4
-Recorder: Higa4 | CC0 |
+| ja-1383240 | [LL-Q5287 (jpn)-Fukujinzuke-赤い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B5%A4%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1223640 | [LL-Q5287 (jpn)-Fukujinzuke-起きる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B5%B7%E3%81%8D%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1237150 | [LL-Q5287 (jpn)-Fukujinzuke-教室.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%99%E5%AE%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1289220 | [LL-Q5287 (jpn)-葵心-今週.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%BB%8A%E9%80%B1.wav) | Speaker: 葵心
@@ -5284,19 +5363,25 @@ Recorder: 葵心 | CC0 |
 Recorder: 葵心 | CC0 |
 | ja-1602710 | [LL-Q5287 (jpn)-葵心-両親.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%B8%A1%E8%A6%AA.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
-| ja-1519290 | [LL-Q5287 (jpn)-Zsrtrgh-忙しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%BF%99%E3%81%97%E3%81%84.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1519290 | [LL-Q5287 (jpn)-Fukujinzuke-忙しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BF%99%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1473950 | [LL-Q5287 (jpn)-Fukujinzuke-売る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A3%B2%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1421970 | [LL-Q5287 (jpn)-Fukujinzuke-遅い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%85%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589730 | [LL-Q5287 (jpn)-Fukujinzuke-買い物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B2%B7%E3%81%84%E7%89%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1316140 | [LL-Q5287 (jpn)-葵心-時計.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E6%99%82%E8%A8%88.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1195430 | [LL-Q5287 (jpn)-Fukujinzuke-荷物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8D%B7%E7%89%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1327720 | [LL-Q5287 (jpn)-葵心-手紙.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E6%89%8B%E7%B4%99.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1426250 | [LL-Q5287 (jpn)-I JethroBT-昼.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E6%98%BC.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
 | ja-1505470 | [LL-Q5287 (jpn)-Fukujinzuke-文章.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%87%E7%AB%A0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1512070 | [LL-Q5287 (jpn)-Fukujinzuke-辺.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1296970 | [LL-Q5287 (jpn)-Fukujinzuke-財布.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B2%A1%E5%B8%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5306,18 +5391,22 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1421290 | [LL-Q5287 (jpn)-葵心-地図.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%9C%B0%E5%9B%B3.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1355120 | [LL-Q5287 (jpn)-Fukujinzuke-乗る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B9%97%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1115150 | [LL-Q5287 (jpn)-Fukujinzuke-プール.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%97%E3%83%BC%E3%83%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1002430 | [LL-Q5287 (jpn)-Fukujinzuke-お茶.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E8%8C%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1042820 | [LL-Q5287 (jpn)-葵心-ギター.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%AE%E3%82%BF%E3%83%BC.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1042820 | [LL-Q5287 (jpn)-Fukujinzuke-ギター.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AE%E3%82%BF%E3%83%BC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1418620 | [LL-Q5287 (jpn)-Fukujinzuke-短い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9F%AD%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1132570 | [LL-Q5287 (jpn)-Fukujinzuke-メートル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%A1%E3%83%BC%E3%83%88%E3%83%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1352320 | [LL-Q5287 (jpn)-CKali-上げる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E4%B8%8A%E3%81%92%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1159980 | [LL-Q5287 (jpn)-Zsrtrgh-医者.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%8C%BB%E8%80%85.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1159980 | [LL-Q5287 (jpn)-Fukujinzuke-医者.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8C%BB%E8%80%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1402540 | [LL-Q5287 (jpn)-Higa4-走る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Higa4-%E8%B5%B0%E3%82%8B.wav) | Speaker: Higa4
 Recorder: Higa4 | CC0 |
 | ja-1001990 | [LL-Q5287 (jpn)-Fukujinzuke-お姉さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%A7%89%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
@@ -5330,8 +5419,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1000320 | [LL-Q5287 (jpn)-CKali-あそこ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%81%82%E3%81%9D%E3%81%93.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1218380 | [LL-Q5287 (jpn)-Zsrtrgh-危ない.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%8D%B1%E3%81%AA%E3%81%84.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1218380 | [LL-Q5287 (jpn)-Fukujinzuke-危ない.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%B1%E3%81%AA%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1335750 | [LL-Q5287 (jpn)-Fukujinzuke-重い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%8D%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1287420 | [LL-Q5287 (jpn)-Fukujinzuke-黒い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%BB%92%E3%81%84.wav) | Speaker: Fukujinzuke
@@ -5342,8 +5431,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1145310 | [LL-Q5287 (jpn)-Fukujinzuke-レストラン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1586270 | [LL-Q5287 (jpn)-Zsrtrgh-開く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E9%96%8B%E3%81%8F.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1586270 | [LL-Q5287 (jpn)-Fukujinzuke-開く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%96%8B%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1467720 | [LL-Q5287 (jpn)-CKali-熱い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%86%B1%E3%81%84.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1303620 | [LL-Q5287 (jpn)-Fukujinzuke-散歩.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%A3%E6%AD%A9.wav) | Speaker: Fukujinzuke
@@ -5358,35 +5447,43 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1343460 | [LL-Q5287 (jpn)-CKali-暑い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%9A%91%E3%81%84.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1514320 | [LL-Q5287 (jpn)-Zsrtrgh-歩く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E6%AD%A9%E3%81%8F.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1514320 | [LL-Q5287 (jpn)-Fukujinzuke-歩く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%A9%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1213170 | [LL-Q5287 (jpn)-Fukujinzuke-漢字.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%BC%A2%E5%AD%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1078630 | [LL-Q5287 (jpn)-Fukujinzuke-テーブル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1482110 | [LL-Q5287 (jpn)-Fukujinzuke-晩.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%99%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1410590 | [LL-Q5287 (jpn)-Fukujinzuke-待つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%85%E3%81%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1421700 | [LL-Q5287 (jpn)-Zsrtrgh-池.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E6%B1%A0.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1421700 | [LL-Q5287 (jpn)-Fukujinzuke-池.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%A0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1513065 | [LL-Q5287 (jpn)-Fukujinzuke-お弁当.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%BC%81%E5%BD%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1076190 | [LL-Q5287 (jpn)-Fukujinzuke-タクシー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1378690 | [LL-Q5287 (jpn)-Fukujinzuke-生まれる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E3%81%BE%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1049000 | [LL-Q5287 (jpn)-CKali-コート.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%B3%E3%83%BC%E3%83%88.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1001710 | [LL-Q5287 (jpn)-Fukujinzuke-お菓子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E8%8F%93%E5%AD%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1252560 | [LL-Q5287 (jpn)-Fukujinzuke-軽い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BB%BD%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1203090 | [LL-Q5287 (jpn)-Fukujinzuke-階段.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9A%8E%E6%AE%B5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1178940 | [LL-Q5287 (jpn)-Fukujinzuke-汚い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%9A%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1384830 | [LL-Q5287 (jpn)-Fukujinzuke-切る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%87%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2147990 | [LL-Q5287 (jpn)-Fukujinzuke-せ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9B.wav) | Speaker: Fukujinzuke
+| ja-2147990 | [LL-Q5287 (jpn)-Fukujinzuke-背.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%83%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1278410 | [LL-Q5287 (jpn)-Fukujinzuke-広い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BA%83%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1121380 | [LL-Q5287 (jpn)-Fukujinzuke-ペン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%9A%E3%83%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1296400 | [LL-Q5287 (jpn)-Fukujinzuke-ある.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1296400 | [LL-Q5287 (jpn)-Fukujinzuke-有る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%89%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2845606 | [LL-Q5287 (jpn)-Fukujinzuke-いかが.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%8B%E3%81%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5396,8 +5493,12 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1436130 | [LL-Q5287 (jpn)-葵心-庭.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%BA%AD.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
-| ja-1381390 | [LL-Q5287 (jpn)-I JethroBT-青い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E9%9D%92%E3%81%84.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1169250 | [LL-Q5287 (jpn)-Fukujinzuke-引く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BC%95%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1548010 | [LL-Q5287 (jpn)-Fukujinzuke-来週.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9D%A5%E9%80%B1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1381390 | [LL-Q5287 (jpn)-Fukujinzuke-青い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%92%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1588120 | [LL-Q5287 (jpn)-Fukujinzuke-歌う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%8C%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1179330 | [LL-Q5287 (jpn)-Fukujinzuke-奥さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A5%A5%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
@@ -5406,30 +5507,44 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1542790 | [LL-Q5287 (jpn)-CKali-夕方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%A4%95%E6%96%B9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1017760 | [LL-Q5287 (jpn)-Zsrtrgh-アパート.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%82%A2%E3%83%91%E3%83%BC%E3%83%88.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1017760 | [LL-Q5287 (jpn)-Fukujinzuke-アパート.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A2%E3%83%91%E3%83%BC%E3%83%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1001830 | [LL-Q5287 (jpn)-Fukujinzuke-お兄さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%85%84%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1583720 | [LL-Q5287 (jpn)-Fukujinzuke-かぜ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%9C.wav) | Speaker: Fukujinzuke
+| ja-1583720 | [LL-Q5287 (jpn)-Fukujinzuke-風邪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A2%A8%E9%82%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1542160 | [LL-Q5287 (jpn)-CKali-遊ぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E9%81%8A%E3%81%B6.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1475480 | [LL-Q5287 (jpn)-Fukujinzuke-薄い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%96%84%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1236900 | [LL-Q5287 (jpn)-Fukujinzuke-教える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%99%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1350040 | [LL-Q5287 (jpn)-Fukujinzuke-消える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B6%88%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1519170 | [LL-Q5287 (jpn)-Fukujinzuke-帽子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%BD%E5%AD%90.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1067470 | [LL-Q5287 (jpn)-Fukujinzuke-スカート.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1533580 | [LL-Q5287 (jpn)-Fukujinzuke-おもしろい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%82%E3%81%97%E3%82%8D%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1579100 | [LL-Q5287 (jpn)-Fukujinzuke-今朝.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E6%9C%9D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1519210 | [LL-Q5287 (jpn)-Fukujinzuke-忘れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BF%98%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1512130 | [LL-Q5287 (jpn)-Fukujinzuke-返す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BF%94%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1220210 | [LL-Q5287 (jpn)-Fukujinzuke-机.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1243320 | [LL-Q5287 (jpn)-Fukujinzuke-金曜日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%91%E6%9B%9C%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1237680 | [LL-Q5287 (jpn)-Fukujinzuke-狭い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8B%AD%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1429700 | [LL-Q5287 (jpn)-Fukujinzuke-飛ぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%9B%E3%81%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1576760 | [LL-Q5287 (jpn)-葵心-黄色.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%BB%84%E8%89%B2.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1299685 | [LL-Q5287 (jpn)-Fukujinzuke-お皿.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E7%9A%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1576760 | [LL-Q5287 (jpn)-Fukujinzuke-黄色.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%BB%84%E8%89%B2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1154330 | [LL-Q5287 (jpn)-Fukujinzuke-暗い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9A%97%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1255890 | [LL-Q5287 (jpn)-Fukujinzuke-月曜日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%88%E6%9B%9C%E6%97%A5.wav) | Speaker: Fukujinzuke
@@ -5438,13 +5553,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1376460 | [LL-Q5287 (jpn)-葵心-晴れ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E6%99%B4%E3%82%8C.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1449540 | [LL-Q5287 (jpn)-Fukujinzuke-答える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AD%94%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1291600 | [LL-Q5287 (jpn)-Fukujinzuke-砂糖.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A0%82%E7%B3%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1266970 | [LL-Q5287 (jpn)-Fukujinzuke-戸.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%88%B8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1423000 | [LL-Q5287 (jpn)-Fukujinzuke-着る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9D%80%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1252330 | [LL-Q5287 (jpn)-Fukujinzuke-警官.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AD%A6%E5%AE%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1557110 | [LL-Q5287 (jpn)-Fukujinzuke-冷蔵庫.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%86%B7%E8%94%B5%E5%BA%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1414220 | [LL-Q5287 (jpn)-Fukujinzuke-大勢.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E5%8B%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1600430 | [LL-Q5287 (jpn)-Fukujinzuke-飲み物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%B2%E3%81%BF%E7%89%A9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1542430 | [LL-Q5287 (jpn)-Fukujinzuke-郵便局.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%83%B5%E4%BE%BF%E5%B1%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5453,6 +5576,8 @@ Recorder: I JethroBT | CC BY-SA 4.0 |
 | ja-1577670 | [LL-Q5287 (jpn)-Fukujinzuke-眼鏡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9C%BC%E9%8F%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1583250 | [LL-Q5287 (jpn)-Fukujinzuke-いいえ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%84%E3%81%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1180470 | [LL-Q5287 (jpn)-Fukujinzuke-押す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%BC%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1301940 | [LL-Q5287 (jpn)-Fukujinzuke-傘.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%82%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5470,15 +5595,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1557630 | [LL-Q5287 (jpn)-Fukujinzuke-零.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1202450 | [LL-Q5287 (jpn)-I JethroBT-開ける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E9%96%8B%E3%81%91%E3%82%8B.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY 4.0 |
+| ja-1202450 | [LL-Q5287 (jpn)-Fukujinzuke-開ける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%96%8B%E3%81%91%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1206050 | [LL-Q5287 (jpn)-Fukujinzuke-覚える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A6%9A%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1039220 | [LL-Q5287 (jpn)-Fukujinzuke-カレンダー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1299740 | [LL-Q5287 (jpn)-Fukujinzuke-三つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%89%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1586420 | [LL-Q5287 (jpn)-CKali-暖かい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%9A%96%E3%81%8B%E3%81%84.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1280770 | [LL-Q5287 (jpn)-Fukujinzuke-紅茶.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B4%85%E8%8C%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1444680 | [LL-Q5287 (jpn)-Fukujinzuke-渡る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B8%A1%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1194290 | [LL-Q5287 (jpn)-Fukujinzuke-火曜日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%81%AB%E6%9B%9C%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5490,15 +5619,23 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1337270 | [LL-Q5287 (jpn)-Fukujinzuke-宿題.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%BF%E9%A1%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1165970 | [LL-Q5287 (jpn)-Zsrtrgh-いちばん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1002610 | [LL-Q5287 (jpn)-Fukujinzuke-おなか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%AA%E3%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1165970 | [LL-Q5287 (jpn)-Fukujinzuke-いちばん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1295510 | [LL-Q5287 (jpn)-Fukujinzuke-細い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B4%B0%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1227560 | [LL-Q5287 (jpn)-Fukujinzuke-休む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%91%E3%82%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1207590 | [LL-Q5287 (jpn)-Fukujinzuke-かかる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%8B%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1318970 | [LL-Q5287 (jpn)-Fukujinzuke-辞書.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%9E%E6%9B%B8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1282790 | [LL-Q5287 (jpn)-Fukujinzuke-降る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%99%8D%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1246740 | [LL-Q5287 (jpn)-Fukujinzuke-靴下.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%B4%E4%B8%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1228260 | [LL-Q5287 (jpn)-Fukujinzuke-吸う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%B8%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1008910 | [LL-Q5287 (jpn)-Fukujinzuke-如何.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A6%82%E4%BD%95.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5508,13 +5645,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-1483740 | [LL-Q5287 (jpn)-Fukujinzuke-疲れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%96%B2%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1182030 | [LL-Q5287 (jpn)-Fukujinzuke-黄色い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%BB%84%E8%89%B2%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1291800 | [LL-Q5287 (jpn)-Fukujinzuke-座る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BA%A7%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1422720 | [LL-Q5287 (jpn)-Fukujinzuke-茶色.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8C%B6%E8%89%B2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1110110 | [LL-Q5287 (jpn)-Fukujinzuke-フォーク.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1408180 | [LL-Q5287 (jpn)-Fukujinzuke-太い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%AA%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1046810 | [LL-Q5287 (jpn)-Fukujinzuke-グラム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B0%E3%83%A9%E3%83%A0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1323560 | [LL-Q5287 (jpn)-Fukujinzuke-借りる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%80%9F%E3%82%8A%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1226440 | [LL-Q5287 (jpn)-Fukujinzuke-喫茶店.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%96%AB%E8%8C%B6%E5%BA%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5524,33 +5667,69 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-2846389 | [LL-Q5287 (jpn)-葵心-コップ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%B3%E3%83%83%E3%83%97.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1589500 | [LL-Q5287 (jpn)-Fukujinzuke-降りる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%99%8D%E3%82%8A%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1412640 | [LL-Q5287 (jpn)-葵心-台所.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%8F%B0%E6%89%80.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1483185 | [LL-Q5287 (jpn)-Fukujinzuke-あちら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%A1%E3%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1153520 | [LL-Q5287 (jpn)-Zsrtrgh-飴.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E9%A3%B4.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1153520 | [LL-Q5287 (jpn)-Fukujinzuke-飴.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1207610 | [LL-Q5287 (jpn)-Fukujinzuke-掛ける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8E%9B%E3%81%91%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1370760 | [LL-Q5287 (jpn)-Fukujinzuke-吹く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%B9%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1584910 | [LL-Q5287 (jpn)-Fukujinzuke-夕飯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%95%E9%A3%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1385070 | [LL-Q5287 (jpn)-Fukujinzuke-切手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%87%E6%89%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1072590 | [LL-Q5287 (jpn)-Fukujinzuke-スプーン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B9%E3%83%97%E3%83%BC%E3%83%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1157070 | [LL-Q5287 (jpn)-Zsrtrgh-いす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%84%E3%81%99.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1289470 | [LL-Q5287 (jpn)-Fukujinzuke-今晩.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E6%99%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1157070 | [LL-Q5287 (jpn)-Fukujinzuke-いす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1231580 | [LL-Q5287 (jpn)-Fukujinzuke-牛肉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%89%9B%E8%82%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1546640 | [LL-Q5287 (jpn)-Fukujinzuke-要る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A6%81%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1580340 | [LL-Q5287 (jpn)-Fukujinzuke-上着.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8A%E7%9D%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1178590 | [LL-Q5287 (jpn)-Fukujinzuke-鉛筆.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%89%9B%E7%AD%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1275320 | [LL-Q5287 (jpn)-Zsrtrgh-厚い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%8E%9A%E3%81%84.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1385170 | [LL-Q5287 (jpn)-Fukujinzuke-切符.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%87%E7%AC%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1275320 | [LL-Q5287 (jpn)-Fukujinzuke-厚い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8E%9A%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1604230 | [LL-Q5287 (jpn)-Fukujinzuke-丸い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%B8%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1042650 | [LL-Q5287 (jpn)-Fukujinzuke-キロメートル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AD%E3%83%AD%E3%83%A1%E3%83%BC%E3%83%88%E3%83%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1416400 | [LL-Q5287 (jpn)-Fukujinzuke-脱ぐ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%84%B1%E3%81%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1576050 | [LL-Q5287 (jpn)-Fukujinzuke-一昨日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E6%98%A8%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1411160 | [LL-Q5287 (jpn)-Fukujinzuke-貸す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B2%B8%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1522980 | [LL-Q5287 (jpn)-Fukujinzuke-本棚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%AC%E6%A3%9A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1174340 | [LL-Q5287 (jpn)-Fukujinzuke-泳ぐ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%B3%E3%81%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1096420 | [LL-Q5287 (jpn)-Fukujinzuke-ハンカチ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%8F%E3%83%B3%E3%82%AB%E3%83%81.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002320 | [LL-Q5287 (jpn)-Fukujinzuke-おじいさん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%98%E3%81%84%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1123590 | [LL-Q5287 (jpn)-Fukujinzuke-ボールペン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1576060 | [LL-Q5287 (jpn)-Fukujinzuke-一昨年.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E6%98%A8%E5%B9%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1288810 | [LL-Q5287 (jpn)-Fukujinzuke-ここ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1532870 | [LL-Q5287 (jpn)-Fukujinzuke-なく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002100 | [LL-Q5287 (jpn)-Fukujinzuke-お手洗い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E6%89%8B%E6%B4%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002330 | [LL-Q5287 (jpn)-Fukujinzuke-おばあさん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%B0%E3%81%82%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1006830 | [LL-Q5287 (jpn)-Fukujinzuke-その.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9D%E3%81%AE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5562,28 +5741,42 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1270590 | [LL-Q5287 (jpn)-Fukujinzuke-御飯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%A1%E9%A3%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1586330 | [LL-Q5287 (jpn)-I JethroBT-朝御飯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E6%9C%9D%E5%BE%A1%E9%A3%AF.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY 4.0 |
+| ja-1586330 | [LL-Q5287 (jpn)-Fukujinzuke-朝御飯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%9D%E5%BE%A1%E9%A3%AF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1268070 | [LL-Q5287 (jpn)-Fukujinzuke-五つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%94%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002120 | [LL-Q5287 (jpn)-Fukujinzuke-おまわりさん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%BE%E3%82%8F%E3%82%8A%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1508590 | [LL-Q5287 (jpn)-Fukujinzuke-閉める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%96%89%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1584640 | [LL-Q5287 (jpn)-CKali-あさって.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%81%82%E3%81%95%E3%81%A3%E3%81%A6.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1194870 | [LL-Q5287 (jpn)-Fukujinzuke-花瓶.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8A%B1%E7%93%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1481920 | [LL-Q5287 (jpn)-Fukujinzuke-煩い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%85%A9%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2261500 | [LL-Q5287 (jpn)-Fukujinzuke-伯母さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%AF%E6%AF%8D%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1546590 | [LL-Q5287 (jpn)-Fukujinzuke-葉書.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%91%89%E6%9B%B8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1006670 | [LL-Q5287 (jpn)-Fukujinzuke-そこ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9D%E3%81%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1042620 | [LL-Q5287 (jpn)-Fukujinzuke-キログラム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AD%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1547450 | [LL-Q5287 (jpn)-Zsrtrgh-あびる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%82%E3%81%B3%E3%82%8B.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1589600 | [LL-Q5287 (jpn)-Fukujinzuke-終る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%82%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1547450 | [LL-Q5287 (jpn)-Fukujinzuke-あびる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%B3%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1012980 | [LL-Q5287 (jpn)-Fukujinzuke-やる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%84%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1505990 | [LL-Q5287 (jpn)-Fukujinzuke-しかし.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%81%8B%E3%81%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1157170 | [LL-Q5287 (jpn)-Fukujinzuke-する.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%99%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1532350 | [LL-Q5287 (jpn)-I JethroBT-明い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E6%98%8E%E3%81%84.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1532350 | [LL-Q5287 (jpn)-Fukujinzuke-明い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%8E%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2524270 | [LL-Q5287 (jpn)-Fukujinzuke-こと.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1463770 | [LL-Q5287 (jpn)-Fukujinzuke-日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1006610 | [LL-Q5287 (jpn)-Fukujinzuke-そう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9D%E3%81%86.wav) | Speaker: Fukujinzuke
@@ -5608,6 +5801,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1521400 | [LL-Q5287 (jpn)-Fukujinzuke-僕.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%83%95.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1155120 | [LL-Q5287 (jpn)-Fukujinzuke-以上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E4%B8%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1307770 | [LL-Q5287 (jpn)-Fukujinzuke-子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%90.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1355810 | [LL-Q5287 (jpn)-Fukujinzuke-場合.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A0%B4%E5%90%88.wav) | Speaker: Fukujinzuke
@@ -5616,8 +5811,10 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1215230 | [LL-Q5287 (jpn)-Fukujinzuke-間.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%96%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1345250 | [LL-Q5287 (jpn)-葵心-女性.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%A5%B3%E6%80%A7.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1576250 | [LL-Q5287 (jpn)-Fukujinzuke-一度.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E5%BA%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1345250 | [LL-Q5287 (jpn)-Fukujinzuke-女性.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A5%B3%E6%80%A7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1247250 | [LL-Q5287 (jpn)-Fukujinzuke-君.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%9B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1247260 | [LL-Q5287 (jpn)-Fukujinzuke-君.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%9B.wav) | Speaker: Fukujinzuke
@@ -5626,9 +5823,13 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1005180 | [LL-Q5287 (jpn)-Fukujinzuke-先.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1546200 | [LL-Q5287 (jpn)-Fukujinzuke-よう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
+| ja-1546200 | [LL-Q5287 (jpn)-Fukujinzuke-用.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1316300 | [LL-Q5287 (jpn)-Fukujinzuke-時代.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%99%82%E4%BB%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1149830 | [LL-Q5287 (jpn)-Fukujinzuke-アメリカ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1483070 | [LL-Q5287 (jpn)-Fukujinzuke-彼.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1360480 | [LL-Q5287 (jpn)-Fukujinzuke-心.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BF%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5638,15 +5839,23 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1550140 | [LL-Q5287 (jpn)-Fukujinzuke-理由.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%90%86%E7%94%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1483150 | [LL-Q5287 (jpn)-葵心-彼女.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%BD%BC%E5%A5%B3.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1483150 | [LL-Q5287 (jpn)-Fukujinzuke-彼女.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%BC%E5%A5%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1526920 | [LL-Q5287 (jpn)-葵心-漫画.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E6%BC%AB%E7%94%BB.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1155090 | [LL-Q5287 (jpn)-Fukujinzuke-以外.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E5%A4%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1214330 | [LL-Q5287 (jpn)-Fukujinzuke-簡単.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B0%A1%E5%8D%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1591430 | [LL-Q5287 (jpn)-Fukujinzuke-気持ち.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%97%E6%8C%81%E3%81%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1378860 | [LL-Q5287 (jpn)-Fukujinzuke-生活.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E6%B4%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1576900 | [LL-Q5287 (jpn)-Fukujinzuke-音.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9F%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1531190 | [LL-Q5287 (jpn)-Fukujinzuke-娘.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A8%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1225130 | [LL-Q5287 (jpn)-Fukujinzuke-技術.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%80%E8%A1%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1258520 | [LL-Q5287 (jpn)-Fukujinzuke-研究.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A0%94%E7%A9%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5660,13 +5869,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1252090 | [LL-Q5287 (jpn)-Fukujinzuke-計画.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%88%E7%94%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1250220 | [LL-Q5287 (jpn)-Fukujinzuke-形.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1318720 | [LL-Q5287 (jpn)-Fukujinzuke-自由.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%AA%E7%94%B1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001090 | [LL-Q5287 (jpn)-Fukujinzuke-うん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1420160 | [LL-Q5287 (jpn)-Fukujinzuke-男性.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%B7%E6%80%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1426530 | [LL-Q5287 (jpn)-Fukujinzuke-注意.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%A8%E6%84%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1153930 | [LL-Q5287 (jpn)-Fukujinzuke-安全.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%89%E5%85%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1157080 | [LL-Q5287 (jpn)-Fukujinzuke-ため.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%82%81.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1155060 | [LL-Q5287 (jpn)-Fukujinzuke-以下.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E4%B8%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1375970 | [LL-Q5287 (jpn)-Fukujinzuke-政治.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%BF%E6%B2%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5682,6 +5899,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1252390 | [LL-Q5287 (jpn)-Fukujinzuke-警察.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AD%A6%E5%AF%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1236950 | [LL-Q5287 (jpn)-Fukujinzuke-教育.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%99%E8%82%B2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1593480 | [LL-Q5287 (jpn)-Fukujinzuke-怖い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%96%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1272780 | [LL-Q5287 (jpn)-Fukujinzuke-光.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%89.wav) | Speaker: Fukujinzuke
@@ -5692,27 +5911,61 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1505120 | [LL-Q5287 (jpn)-Fukujinzuke-文化.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%87%E5%8C%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1172400 | [LL-Q5287 (jpn)-Fukujinzuke-嘘.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%98%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1238410 | [LL-Q5287 (jpn)-Fukujinzuke-興味.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%88%88%E5%91%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1251270 | [LL-Q5287 (jpn)-Fukujinzuke-経験.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%8C%E9%A8%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1172830 | [LL-Q5287 (jpn)-Fukujinzuke-運転.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8B%E8%BB%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589590 | [LL-Q5287 (jpn)-Fukujinzuke-終わり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%82%E3%82%8F%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1182620 | [LL-Q5287 (jpn)-Fukujinzuke-億.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%84%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589060 | [LL-Q5287 (jpn)-Fukujinzuke-行う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%8C%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1483090 | [LL-Q5287 (jpn)-Fukujinzuke-彼ら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%BC%E3%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1376310 | [LL-Q5287 (jpn)-Fukujinzuke-星.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1172910 | [LL-Q5287 (jpn)-Fukujinzuke-運動.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8B%E5%8B%95.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1294330 | [LL-Q5287 (jpn)-Fukujinzuke-妻.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A6%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1293700 | [LL-Q5287 (jpn)-Fukujinzuke-最も.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%80%E3%82%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2607730 | [LL-Q5287 (jpn)-Fukujinzuke-もし.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%82%E3%81%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1526960 | [LL-Q5287 (jpn)-Fukujinzuke-味.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%91%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1222590 | [LL-Q5287 (jpn)-Fukujinzuke-気分.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%97%E5%88%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1283500 | [LL-Q5287 (jpn)-Fukujinzuke-高校.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%AB%98%E6%A0%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1153890 | [LL-Q5287 (jpn)-Fukujinzuke-安心.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%89%E5%BF%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1261190 | [LL-Q5287 (jpn)-Fukujinzuke-原因.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8E%9F%E5%9B%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1218560 | [LL-Q5287 (jpn)-Fukujinzuke-危険.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%B1%E9%99%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1003430 | [LL-Q5287 (jpn)-Fukujinzuke-きっと.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%81%A3%E3%81%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1312420 | [LL-Q5287 (jpn)-Fukujinzuke-試合.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A9%A6%E5%90%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1341670 | [LL-Q5287 (jpn)-Fukujinzuke-準備.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%BA%96%E5%82%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1365040 | [LL-Q5287 (jpn)-Fukujinzuke-親.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A6%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1192700 | [LL-Q5287 (jpn)-Fukujinzuke-科学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%91%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1550190 | [LL-Q5287 (jpn)-Fukujinzuke-裏.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A3%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1446760 | [LL-Q5287 (jpn)-Fukujinzuke-島.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B3%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1172870 | [LL-Q5287 (jpn)-Fukujinzuke-運転手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8B%E8%BB%A2%E6%89%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1487400 | [LL-Q5287 (jpn)-Fukujinzuke-必ず.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BF%85%E3%81%9A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1193610 | [LL-Q5287 (jpn)-Fukujinzuke-火.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%81%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5722,15 +5975,23 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1382440 | [LL-Q5287 (jpn)-Fukujinzuke-石.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9F%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1286400 | [LL-Q5287 (jpn)-Fukujinzuke-国際.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%BD%E9%9A%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1362490 | [LL-Q5287 (jpn)-Fukujinzuke-森.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A3%AE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1198360 | [LL-Q5287 (jpn)-Fukujinzuke-会議.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%9A%E8%AD%B0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1258570 | [LL-Q5287 (jpn)-Fukujinzuke-研究室.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A0%94%E7%A9%B6%E5%AE%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1358490 | [LL-Q5287 (jpn)-Fukujinzuke-食事.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%9F%E4%BA%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1156530 | [LL-Q5287 (jpn)-Fukujinzuke-意見.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%8F%E8%A6%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1477950 | [LL-Q5287 (jpn)-Fukujinzuke-かみ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%BF.wav) | Speaker: Fukujinzuke
+| ja-1477950 | [LL-Q5287 (jpn)-Fukujinzuke-髪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%AB%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1226630 | [LL-Q5287 (jpn)-Fukujinzuke-客.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1480670 | [LL-Q5287 (jpn)-Fukujinzuke-反対.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%8D%E5%AF%BE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1496480 | [LL-Q5287 (jpn)-Fukujinzuke-夫.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5738,47 +5999,99 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1509290 | [LL-Q5287 (jpn)-Fukujinzuke-壁.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A3%81.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1382250 | [LL-Q5287 (jpn)-Fukujinzuke-席.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2853889 | [LL-Q5287 (jpn)-Fukujinzuke-けれど.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%91%E3%82%8C%E3%81%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1486360 | [LL-Q5287 (jpn)-Fukujinzuke-美しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BE%8E%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1220800 | [LL-Q5287 (jpn)-Fukujinzuke-機会.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A9%9F%E4%BC%9A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1348430 | [LL-Q5287 (jpn)-Fukujinzuke-小説.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%8F%E8%AA%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1190860 | [LL-Q5287 (jpn)-Fukujinzuke-おかしい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1590770 | [LL-Q5287 (jpn)-Fukujinzuke-代わり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A3%E3%82%8F%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1421210 | [LL-Q5287 (jpn)-Fukujinzuke-地震.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%B0%E9%9C%87.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1329590 | [LL-Q5287 (jpn)-Fukujinzuke-受ける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%97%E3%81%91%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001640 | [LL-Q5287 (jpn)-Fukujinzuke-おかげ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%8B%E3%81%92.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1376600 | [LL-Q5287 (jpn)-Fukujinzuke-正しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%A3%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1198660 | [LL-Q5287 (jpn)-Fukujinzuke-会場.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%9A%E5%A0%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1198880 | [LL-Q5287 (jpn)-Fukujinzuke-会話.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%9A%E8%A9%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1542070 | [LL-Q5287 (jpn)-Fukujinzuke-遊び.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8A%E3%81%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1221250 | [LL-Q5287 (jpn)-Fukujinzuke-帰り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%B0%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1510790 | [LL-Q5287 (jpn)-Fukujinzuke-変わる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%89%E3%82%8F%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1592270 | [LL-Q5287 (jpn)-Fukujinzuke-首.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A6%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1165670 | [LL-Q5287 (jpn)-Fukujinzuke-いっぱい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A3%E3%81%B1%E3%81%84.wav) | Speaker: Fukujinzuke
+| ja-1308690 | [LL-Q5287 (jpn)-Fukujinzuke-市民.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%82%E6%B0%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1165670 | [LL-Q5287 (jpn)-Fukujinzuke-一杯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E6%9D%AF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1489340 | [LL-Q5287 (jpn)-Fukujinzuke-表.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1312350 | [LL-Q5287 (jpn)-Fukujinzuke-試験.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A9%A6%E9%A8%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1307550 | [LL-Q5287 (jpn)-Fukujinzuke-始める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A7%8B%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1040060 | [LL-Q5287 (jpn)-Fukujinzuke-ガス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AC%E3%82%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1309650 | [LL-Q5287 (jpn)-Fukujinzuke-指.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8C%87.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1228560 | [LL-Q5287 (jpn)-Fukujinzuke-急.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%A5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1315130 | [LL-Q5287 (jpn)-Fukujinzuke-字.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1272280 | [LL-Q5287 (jpn)-Fukujinzuke-交通.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%A4%E9%80%9A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1578700 | [LL-Q5287 (jpn)-Fukujinzuke-工場.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B7%A5%E5%A0%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1255060 | [LL-Q5287 (jpn)-Fukujinzuke-血.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1546550 | [LL-Q5287 (jpn)-葵心-葉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E8%91%89.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1546550 | [LL-Q5287 (jpn)-Fukujinzuke-葉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%91%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1154860 | [LL-Q5287 (jpn)-Fukujinzuke-案内.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A1%88%E5%86%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1562850 | [LL-Q5287 (jpn)-Fukujinzuke-腕.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%85%95.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1245470 | [LL-Q5287 (jpn)-Fukujinzuke-空気.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%BA%E6%B0%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1198380 | [LL-Q5287 (jpn)-Fukujinzuke-会議室.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%9A%E8%AD%B0%E5%AE%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1533820 | [LL-Q5287 (jpn)-Fukujinzuke-毛.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AF%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1347710 | [LL-Q5287 (jpn)-Fukujinzuke-将来.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%86%E6%9D%A5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1000590 | [LL-Q5287 (jpn)-Fukujinzuke-あんな.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%93%E3%81%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1593670 | [LL-Q5287 (jpn)-Fukujinzuke-探す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8E%A2%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1467710 | [LL-Q5287 (jpn)-Fukujinzuke-熱.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%86%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1401910 | [LL-Q5287 (jpn)-Fukujinzuke-草.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8D%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1284430 | [LL-Q5287 (jpn)-Fukujinzuke-あう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%86.wav) | Speaker: Fukujinzuke
+| ja-1284430 | [LL-Q5287 (jpn)-Fukujinzuke-合う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%88%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1155180 | [LL-Q5287 (jpn)-Fukujinzuke-以内.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E5%86%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1510650 | [LL-Q5287 (jpn)-Fukujinzuke-変える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%89%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1242350 | [LL-Q5287 (jpn)-Fukujinzuke-近所.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BF%91%E6%89%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1347870 | [LL-Q5287 (jpn)-Fukujinzuke-小学校.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%8F%E5%AD%A6%E6%A0%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1101570 | [LL-Q5287 (jpn)-Fukujinzuke-パソコン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1604135 | [LL-Q5287 (jpn)-Fukujinzuke-お祭り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E7%A5%AD%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1367300 | [LL-Q5287 (jpn)-Fukujinzuke-人口.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%BA%E5%8F%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5786,12 +6099,18 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1362640 | [LL-Q5287 (jpn)-Fukujinzuke-深い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B7%B1%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1539040 | [LL-Q5287 (jpn)-Fukujinzuke-優しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%84%AA%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1262530 | [LL-Q5287 (jpn)-Fukujinzuke-厳しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8E%B3%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1304510 | [LL-Q5287 (jpn)-Fukujinzuke-残る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AE%8B%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1523400 | [LL-Q5287 (jpn)-Fukujinzuke-翻訳.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BF%BB%E8%A8%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1015840 | [LL-Q5287 (jpn)-CKali-アジア.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%A2%E3%82%B8%E3%82%A2.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1588730 | [LL-Q5287 (jpn)-Fukujinzuke-選ぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%B8%E3%81%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1483190 | [LL-Q5287 (jpn)-Fukujinzuke-悲しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%82%B2%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1451210 | [LL-Q5287 (jpn)-Fukujinzuke-動く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8B%95%E3%81%8F.wav) | Speaker: Fukujinzuke
@@ -5802,19 +6121,25 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1596780 | [LL-Q5287 (jpn)-I JethroBT-台風.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%8F%B0%E9%A2%A8.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1219510 | [LL-Q5287 (jpn)-Fukujinzuke-うれしい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%82%8C%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1245570 | [LL-Q5287 (jpn)-Fukujinzuke-空港.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%BA%E6%B8%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1238550 | [LL-Q5287 (jpn)-Fukujinzuke-鏡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%8F%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1426680 | [LL-Q5287 (jpn)-Fukujinzuke-虫.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%99%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1254130 | [LL-Q5287 (jpn)-Fukujinzuke-決して.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%BA%E3%81%97%E3%81%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1254180 | [LL-Q5287 (jpn)-Fukujinzuke-決める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%BA%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1283510 | [LL-Q5287 (jpn)-葵心-高校生.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%AB%98%E6%A0%A1%E7%94%9F.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1283510 | [LL-Q5287 (jpn)-Fukujinzuke-高校生.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%AB%98%E6%A0%A1%E7%94%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1451490 | [LL-Q5287 (jpn)-CKali-動物園.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%8B%95%E7%89%A9%E5%9C%92.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1602440 | [LL-Q5287 (jpn)-Fukujinzuke-増える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A2%97%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1402730 | [LL-Q5287 (jpn)-Fukujinzuke-送る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%81%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1364670 | [LL-Q5287 (jpn)-葵心-神社.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%A5%9E%E7%A4%BE.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -5826,37 +6151,71 @@ Recorder: 葵心 | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1222840 | [LL-Q5287 (jpn)-Fukujinzuke-季節.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%A3%E7%AF%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1223021 | [LL-Q5287 (jpn)-Fukujinzuke-規則.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A6%8F%E5%89%87.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1535880 | [LL-Q5287 (jpn)-Fukujinzuke-戻る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%88%BB%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1351360 | [LL-Q5287 (jpn)-Fukujinzuke-笑う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AC%91%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1106400 | [LL-Q5287 (jpn)-葵心-ピアノ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%83%94%E3%82%A2%E3%83%8E.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1592500 | [LL-Q5287 (jpn)-Fukujinzuke-具合.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%B7%E5%90%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1463930 | [LL-Q5287 (jpn)-Fukujinzuke-日記.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%A5%E8%A8%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1588060 | [LL-Q5287 (jpn)-Fukujinzuke-受付.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%97%E4%BB%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1309260 | [LL-Q5287 (jpn)-Fukujinzuke-思い出す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%9D%E3%81%84%E5%87%BA%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1040380 | [LL-Q5287 (jpn)-Fukujinzuke-ガラス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AC%E3%83%A9%E3%82%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1053350 | [LL-Q5287 (jpn)-葵心-コンピュータ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1334080 | [LL-Q5287 (jpn)-Fukujinzuke-住所.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%8F%E6%89%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1512220 | [LL-Q5287 (jpn)-葵心-返事.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E8%BF%94%E4%BA%8B.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1234140 | [LL-Q5287 (jpn)-Fukujinzuke-競争.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AB%B6%E4%BA%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1372980 | [LL-Q5287 (jpn)-葵心-数学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E6%95%B0%E5%AD%A6.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1454180 | [LL-Q5287 (jpn)-Fukujinzuke-道具.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%93%E5%85%B7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1202440 | [LL-Q5287 (jpn)-Zsrtrgh-開く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E9%96%8B%E3%81%8F.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1202440 | [LL-Q5287 (jpn)-Fukujinzuke-開く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%96%8B%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1442750 | [LL-Q5287 (jpn)-Fukujinzuke-田舎.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%B0%E8%88%8E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2429350 | [LL-Q5287 (jpn)-Fukujinzuke-おかねもち.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%8B%E3%81%AD%E3%82%82%E3%81%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1242970 | [LL-Q5287 (jpn)-Fukujinzuke-かねもち.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%AD%E3%82%82%E3%81%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1080000 | [LL-Q5287 (jpn)-Fukujinzuke-テニス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%86%E3%83%8B%E3%82%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1346150 | [LL-Q5287 (jpn)-Fukujinzuke-勝つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8B%9D%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1238680 | [LL-Q5287 (jpn)-Fukujinzuke-驚く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A9%9A%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1173100 | [LL-Q5287 (jpn)-Fukujinzuke-雲.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%B2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1185930 | [LL-Q5287 (jpn)-Fukujinzuke-下着.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8B%E7%9D%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1413260 | [LL-Q5287 (jpn)-I JethroBT-大学生.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%A4%A7%E5%AD%A6%E7%94%9F.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
-| ja-1310460 | [LL-Q5287 (jpn)-I JethroBT-うまい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%86%E3%81%BE%E3%81%84.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1310460 | [LL-Q5287 (jpn)-Fukujinzuke-うまい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%BE%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1929050 | [LL-Q5287 (jpn)-CKali-アフリカ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%A2%E3%83%95%E3%83%AA%E3%82%AB.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1612770 | [LL-Q5287 (jpn)-Fukujinzuke-お祝い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E7%A5%9D%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1465720 | [LL-Q5287 (jpn)-CKali-入院.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%85%A5%E9%99%A2.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1496890 | [LL-Q5287 (jpn)-Fukujinzuke-布団.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%83%E5%9B%A3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1159810 | [LL-Q5287 (jpn)-Fukujinzuke-医学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8C%BB%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1555440 | [LL-Q5287 (jpn)-Fukujinzuke-林.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9E%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1267180 | [LL-Q5287 (jpn)-Fukujinzuke-故障.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%85%E9%9A%9C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1448580 | [LL-Q5287 (jpn)-Fukujinzuke-ゆ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5864,21 +6223,61 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1019280 | [LL-Q5287 (jpn)-Fukujinzuke-アルコール.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1546880 | [LL-Q5287 (jpn)-Fukujinzuke-踊り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B8%8A%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1217070 | [LL-Q5287 (jpn)-Fukujinzuke-おもちゃ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1311450 | [LL-Q5287 (jpn)-Fukujinzuke-糸.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B3%B8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1295530 | [LL-Q5287 (jpn)-Fukujinzuke-細かい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B4%B0%E3%81%8B%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1310050 | [LL-Q5287 (jpn)-Fukujinzuke-指輪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8C%87%E8%BC%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1019420 | [LL-Q5287 (jpn)-Fukujinzuke-アルバイト.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1591150 | [LL-Q5287 (jpn)-Fukujinzuke-聞こえる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%81%9E%E3%81%93%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1278040 | [LL-Q5287 (jpn)-Fukujinzuke-工業.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B7%A5%E6%A5%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1322320 | [LL-Q5287 (jpn)-Fukujinzuke-捨てる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8D%A8%E3%81%A6%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1333560 | [LL-Q5287 (jpn)-Fukujinzuke-集める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%86%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001180 | [LL-Q5287 (jpn)-Fukujinzuke-おいでになる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%84%E3%81%A7%E3%81%AB%E3%81%AA%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1423650 | [LL-Q5287 (jpn)-Fukujinzuke-中学校.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%AD%E5%AD%A6%E6%A0%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1486460 | [LL-Q5287 (jpn)-Fukujinzuke-美術館.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BE%8E%E8%A1%93%E9%A4%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1201280 | [LL-Q5287 (jpn)-Fukujinzuke-海岸.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B5%B7%E5%B2%B8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1270390 | [LL-Q5287 (jpn)-Fukujinzuke-御主人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%A1%E4%B8%BB%E4%BA%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1505190 | [LL-Q5287 (jpn)-Fukujinzuke-文学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%87%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1587290 | [LL-Q5287 (jpn)-Fukujinzuke-いただく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1178450 | [LL-Q5287 (jpn)-Fukujinzuke-遠慮.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%A0%E6%85%AE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1279590 | [LL-Q5287 (jpn)-Fukujinzuke-校長.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A0%A1%E9%95%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002400 | [LL-Q5287 (jpn)-Fukujinzuke-お宅.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%AE%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1432850 | [LL-Q5287 (jpn)-Fukujinzuke-通う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%9A%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1483540 | [LL-Q5287 (jpn)-Fukujinzuke-比べる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AF%94%E3%81%B9%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1477170 | [LL-Q5287 (jpn)-Fukujinzuke-発音.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%99%BA%E9%9F%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002500 | [LL-Q5287 (jpn)-Fukujinzuke-お土産.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%9C%9F%E7%94%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1291500 | [LL-Q5287 (jpn)-Fukujinzuke-砂.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A0%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1229840 | [LL-Q5287 (jpn)-Fukujinzuke-泣く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%A3%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1164010 | [LL-Q5287 (jpn)-Fukujinzuke-一生懸命.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E7%94%9F%E6%87%B8%E5%91%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1270810 | [LL-Q5287 (jpn)-Fukujinzuke-お礼.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E7%A4%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1213870 | [LL-Q5287 (jpn)-Fukujinzuke-看護婦.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9C%8B%E8%AD%B7%E5%A9%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5886,18 +6285,30 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1445690 | [LL-Q5287 (jpn)-Fukujinzuke-怒る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%92%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1408810 | [LL-Q5287 (jpn)-Fukujinzuke-うつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%A4.wav) | Speaker: Fukujinzuke
+| ja-1408810 | [LL-Q5287 (jpn)-Fukujinzuke-打つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%93%E3%81%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1274820 | [LL-Q5287 (jpn)-Fukujinzuke-公務員.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%AC%E5%8B%99%E5%93%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1396840 | [LL-Q5287 (jpn)-Fukujinzuke-祖父.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A5%96%E7%88%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1310530 | [LL-Q5287 (jpn)-Fukujinzuke-枝.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9E%9D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1282260 | [LL-Q5287 (jpn)-Fukujinzuke-講義.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AC%9B%E7%BE%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1283860 | [LL-Q5287 (jpn)-Fukujinzuke-高等学校.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1040250 | [LL-Q5287 (jpn)-Fukujinzuke-ガソリン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AC%E3%82%BD%E3%83%AA%E3%83%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1538440 | [LL-Q5287 (jpn)-Fukujinzuke-踊る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B8%8A%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1250870 | [LL-Q5287 (jpn)-Fukujinzuke-景色.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%99%AF%E8%89%B2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1604300 | [LL-Q5287 (jpn)-Fukujinzuke-回る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%9E%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1527040 | [LL-Q5287 (jpn)-higa4 kagoshima (Higa4)-味噌.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-higa4_kagoshima_%28Higa4%29-%E5%91%B3%E5%99%8C.wav) | Speaker: higa4_kagoshima
 Recorder: Higa4 | CC0 |
-| ja-1589030 | [LL-Q5287 (jpn)-フィリピン人-贈り物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E4%BA%BA-%E8%B4%88%E3%82%8A%E7%89%A9.wav) | Speaker: フィリピン人
-Recorder: フィリピン人 | CC0 |
+| ja-1589030 | [LL-Q5287 (jpn)-Fukujinzuke-贈り物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B4%88%E3%82%8A%E7%89%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1396860 | [LL-Q5287 (jpn)-Fukujinzuke-祖母.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A5%96%E6%AF%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1599390 | [LL-Q5287 (jpn)-Fukujinzuke-直す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9B%B4%E3%81%99.wav) | Speaker: Fukujinzuke
@@ -5908,63 +6319,163 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-1438770 | [LL-Q5287 (jpn)-Fukujinzuke-天気予報.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A9%E6%B0%97%E4%BA%88%E5%A0%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1447000 | [LL-Q5287 (jpn)-Fukujinzuke-投げる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%95%E3%81%92%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1601810 | [LL-Q5287 (jpn)-CKali-ひげ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%81%B2%E3%81%92.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1222770 | [LL-Q5287 (jpn)-Fukujinzuke-祈る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A5%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1193950 | [LL-Q5287 (jpn)-Fukujinzuke-火事.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%81%AB%E4%BA%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1006280 | [LL-Q5287 (jpn)-Fukujinzuke-すると.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%99%E3%82%8B%E3%81%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1182710 | [LL-Q5287 (jpn)-Fukujinzuke-屋上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B1%8B%E4%B8%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1335440 | [LL-Q5287 (jpn)-Fukujinzuke-柔道.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9F%94%E9%81%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1282490 | [LL-Q5287 (jpn)-Fukujinzuke-郊外.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%83%8A%E5%A4%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1529390 | [LL-Q5287 (jpn)-Fukujinzuke-眠る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9C%A0%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1000940 | [LL-Q5287 (jpn)-Fukujinzuke-いらっしゃる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%82%89%E3%81%A3%E3%81%97%E3%82%83%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1313080 | [LL-Q5287 (jpn)-Fukujinzuke-歯医者.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%AF%E5%8C%BB%E8%80%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1270550 | [LL-Q5287 (jpn)-Fukujinzuke-おつり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%A4%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1215260 | [LL-Q5287 (jpn)-Fukujinzuke-間に合う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%96%93%E3%81%AB%E5%90%88%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1195840 | [LL-Q5287 (jpn)-Fukujinzuke-課長.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AA%B2%E9%95%B7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1589040 | [LL-Q5287 (jpn)-Fukujinzuke-遅れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%85%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1505600 | [LL-Q5287 (jpn)-Fukujinzuke-文法.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%87%E6%B3%95.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1390800 | [LL-Q5287 (jpn)-Fukujinzuke-浅い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B5%85%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1423240 | [LL-Q5287 (jpn)-Fukujinzuke-着物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9D%80%E7%89%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001870 | [LL-Q5287 (jpn)-Fukujinzuke-お見舞い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E8%A6%8B%E8%88%9E%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1357210 | [LL-Q5287 (jpn)-Fukujinzuke-飾る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%BE%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1004690 | [LL-Q5287 (jpn)-Fukujinzuke-このあいだ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%AE%E3%81%82%E3%81%84%E3%81%A0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1228690 | [LL-Q5287 (jpn)-Fukujinzuke-急行.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%A5%E8%A1%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1323010 | [LL-Q5287 (jpn)-CKali-謝る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%AC%9D%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1058580 | [LL-Q5287 (jpn)-Fukujinzuke-サンドイッチ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B5%E3%83%B3%E3%83%89%E3%82%A4%E3%83%83%E3%83%81.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1602800 | [LL-Q5287 (jpn)-Fukujinzuke-舟.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%88%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1595270 | [LL-Q5287 (jpn)-Fukujinzuke-辞典.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%9E%E5%85%B8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1158210 | [LL-Q5287 (jpn)-Fukujinzuke-うつる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%A4%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1002170 | [LL-Q5287 (jpn)-Fukujinzuke-お嬢さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%AC%A2%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1158210 | [LL-Q5287 (jpn)-Fukujinzuke-移る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%BB%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1348530 | [LL-Q5287 (jpn)-Fukujinzuke-小鳥.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%8F%E9%B3%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1421540 | [LL-Q5287 (jpn)-Fukujinzuke-地理.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%B0%E7%90%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1532910 | [LL-Q5287 (jpn)-Fukujinzuke-なる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1238840 | [LL-Q5287 (jpn)-Fukujinzuke-おっしゃる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%A3%E3%81%97%E3%82%83%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1383310 | [LL-Q5287 (jpn)-Fukujinzuke-赤ん坊.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B5%A4%E3%82%93%E5%9D%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1352290 | [LL-Q5287 (jpn)-Fukujinzuke-あがる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1593410 | [LL-Q5287 (jpn)-Fukujinzuke-込む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%BC%E3%82%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1588550 | [LL-Q5287 (jpn)-Fukujinzuke-売り場.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A3%B2%E3%82%8A%E5%A0%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1151120 | [LL-Q5287 (jpn)-Fukujinzuke-あいさつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%84%E3%81%95%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1209240 | [LL-Q5287 (jpn)-Fukujinzuke-噛む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%99%9B%E3%82%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1593570 | [LL-Q5287 (jpn)-Fukujinzuke-ご存じ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%94%E5%AD%98%E3%81%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1511790 | [LL-Q5287 (jpn)-Fukujinzuke-片付ける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%89%87%E4%BB%98%E3%81%91%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1449530 | [LL-Q5287 (jpn)-Fukujinzuke-答.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AD%94.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1352290 | [LL-Q5287 (jpn)-Fukujinzuke-上る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8A%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1028580 | [LL-Q5287 (jpn)-Fukujinzuke-エスカレーター.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1257110 | [LL-Q5287 (jpn)-I JethroBT-かたい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%8B%E3%81%9F%E3%81%84.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1518540 | [LL-Q5287 (jpn)-Fukujinzuke-亡くなる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%A1%E3%81%8F%E3%81%AA%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1385920 | [LL-Q5287 (jpn)-Fukujinzuke-折れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%98%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1260000 | [LL-Q5287 (jpn)-Fukujinzuke-見物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A6%8B%E7%89%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1244310 | [LL-Q5287 (jpn)-Fukujinzuke-苦い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8B%A6%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1257110 | [LL-Q5287 (jpn)-Fukujinzuke-かたい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1369900 | [LL-Q5287 (jpn)-Fukujinzuke-ごみ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%94%E3%81%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1219680 | [LL-Q5287 (jpn)-I JethroBT-寄る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%AF%84%E3%82%8B.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1228650 | [LL-Q5287 (jpn)-Fukujinzuke-急ぐ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%A5%E3%81%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1258710 | [LL-Q5287 (jpn)-Fukujinzuke-絹.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1385910 | [LL-Q5287 (jpn)-Fukujinzuke-折る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%98%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1032030 | [LL-Q5287 (jpn)-Fukujinzuke-オートバイ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AA%E3%83%BC%E3%83%88%E3%83%90%E3%82%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1208020 | [LL-Q5287 (jpn)-Fukujinzuke-われる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%8F%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1209650 | [LL-Q5287 (jpn)-Fukujinzuke-乾く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B9%BE%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1593590 | [LL-Q5287 (jpn)-Fukujinzuke-ごちそう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%94%E3%81%A1%E3%81%9D%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1222700 | [LL-Q5287 (jpn)-Fukujinzuke-汽車.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%BD%E8%BB%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1185290 | [LL-Q5287 (jpn)-Fukujinzuke-下宿.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8B%E5%AE%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1350080 | [LL-Q5287 (jpn)-Fukujinzuke-消しゴム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B6%88%E3%81%97%E3%82%B4%E3%83%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1499230 | [LL-Q5287 (jpn)-Fukujinzuke-葡萄.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%91%A1%E8%90%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1195140 | [LL-Q5287 (jpn)-Fukujinzuke-いじめる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%98%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1548550 | [LL-Q5287 (jpn)-Fukujinzuke-落る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%90%BD%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1192420 | [LL-Q5287 (jpn)-CKali-家内.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%AE%B6%E5%86%85.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1357250 | [LL-Q5287 (jpn)-Fukujinzuke-うえる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1586265 | [LL-Q5287 (jpn)-Fukujinzuke-空く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%BA%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1588320 | [LL-Q5287 (jpn)-Fukujinzuke-うつす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%A4%E3%81%99.wav) | Speaker: Fukujinzuke
+| ja-1357250 | [LL-Q5287 (jpn)-Fukujinzuke-植える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A4%8D%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1282340 | [LL-Q5287 (jpn)-Fukujinzuke-講堂.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AC%9B%E5%A0%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1004710 | [LL-Q5287 (jpn)-Fukujinzuke-このごろ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%AE%E3%81%94%E3%82%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1514960 | [LL-Q5287 (jpn)-Fukujinzuke-暮れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9A%AE%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1305700 | [LL-Q5287 (jpn)-Fukujinzuke-伺う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BC%BA%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1588320 | [LL-Q5287 (jpn)-Fukujinzuke-写す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%86%99%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589110 | [LL-Q5287 (jpn)-Fukujinzuke-押し入れ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%BC%E3%81%97%E5%85%A5%E3%82%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1004310 | [LL-Q5287 (jpn)-Fukujinzuke-こう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1333550 | [LL-Q5287 (jpn)-Fukujinzuke-あつまる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%A4%E3%81%BE%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1421900 | [LL-Q5287 (jpn)-Fukujinzuke-致す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%B4%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589260 | [LL-Q5287 (jpn)-Fukujinzuke-落す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%90%BD%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1223660 | [LL-Q5287 (jpn)-Fukujinzuke-起す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B5%B7%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2005990 | [LL-Q5287 (jpn)-Fukujinzuke-泳ぎ方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%B3%E3%81%8E%E6%96%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1333550 | [LL-Q5287 (jpn)-Fukujinzuke-集る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%86%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1269130 | [LL-Q5287 (jpn)-Fukujinzuke-くれる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8F%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1591420 | [LL-Q5287 (jpn)-Fukujinzuke-決る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%BA%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2083100 | [LL-Q5287 (jpn)-Fukujinzuke-日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5974,7 +6485,7 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1315840 | [LL-Q5287 (jpn)-Fukujinzuke-時.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%99%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1582710 | [LL-Q5287 (jpn)-Fukujinzuke-にほん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB%E3%81%BB%E3%82%93.wav) | Speaker: Fukujinzuke
+| ja-1582710 | [LL-Q5287 (jpn)-Fukujinzuke-日本.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%A5%E6%9C%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1313580 | [LL-Q5287 (jpn)-Fukujinzuke-事.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -5986,20 +6497,24 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1175570 | [LL-Q5287 (jpn)-Fukujinzuke-円.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%86%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2147630 | [LL-Q5287 (jpn)-Zsrtrgh-後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%BE%8C.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
-| ja-1269330 | [LL-Q5287 (jpn)-Zsrtrgh-後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%BE%8C.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-2147630 | [LL-Q5287 (jpn)-Fukujinzuke-後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1269330 | [LL-Q5287 (jpn)-Fukujinzuke-後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1375260 | [LL-Q5287 (jpn)-Fukujinzuke-性.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%A7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2082450 | [LL-Q5287 (jpn)-Fukujinzuke-大.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1352140 | [LL-Q5287 (jpn)-葵心-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%B8%8A.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1352140 | [LL-Q5287 (jpn)-Fukujinzuke-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1199330 | [LL-Q5287 (jpn)-Fukujinzuke-回.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%9E.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1352150 | [LL-Q5287 (jpn)-葵心-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%B8%8A.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
-| ja-1352170 | [LL-Q5287 (jpn)-葵心-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%B8%8A.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1352150 | [LL-Q5287 (jpn)-Fukujinzuke-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1281000 | [LL-Q5287 (jpn)-Fukujinzuke-考え.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%80%83%E3%81%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1352170 | [LL-Q5287 (jpn)-Fukujinzuke-上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1580820 | [LL-Q5287 (jpn)-Fukujinzuke-数.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1212250 | [LL-Q5287 (jpn)-Fukujinzuke-かんじ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%93%E3%81%98.wav) | Speaker: Fukujinzuke
@@ -6014,7 +6529,9 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1258810 | [LL-Q5287 (jpn)-Fukujinzuke-県.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9C%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1445160 | [LL-Q5287 (jpn)-Fukujinzuke-ど.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A9.wav) | Speaker: Fukujinzuke
+| ja-1445150 | [LL-Q5287 (jpn)-Fukujinzuke-度.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BA%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1445160 | [LL-Q5287 (jpn)-Fukujinzuke-度.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BA%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1048400 | [LL-Q5287 (jpn)-CKali-ゲーム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%B2%E3%83%BC%E3%83%A0.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
@@ -6032,15 +6549,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1366770 | [LL-Q5287 (jpn)-葵心-人間.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%BA%BA%E9%96%93.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
-| ja-1605840 | [LL-Q5287 (jpn)-Fukujinzuke-よう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
+| ja-1605840 | [LL-Q5287 (jpn)-Fukujinzuke-様.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A7%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1420020 | [LL-Q5287 (jpn)-Fukujinzuke-男の人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%B7%E3%81%AE%E4%BA%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1609210 | [LL-Q5287 (jpn)-Fukujinzuke-一度に.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E5%BA%A6%E3%81%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1254690 | [LL-Q5287 (jpn)-Fukujinzuke-結果.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%90%E6%9E%9C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1306200 | [LL-Q5287 (jpn)-Fukujinzuke-しよう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2088240 | [LL-Q5287 (jpn)-Fukujinzuke-生.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1378450 | [LL-Q5287 (jpn)-Fukujinzuke-生.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1302090 | [LL-Q5287 (jpn)-Fukujinzuke-参加.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%82%E5%8A%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1364440 | [LL-Q5287 (jpn)-葵心-神.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%A5%9E.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -6052,17 +6575,35 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2219590 | [LL-Q5287 (jpn)-Fukujinzuke-元.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2101130 | [LL-Q5287 (jpn)-Fukujinzuke-し.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97.wav) | Speaker: Fukujinzuke
+| ja-1000730 | [LL-Q5287 (jpn)-Fukujinzuke-いけない.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%91%E3%81%AA%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2101130 | [LL-Q5287 (jpn)-Fukujinzuke-氏.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1401000 | [LL-Q5287 (jpn)-CKali-相手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%9B%B8%E6%89%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1250090 | [LL-Q5287 (jpn)-Fukujinzuke-かた.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1263650 | [LL-Q5287 (jpn)-Fukujinzuke-現在.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8F%BE%E5%9C%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1578790 | [LL-Q5287 (jpn)-Fukujinzuke-いき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%8D.wav) | Speaker: Fukujinzuke
+| ja-1578790 | [LL-Q5287 (jpn)-Fukujinzuke-行き.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%8C%E3%81%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1313830 | [LL-Q5287 (jpn)-Fukujinzuke-事件.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%8B%E4%BB%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1293850 | [LL-Q5287 (jpn)-Fukujinzuke-最高.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%80%E9%AB%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1356730 | [LL-Q5287 (jpn)-Fukujinzuke-状態.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8A%B6%E6%85%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1538100 | [LL-Q5287 (jpn)-Fukujinzuke-約.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B4%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1205900 | [LL-Q5287 (jpn)-Fukujinzuke-確認.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A2%BA%E8%AA%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1289070 | [LL-Q5287 (jpn)-Fukujinzuke-今回.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E5%9B%9E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1264770 | [LL-Q5287 (jpn)-Fukujinzuke-個人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%80%8B%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1517150 | [LL-Q5287 (jpn)-Fukujinzuke-法.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%95.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1006380 | [LL-Q5287 (jpn)-Fukujinzuke-ずっと.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9A%E3%81%A3%E3%81%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1355790 | [LL-Q5287 (jpn)-Fukujinzuke-場.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A0%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6070,7 +6611,23 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-2859161 | [LL-Q5287 (jpn)-Fukujinzuke-音.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9F%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1208360 | [LL-Q5287 (jpn)-Fukujinzuke-活動.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B4%BB%E5%8B%95.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1356700 | [LL-Q5287 (jpn)-Fukujinzuke-状況.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8A%B6%E6%B3%81.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1595730 | [LL-Q5287 (jpn)-Fukujinzuke-すべて.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%99%E3%81%B9%E3%81%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1459400 | [LL-Q5287 (jpn)-Fukujinzuke-内容.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%86%85%E5%AE%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1394770 | [LL-Q5287 (jpn)-Fukujinzuke-全.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1477840 | [LL-Q5287 (jpn)-Fukujinzuke-発表.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%99%BA%E8%A1%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1165790 | [LL-Q5287 (jpn)-Fukujinzuke-一般.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E8%88%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1279170 | [LL-Q5287 (jpn)-Fukujinzuke-攻撃.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%BB%E6%92%83.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1499490 | [LL-Q5287 (jpn)-Fukujinzuke-部分.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%83%A8%E5%88%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1956960 | [LL-Q5287 (jpn)-Fukujinzuke-む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6078,77 +6635,135 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1221130 | [LL-Q5287 (jpn)-Fukujinzuke-きのう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%81%AE%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1429120 | [LL-Q5287 (jpn)-Fukujinzuke-調査.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AA%BF%E6%9F%BB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1577130 | [LL-Q5287 (jpn)-Fukujinzuke-いつでも.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1202760 | [LL-Q5287 (jpn)-葵心-開始.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%96%8B%E5%A7%8B.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1223240 | [LL-Q5287 (jpn)-Fukujinzuke-記事.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%98%E4%BA%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1296300 | [LL-Q5287 (jpn)-Fukujinzuke-際.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9A%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1368370 | [LL-Q5287 (jpn)-葵心-人生.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%BA%BA%E7%94%9F.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1173660 | [LL-Q5287 (jpn)-Fukujinzuke-影響.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%B1%E9%9F%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1376070 | [LL-Q5287 (jpn)-Fukujinzuke-政府.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%BF%E5%BA%9C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1420730 | [LL-Q5287 (jpn)-Fukujinzuke-地.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1420800 | [LL-Q5287 (jpn)-Fukujinzuke-地域.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%B0%E5%9F%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1188880 | [LL-Q5287 (jpn)-Fukujinzuke-いつまでも.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E3%82%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1155150 | [LL-Q5287 (jpn)-Fukujinzuke-いぜん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%9C%E3%82%93.wav) | Speaker: Fukujinzuke
+| ja-1155150 | [LL-Q5287 (jpn)-Fukujinzuke-以前.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E5%89%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1629200 | [LL-Q5287 (jpn)-Fukujinzuke-王.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8E%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1247660 | [LL-Q5287 (jpn)-Fukujinzuke-軍.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BB%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1196030 | [LL-Q5287 (jpn)-Fukujinzuke-過去.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8E%E5%8E%BB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1282100 | [LL-Q5287 (jpn)-Fukujinzuke-行動.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%8C%E5%8B%95.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1392250 | [LL-Q5287 (jpn)-Fukujinzuke-選手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%B8%E6%89%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1219910 | [LL-Q5287 (jpn)-Fukujinzuke-希望.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%8C%E6%9C%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1333500 | [LL-Q5287 (jpn)-Fukujinzuke-週間.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%B1%E9%96%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1213280 | [LL-Q5287 (jpn)-Fukujinzuke-環境.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%92%B0%E5%A2%83.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1226020 | [LL-Q5287 (jpn)-Fukujinzuke-議員.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AD%B0%E5%93%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1410800 | [LL-Q5287 (jpn)-Fukujinzuke-いただきます.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8D%E3%81%BE%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1477310 | [LL-Q5287 (jpn)-CKali-発見.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%99%BA%E8%A6%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1325260 | [LL-Q5287 (jpn)-Fukujinzuke-主義.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%BB%E7%BE%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1609350 | [LL-Q5287 (jpn)-Fukujinzuke-生まれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E3%81%BE%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1582000 | [LL-Q5287 (jpn)-Fukujinzuke-敵.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%B5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1270910 | [LL-Q5287 (jpn)-Fukujinzuke-語.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AA%9E.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2083540 | [LL-Q5287 (jpn)-Fukujinzuke-小.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1484350 | [LL-Q5287 (jpn)-Fukujinzuke-被害.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A2%AB%E5%AE%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1484920 | [LL-Q5287 (jpn)-Fukujinzuke-非常.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%9E%E5%B8%B8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1584695 | [LL-Q5287 (jpn)-Fukujinzuke-面.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%A2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1158400 | [LL-Q5287 (jpn)-葵心-移動.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%A7%BB%E5%8B%95.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1158400 | [LL-Q5287 (jpn)-Fukujinzuke-移動.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%BB%E5%8B%95.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1515670 | [LL-Q5287 (jpn)-CKali-報告.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%A0%B1%E5%91%8A.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1490430 | [LL-Q5287 (jpn)-Fukujinzuke-秒.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%92.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1505390 | [LL-Q5287 (jpn)-Fukujinzuke-文字.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%87%E5%AD%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1156640 | [LL-Q5287 (jpn)-Fukujinzuke-意識.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%8F%E8%AD%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1166510 | [LL-Q5287 (jpn)-Fukujinzuke-一方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E6%96%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1397630 | [LL-Q5287 (jpn)-Fukujinzuke-組織.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%84%E7%B9%94.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1418160 | [LL-Q5287 (jpn)-Fukujinzuke-担当.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8B%85%E5%BD%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1594060 | [LL-Q5287 (jpn)-Fukujinzuke-幸せ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%B8%E3%81%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1173430 | [LL-Q5287 (jpn)-Fukujinzuke-営業.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%96%B6%E6%A5%AD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1318090 | [LL-Q5287 (jpn)-Fukujinzuke-自然.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%AA%E7%84%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1449090 | [LL-Q5287 (jpn)-Fukujinzuke-当時.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%93%E6%99%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1478620 | [LL-Q5287 (jpn)-Fukujinzuke-判断.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%A4%E6%96%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1365520 | [LL-Q5287 (jpn)-Fukujinzuke-身.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BA%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1328820 | [LL-Q5287 (jpn)-葵心-種.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%A8%AE.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1263710 | [LL-Q5287 (jpn)-Fukujinzuke-現実.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8F%BE%E5%AE%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1328820 | [LL-Q5287 (jpn)-Fukujinzuke-種.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A8%AE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1528060 | [LL-Q5287 (jpn)-Fukujinzuke-未来.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%AA%E6%9D%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1587310 | [LL-Q5287 (jpn)-Fukujinzuke-いち.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A1.wav) | Speaker: Fukujinzuke
+| ja-1606450 | [LL-Q5287 (jpn)-Fukujinzuke-労働.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8A%B4%E5%83%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1587310 | [LL-Q5287 (jpn)-Fukujinzuke-位置.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%8D%E7%BD%AE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1168390 | [LL-Q5287 (jpn)-Fukujinzuke-印象.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%B0%E8%B1%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1245280 | [LL-Q5287 (jpn)-Fukujinzuke-空.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1471560 | [LL-Q5287 (jpn)-I JethroBT-馬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E9%A6%AC.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1471560 | [LL-Q5287 (jpn)-Fukujinzuke-馬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A6%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1321140 | [LL-Q5287 (jpn)-Fukujinzuke-実施.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%9F%E6%96%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1420970 | [LL-Q5287 (jpn)-Fukujinzuke-地球.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%B0%E7%90%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1540150 | [LL-Q5287 (jpn)-Fukujinzuke-友人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%8B%E4%BA%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1171300 | [LL-Q5287 (jpn)-葵心-宇宙.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%AE%87%E5%AE%99.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1171300 | [LL-Q5287 (jpn)-Fukujinzuke-宇宙.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%87%E5%AE%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1287070 | [LL-Q5287 (jpn)-Fukujinzuke-国民.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%BD%E6%B0%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1580290 | [LL-Q5287 (jpn)-Fukujinzuke-少女.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%91%E5%A5%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1414650 | [LL-Q5287 (jpn)-Fukujinzuke-大統領.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E7%B5%B1%E9%A0%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1532310 | [LL-Q5287 (jpn)-Fukujinzuke-明らか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%8E%E3%82%89%E3%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1189500 | [LL-Q5287 (jpn)-Fukujinzuke-価格.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BE%A1%E6%A0%BC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1955900 | [LL-Q5287 (jpn)-Fukujinzuke-学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1291070 | [LL-Q5287 (jpn)-Fukujinzuke-さ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%95.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1481590 | [LL-Q5287 (jpn)-Fukujinzuke-犯罪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8A%AF%E7%BD%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1207230 | [LL-Q5287 (jpn)-Fukujinzuke-楽.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A5%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6162,15 +6777,49 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1349170 | [LL-Q5287 (jpn)-Fukujinzuke-少年.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%91%E5%B9%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1421450 | [LL-Q5287 (jpn)-Fukujinzuke-地方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%B0%E6%96%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1156100 | [LL-Q5287 (jpn)-Fukujinzuke-委員.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A7%94%E5%93%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1256170 | [LL-Q5287 (jpn)-Fukujinzuke-健康.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%81%A5%E5%BA%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1220870 | [LL-Q5287 (jpn)-Fukujinzuke-機関.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A9%9F%E9%96%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1411470 | [LL-Q5287 (jpn)-Fukujinzuke-逮捕.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%AE%E6%8D%95.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1530510 | [LL-Q5287 (jpn)-Fukujinzuke-むだ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%80%E3%81%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1531940 | [LL-Q5287 (jpn)-Fukujinzuke-命.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%91%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1160140 | [LL-Q5287 (jpn)-Fukujinzuke-医療.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8C%BB%E7%99%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1289140 | [LL-Q5287 (jpn)-Fukujinzuke-今後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E5%BE%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1433330 | [LL-Q5287 (jpn)-Fukujinzuke-通信.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%9A%E4%BF%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1444950 | [LL-Q5287 (jpn)-Fukujinzuke-都.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%83%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1361510 | [LL-Q5287 (jpn)-Fukujinzuke-新た.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%B0%E3%81%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1263760 | [LL-Q5287 (jpn)-Fukujinzuke-現場.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8F%BE%E5%A0%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2252690 | [LL-Q5287 (jpn)-Fukujinzuke-ド.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1919590 | [LL-Q5287 (jpn)-Fukujinzuke-きゅう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%85%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1331840 | [LL-Q5287 (jpn)-Fukujinzuke-州.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B7%9E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1447320 | [LL-Q5287 (jpn)-Fukujinzuke-投票.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%95%E7%A5%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1154120 | [LL-Q5287 (jpn)-Fukujinzuke-安定.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%89%E5%AE%9A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1278510 | [LL-Q5287 (jpn)-Fukujinzuke-広告.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BA%83%E5%91%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1445270 | [LL-Q5287 (jpn)-Fukujinzuke-土.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1444990 | [LL-Q5287 (jpn)-Fukujinzuke-都市.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%83%BD%E5%B8%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1484150 | [LL-Q5287 (jpn)-Fukujinzuke-秘密.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%98%E5%AF%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1498460 | [LL-Q5287 (jpn)-Fukujinzuke-武器.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%A6%E5%99%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6180,29 +6829,63 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1566210 | [LL-Q5287 (jpn)-Fukujinzuke-いずれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%9A%E3%82%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1308300 | [LL-Q5287 (jpn)-Fukujinzuke-市場.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%82%E5%A0%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1325910 | [LL-Q5287 (jpn)-Fukujinzuke-主張.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%BB%E5%BC%B5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1419270 | [LL-Q5287 (jpn)-Fukujinzuke-団体.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%A3%E4%BD%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1296680 | [LL-Q5287 (jpn)-Fukujinzuke-罪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BD%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1443320 | [LL-Q5287 (jpn)-Fukujinzuke-電子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%BB%E5%AD%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1241550 | [LL-Q5287 (jpn)-Fukujinzuke-禁止.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A6%81%E6%AD%A2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1254480 | [LL-Q5287 (jpn)-Fukujinzuke-穴.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1586850 | [LL-Q5287 (jpn)-Fukujinzuke-あるいは.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%8B%E3%81%84%E3%81%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1220810 | [LL-Q5287 (jpn)-Fukujinzuke-きかい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%81%8B%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1508070 | [LL-Q5287 (jpn)-葵心-平和.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%B9%B3%E5%92%8C.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
-| ja-1158450 | [LL-Q5287 (jpn)-Fukujinzuke-いじ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%98.wav) | Speaker: Fukujinzuke
+| ja-1158450 | [LL-Q5287 (jpn)-Fukujinzuke-維持.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B6%AD%E6%8C%81.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1230380 | [LL-Q5287 (jpn)-Fukujinzuke-きゅう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%85%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1386020 | [LL-Q5287 (jpn)-CKali-設計.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%A8%AD%E8%A8%88.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1539980 | [LL-Q5287 (jpn)-Fukujinzuke-友.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1483420 | [LL-Q5287 (jpn)-Fukujinzuke-批判.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%B9%E5%88%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1489350 | [LL-Q5287 (jpn)-Fukujinzuke-表.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1588760 | [LL-Q5287 (jpn)-Fukujinzuke-得る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%97%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1454500 | [LL-Q5287 (jpn)-Fukujinzuke-得る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%97%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1593710 | [LL-Q5287 (jpn)-CKali-桜.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%A1%9C.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1355710 | [LL-Q5287 (jpn)-Fukujinzuke-城.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9F%8E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1155210 | [LL-Q5287 (jpn)-Fukujinzuke-以来.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E6%9D%A5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1258200 | [LL-Q5287 (jpn)-Fukujinzuke-権利.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A8%A9%E5%88%A9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1420590 | [LL-Q5287 (jpn)-Fukujinzuke-知識.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9F%A5%E8%AD%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1505090 | [LL-Q5287 (jpn)-Fukujinzuke-文.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%87.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2826528 | [LL-Q5287 (jpn)-Fukujinzuke-お.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A.wav) | Speaker: Fukujinzuke
+| ja-2826528 | [LL-Q5287 (jpn)-Fukujinzuke-御.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1212210 | [LL-Q5287 (jpn)-Fukujinzuke-患者.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%82%A3%E8%80%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1320970 | [LL-Q5287 (jpn)-Fukujinzuke-実験.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%9F%E9%A8%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1409800 | [LL-Q5287 (jpn)-Fukujinzuke-たい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1492570 | [LL-Q5287 (jpn)-Fukujinzuke-不思議.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8D%E6%80%9D%E8%AD%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1029430 | [LL-Q5287 (jpn)-Fukujinzuke-エネルギー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AE%E3%83%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6210,15 +6893,31 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1581400 | [LL-Q5287 (jpn)-Fukujinzuke-他人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%96%E4%BA%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1475910 | [LL-Q5287 (jpn)-Fukujinzuke-爆発.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%88%86%E7%99%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1545820 | [LL-Q5287 (jpn)-Fukujinzuke-様子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A7%98%E5%AD%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1979930 | [LL-Q5287 (jpn)-Fukujinzuke-お互い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E4%BA%92%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1333450 | [LL-Q5287 (jpn)-葵心-週.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%80%B1.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1358760 | [LL-Q5287 (jpn)-Fukujinzuke-尻.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1509480 | [LL-Q5287 (jpn)-CKali-別に.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%88%A5%E3%81%AB.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1164510 | [LL-Q5287 (jpn)-Fukujinzuke-いったい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A3%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+| ja-1157760 | [LL-Q5287 (jpn)-Fukujinzuke-異常.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%95%B0%E5%B8%B8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1164510 | [LL-Q5287 (jpn)-Fukujinzuke-一体.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E4%BD%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1237160 | [LL-Q5287 (jpn)-Fukujinzuke-教授.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%99%E6%8E%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1345430 | [LL-Q5287 (jpn)-Fukujinzuke-女優.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A5%B3%E5%84%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1155710 | [LL-Q5287 (jpn)-Fukujinzuke-依頼.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BE%9D%E9%A0%BC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1279310 | [LL-Q5287 (jpn)-Fukujinzuke-さらに.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%95%E3%82%89%E3%81%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1310950 | [LL-Q5287 (jpn)-Fukujinzuke-死亡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%BB%E4%BA%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1337000 | [LL-Q5287 (jpn)-I JethroBT-じゅう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%98%E3%82%85%E3%81%86.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
@@ -6226,33 +6925,63 @@ Recorder: I JethroBT | CC BY-SA 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1295060 | [LL-Q5287 (jpn)-Fukujinzuke-すみません.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%99%E3%81%BF%E3%81%BE%E3%81%9B%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2081570 | [LL-Q5287 (jpn)-Fukujinzuke-税.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A8%8E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1501110 | [LL-Q5287 (jpn)-Fukujinzuke-腹.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%85%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1327120 | [LL-Q5287 (jpn)-CKali-守る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%AE%88%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1481350 | [LL-Q5287 (jpn)-Fukujinzuke-板.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9D%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1607520 | [LL-Q5287 (jpn)-Fukujinzuke-演奏.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%BC%94%E5%A5%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1256730 | [LL-Q5287 (jpn)-Fukujinzuke-けん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%91%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1558920 | [LL-Q5287 (jpn)-CKali-恋人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%81%8B%E4%BA%BA.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1240530 | [LL-Q5287 (jpn)-Fukujinzuke-玉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8E%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1497680 | [LL-Q5287 (jpn)-Fukujinzuke-父親.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%88%B6%E8%A6%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1512360 | [LL-Q5287 (jpn)-Fukujinzuke-便.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BE%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1172610 | [LL-Q5287 (jpn)-Fukujinzuke-運.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1577985 | [LL-Q5287 (jpn)-Fukujinzuke-居る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B1%85%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1317770 | [LL-Q5287 (jpn)-Fukujinzuke-自殺.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%AA%E6%AE%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1454290 | [LL-Q5287 (jpn)-Fukujinzuke-道路.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%93%E8%B7%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1105360 | [LL-Q5287 (jpn)-Fukujinzuke-ビデオ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%93%E3%83%87%E3%82%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1607050 | [LL-Q5287 (jpn)-Fukujinzuke-我々.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%88%91%E3%80%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1544730 | [LL-Q5287 (jpn)-CKali-与える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E4%B8%8E%E3%81%88%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1610550 | [LL-Q5287 (jpn)-Fukujinzuke-あらわれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%89%E3%82%8F%E3%82%8C.wav) | Speaker: Fukujinzuke
+| ja-1610550 | [LL-Q5287 (jpn)-Fukujinzuke-現れ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8F%BE%E3%82%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1200960 | [LL-Q5287 (jpn)-CKali-改善.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%94%B9%E5%96%84.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1329300 | [LL-Q5287 (jpn)-Fukujinzuke-首相.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A6%96%E7%9B%B8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2796520 | [LL-Q5287 (jpn)-Fukujinzuke-ビール.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%93%E3%83%BC%E3%83%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1237130 | [LL-Q5287 (jpn)-Fukujinzuke-教師.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%99%E5%B8%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1272730 | [LL-Q5287 (jpn)-Fukujinzuke-候補.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%80%99%E8%A3%9C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1373990 | [LL-Q5287 (jpn)-Fukujinzuke-世紀.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%96%E7%B4%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1365860 | [LL-Q5287 (jpn)-Fukujinzuke-辛い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%9B%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1611020 | [LL-Q5287 (jpn)-CKali-なんで.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%81%AA%E3%82%93%E3%81%A7.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1172590 | [LL-Q5287 (jpn)-Fukujinzuke-噂.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%99%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1264420 | [LL-Q5287 (jpn)-Fukujinzuke-言語.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%80%E8%AA%9E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1334210 | [LL-Q5287 (jpn)-Fukujinzuke-住民.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%8F%E6%B0%91.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1476450 | [LL-Q5287 (jpn)-Fukujinzuke-肌.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%82%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6268,25 +6997,41 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1379530 | [LL-Q5287 (jpn)-Fukujinzuke-生命.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E5%91%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1445980 | [LL-Q5287 (jpn)-Fukujinzuke-党.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%9A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1587300 | [LL-Q5287 (jpn)-Fukujinzuke-痛み.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%97%9B%E3%81%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1223250 | [LL-Q5287 (jpn)-Fukujinzuke-記者.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%98%E8%80%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1549470 | [LL-Q5287 (jpn)-Fukujinzuke-利益.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%A9%E7%9B%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1351400 | [LL-Q5287 (jpn)-Fukujinzuke-笑顔.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AC%91%E9%A1%94.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1207500 | [LL-Q5287 (jpn)-Fukujinzuke-額.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A1%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1595090 | [LL-Q5287 (jpn)-Fukujinzuke-銀.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%8A%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1257500 | [LL-Q5287 (jpn)-Fukujinzuke-建築.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BB%BA%E7%AF%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1207510 | [LL-Q5287 (jpn)-Fukujinzuke-額.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A1%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1152510 | [LL-Q5287 (jpn)-Fukujinzuke-悪魔.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%82%AA%E9%AD%94.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1231490 | [LL-Q5287 (jpn)-葵心-牛.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%89%9B.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
-| ja-1408370 | [LL-Q5287 (jpn)-Higa4-太陽.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Higa4-%E5%A4%AA%E9%99%BD.wav) | Speaker: Higa4
-Recorder: Higa4 | CC BY-SA 4.0 |
+| ja-1231490 | [LL-Q5287 (jpn)-Fukujinzuke-牛.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%89%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1408370 | [LL-Q5287 (jpn)-Fukujinzuke-太陽.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%AA%E9%99%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1181500 | [LL-Q5287 (jpn)-Fukujinzuke-王子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8E%8B%E5%AD%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1225630 | [LL-Q5287 (jpn)-葵心-疑問.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E7%96%91%E5%95%8F.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1379430 | [LL-Q5287 (jpn)-Fukujinzuke-生物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E7%89%A9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2055530 | [LL-Q5287 (jpn)-Fukujinzuke-だが.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A0%E3%81%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1213060 | [LL-Q5287 (jpn)-Fukujinzuke-汗.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1257590 | [LL-Q5287 (jpn)-Fukujinzuke-憲法.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%86%B2%E6%B3%95.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1555930 | [LL-Q5287 (jpn)-Fukujinzuke-涙.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B6%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6296,13 +7041,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1148850 | [LL-Q5287 (jpn)-葵心-ワイン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%83%AF%E3%82%A4%E3%83%B3.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1154770 | [LL-Q5287 (jpn)-Fukujinzuke-案.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A1%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1576200 | [LL-Q5287 (jpn)-Fukujinzuke-一生.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E7%94%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1158950 | [LL-Q5287 (jpn)-Fukujinzuke-違反.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%95%E5%8F%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1034660 | [LL-Q5287 (jpn)-葵心-オフィス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1044830 | [LL-Q5287 (jpn)-Fukujinzuke-クリスマス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1411070 | [LL-Q5287 (jpn)-Fukujinzuke-袋.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A2%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1555710 | [LL-Q5287 (jpn)-Fukujinzuke-わ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%8F.wav) | Speaker: Fukujinzuke
+| ja-1555710 | [LL-Q5287 (jpn)-Fukujinzuke-輪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BC%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1206820 | [LL-Q5287 (jpn)-葵心-学習.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%AD%A6%E7%BF%92.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -6312,17 +7063,35 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1586780 | [LL-Q5287 (jpn)-Fukujinzuke-あらゆる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%89%E3%82%86%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1236650 | [LL-Q5287 (jpn)-Fukujinzuke-おそらく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%9D%E3%82%89%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1590145 | [LL-Q5287 (jpn)-Fukujinzuke-影.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%B1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1236750 | [LL-Q5287 (jpn)-Fukujinzuke-恐怖.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%81%90%E6%80%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1253060 | [LL-Q5287 (jpn)-Fukujinzuke-芸術.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8A%B8%E8%A1%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1576100 | [LL-Q5287 (jpn)-CKali-一時.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E4%B8%80%E6%99%82.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1163340 | [LL-Q5287 (jpn)-Fukujinzuke-一瞬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E7%9E%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1225900 | [LL-Q5287 (jpn)-Fukujinzuke-義務.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BE%A9%E5%8B%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1299030 | [LL-Q5287 (jpn)-Fukujinzuke-殺す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AE%BA%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1357300 | [LL-Q5287 (jpn)-Fukujinzuke-植物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A4%8D%E7%89%A9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1470970 | [LL-Q5287 (jpn)-フィリピン人-波.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E4%BA%BA-%E6%B3%A2.wav) | Speaker: フィリピン人
 Recorder: フィリピン人 | CC0 |
 | ja-1583460 | [LL-Q5287 (jpn)-CKali-描く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%8F%8F%E3%81%8F.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1223680 | [LL-Q5287 (jpn)-Fukujinzuke-起こる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B5%B7%E3%81%93%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1252050 | [LL-Q5287 (jpn)-Fukujinzuke-計.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1373060 | [LL-Q5287 (jpn)-Fukujinzuke-数字.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%95%B0%E5%AD%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1425710 | [LL-Q5287 (jpn)-Fukujinzuke-なか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%81%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1482010 | [LL-Q5287 (jpn)-葵心-飯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%A3%AF.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -6332,11 +7101,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1174070 | [LL-Q5287 (jpn)-Fukujinzuke-永遠.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%B8%E9%81%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1359240 | [LL-Q5287 (jpn)-Fukujinzuke-信号.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BF%A1%E5%8F%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1437780 | [LL-Q5287 (jpn)-Fukujinzuke-鉄.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%89%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1137570 | [LL-Q5287 (jpn)-Fukujinzuke-ヨーロッパ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1190710 | [LL-Q5287 (jpn)-Fukujinzuke-か.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B.wav) | Speaker: Fukujinzuke
+| ja-1448810 | [LL-Q5287 (jpn)-Fukujinzuke-当たる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%93%E3%81%9F%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1343150 | [LL-Q5287 (jpn)-Fukujinzuke-いわゆる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%82%8F%E3%82%86%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1169610 | [LL-Q5287 (jpn)-Fukujinzuke-引退.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BC%95%E9%80%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1190710 | [LL-Q5287 (jpn)-Fukujinzuke-可.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%AF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1261140 | [LL-Q5287 (jpn)-Fukujinzuke-原.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8E%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1241810 | [LL-Q5287 (jpn)-Fukujinzuke-筋肉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AD%8B%E8%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6344,9 +7123,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1581590 | [LL-Q5287 (jpn)-Fukujinzuke-谷.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B0%B7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1156610 | [LL-Q5287 (jpn)-Fukujinzuke-いし.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%97.wav) | Speaker: Fukujinzuke
+| ja-1179320 | [LL-Q5287 (jpn)-Fukujinzuke-奥.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A5%A5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1236690 | [LL-Q5287 (jpn)-Fukujinzuke-恐ろしい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%81%90%E3%82%8D%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1208460 | [LL-Q5287 (jpn)-Fukujinzuke-活用.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B4%BB%E7%94%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1455500 | [LL-Q5287 (jpn)-Fukujinzuke-毒.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AF%92.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1375040 | [LL-Q5287 (jpn)-Fukujinzuke-勢い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8B%A2%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1156610 | [LL-Q5287 (jpn)-Fukujinzuke-意思.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%8F%E6%80%9D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1206530 | [LL-Q5287 (jpn)-Fukujinzuke-学ぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%A6%E3%81%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1156410 | [LL-Q5287 (jpn)-Fukujinzuke-意外.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%8F%E5%A4%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1186760 | [LL-Q5287 (jpn)-Fukujinzuke-化学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8C%96%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6354,15 +7145,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1575990 | [LL-Q5287 (jpn)-Fukujinzuke-一言.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E8%A8%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1349860 | [LL-Q5287 (jpn)-Fukujinzuke-松.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9D%BE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1446420 | [LL-Q5287 (jpn)-Fukujinzuke-刀.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1360770 | [LL-Q5287 (jpn)-CKali-心臓.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%BF%83%E8%87%93.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1077330 | [LL-Q5287 (jpn)-Fukujinzuke-チーズ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%81%E3%83%BC%E3%82%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1177500 | [LL-Q5287 (jpn)-Fukujinzuke-縁.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B8%81.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1538590 | [LL-Q5287 (jpn)-Fukujinzuke-油.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B2%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1488840 | [LL-Q5287 (jpn)-Fukujinzuke-氷.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1229880 | [LL-Q5287 (jpn)-Fukujinzuke-きゅう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%85%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1243040 | [LL-Q5287 (jpn)-Fukujinzuke-金属.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%91%E5%B1%9E.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6370,19 +7167,25 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1171680 | [LL-Q5287 (jpn)-Fukujinzuke-羽.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BE%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1512080 | [LL-Q5287 (jpn)-Fukujinzuke-あたり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%9F%E3%82%8A.wav) | Speaker: Fukujinzuke
+| ja-1512080 | [LL-Q5287 (jpn)-Fukujinzuke-辺り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%BA%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1422570 | [LL-Q5287 (jpn)-CKali-茶.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%8C%B6.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1519830 | [LL-Q5287 (jpn)-CKali-冒険.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%86%92%E9%99%BA.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1404320 | [LL-Q5287 (jpn)-Fukujinzuke-いき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%8D.wav) | Speaker: Fukujinzuke
+| ja-1404320 | [LL-Q5287 (jpn)-Fukujinzuke-息.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%81%AF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1169660 | [LL-Q5287 (jpn)-Fukujinzuke-引用.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BC%95%E7%94%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1483800 | [LL-Q5287 (jpn)-Fukujinzuke-皮.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9A%AE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1345020 | [LL-Q5287 (jpn)-CKali-女王.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%A5%B3%E7%8E%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1164740 | [LL-Q5287 (jpn)-Fukujinzuke-一致.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E8%87%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1217270 | [LL-Q5287 (jpn)-Fukujinzuke-岩.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B2%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1174760 | [LL-Q5287 (jpn)-Fukujinzuke-衛星.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%9B%E6%98%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1296820 | [LL-Q5287 (jpn)-Fukujinzuke-財産.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B2%A1%E7%94%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6390,39 +7193,75 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1182700 | [LL-Q5287 (jpn)-Fukujinzuke-屋根.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B1%8B%E6%A0%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1508290 | [LL-Q5287 (jpn)-Fukujinzuke-え.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%88.wav) | Speaker: Fukujinzuke
+| ja-1183510 | [LL-Q5287 (jpn)-Fukujinzuke-温度.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B8%A9%E5%BA%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1203540 | [LL-Q5287 (jpn)-Fukujinzuke-外交.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%96%E4%BA%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1311870 | [LL-Q5287 (jpn)-Fukujinzuke-至る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%87%B3%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1508290 | [LL-Q5287 (jpn)-Fukujinzuke-柄.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9F%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1508300 | [LL-Q5287 (jpn)-Fukujinzuke-柄.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9F%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1177390 | [LL-Q5287 (jpn)-Fukujinzuke-猿.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8C%BF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1472650 | [LL-Q5287 (jpn)-Fukujinzuke-背.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%83%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1547530 | [LL-Q5287 (jpn)-Fukujinzuke-翼.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BF%BC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1000920 | [LL-Q5287 (jpn)-Fukujinzuke-いらっしゃい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%82%89%E3%81%A3%E3%81%97%E3%82%83%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1226040 | [LL-Q5287 (jpn)-Fukujinzuke-議会.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AD%B0%E4%BC%9A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1266470 | [LL-Q5287 (jpn)-葵心-呼吸.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%91%BC%E5%90%B8.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1375740 | [LL-Q5287 (jpn)-Fukujinzuke-成人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%88%90%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1487320 | [LL-Q5287 (jpn)-Fukujinzuke-膝.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%86%9D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1153440 | [LL-Q5287 (jpn)-CKali-扱う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%89%B1%E3%81%86.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1263510 | [LL-Q5287 (jpn)-Fukujinzuke-あらわれる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%89%E3%82%8F%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1263510 | [LL-Q5287 (jpn)-Fukujinzuke-現れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8F%BE%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1387010 | [LL-Q5287 (jpn)-Fukujinzuke-舌.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%88%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1552140 | [LL-Q5287 (jpn)-Fukujinzuke-流れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B5%81%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1450030 | [LL-Q5287 (jpn)-Fukujinzuke-豆.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B1%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1383680 | [LL-Q5287 (jpn)-Zsrtrgh-あと.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%82%E3%81%A8.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1383680 | [LL-Q5287 (jpn)-Fukujinzuke-跡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B7%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1168190 | [LL-Q5287 (jpn)-Fukujinzuke-印刷.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%B0%E5%88%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1176820 | [LL-Q5287 (jpn)-Fukujinzuke-演技.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%BC%94%E6%8A%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1514840 | [LL-Q5287 (jpn)-Fukujinzuke-墓.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A2%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1390780 | [LL-Q5287 (jpn)-Fukujinzuke-泉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1195710 | [LL-Q5287 (jpn)-Fukujinzuke-か.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1168060 | [LL-Q5287 (jpn)-Fukujinzuke-印.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1437610 | [LL-Q5287 (jpn)-Fukujinzuke-哲学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%93%B2%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1329340 | [LL-Q5287 (jpn)-Fukujinzuke-首都.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A6%96%E9%83%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1179040 | [LL-Q5287 (jpn)-Fukujinzuke-汚染.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B1%9A%E6%9F%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1417330 | [LL-Q5287 (jpn)-Fukujinzuke-単語.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%98%E8%AA%9E.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1290020 | [LL-Q5287 (jpn)-Fukujinzuke-ね.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AD.wav) | Speaker: Fukujinzuke
+| ja-1290020 | [LL-Q5287 (jpn)-Fukujinzuke-根.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A0%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1067040 | [LL-Q5287 (jpn)-Fukujinzuke-スープ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B9%E3%83%BC%E3%83%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1470660 | [LL-Q5287 (jpn)-Fukujinzuke-農業.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BE%B2%E6%A5%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1476520 | [LL-Q5287 (jpn)-Fukujinzuke-畑.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%95%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1609050 | [LL-Q5287 (jpn)-Fukujinzuke-集まり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%86%E3%81%BE%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1173990 | [LL-Q5287 (jpn)-Fukujinzuke-栄養.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A0%84%E9%A4%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1359040 | [LL-Q5287 (jpn)-Fukujinzuke-信じる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BF%A1%E3%81%98%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6432,19 +7271,33 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1150450 | [LL-Q5287 (jpn)-CKali-愛する.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%84%9B%E3%81%99%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1176660 | [LL-Q5287 (jpn)-Fukujinzuke-援助.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8F%B4%E5%8A%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1304350 | [LL-Q5287 (jpn)-CKali-酸素.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E9%85%B8%E7%B4%A0.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1065950 | [LL-Q5287 (jpn)-Fukujinzuke-ジュース.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B8%E3%83%A5%E3%83%BC%E3%82%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1299680 | [LL-Q5287 (jpn)-I JethroBT-皿.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E7%9A%BF.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
 | ja-1378590 | [LL-Q5287 (jpn)-CKali-生き物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%94%9F%E3%81%8D%E7%89%A9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1243310 | [LL-Q5287 (jpn)-Fukujinzuke-金曜.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%91%E6%9B%9C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1278400 | [LL-Q5287 (jpn)-Fukujinzuke-幸福.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%B8%E7%A6%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1286320 | [LL-Q5287 (jpn)-Fukujinzuke-国境.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%BD%E5%A2%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1442730 | [LL-Q5287 (jpn)-Fukujinzuke-田.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1474720 | [LL-Q5287 (jpn)-Fukujinzuke-博物館.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%9A%E7%89%A9%E9%A4%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1158500 | [LL-Q5287 (jpn)-Fukujinzuke-胃.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%83%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1156560 | [LL-Q5287 (jpn)-Fukujinzuke-いし.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%97.wav) | Speaker: Fukujinzuke
+| ja-1156560 | [LL-Q5287 (jpn)-Fukujinzuke-意志.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%8F%E5%BF%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1576520 | [LL-Q5287 (jpn)-Fukujinzuke-永久.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%B8%E4%B9%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1173340 | [LL-Q5287 (jpn)-Fukujinzuke-餌.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A4%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1591100 | [LL-Q5287 (jpn)-Fukujinzuke-きく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6454,7 +7307,11 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1150860 | [LL-Q5287 (jpn)-Fukujinzuke-愛情.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%9B%E6%83%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001560 | [LL-Q5287 (jpn)-Fukujinzuke-おや.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1585060 | [LL-Q5287 (jpn)-Fukujinzuke-雷.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1086410 | [LL-Q5287 (jpn)-Fukujinzuke-トランプ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%88%E3%83%A9%E3%83%B3%E3%83%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1496840 | [LL-Q5287 (jpn)-Fukujinzuke-布.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6462,15 +7319,27 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1326990 | [LL-Q5287 (jpn)-I JethroBT-取れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%8F%96%E3%82%8C%E3%82%8B.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1473460 | [LL-Q5287 (jpn)-Fukujinzuke-梅.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A2%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1282240 | [LL-Q5287 (jpn)-Fukujinzuke-こうえん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86%E3%81%88%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1929950 | [LL-Q5287 (jpn)-Fukujinzuke-し.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1220240 | [LL-Q5287 (jpn)-Fukujinzuke-旗.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1451170 | [LL-Q5287 (jpn)-Fukujinzuke-動かす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8B%95%E3%81%8B%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1588920 | [LL-Q5287 (jpn)-Fukujinzuke-丘.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1582290 | [LL-Q5287 (jpn)-Fukujinzuke-ひ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%B2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1501760 | [LL-Q5287 (jpn)-Fukujinzuke-仏.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1222640 | [LL-Q5287 (jpn)-Fukujinzuke-きみ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%81%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1436900 | [LL-Q5287 (jpn)-Fukujinzuke-泥.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%A5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1491370 | [LL-Q5287 (jpn)-Fukujinzuke-不可.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8D%E5%8F%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1445360 | [LL-Q5287 (jpn)-葵心-土産.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%9C%9F%E7%94%A3.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -6478,27 +7347,55 @@ Recorder: 葵心 | CC0 |
 Recorder: CKali | CC0 |
 | ja-1197020 | [LL-Q5287 (jpn)-CKali-わがまま.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%8F%E3%81%8C%E3%81%BE%E3%81%BE.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1981450 | [LL-Q5287 (jpn)-Fukujinzuke-あんなに.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%93%E3%81%AA%E3%81%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1193290 | [LL-Q5287 (jpn)-Fukujinzuke-歌手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%8C%E6%89%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2078590 | [LL-Q5287 (jpn)-Fukujinzuke-けん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%91%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1319750 | [LL-Q5287 (jpn)-Fukujinzuke-失う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%B1%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1176430 | [LL-Q5287 (jpn)-Fukujinzuke-延期.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BB%B6%E6%9C%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1470120 | [LL-Q5287 (jpn)-Fukujinzuke-能.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%83%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1155920 | [LL-Q5287 (jpn)-Fukujinzuke-偉大.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%81%89%E5%A4%A7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1163170 | [LL-Q5287 (jpn)-Fukujinzuke-一種.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E7%A8%AE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1044480 | [LL-Q5287 (jpn)-葵心-クリーム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1408815 | [LL-Q5287 (jpn)-Fukujinzuke-打つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%93%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1177180 | [LL-Q5287 (jpn)-Fukujinzuke-煙.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%85%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1400390 | [LL-Q5287 (jpn)-CKali-巣.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%B7%A3.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1473960 | [LL-Q5287 (jpn)-Fukujinzuke-売れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A3%B2%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1183590 | [LL-Q5287 (jpn)-Fukujinzuke-穏やか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%8F%E3%82%84%E3%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1182500 | [LL-Q5287 (jpn)-Fukujinzuke-沖.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B2%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1260260 | [LL-Q5287 (jpn)-I JethroBT-賢い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E8%B3%A2%E3%81%84.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
 | ja-1612620 | [LL-Q5287 (jpn)-Fukujinzuke-あちこち.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%A1%E3%81%93%E3%81%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1263490 | [LL-Q5287 (jpn)-Fukujinzuke-あらわす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%89%E3%82%8F%E3%81%99.wav) | Speaker: Fukujinzuke
+| ja-1263490 | [LL-Q5287 (jpn)-Fukujinzuke-表す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A8%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1284480 | [LL-Q5287 (jpn)-Fukujinzuke-合わせる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%88%E3%82%8F%E3%81%9B%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1176960 | [LL-Q5287 (jpn)-Fukujinzuke-演説.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%BC%94%E8%AA%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1545110 | [LL-Q5287 (jpn)-Fukujinzuke-幼い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%BC%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1593800 | [LL-Q5287 (jpn)-Fukujinzuke-砂漠.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A0%82%E6%BC%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1197710 | [LL-Q5287 (jpn)-Fukujinzuke-め.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%81.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1609010 | [LL-Q5287 (jpn)-Fukujinzuke-あき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%8D.wav) | Speaker: Fukujinzuke
+| ja-1609010 | [LL-Q5287 (jpn)-Fukujinzuke-空き.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%BA%E3%81%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1575940 | [LL-Q5287 (jpn)-Fukujinzuke-一家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E5%AE%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2857380 | [LL-Q5287 (jpn)-Fukujinzuke-否.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6506,31 +7403,79 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1491120 | [LL-Q5287 (jpn)-Fukujinzuke-瓶.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%93%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1263120 | [LL-Q5287 (jpn)-Fukujinzuke-減る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B8%9B%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1416170 | [LL-Q5287 (jpn)-Fukujinzuke-叩く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%A9%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1251100 | [LL-Q5287 (jpn)-Fukujinzuke-たつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1181700 | [LL-Q5287 (jpn)-Fukujinzuke-王様.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8E%8B%E6%A7%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1660100 | [LL-Q5287 (jpn)-I JethroBT-お昼.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%8A%E6%98%BC.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
 | ja-1201860 | [LL-Q5287 (jpn)-Fukujinzuke-灰.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%81%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1344410 | [LL-Q5287 (jpn)-I JethroBT-たすける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%9F%E3%81%99%E3%81%91%E3%82%8B.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1412880 | [LL-Q5287 (jpn)-Fukujinzuke-大いに.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E3%81%84%E3%81%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1191980 | [LL-Q5287 (jpn)-Fukujinzuke-かじ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1222170 | [LL-Q5287 (jpn)-Fukujinzuke-気候.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%97%E5%80%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1344410 | [LL-Q5287 (jpn)-Fukujinzuke-助ける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8A%A9%E3%81%91%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1152730 | [LL-Q5287 (jpn)-Fukujinzuke-握手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8F%A1%E6%89%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1271290 | [LL-Q5287 (jpn)-Fukujinzuke-誤り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AA%A4%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1517510 | [LL-Q5287 (jpn)-Fukujinzuke-泡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B3%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1191870 | [LL-Q5287 (jpn)-Fukujinzuke-家具.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%B6%E5%85%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1531110 | [LL-Q5287 (jpn)-Fukujinzuke-霧.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9C%A7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1416340 | [LL-Q5287 (jpn)-Fukujinzuke-奪う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A5%AA%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1337370 | [LL-Q5287 (jpn)-Fukujinzuke-祝い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A5%9D%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1575730 | [LL-Q5287 (jpn)-Fukujinzuke-悪口.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%82%AA%E5%8F%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1432410 | [LL-Q5287 (jpn)-Fukujinzuke-おう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%86.wav) | Speaker: Fukujinzuke
+| ja-1329650 | [LL-Q5287 (jpn)-Fukujinzuke-受け取る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%97%E3%81%91%E5%8F%96%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1432410 | [LL-Q5287 (jpn)-Fukujinzuke-追う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BF%BD%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1286370 | [LL-Q5287 (jpn)-Fukujinzuke-国語.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%BD%E8%AA%9E.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1436730 | [LL-Q5287 (jpn)-CKali-諦める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%AB%A6%E3%82%81%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1448860 | [LL-Q5287 (jpn)-Fukujinzuke-あてる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%A6%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-2646460 | [LL-Q5287 (jpn)-Fukujinzuke-吐く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%90%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1225510 | [LL-Q5287 (jpn)-Fukujinzuke-疑う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%96%91%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1483805 | [LL-Q5287 (jpn)-Fukujinzuke-かわ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1448860 | [LL-Q5287 (jpn)-Fukujinzuke-当てる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%93%E3%81%A6%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1406000 | [LL-Q5287 (jpn)-Fukujinzuke-袖.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A2%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1254670 | [LL-Q5287 (jpn)-Fukujinzuke-結ぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%90%E3%81%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1180900 | [LL-Q5287 (jpn)-Fukujinzuke-横断.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A8%AA%E6%96%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1580270 | [LL-Q5287 (jpn)-Fukujinzuke-商人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%95%86%E4%BA%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1584090 | [LL-Q5287 (jpn)-Fukujinzuke-抱く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%B1%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1397720 | [LL-Q5287 (jpn)-Fukujinzuke-訴える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%B4%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002450 | [LL-Q5287 (jpn)-Fukujinzuke-おしゃべり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%97%E3%82%83%E3%81%B9%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1231650 | [LL-Q5287 (jpn)-Fukujinzuke-さる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%95%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1351830 | [LL-Q5287 (jpn)-Fukujinzuke-象.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B1%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1602330 | [LL-Q5287 (jpn)-Fukujinzuke-昼食.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%BC%E9%A3%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1469570 | [LL-Q5287 (jpn)-Fukujinzuke-燃える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%87%83%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1545770 | [LL-Q5287 (jpn)-Fukujinzuke-曜日.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9B%9C%E6%97%A5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6540,15 +7485,39 @@ Recorder: CKali | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1347530 | [LL-Q5287 (jpn)-CKali-奨学金.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%A5%A8%E5%AD%A6%E9%87%91.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1584160 | [LL-Q5287 (jpn)-Fukujinzuke-頬.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A0%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1022210 | [LL-Q5287 (jpn)-Fukujinzuke-インク.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A4%E3%83%B3%E3%82%AF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1197120 | [LL-Q5287 (jpn)-Fukujinzuke-画家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%BB%E5%AE%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1174890 | [LL-Q5287 (jpn)-Fukujinzuke-鋭い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%8B%AD%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1403120 | [LL-Q5287 (jpn)-Fukujinzuke-ます.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BE%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1194280 | [LL-Q5287 (jpn)-Fukujinzuke-かよう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1443970 | [LL-Q5287 (jpn)-Fukujinzuke-兎.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%8E.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1403550 | [LL-Q5287 (jpn)-Fukujinzuke-贈る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B4%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1437310 | [LL-Q5287 (jpn)-Fukujinzuke-笛.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AC%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1150110 | [LL-Q5287 (jpn)-Fukujinzuke-哀れ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%93%80%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1013980 | [LL-Q5287 (jpn)-CKali-アイスクリーム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
-| ja-1253570 | [LL-Q5287 (jpn)-Fukujinzuke-うつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%A4.wav) | Speaker: Fukujinzuke
+| ja-1253570 | [LL-Q5287 (jpn)-Fukujinzuke-撃つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%92%83%E3%81%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1158160 | [LL-Q5287 (jpn)-Fukujinzuke-うつす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%A4%E3%81%99.wav) | Speaker: Fukujinzuke
+| ja-1158160 | [LL-Q5287 (jpn)-Fukujinzuke-移す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%BB%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1332760 | [LL-Q5287 (jpn)-Fukujinzuke-終える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B5%82%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1164340 | [LL-Q5287 (jpn)-Fukujinzuke-一層.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E5%B1%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1158810 | [LL-Q5287 (jpn)-Fukujinzuke-衣服.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A3%E6%9C%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1337390 | [LL-Q5287 (jpn)-Fukujinzuke-祝う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A5%9D%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1243940 | [LL-Q5287 (jpn)-Fukujinzuke-く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6556,17 +7525,37 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2137720 | [LL-Q5287 (jpn)-Fukujinzuke-そう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9D%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1586250 | [LL-Q5287 (jpn)-Fukujinzuke-飽きる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%BD%E3%81%8D%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1413140 | [LL-Q5287 (jpn)-Fukujinzuke-大家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E5%AE%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589580 | [LL-Q5287 (jpn)-Fukujinzuke-おろす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%8D%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1253920 | [LL-Q5287 (jpn)-Fukujinzuke-かける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%91%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1588840 | [LL-Q5287 (jpn)-Fukujinzuke-覆う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A6%86%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1382700 | [LL-Q5287 (jpn)-Fukujinzuke-石炭.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9F%B3%E7%82%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1586910 | [LL-Q5287 (jpn)-Fukujinzuke-暗記.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9A%97%E8%A8%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1167820 | [LL-Q5287 (jpn)-CKali-稲.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%A8%B2.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1348630 | [LL-Q5287 (jpn)-CKali-小麦.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%B0%8F%E9%BA%A6.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1451380 | [LL-Q5287 (jpn)-葵心-動詞.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%8B%95%E8%A9%9E.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
-| ja-1335290 | [LL-Q5287 (jpn)-Fukujinzuke-いとこ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A8%E3%81%93.wav) | Speaker: Fukujinzuke
+| ja-1335290 | [LL-Q5287 (jpn)-Fukujinzuke-従兄弟.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%93%E5%85%84%E5%BC%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589200 | [LL-Q5287 (jpn)-Fukujinzuke-恐れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%81%90%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1312970 | [LL-Q5287 (jpn)-Fukujinzuke-かう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1643510 | [LL-Q5287 (jpn)-Fukujinzuke-老い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%80%81%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1097740 | [LL-Q5287 (jpn)-Fukujinzuke-バイオリン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%90%E3%82%A4%E3%82%AA%E3%83%AA%E3%83%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1565750 | [LL-Q5287 (jpn)-Fukujinzuke-埃.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9F%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1284930 | [LL-Q5287 (jpn)-Fukujinzuke-合図.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%88%E5%9B%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6574,34 +7563,70 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1014590 | [LL-Q5287 (jpn)-Fukujinzuke-アイロン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1179830 | [LL-Q5287 (jpn)-Fukujinzuke-応じる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BF%9C%E3%81%98%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1231890 | [LL-Q5287 (jpn)-Fukujinzuke-居眠り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B1%85%E7%9C%A0%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1550380 | [LL-Q5287 (jpn)-Fukujinzuke-裏切る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A3%8F%E5%88%87%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1151580 | [LL-Q5287 (jpn)-Fukujinzuke-悪戯.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%82%AA%E6%88%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1586840 | [LL-Q5287 (jpn)-Fukujinzuke-ある.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1586840 | [LL-Q5287 (jpn)-Fukujinzuke-或.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%88%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1589090 | [LL-Q5287 (jpn)-Fukujinzuke-おさめる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%95%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
+| ja-1589090 | [LL-Q5287 (jpn)-Fukujinzuke-収める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%8E%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1288080 | [LL-Q5287 (jpn)-Fukujinzuke-黒板.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%BB%92%E6%9D%BF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1397840 | [LL-Q5287 (jpn)-Fukujinzuke-鼠.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%BC%A0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1372650 | [LL-Q5287 (jpn)-Fukujinzuke-よう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1544990 | [LL-Q5287 (jpn)-Fukujinzuke-預ける.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A0%90%E3%81%91%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1188790 | [LL-Q5287 (jpn)-Fukujinzuke-何時か.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%95%E6%99%82%E3%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1586210 | [LL-Q5287 (jpn)-Fukujinzuke-明かり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%8E%E3%81%8B%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1589780 | [LL-Q5287 (jpn)-Fukujinzuke-かえる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%88%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1497800 | [LL-Q5287 (jpn)-Fukujinzuke-腐る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%85%90%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1379210 | [LL-Q5287 (jpn)-Fukujinzuke-あいにく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%84%E3%81%AB%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1231720 | [LL-Q5287 (jpn)-葵心-居間.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%B1%85%E9%96%93.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1231720 | [LL-Q5287 (jpn)-Fukujinzuke-居間.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B1%85%E9%96%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1288950 | [LL-Q5287 (jpn)-Fukujinzuke-今にも.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E3%81%AB%E3%82%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1956150 | [LL-Q5287 (jpn)-Fukujinzuke-くん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8F%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1593100 | [LL-Q5287 (jpn)-Fukujinzuke-凍る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%87%8D%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1264380 | [LL-Q5287 (jpn)-Fukujinzuke-言わば.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%80%E3%82%8F%E3%81%B0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1582130 | [LL-Q5287 (jpn)-Fukujinzuke-転ぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BB%A2%E3%81%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1603420 | [LL-Q5287 (jpn)-CKali-吠える.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%90%A0%E3%81%88%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1587700 | [LL-Q5287 (jpn)-Fukujinzuke-いらいら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%82%89%E3%81%84%E3%82%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1573820 | [LL-Q5287 (jpn)-Fukujinzuke-はさみ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AF%E3%81%95%E3%81%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1288940 | [LL-Q5287 (jpn)-Fukujinzuke-今に.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8A%E3%81%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1565300 | [LL-Q5287 (jpn)-Fukujinzuke-うなる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%AA%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1168660 | [LL-Q5287 (jpn)-I JethroBT-よる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%82%88%E3%82%8B.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1609500 | [LL-Q5287 (jpn)-Fukujinzuke-かかる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%8B%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1588810 | [LL-Q5287 (jpn)-Fukujinzuke-追い付く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BF%BD%E3%81%84%E4%BB%98%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1577660 | [LL-Q5287 (jpn)-Fukujinzuke-うがい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%86%E3%81%8C%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1469800 | [LL-Q5287 (jpn)-Fukujinzuke-の.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2028990 | [LL-Q5287 (jpn)-I JethroBT-に.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%AB.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-2028990 | [LL-Q5287 (jpn)-Fukujinzuke-に.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2028920 | [LL-Q5287 (jpn)-Fukujinzuke-は.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2028930 | [LL-Q5287 (jpn)-Fukujinzuke-が.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8C.wav) | Speaker: Fukujinzuke
@@ -6615,6 +7640,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1008490 | [LL-Q5287 (jpn)-Fukujinzuke-と.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2029110 | [LL-Q5287 (jpn)-Fukujinzuke-な.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2257550 | [LL-Q5287 (jpn)-Fukujinzuke-ない.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2028940 | [LL-Q5287 (jpn)-Fukujinzuke-も.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6632,19 +7659,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2029080 | [LL-Q5287 (jpn)-Fukujinzuke-ね.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2149890 | [LL-Q5287 (jpn)-I JethroBT-人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E4%BA%BA.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
-| ja-1366410 | [LL-Q5287 (jpn)-I JethroBT-人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E4%BA%BA.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-2149890 | [LL-Q5287 (jpn)-Fukujinzuke-人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1366410 | [LL-Q5287 (jpn)-Fukujinzuke-人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2028960 | [LL-Q5287 (jpn)-Fukujinzuke-や.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2029040 | [LL-Q5287 (jpn)-Fukujinzuke-ば.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1628530 | [LL-Q5287 (jpn)-Wiktionairy-これ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Wiktionairy-%E3%81%93%E3%82%8C.wav) | Speaker: Wiktionairy
-Recorder: Wiktionairy | CC0 |
+| ja-1628530 | [LL-Q5287 (jpn)-Fukujinzuke-これ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2084840 | [LL-Q5287 (jpn)-Fukujinzuke-年.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2017560 | [LL-Q5287 (jpn)-Fukujinzuke-たい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1525680 | [LL-Q5287 (jpn)-Fukujinzuke-まで.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BE%E3%81%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1437260 | [LL-Q5287 (jpn)-Fukujinzuke-的.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9A%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6662,37 +7691,69 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2020680 | [LL-Q5287 (jpn)-Fukujinzuke-時.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%99%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2821500 | [LL-Q5287 (jpn)-Zsrtrgh-一.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E4%B8%80.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-2780660 | [LL-Q5287 (jpn)-Fukujinzuke-もの.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%82%E3%81%AE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2821500 | [LL-Q5287 (jpn)-Fukujinzuke-一.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2029000 | [LL-Q5287 (jpn)-Fukujinzuke-へ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%B8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1005340 | [LL-Q5287 (jpn)-Fukujinzuke-さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1008590 | [LL-Q5287 (jpn)-Fukujinzuke-として.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A8%E3%81%97%E3%81%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1162120 | [LL-Q5287 (jpn)-Fukujinzuke-いちがつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A1%E3%81%8C%E3%81%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1576870 | [LL-Q5287 (jpn)-Fukujinzuke-俺.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BF%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1392570 | [LL-Q5287 (jpn)-Fukujinzuke-前.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%89%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1004820 | [LL-Q5287 (jpn)-Fukujinzuke-これまで.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%82%8C%E3%81%BE%E3%81%A7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2122310 | [LL-Q5287 (jpn)-Fukujinzuke-え.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2029070 | [LL-Q5287 (jpn)-Fukujinzuke-なり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1307180 | [LL-Q5287 (jpn)-Fukujinzuke-しがつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%81%8C%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2143350 | [LL-Q5287 (jpn)-Fukujinzuke-かも.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1502840 | [LL-Q5287 (jpn)-Fukujinzuke-分.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1191750 | [LL-Q5287 (jpn)-Zsrtrgh-家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%AE%B6.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
-| ja-1191740 | [LL-Q5287 (jpn)-Zsrtrgh-家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E5%AE%B6.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1191750 | [LL-Q5287 (jpn)-Fukujinzuke-家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1191740 | [LL-Q5287 (jpn)-Fukujinzuke-家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2029060 | [LL-Q5287 (jpn)-Fukujinzuke-たり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2082140 | [LL-Q5287 (jpn)-Fukujinzuke-大.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2029130 | [LL-Q5287 (jpn)-Fukujinzuke-ぞ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9E.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1000580 | [LL-Q5287 (jpn)-Zsrtrgh-あれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%82%E3%82%8C.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1000580 | [LL-Q5287 (jpn)-Fukujinzuke-あれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1415260 | [LL-Q5287 (jpn)-Fukujinzuke-第.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AC%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1565440 | [LL-Q5287 (jpn)-Fukujinzuke-ああ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%82.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1005460 | [LL-Q5287 (jpn)-Fukujinzuke-しか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%81%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1922760 | [LL-Q5287 (jpn)-Fukujinzuke-という.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A8%E3%81%84%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1476730 | [LL-Q5287 (jpn)-Fukujinzuke-はちがつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AF%E3%81%A1%E3%81%8C%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1584500 | [LL-Q5287 (jpn)-Fukujinzuke-万人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%87%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1009780 | [LL-Q5287 (jpn)-Fukujinzuke-について.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1166270 | [LL-Q5287 (jpn)-Fukujinzuke-いちぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A1%E3%81%B6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1243660 | [LL-Q5287 (jpn)-Fukujinzuke-くがつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8F%E3%81%8C%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589320 | [LL-Q5287 (jpn)-Fukujinzuke-おもい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%82%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1554840 | [LL-Q5287 (jpn)-Fukujinzuke-力.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8A%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1459640 | [LL-Q5287 (jpn)-Fukujinzuke-ながら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%81%8C%E3%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1307780 | [LL-Q5287 (jpn)-Fukujinzuke-子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%90.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6700,22 +7761,36 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1000420 | [LL-Q5287 (jpn)-Fukujinzuke-あの.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%AE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1340430 | [LL-Q5287 (jpn)-Fukujinzuke-でき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A7%E3%81%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2068010 | [LL-Q5287 (jpn)-Fukujinzuke-い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1545790 | [LL-Q5287 (jpn)-Fukujinzuke-様.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A7%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1529520 | [LL-Q5287 (jpn)-Fukujinzuke-ない.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1447690 | [LL-Q5287 (jpn)-Fukujinzuke-東京.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9D%B1%E4%BA%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1294940 | [LL-Q5287 (jpn)-Fukujinzuke-歳.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1344980 | [LL-Q5287 (jpn)-Fukujinzuke-女の人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A5%B3%E3%81%AE%E4%BA%BA.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1861770 | [LL-Q5287 (jpn)-Fukujinzuke-多く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%9A%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1582125 | [LL-Q5287 (jpn)-葵心-店.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%BA%97.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1361480 | [LL-Q5287 (jpn)-Fukujinzuke-新.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%96%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1009640 | [LL-Q5287 (jpn)-Fukujinzuke-によって.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2834812 | [LL-Q5287 (jpn)-Fukujinzuke-ぜ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2098290 | [LL-Q5287 (jpn)-Fukujinzuke-内.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%86%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1217730 | [LL-Q5287 (jpn)-Fukujinzuke-顔.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A1%94.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1450690 | [LL-Q5287 (jpn)-Zsrtrgh-頭.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E9%A0%AD.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1450690 | [LL-Q5287 (jpn)-Fukujinzuke-頭.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A0%AD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1633260 | [LL-Q5287 (jpn)-Fukujinzuke-高.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%AB%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1595125 | [LL-Q5287 (jpn)-Fukujinzuke-心.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BF%83.wav) | Speaker: Fukujinzuke
@@ -6726,13 +7801,27 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-2004390 | [LL-Q5287 (jpn)-Fukujinzuke-下.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1499290 | [LL-Q5287 (jpn)-Fukujinzuke-ぶ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%B6.wav) | Speaker: Fukujinzuke
+| ja-1499290 | [LL-Q5287 (jpn)-Fukujinzuke-部.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%83%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589430 | [LL-Q5287 (jpn)-Fukujinzuke-おやつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%84%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1659120 | [LL-Q5287 (jpn)-Fukujinzuke-受け.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%97%E3%81%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1191080 | [LL-Q5287 (jpn)-Fukujinzuke-可能性.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%AF%E8%83%BD%E6%80%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1334470 | [LL-Q5287 (jpn)-CKali-十一.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%8D%81%E4%B8%80.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1239700 | [LL-Q5287 (jpn)-Fukujinzuke-曲.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9B%B2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1416220 | [LL-Q5287 (jpn)-Fukujinzuke-たち.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1454490 | [LL-Q5287 (jpn)-Fukujinzuke-得.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1424270 | [LL-Q5287 (jpn)-Fukujinzuke-中国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%AD%E5%9B%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-2037700 | [LL-Q5287 (jpn)-Fukujinzuke-き.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D.wav) | Speaker: Fukujinzuke
+| ja-2227930 | [LL-Q5287 (jpn)-Fukujinzuke-外.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2037700 | [LL-Q5287 (jpn)-Fukujinzuke-機.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A9%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1334890 | [LL-Q5287 (jpn)-Fukujinzuke-十二.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%81%E4%BA%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6744,6 +7833,10 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2078800 | [LL-Q5287 (jpn)-Fukujinzuke-大阪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E9%98%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1409840 | [LL-Q5287 (jpn)-Fukujinzuke-対応.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AF%BE%E5%BF%9C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1277090 | [LL-Q5287 (jpn)-Fukujinzuke-向け.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%91%E3%81%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1499730 | [LL-Q5287 (jpn)-Fukujinzuke-風.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A2%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1334610 | [LL-Q5287 (jpn)-Fukujinzuke-十三.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%81%E4%B8%89.wav) | Speaker: Fukujinzuke
@@ -6754,11 +7847,17 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1378500 | [LL-Q5287 (jpn)-Fukujinzuke-いき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1168610 | [LL-Q5287 (jpn)-葵心-員.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E5%93%A1.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1168610 | [LL-Q5287 (jpn)-Fukujinzuke-員.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%93%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1009800 | [LL-Q5287 (jpn)-Fukujinzuke-に対して.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB%E5%AF%BE%E3%81%97%E3%81%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1216170 | [LL-Q5287 (jpn)-Fukujinzuke-韓国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9F%93%E5%9B%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001200 | [LL-Q5287 (jpn)-Fukujinzuke-おい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1429740 | [LL-Q5287 (jpn)-Fukujinzuke-長.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%95%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1320300 | [LL-Q5287 (jpn)-Fukujinzuke-室.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1587140 | [LL-Q5287 (jpn)-Fukujinzuke-戦.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%88%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6770,10 +7869,10 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2150610 | [LL-Q5287 (jpn)-Fukujinzuke-米.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B1%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1471120 | [LL-Q5287 (jpn)-Fukujinzuke-は.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AF.wav) | Speaker: Fukujinzuke
+| ja-1471120 | [LL-Q5287 (jpn)-Fukujinzuke-派.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B4%BE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1451730 | [LL-Q5287 (jpn)-I JethroBT-どう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%A9%E3%81%86.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1451730 | [LL-Q5287 (jpn)-Fukujinzuke-同.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1166180 | [LL-Q5287 (jpn)-Fukujinzuke-一部.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E9%83%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1514990 | [LL-Q5287 (jpn)-Fukujinzuke-母.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AF%8D.wav) | Speaker: Fukujinzuke
@@ -6787,6 +7886,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1324940 | [LL-Q5287 (jpn)-Fukujinzuke-主.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1497610 | [LL-Q5287 (jpn)-Fukujinzuke-父.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%88%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1257900 | [LL-Q5287 (jpn)-Fukujinzuke-検索.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A4%9C%E7%B4%A2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1204860 | [LL-Q5287 (jpn)-Fukujinzuke-各.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6802,9 +7903,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1392190 | [LL-Q5287 (jpn)-Fukujinzuke-選挙.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%B8%E6%8C%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1310100 | [LL-Q5287 (jpn)-Fukujinzuke-支援.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%AF%E6%8F%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1009810 | [LL-Q5287 (jpn)-Fukujinzuke-に対する.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2017770 | [LL-Q5287 (jpn)-Fukujinzuke-かい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1611790 | [LL-Q5287 (jpn)-Fukujinzuke-認め.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%AA%8D%E3%82%81.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1513530 | [LL-Q5287 (jpn)-Fukujinzuke-保護.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BF%9D%E8%AD%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1258080 | [LL-Q5287 (jpn)-Fukujinzuke-けん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%91%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1012500 | [LL-Q5287 (jpn)-Fukujinzuke-もし.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%82%E3%81%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1389890 | [LL-Q5287 (jpn)-CKali-専門家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%B0%82%E9%96%80%E5%AE%B6.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
@@ -6818,23 +7929,35 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1161190 | [LL-Q5287 (jpn)-CKali-一億.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E4%B8%80%E5%84%84.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1075900 | [LL-Q5287 (jpn)-Fukujinzuke-タイトル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1923480 | [LL-Q5287 (jpn)-CKali-キャラ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%AD%E3%83%A3%E3%83%A9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1464700 | [LL-Q5287 (jpn)-Fukujinzuke-日本人.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%97%A5%E6%9C%AC%E4%BA%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2242840 | [LL-Q5287 (jpn)-Fukujinzuke-み.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1486350 | [LL-Q5287 (jpn)-Fukujinzuke-び.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%B3.wav) | Speaker: Fukujinzuke
+| ja-1286930 | [LL-Q5287 (jpn)-Fukujinzuke-国内.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9B%BD%E5%86%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1486350 | [LL-Q5287 (jpn)-Fukujinzuke-美.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BE%8E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1464530 | [LL-Q5287 (jpn)-Fukujinzuke-にほんご.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB%E3%81%BB%E3%82%93%E3%81%94.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1297240 | [LL-Q5287 (jpn)-Fukujinzuke-作.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%9C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1652350 | [LL-Q5287 (jpn)-Fukujinzuke-京都.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%AC%E9%83%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1203020 | [LL-Q5287 (jpn)-Fukujinzuke-かい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1580650 | [LL-Q5287 (jpn)-Fukujinzuke-人々.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%BA%E3%80%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1407450 | [LL-Q5287 (jpn)-Fukujinzuke-た.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1363170 | [LL-Q5287 (jpn)-Fukujinzuke-真.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9C%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1155110 | [LL-Q5287 (jpn)-Fukujinzuke-以降.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E9%99%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1009600 | [LL-Q5287 (jpn)-Fukujinzuke-にとって.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AB%E3%81%A8%E3%81%A3%E3%81%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1775880 | [LL-Q5287 (jpn)-Fukujinzuke-ロシア.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%AD%E3%82%B7%E3%82%A2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6850,15 +7973,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1382450 | [LL-Q5287 (jpn)-Fukujinzuke-石.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9F%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1001370 | [LL-Q5287 (jpn)-葵心-おっぱい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%81%8A%E3%81%A3%E3%81%B1%E3%81%84.wav) | Speaker: 葵心
-Recorder: 葵心 | CC0 |
+| ja-1001370 | [LL-Q5287 (jpn)-Fukujinzuke-おっぱい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%A3%E3%81%B1%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1583630 | [LL-Q5287 (jpn)-Fukujinzuke-つき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A4%E3%81%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1537300 | [LL-Q5287 (jpn)-Fukujinzuke-野球.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%8E%E7%90%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1520810 | [LL-Q5287 (jpn)-Fukujinzuke-北海道.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8C%97%E6%B5%B7%E9%81%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1346190 | [LL-Q5287 (jpn)-Fukujinzuke-かって.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%A3%E3%81%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1322740 | [LL-Q5287 (jpn)-Fukujinzuke-社会主義.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A4%BE%E4%BC%9A%E4%B8%BB%E7%BE%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1089090 | [LL-Q5287 (jpn)-Fukujinzuke-ドル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%89%E3%83%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1636070 | [LL-Q5287 (jpn)-Fukujinzuke-かい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6870,6 +7997,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1612820 | [LL-Q5287 (jpn)-Fukujinzuke-おはよう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%AF%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1501400 | [LL-Q5287 (jpn)-Fukujinzuke-複数.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A4%87%E6%95%B0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1591050 | [LL-Q5287 (jpn)-CKali-気がつく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%B0%97%E3%81%8C%E3%81%A4%E3%81%8F.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1346240 | [LL-Q5287 (jpn)-Fukujinzuke-勝利.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8B%9D%E5%88%A9.wav) | Speaker: Fukujinzuke
@@ -6878,7 +8007,11 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1612800 | [LL-Q5287 (jpn)-Fukujinzuke-お代わり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E4%BB%A3%E3%82%8F%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2084570 | [LL-Q5287 (jpn)-Fukujinzuke-おっと.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%A3%E3%81%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1956480 | [LL-Q5287 (jpn)-Fukujinzuke-食.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1508900 | [LL-Q5287 (jpn)-Fukujinzuke-米国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B1%B3%E5%9B%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1484590 | [LL-Q5287 (jpn)-Fukujinzuke-ひ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%B2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6886,19 +8019,39 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1056700 | [LL-Q5287 (jpn)-Fukujinzuke-サッカー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1308305 | [LL-Q5287 (jpn)-Fukujinzuke-市場.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%82%E5%A0%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1133620 | [LL-Q5287 (jpn)-Fukujinzuke-メディア.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1270220 | [LL-Q5287 (jpn)-Fukujinzuke-おかげさまで.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%8B%E3%81%92%E3%81%95%E3%81%BE%E3%81%A7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1956400 | [LL-Q5287 (jpn)-Fukujinzuke-しゅう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%82%85%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1956260 | [LL-Q5287 (jpn)-Fukujinzuke-合.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1652680 | [LL-Q5287 (jpn)-Fukujinzuke-フランス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1515730 | [LL-Q5287 (jpn)-Fukujinzuke-報道.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A0%B1%E9%81%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1438210 | [LL-Q5287 (jpn)-Fukujinzuke-天.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1421060 | [LL-Q5287 (jpn)-Fukujinzuke-地元.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%B0%E5%85%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1401470 | [LL-Q5287 (jpn)-Fukujinzuke-そう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9D%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1273280 | [LL-Q5287 (jpn)-Fukujinzuke-こうえん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86%E3%81%88%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1612780 | [LL-Q5287 (jpn)-Fukujinzuke-お帰り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%B8%B0%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1322730 | [LL-Q5287 (jpn)-Fukujinzuke-社会学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A4%BE%E4%BC%9A%E5%AD%A6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2029030 | [LL-Q5287 (jpn)-Fukujinzuke-ものの.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%82%E3%81%AE%E3%81%AE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1477350 | [LL-Q5287 (jpn)-Fukujinzuke-発言.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%99%BA%E8%A8%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1163190 | [LL-Q5287 (jpn)-Fukujinzuke-いっしゅ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A3%E3%81%97%E3%82%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1305500 | [LL-Q5287 (jpn)-Fukujinzuke-しよう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1163520 | [LL-Q5287 (jpn)-Fukujinzuke-いちじょう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A1%E3%81%98%E3%82%87%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6910,11 +8063,13 @@ Recorder: LaKoalita | CC BY-SA 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1014200 | [LL-Q5287 (jpn)-CKali-アイテム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-2826190 | [LL-Q5287 (jpn)-Fukujinzuke-各々.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%84%E3%80%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1513440 | [LL-Q5287 (jpn)-Fukujinzuke-保険.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BF%9D%E9%99%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1315120 | [LL-Q5287 (jpn)-Fukujinzuke-字.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AD%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1270190 | [LL-Q5287 (jpn)-Fukujinzuke-ご.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%94.wav) | Speaker: Fukujinzuke
+| ja-1270190 | [LL-Q5287 (jpn)-Fukujinzuke-御.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1250690 | [LL-Q5287 (jpn)-Fukujinzuke-携帯電話.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%90%BA%E5%B8%AF%E9%9B%BB%E8%A9%B1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6924,21 +8079,41 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-1000520 | [LL-Q5287 (jpn)-Fukujinzuke-あら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1602150 | [LL-Q5287 (jpn)-Fukujinzuke-姫.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A7%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1375950 | [LL-Q5287 (jpn)-Fukujinzuke-政策.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%BF%E7%AD%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1070320 | [LL-Q5287 (jpn)-CKali-ステージ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1162900 | [LL-Q5287 (jpn)-Fukujinzuke-いちじ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A1%E3%81%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1002340 | [LL-Q5287 (jpn)-Fukujinzuke-おはようございます.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%AF%E3%82%88%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1410420 | [LL-Q5287 (jpn)-Fukujinzuke-たい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1310150 | [LL-Q5287 (jpn)-Fukujinzuke-支持.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%AF%E6%8C%81.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1153430 | [LL-Q5287 (jpn)-Fukujinzuke-扱い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%B1%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2854424 | [LL-Q5287 (jpn)-Fukujinzuke-園.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%92.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1375930 | [LL-Q5287 (jpn)-Fukujinzuke-政権.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%BF%E6%A8%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1176240 | [LL-Q5287 (jpn)-Fukujinzuke-園.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9C%92.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1309940 | [LL-Q5287 (jpn)-Fukujinzuke-指摘.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8C%87%E6%91%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1956560 | [LL-Q5287 (jpn)-Fukujinzuke-選.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%B8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1514300 | [LL-Q5287 (jpn)-Fukujinzuke-ほ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1490160 | [LL-Q5287 (jpn)-Fukujinzuke-病.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%97%85.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1399660 | [LL-Q5287 (jpn)-Fukujinzuke-捜査.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8D%9C%E6%9F%BB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1312610 | [LL-Q5287 (jpn)-Fukujinzuke-し.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1167180 | [LL-Q5287 (jpn)-Fukujinzuke-一覧.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%80%E8%A6%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1147870 | [LL-Q5287 (jpn)-葵心-ロボット.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -6946,6 +8121,8 @@ Recorder: 葵心 | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1442100 | [LL-Q5287 (jpn)-葵心-伝説.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E4%BC%9D%E8%AA%AC.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1207600 | [LL-Q5287 (jpn)-Fukujinzuke-かけ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1197050 | [LL-Q5287 (jpn)-Fukujinzuke-画.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%BB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1123880 | [LL-Q5287 (jpn)-CKali-ボタン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%83%9C%E3%82%BF%E3%83%B3.wav) | Speaker: CKali
@@ -6953,6 +8130,8 @@ Recorder: CKali | CC0 |
 | ja-1075830 | [LL-Q5287 (jpn)-Fukujinzuke-タイ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%BF%E3%82%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1022880 | [LL-Q5287 (jpn)-Fukujinzuke-インターネット.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1551240 | [LL-Q5287 (jpn)-Fukujinzuke-たち.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1245450 | [LL-Q5287 (jpn)-Fukujinzuke-空間.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A9%BA%E9%96%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6968,9 +8147,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1320800 | [LL-Q5287 (jpn)-Fukujinzuke-実.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1295740 | [LL-Q5287 (jpn)-Fukujinzuke-細胞.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B4%B0%E8%83%9E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1281690 | [LL-Q5287 (jpn)-Fukujinzuke-行.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1272110 | [LL-Q5287 (jpn)-Fukujinzuke-交渉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%A4%E6%B8%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1853460 | [LL-Q5287 (jpn)-Fukujinzuke-示し.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A4%BA%E3%81%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1610630 | [LL-Q5287 (jpn)-Fukujinzuke-思い掛けない.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%9D%E3%81%84%E6%8E%9B%E3%81%91%E3%81%AA%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2243120 | [LL-Q5287 (jpn)-Fukujinzuke-相.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9B%B8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1080860 | [LL-Q5287 (jpn)-Fukujinzuke-テロ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%86%E3%83%AD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1282000 | [LL-Q5287 (jpn)-Fukujinzuke-いきなり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%8D%E3%81%AA%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -6988,17 +8177,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1291770 | [LL-Q5287 (jpn)-Fukujinzuke-ざ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1205510 | [LL-Q5287 (jpn)-Fukujinzuke-かく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%8F.wav) | Speaker: Fukujinzuke
+| ja-1205510 | [LL-Q5287 (jpn)-Fukujinzuke-核.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A0%B8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1956170 | [LL-Q5287 (jpn)-Fukujinzuke-きょう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%87%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1633990 | [LL-Q5287 (jpn)-Fukujinzuke-ま.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1488160 | [LL-Q5287 (jpn)-Fukujinzuke-百合.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%99%BE%E5%90%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1483520 | [LL-Q5287 (jpn)-Fukujinzuke-ひ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%B2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1448780 | [LL-Q5287 (jpn)-Fukujinzuke-当たり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%93%E3%81%9F%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1257510 | [LL-Q5287 (jpn)-Fukujinzuke-建築家.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BB%BA%E7%AF%89%E5%AE%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002390 | [LL-Q5287 (jpn)-Fukujinzuke-おだいじに.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%A0%E3%81%84%E3%81%98%E3%81%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1979920 | [LL-Q5287 (jpn)-CKali-貴方.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%B2%B4%E6%96%B9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
@@ -7007,6 +8200,8 @@ Recorder: 葵心 | CC0 |
 | ja-1053280 | [LL-Q5287 (jpn)-葵心-コンビニ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1021360 | [LL-Q5287 (jpn)-Fukujinzuke-イタリア.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1596390 | [LL-Q5287 (jpn)-Fukujinzuke-掃除機.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8E%83%E9%99%A4%E6%A9%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1457390 | [LL-Q5287 (jpn)-Fukujinzuke-豚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B1%9A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7018,13 +8213,25 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: 葵心 | CC0 |
 | ja-1277420 | [LL-Q5287 (jpn)-Fukujinzuke-垢.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9E%A2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1235550 | [LL-Q5287 (jpn)-Fukujinzuke-きょうかい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%87%E3%81%86%E3%81%8B%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1077010 | [LL-Q5287 (jpn)-葵心-ダウンロード.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1023840 | [LL-Q5287 (jpn)-Fukujinzuke-インド.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A4%E3%83%B3%E3%83%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2067560 | [LL-Q5287 (jpn)-Fukujinzuke-兵.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%B5.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1545380 | [LL-Q5287 (jpn)-Fukujinzuke-容疑.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%B9%E7%96%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1376910 | [LL-Q5287 (jpn)-Fukujinzuke-正義.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%A3%E7%BE%A9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1327020 | [LL-Q5287 (jpn)-Fukujinzuke-取材.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%96%E6%9D%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1273170 | [LL-Q5287 (jpn)-Fukujinzuke-公.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%AC.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1206500 | [LL-Q5287 (jpn)-Fukujinzuke-革命.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%A9%E5%91%BD.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1091340 | [LL-Q5287 (jpn)-Fukujinzuke-ニュー.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%8B%E3%83%A5%E3%83%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1587150 | [LL-Q5287 (jpn)-Fukujinzuke-育成.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%82%B2%E6%88%90.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7038,7 +8245,11 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2080900 | [LL-Q5287 (jpn)-Fukujinzuke-し.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1480060 | [LL-Q5287 (jpn)-Fukujinzuke-反.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1432840 | [LL-Q5287 (jpn)-Fukujinzuke-通.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%9A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1173030 | [LL-Q5287 (jpn)-Fukujinzuke-運命.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8B%E5%91%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1158760 | [LL-Q5287 (jpn)-Fukujinzuke-衣装.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A3%E8%A3%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7048,9 +8259,17 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1255120 | [LL-Q5287 (jpn)-Fukujinzuke-血液.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%80%E6%B6%B2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2083370 | [LL-Q5287 (jpn)-Fukujinzuke-英.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8B%B1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1448820 | [LL-Q5287 (jpn)-Fukujinzuke-当て.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%93%E3%81%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1277250 | [LL-Q5287 (jpn)-Fukujinzuke-こうじょう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86%E3%81%98%E3%82%87%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1236660 | [LL-Q5287 (jpn)-Fukujinzuke-恐れ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%81%90%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1540940 | [LL-Q5287 (jpn)-Fukujinzuke-有.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%89.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1369560 | [LL-Q5287 (jpn)-Fukujinzuke-人類学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%BA%E9%A1%9E%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1334560 | [LL-Q5287 (jpn)-I JethroBT-十九.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E5%8D%81%E4%B9%9D.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
@@ -7062,11 +8281,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1766800 | [LL-Q5287 (jpn)-Fukujinzuke-スペイン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%B9%E3%83%9A%E3%82%A4%E3%83%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1510720 | [LL-Q5287 (jpn)-Fukujinzuke-かわり.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%8F%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1483380 | [LL-Q5287 (jpn)-Fukujinzuke-扉.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1390240 | [LL-Q5287 (jpn)-CKali-戦士.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%88%A6%E5%A3%AB.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1609020 | [LL-Q5287 (jpn)-Fukujinzuke-あき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1429820 | [LL-Q5287 (jpn)-Fukujinzuke-長官.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%95%B7%E5%AE%98.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1243710 | [LL-Q5287 (jpn)-Fukujinzuke-九州.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B9%9D%E5%B7%9E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001780 | [LL-Q5287 (jpn)-Fukujinzuke-お休みなさい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E4%BC%91%E3%81%BF%E3%81%AA%E3%81%95%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1364920 | [LL-Q5287 (jpn)-Fukujinzuke-神様.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A5%9E%E6%A7%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7082,11 +8309,15 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-1013560 | [LL-Q5287 (jpn)-CKali-アーティスト.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%82%A2%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1612680 | [LL-Q5287 (jpn)-Fukujinzuke-おやすみ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%84%E3%81%99%E3%81%BF.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1545260 | [LL-Q5287 (jpn)-Fukujinzuke-幼稚園.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%BC%E7%A8%9A%E5%9C%92.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1591250 | [LL-Q5287 (jpn)-CKali-奇跡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%A5%87%E8%B7%A1.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1185190 | [LL-Q5287 (jpn)-Fukujinzuke-下手.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%8B%E6%89%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1181480 | [LL-Q5287 (jpn)-Fukujinzuke-王国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%8E%8B%E5%9B%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1612760 | [LL-Q5287 (jpn)-葵心-お医者さん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%81%8A%E5%8C%BB%E8%80%85%E3%81%95%E3%82%93.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
@@ -7104,6 +8335,14 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1554720 | [LL-Q5287 (jpn)-葵心-領域.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E9%A0%98%E5%9F%9F.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1528790 | [LL-Q5287 (jpn)-Fukujinzuke-民主.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%91%E4%B8%BB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1308610 | [LL-Q5287 (jpn)-Fukujinzuke-市長.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B8%82%E9%95%B7.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1224110 | [LL-Q5287 (jpn)-Fukujinzuke-騎士.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A8%8E%E5%A3%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1130570 | [LL-Q5287 (jpn)-Fukujinzuke-ミサイル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%9F%E3%82%B5%E3%82%A4%E3%83%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1176510 | [LL-Q5287 (jpn)-Fukujinzuke-延長.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BB%B6%E9%95%B7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1210620 | [LL-Q5287 (jpn)-CKali-勘違い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%8B%98%E9%81%95%E3%81%84.wav) | Speaker: CKali
@@ -7118,6 +8357,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1379450 | [LL-Q5287 (jpn)-Fukujinzuke-生物学.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E7%89%A9%E5%AD%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1159500 | [LL-Q5287 (jpn)-Fukujinzuke-遺伝子.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%BA%E4%BC%9D%E5%AD%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1158240 | [LL-Q5287 (jpn)-Fukujinzuke-移行.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%BB%E8%A1%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1595650 | [LL-Q5287 (jpn)-Fukujinzuke-寿司.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AF%BF%E5%8F%B8.wav) | Speaker: Fukujinzuke
@@ -7126,13 +8367,21 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1351580 | [LL-Q5287 (jpn)-Fukujinzuke-証.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%BC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1258220 | [LL-Q5287 (jpn)-Fukujinzuke-権力.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A8%A9%E5%8A%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1928100 | [LL-Q5287 (jpn)-Fukujinzuke-看護師.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9C%8B%E8%AD%B7%E5%B8%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1375150 | [LL-Q5287 (jpn)-Fukujinzuke-勢力.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8B%A2%E5%8A%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1308640 | [LL-Q5287 (jpn)-Fukujinzuke-しない.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%81%AA%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1174450 | [LL-Q5287 (jpn)-Fukujinzuke-英国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8B%B1%E5%9B%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1156690 | [LL-Q5287 (jpn)-Fukujinzuke-意図.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%84%8F%E5%9B%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1133090 | [LL-Q5287 (jpn)-Fukujinzuke-メキシコ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%A1%E3%82%AD%E3%82%B7%E3%82%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1559790 | [LL-Q5287 (jpn)-Fukujinzuke-連邦.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%A3%E9%82%A6.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1295830 | [LL-Q5287 (jpn)-Fukujinzuke-な.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7166,12 +8415,16 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1506420 | [LL-Q5287 (jpn)-Fukujinzuke-兵士.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%B5%E5%A3%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1390990 | [LL-Q5287 (jpn)-Fukujinzuke-洗濯機.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B4%97%E6%BF%AF%E6%A9%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1224260 | [LL-Q5287 (jpn)-Fukujinzuke-亀.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1189940 | [LL-Q5287 (jpn)-Fukujinzuke-か.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1153340 | [LL-Q5287 (jpn)-CKali-圧力.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%9C%A7%E5%8A%9B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1196270 | [LL-Q5287 (jpn)-Fukujinzuke-かてい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%A6%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1629170 | [LL-Q5287 (jpn)-Fukujinzuke-竜.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%AB%9C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1528840 | [LL-Q5287 (jpn)-Fukujinzuke-民主主義.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B0%91%E4%B8%BB%E4%B8%BB%E7%BE%A9.wav) | Speaker: Fukujinzuke
@@ -7182,8 +8435,8 @@ Recorder: CKali | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1233320 | [LL-Q5287 (jpn)-Fukujinzuke-京.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%AC.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1453640 | [LL-Q5287 (jpn)-I JethroBT-どう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%A9%E3%81%86.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1453640 | [LL-Q5287 (jpn)-Fukujinzuke-どう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A9%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1144630 | [LL-Q5287 (jpn)-CKali-レイプ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%83%AC%E3%82%A4%E3%83%97.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1035860 | [LL-Q5287 (jpn)-葵心-オレンジ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8.wav) | Speaker: 葵心
@@ -7194,17 +8447,29 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1485770 | [LL-Q5287 (jpn)-Fukujinzuke-尾.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B0%BE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1483410 | [LL-Q5287 (jpn)-Fukujinzuke-非難.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9D%9E%E9%9B%A3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1400560 | [LL-Q5287 (jpn)-Fukujinzuke-争い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%89%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1168050 | [LL-Q5287 (jpn)-Fukujinzuke-印.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%B0.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1048000 | [LL-Q5287 (jpn)-葵心-ケーブル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1443620 | [LL-Q5287 (jpn)-Fukujinzuke-電池.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%BB%E6%B1%A0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1284550 | [LL-Q5287 (jpn)-Fukujinzuke-合意.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%88%E6%84%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1265040 | [LL-Q5287 (jpn)-Fukujinzuke-古.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1013970 | [LL-Q5287 (jpn)-葵心-アイス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%A2%E3%82%A4%E3%82%B9.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1587670 | [LL-Q5287 (jpn)-Fukujinzuke-いよいよ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%82%88%E3%81%84%E3%82%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1298230 | [LL-Q5287 (jpn)-Fukujinzuke-昨年.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%98%A8%E5%B9%B4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1106620 | [LL-Q5287 (jpn)-Fukujinzuke-ピザ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%94%E3%82%B6.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1203380 | [LL-Q5287 (jpn)-Fukujinzuke-外科.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%96%E7%A7%91.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1534380 | [LL-Q5287 (jpn)-Fukujinzuke-網.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B6%B2.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7224,9 +8489,17 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1588500 | [LL-Q5287 (jpn)-Fukujinzuke-売上.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A3%B2%E4%B8%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1424690 | [LL-Q5287 (jpn)-Fukujinzuke-中世.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%B8%AD%E4%B8%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1549460 | [LL-Q5287 (jpn)-Fukujinzuke-り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1444530 | [LL-Q5287 (jpn)-Fukujinzuke-と.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1278860 | [LL-Q5287 (jpn)-Fukujinzuke-抗議.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8A%97%E8%AD%B0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1181190 | [LL-Q5287 (jpn)-Fukujinzuke-欧州.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AC%A7%E5%B7%9E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1158710 | [LL-Q5287 (jpn)-Fukujinzuke-衣.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1043190 | [LL-Q5287 (jpn)-Fukujinzuke-ギリシャ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AE%E3%83%AA%E3%82%B7%E3%83%A3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7236,12 +8509,20 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1194580 | [LL-Q5287 (jpn)-CKali-花火.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%8A%B1%E7%81%AB.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1956390 | [LL-Q5287 (jpn)-Fukujinzuke-しゅう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%82%85%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1367200 | [LL-Q5287 (jpn)-CKali-人権.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E4%BA%BA%E6%A8%A9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1174790 | [LL-Q5287 (jpn)-Fukujinzuke-えいせい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%88%E3%81%84%E3%81%9B%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1483920 | [LL-Q5287 (jpn)-Fukujinzuke-皮膚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%9A%AE%E8%86%9A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1578760 | [LL-Q5287 (jpn)-Fukujinzuke-紅.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B4%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1494230 | [LL-Q5287 (jpn)-CKali-不動産屋.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E4%B8%8D%E5%8B%95%E7%94%A3%E5%B1%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1489870 | [LL-Q5287 (jpn)-Fukujinzuke-表明.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A8%E6%98%8E.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1427430 | [LL-Q5287 (jpn)-Fukujinzuke-兆.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1369820 | [LL-Q5287 (jpn)-Fukujinzuke-は.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AF.wav) | Speaker: Fukujinzuke
@@ -7252,11 +8533,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1587030 | [LL-Q5287 (jpn)-Fukujinzuke-言い訳.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%80%E3%81%84%E8%A8%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1451160 | [LL-Q5287 (jpn)-I JethroBT-どう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%A9%E3%81%86.wav) | Speaker: I JethroBT
-Recorder: I JethroBT | CC BY-SA 4.0 |
+| ja-1451160 | [LL-Q5287 (jpn)-Fukujinzuke-どう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A9%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1252990 | [LL-Q5287 (jpn)-Fukujinzuke-鶏.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%B6%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1113730 | [LL-Q5287 (jpn)-葵心-ブラジル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%83%96%E3%83%A9%E3%82%B8%E3%83%AB.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
 | ja-1002770 | [LL-Q5287 (jpn)-Fukujinzuke-おしゃれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1630190 | [LL-Q5287 (jpn)-Fukujinzuke-共和.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%B1%E5%92%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1550930 | [LL-Q5287 (jpn)-Fukujinzuke-離脱.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%A2%E8%84%B1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1333340 | [LL-Q5287 (jpn)-Fukujinzuke-襲撃.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A5%B2%E6%92%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1137760 | [LL-Q5287 (jpn)-CKali-ライオン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E3%83%A9%E3%82%A4%E3%82%AA%E3%83%B3.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
@@ -7282,15 +8571,29 @@ Recorder: CKali | CC0 |
 Recorder: CKali | CC0 |
 | ja-1547320 | [LL-Q5287 (jpn)-Fukujinzuke-よく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%88%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1414230 | [LL-Q5287 (jpn)-Fukujinzuke-大勢.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A4%A7%E5%8B%A2.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1361770 | [LL-Q5287 (jpn)-CKali-新型.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%96%B0%E5%9E%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1257740 | [LL-Q5287 (jpn)-Fukujinzuke-拳.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8B%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1257720 | [LL-Q5287 (jpn)-Fukujinzuke-懸念.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%87%B8%E5%BF%B5.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1246850 | [LL-Q5287 (jpn)-Fukujinzuke-熊.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%86%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1235330 | [LL-Q5287 (jpn)-Fukujinzuke-共和国.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%85%B1%E5%92%8C%E5%9B%BD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1174970 | [LL-Q5287 (jpn)-Fukujinzuke-えき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%88%E3%81%8D.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1171400 | [LL-Q5287 (jpn)-Fukujinzuke-宇宙飛行士.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%87%E5%AE%99%E9%A3%9B%E8%A1%8C%E5%A3%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1127140 | [LL-Q5287 (jpn)-Fukujinzuke-マウス.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%9E%E3%82%A6%E3%82%B9.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1086880 | [LL-Q5287 (jpn)-Fukujinzuke-トルコ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%88%E3%83%AB%E3%82%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1501740 | [LL-Q5287 (jpn)-Fukujinzuke-仏.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1449030 | [LL-Q5287 (jpn)-Fukujinzuke-当局.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%93%E5%B1%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1448290 | [LL-Q5287 (jpn)-Fukujinzuke-桃.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A1%83.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7300,6 +8603,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1422230 | [LL-Q5287 (jpn)-CKali-竹.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%AB%B9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1541040 | [LL-Q5287 (jpn)-Fukujinzuke-ありがとうございます.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1524290 | [LL-Q5287 (jpn)-CKali-麻.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E9%BA%BB.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1256490 | [LL-Q5287 (jpn)-Fukujinzuke-けん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%91%E3%82%93.wav) | Speaker: Fukujinzuke
@@ -7308,15 +8613,25 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-1463740 | [LL-Q5287 (jpn)-葵心-虹.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E8%99%B9.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1604280 | [LL-Q5287 (jpn)-Fukujinzuke-まれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%BE%E3%82%8C.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1956230 | [LL-Q5287 (jpn)-Fukujinzuke-言.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589190 | [LL-Q5287 (jpn)-Fukujinzuke-おす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1428390 | [LL-Q5287 (jpn)-Fukujinzuke-朝食.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%9D%E9%A3%9F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1159430 | [LL-Q5287 (jpn)-Zsrtrgh-いたい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Zsrtrgh-%E3%81%84%E3%81%9F%E3%81%84.wav) | Speaker: Zsrtrgh
-Recorder: Zsrtrgh | CC BY-SA 4.0 |
+| ja-1159430 | [LL-Q5287 (jpn)-Fukujinzuke-いたい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1158440 | [LL-Q5287 (jpn)-Fukujinzuke-移民.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A7%BB%E6%B0%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1099420 | [LL-Q5287 (jpn)-Fukujinzuke-バナナ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%90%E3%83%8A%E3%83%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1578730 | [LL-Q5287 (jpn)-Fukujinzuke-こう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1501020 | [LL-Q5287 (jpn)-Fukujinzuke-福.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%A6%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1434130 | [LL-Q5287 (jpn)-Fukujinzuke-鶴.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%B6%B4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1316230 | [LL-Q5287 (jpn)-Fukujinzuke-時刻表.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%99%82%E5%88%BB%E8%A1%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7325,6 +8640,8 @@ Recorder: LaKoalita | CC BY-SA 4.0 |
 | ja-1156160 | [LL-Q5287 (jpn)-Fukujinzuke-委託.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A7%94%E8%A8%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1609390 | [LL-Q5287 (jpn)-Fukujinzuke-欧米.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AC%A7%E7%B1%B3.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002360 | [LL-Q5287 (jpn)-Fukujinzuke-おまちどおさま.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%BE%E3%81%A1%E3%81%A9%E3%81%8A%E3%81%95%E3%81%BE.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1391940 | [LL-Q5287 (jpn)-Fukujinzuke-羨ましい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%BE%A8%E3%81%BE%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7338,11 +8655,17 @@ Recorder: CKali | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1567920 | [LL-Q5287 (jpn)-Fukujinzuke-曖昧.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9B%96%E6%98%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1235960 | [LL-Q5287 (jpn)-Fukujinzuke-きょうかい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%87%E3%81%86%E3%81%8B%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1336980 | [LL-Q5287 (jpn)-Fukujinzuke-重力.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%8D%E5%8A%9B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2149180 | [LL-Q5287 (jpn)-Fukujinzuke-いってまいります.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A3%E3%81%A6%E3%81%BE%E3%81%84%E3%82%8A%E3%81%BE%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1175030 | [LL-Q5287 (jpn)-Fukujinzuke-液体.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B6%B2%E4%BD%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1359940 | [LL-Q5287 (jpn)-Fukujinzuke-唇.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%94%87.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1002110 | [LL-Q5287 (jpn)-Fukujinzuke-お手伝いさん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%81%95%E3%82%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1032880 | [LL-Q5287 (jpn)-Fukujinzuke-オーバーコート.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7364,6 +8687,8 @@ Recorder: CKali | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1205740 | [LL-Q5287 (jpn)-Fukujinzuke-から.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1241450 | [LL-Q5287 (jpn)-Fukujinzuke-こと.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%A8.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1155100 | [LL-Q5287 (jpn)-Fukujinzuke-以後.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BB%A5%E5%BE%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1176860 | [LL-Q5287 (jpn)-Fukujinzuke-演劇.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%BC%94%E5%8A%87.wav) | Speaker: Fukujinzuke
@@ -7378,13 +8703,15 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1040350 | [LL-Q5287 (jpn)-葵心-ガム.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%82%AC%E3%83%A0.wav) | Speaker: 葵心
 Recorder: 葵心 | CC0 |
+| ja-1141870 | [LL-Q5287 (jpn)-Fukujinzuke-リットル.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%AA%E3%83%83%E3%83%88%E3%83%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1289740 | [LL-Q5287 (jpn)-Fukujinzuke-恨み.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%81%A8%E3%81%BF.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1001150 | [LL-Q5287 (jpn)-Fukujinzuke-ええと.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%88%E3%81%88%E3%81%A8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1370270 | [LL-Q5287 (jpn)-Fukujinzuke-す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1531550 | [LL-Q5287 (jpn)-Fukujinzuke-めいし.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%81%E3%81%84%E3%81%97.wav) | Speaker: Fukujinzuke
+| ja-1531550 | [LL-Q5287 (jpn)-Fukujinzuke-名刺.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%90%8D%E5%88%BA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1203100 | [LL-Q5287 (jpn)-Fukujinzuke-貝.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B2%9D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7400,6 +8727,10 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1160630 | [LL-Q5287 (jpn)-Fukujinzuke-育児.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%82%B2%E5%85%90.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1187870 | [LL-Q5287 (jpn)-Fukujinzuke-かてい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%A6%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1327770 | [LL-Q5287 (jpn)-Fukujinzuke-手首.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%8B%E9%A6%96.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1174620 | [LL-Q5287 (jpn)-Fukujinzuke-英文.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8B%B1%E6%96%87.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1081120 | [LL-Q5287 (jpn)-葵心-テンポ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-%E8%91%B5%E5%BF%83-%E3%83%86%E3%83%B3%E3%83%9D.wav) | Speaker: 葵心
@@ -7412,9 +8743,13 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1582390 | [LL-Q5287 (jpn)-Fukujinzuke-銅.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%8A%85.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1583680 | [LL-Q5287 (jpn)-Fukujinzuke-武士.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%AD%A6%E5%A3%AB.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2864818 | [LL-Q5287 (jpn)-Fukujinzuke-挙げる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8C%99%E3%81%92%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1524500 | [LL-Q5287 (jpn)-Fukujinzuke-埋める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%9F%8B%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1291050 | [LL-Q5287 (jpn)-Fukujinzuke-さようなら.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%95%E3%82%88%E3%81%86%E3%81%AA%E3%82%89.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1362530 | [LL-Q5287 (jpn)-Fukujinzuke-森林.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%A3%AE%E6%9E%97.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7424,6 +8759,8 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1182680 | [LL-Q5287 (jpn)-CKali-屋外.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%B1%8B%E5%A4%96.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1098340 | [LL-Q5287 (jpn)-Fukujinzuke-バケツ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%83%90%E3%82%B1%E3%83%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1487380 | [LL-Q5287 (jpn)-Fukujinzuke-肘.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%82%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1612650 | [LL-Q5287 (jpn)-Fukujinzuke-あれこれ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C.wav) | Speaker: Fukujinzuke
@@ -7432,11 +8769,15 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2167510 | [LL-Q5287 (jpn)-Fukujinzuke-おきのどくに.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%8D%E3%81%AE%E3%81%A9%E3%81%8F%E3%81%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001720 | [LL-Q5287 (jpn)-Fukujinzuke-おねがいします.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%AD%E3%81%8C%E3%81%84%E3%81%97%E3%81%BE%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1473870 | [LL-Q5287 (jpn)-Fukujinzuke-売り切れ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A3%B2%E3%82%8A%E5%88%87%E3%82%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1400620 | [LL-Q5287 (jpn)-Fukujinzuke-争う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BA%89%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1382280 | [LL-Q5287 (jpn)-Fukujinzuke-惜しい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%83%9C%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1195850 | [LL-Q5287 (jpn)-Fukujinzuke-かてい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%A6%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1153720 | [LL-Q5287 (jpn)-Fukujinzuke-安易.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%89%E6%98%93.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7446,9 +8787,13 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1242750 | [LL-Q5287 (jpn)-CKali-金魚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E9%87%91%E9%AD%9A.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1454420 | [LL-Q5287 (jpn)-Fukujinzuke-峠.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B3%A0.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1167610 | [LL-Q5287 (jpn)-Fukujinzuke-あふれる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%B5%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1311750 | [LL-Q5287 (jpn)-Fukujinzuke-脂.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%84%82.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1436840 | [LL-Q5287 (jpn)-Fukujinzuke-釘.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%98.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1015310 | [LL-Q5287 (jpn)-Fukujinzuke-アクセント.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%B3%E3%83%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7462,14 +8807,24 @@ Recorder: CKali | CC0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1323280 | [LL-Q5287 (jpn)-Fukujinzuke-車輪.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BB%8A%E8%BC%AA.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1338475 | [LL-Q5287 (jpn)-Fukujinzuke-お出掛け.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%87%BA%E6%8E%9B%E3%81%91.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1191780 | [LL-Q5287 (jpn)-Fukujinzuke-家屋.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%B6%E5%B1%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1031610 | [LL-Q5287 (jpn)-Fukujinzuke-オーケストラ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1188850 | [LL-Q5287 (jpn)-Fukujinzuke-いつのまにか.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%84%E3%81%A4%E3%81%AE%E3%81%BE%E3%81%AB%E3%81%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1193450 | [LL-Q5287 (jpn)-Fukujinzuke-かよう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%88%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1581330 | [LL-Q5287 (jpn)-Fukujinzuke-足跡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B6%B3%E8%B7%A1.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1533930 | [LL-Q5287 (jpn)-CKali-毛皮.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%AF%9B%E7%9A%AE.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1306470 | [LL-Q5287 (jpn)-Fukujinzuke-刺す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%88%BA%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1956550 | [LL-Q5287 (jpn)-Fukujinzuke-せん.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9B%E3%82%93.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1541560 | [LL-Q5287 (jpn)-Fukujinzuke-有難い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%89%E9%9B%A3%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1609260 | [LL-Q5287 (jpn)-Fukujinzuke-嫌がる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AB%8C%E3%81%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
@@ -7506,10 +8861,14 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-1519340 | [LL-Q5287 (jpn)-Fukujinzuke-暴れる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9A%B4%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1333400 | [LL-Q5287 (jpn)-Fukujinzuke-蹴る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%B9%B4%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1402640 | [LL-Q5287 (jpn)-Fukujinzuke-送り仮名.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%80%81%E3%82%8A%E4%BB%AE%E5%90%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1332950 | [LL-Q5287 (jpn)-CKali-終点.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%B5%82%E7%82%B9.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1519650 | [LL-Q5287 (jpn)-Fukujinzuke-望遠鏡.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%9C%9B%E9%81%A0%E9%8F%A1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1448800 | [LL-Q5287 (jpn)-Fukujinzuke-あたりまえ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%9F%E3%82%8A%E3%81%BE%E3%81%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1281450 | [LL-Q5287 (jpn)-Fukujinzuke-荒い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8D%92%E3%81%84.wav) | Speaker: Fukujinzuke
@@ -7520,15 +8879,25 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: CKali | CC0 |
 | ja-1172710 | [LL-Q5287 (jpn)-Fukujinzuke-運河.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%81%8B%E6%B2%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1273420 | [LL-Q5287 (jpn)-Fukujinzuke-こうがい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86%E3%81%8C%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1520890 | [LL-Q5287 (jpn)-CKali-北極.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E5%8C%97%E6%A5%B5.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1597045 | [LL-Q5287 (jpn)-Fukujinzuke-たつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1177320 | [LL-Q5287 (jpn)-Fukujinzuke-煙突.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%85%99%E7%AA%81.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1304400 | [LL-Q5287 (jpn)-Fukujinzuke-きる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1497420 | [LL-Q5287 (jpn)-Fukujinzuke-浮く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B5%AE%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1321670 | [LL-Q5287 (jpn)-Fukujinzuke-しま.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%81%BE.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2649690 | [LL-Q5287 (jpn)-Fukujinzuke-のる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AE%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1335780 | [LL-Q5287 (jpn)-Fukujinzuke-重たい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%87%8D%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1357240 | [LL-Q5287 (jpn)-Fukujinzuke-拭く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8B%AD%E3%81%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1609130 | [LL-Q5287 (jpn)-Fukujinzuke-生き生き.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E3%81%8D%E7%94%9F%E3%81%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7536,9 +8905,15 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1021220 | [LL-Q5287 (jpn)-Fukujinzuke-イコール.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1414190 | [LL-Q5287 (jpn)-Fukujinzuke-おとなしい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%A8%E3%81%AA%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1329770 | [LL-Q5287 (jpn)-Fukujinzuke-受取.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8F%97%E5%8F%96.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1218360 | [LL-Q5287 (jpn)-Fukujinzuke-危うい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8D%B1%E3%81%86%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1647360 | [LL-Q5287 (jpn)-Fukujinzuke-おめでたい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%81%E3%81%A7%E3%81%9F%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1519990 | [LL-Q5287 (jpn)-Fukujinzuke-膨らむ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%86%A8%E3%82%89%E3%82%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1200750 | [LL-Q5287 (jpn)-Fukujinzuke-改める.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%94%B9%E3%82%81%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7550,11 +8925,17 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1270870 | [LL-Q5287 (jpn)-Fukujinzuke-ご.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%94.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1582430 | [LL-Q5287 (jpn)-Fukujinzuke-鈍い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%88%8D%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2838553 | [LL-Q5287 (jpn)-Fukujinzuke-鈍い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%88%8D%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1441960 | [LL-Q5287 (jpn)-Fukujinzuke-でんき.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%A7%E3%82%93%E3%81%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1025010 | [LL-Q5287 (jpn)-Fukujinzuke-ウール.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A6%E3%83%BC%E3%83%AB.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1220060 | [LL-Q5287 (jpn)-Fukujinzuke-幾分.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%BE%E5%88%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1035780 | [LL-Q5287 (jpn)-Fukujinzuke-オルガン.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%AA%E3%83%AB%E3%82%AC%E3%83%B3.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1507090 | [LL-Q5287 (jpn)-Fukujinzuke-平仮名.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%B9%B3%E4%BB%AE%E5%90%8D.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7594,13 +8975,19 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1002050 | [LL-Q5287 (jpn)-Fukujinzuke-おじゃまします.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%98%E3%82%83%E3%81%BE%E3%81%97%E3%81%BE%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1497020 | [LL-Q5287 (jpn)-Fukujinzuke-しく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%97%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1983730 | [LL-Q5287 (jpn)-CKali-茶色い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E8%8C%B6%E8%89%B2%E3%81%84.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-2864817 | [LL-Q5287 (jpn)-Fukujinzuke-揚げる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8F%9A%E3%81%92%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1517700 | [LL-Q5287 (jpn)-Fukujinzuke-縫う.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B8%AB%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1379740 | [LL-Q5287 (jpn)-CKali-盛る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E7%9B%9B%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
 | ja-1478010 | [LL-Q5287 (jpn)-Fukujinzuke-討つ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A8%8E%E3%81%A4.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1221240 | [LL-Q5287 (jpn)-Fukujinzuke-かえす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%88%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1174720 | [LL-Q5287 (jpn)-Fukujinzuke-英和.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%8B%B1%E5%92%8C.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7612,7 +8999,11 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1511950 | [LL-Q5287 (jpn)-Fukujinzuke-編む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B7%A8%E3%82%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1448600 | [LL-Q5287 (jpn)-Fukujinzuke-湯気.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%B9%AF%E6%B0%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1396910 | [LL-Q5287 (jpn)-Fukujinzuke-粗い.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%B2%97%E3%81%84.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1001950 | [LL-Q5287 (jpn)-Fukujinzuke-お参り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E5%8F%82%E3%82%8A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1603930 | [LL-Q5287 (jpn)-I JethroBT-まじる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-I_JethroBT-%E3%81%BE%E3%81%98%E3%82%8B.wav) | Speaker: I JethroBT
 Recorder: I JethroBT | CC BY-SA 4.0 |
@@ -7628,6 +9019,10 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1592920 | [LL-Q5287 (jpn)-Fukujinzuke-こう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1309230 | [LL-Q5287 (jpn)-Fukujinzuke-思い込む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%9D%E3%81%84%E8%BE%BC%E3%82%80.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-2149640 | [LL-Q5287 (jpn)-Fukujinzuke-おまたせしました.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%BE%E3%81%9F%E3%81%9B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1028990 | [LL-Q5287 (jpn)-Fukujinzuke-エチケット.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A8%E3%83%81%E3%82%B1%E3%83%83%E3%83%88.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1401310 | [LL-Q5287 (jpn)-Fukujinzuke-あいかわらず.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%81%9A.wav) | Speaker: Fukujinzuke
@@ -7640,6 +9035,10 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1158780 | [LL-Q5287 (jpn)-Fukujinzuke-衣食住.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%A1%A3%E9%A3%9F%E4%BD%8F.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589220 | [LL-Q5287 (jpn)-Fukujinzuke-落着く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%90%BD%E7%9D%80%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1298910 | [LL-Q5287 (jpn)-Fukujinzuke-擦る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%93%A6%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1213470 | [LL-Q5287 (jpn)-Fukujinzuke-甘やかす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%98%E3%82%84%E3%81%8B%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1586520 | [LL-Q5287 (jpn)-Fukujinzuke-宛名.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%AE%9B%E5%90%8D.wav) | Speaker: Fukujinzuke
@@ -7650,7 +9049,13 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1472230 | [LL-Q5287 (jpn)-Fukujinzuke-拝む.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8B%9D%E3%82%80.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1693840 | [LL-Q5287 (jpn)-Fukujinzuke-御手洗.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BE%A1%E6%89%8B%E6%B4%97.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1609310 | [LL-Q5287 (jpn)-Fukujinzuke-打ち消す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%93%E3%81%A1%E6%B6%88%E3%81%99.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1277880 | [LL-Q5287 (jpn)-Fukujinzuke-こうこう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%93%E3%81%86%E3%81%93%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589250 | [LL-Q5287 (jpn)-Fukujinzuke-落し物.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%90%BD%E3%81%97%E7%89%A9.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1515580 | [LL-Q5287 (jpn)-Fukujinzuke-あきれる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%8D%E3%82%8C%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7674,11 +9079,15 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1171970 | [LL-Q5287 (jpn)-Fukujinzuke-雨戸.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%9B%A8%E6%88%B8.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1589330 | [LL-Q5287 (jpn)-Fukujinzuke-思い付く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%9D%E3%81%84%E4%BB%98%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1275330 | [LL-Q5287 (jpn)-Fukujinzuke-厚かましい.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%8E%9A%E3%81%8B%E3%81%BE%E3%81%97%E3%81%84.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2856157 | [LL-Q5287 (jpn)-Fukujinzuke-インキ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%82%A4%E3%83%B3%E3%82%AD.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
-| ja-1399970 | [LL-Q5287 (jpn)-Fukujinzuke-かく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%81%8F.wav) | Speaker: Fukujinzuke
+| ja-1399970 | [LL-Q5287 (jpn)-Fukujinzuke-掻く.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%8E%BB%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1427950 | [LL-Q5287 (jpn)-Fukujinzuke-彫る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BD%AB%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-2857436 | [LL-Q5287 (jpn)-Fukujinzuke-たつ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%9F%E3%81%A4.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7688,7 +9097,13 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1586430 | [LL-Q5287 (jpn)-CKali-暖まる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-CKali-%E6%9A%96%E3%81%BE%E3%82%8B.wav) | Speaker: CKali
 Recorder: CKali | CC0 |
+| ja-1208520 | [LL-Q5287 (jpn)-Fukujinzuke-かわく.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%8F%E3%81%8F.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1227780 | [LL-Q5287 (jpn)-Fukujinzuke-きゅうこう.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8D%E3%82%85%E3%81%86%E3%81%93%E3%81%86.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1587180 | [LL-Q5287 (jpn)-Fukujinzuke-生け花.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E7%94%9F%E3%81%91%E8%8A%B1.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1238650 | [LL-Q5287 (jpn)-Fukujinzuke-驚かす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A9%9A%E3%81%8B%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1432280 | [LL-Q5287 (jpn)-Fukujinzuke-追い越す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%BF%BD%E3%81%84%E8%B6%8A%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7706,11 +9121,15 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1518320 | [LL-Q5287 (jpn)-Fukujinzuke-飽くまで.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E9%A3%BD%E3%81%8F%E3%81%BE%E3%81%A7.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1309310 | [LL-Q5287 (jpn)-Fukujinzuke-思いっ切り.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%80%9D%E3%81%84%E3%81%A3%E5%88%87%E3%82%8A.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1298670 | [LL-Q5287 (jpn)-Fukujinzuke-する.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%99%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1609380 | [LL-Q5287 (jpn)-Fukujinzuke-応ずる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%BF%9C%E3%81%9A%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1156320 | [LL-Q5287 (jpn)-Fukujinzuke-威張る.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E5%A8%81%E5%BC%B5%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1183050 | [LL-Q5287 (jpn)-Fukujinzuke-おろす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%82%8D%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1611000 | [LL-Q5287 (jpn)-Fukujinzuke-なる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%AA%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7736,7 +9155,11 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1568910 | [LL-Q5287 (jpn)-Fukujinzuke-あぶる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%82%E3%81%B6%E3%82%8B.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1590820 | [LL-Q5287 (jpn)-Fukujinzuke-かわる.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8B%E3%82%8F%E3%82%8B.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1609000 | [LL-Q5287 (jpn)-Fukujinzuke-扇ぐ.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E6%89%87%E3%81%90.wav) | Speaker: Fukujinzuke
+Recorder: Fukujinzuke | CC BY 4.0 |
+| ja-1578070 | [LL-Q5287 (jpn)-Fukujinzuke-おどかす.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E3%81%8A%E3%81%A9%E3%81%8B%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1427080 | [LL-Q5287 (jpn)-Fukujinzuke-著す.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E8%91%97%E3%81%99.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
@@ -7756,3 +9179,18 @@ Recorder: Fukujinzuke | CC BY 4.0 |
 Recorder: Fukujinzuke | CC BY 4.0 |
 | ja-1585390 | [LL-Q5287 (jpn)-Fukujinzuke-佚.wav](https://commons.wikimedia.org/wiki/File%3ALL-Q5287_%28jpn%29-Fukujinzuke-%E4%BD%9A.wav) | Speaker: Fukujinzuke
 Recorder: Fukujinzuke | CC BY 4.0 |
+
+## Frases e gravacoes do Tatoeba
+
+| Frase | Autor da frase (CC BY 2.0 FR) | Autor da gravacao | Licenca da gravacao |
+|---|---|---|---|
+| [#7532353](https://tatoeba.org/sentences/show/7532353) | MisterTrouser | MisterTrouser | CC BY 4.0 |
+| [#1855100](https://tatoeba.org/sentences/show/1855100) | Pfirsichbaeumchen | MisterTrouser | CC BY 4.0 |
+| [#370210](https://tatoeba.org/sentences/show/370210) | MUIRIEL | MisterTrouser | CC BY 4.0 |
+| [#7683027](https://tatoeba.org/sentences/show/7683027) | raggione | MisterTrouser | CC BY 4.0 |
+| [#5018450](https://tatoeba.org/sentences/show/5018450) | al_ex_an_der | MisterTrouser | CC BY 4.0 |
+| [#7361671](https://tatoeba.org/sentences/show/7361671) | MisterTrouser | MisterTrouser | CC BY 4.0 |
+| [#8220752](https://tatoeba.org/sentences/show/8220752) | MisterTrouser | MisterTrouser | CC BY 4.0 |
+| [#3684460](https://tatoeba.org/sentences/show/3684460) | MisterTrouser | MisterTrouser | CC BY 4.0 |
+| [#357439](https://tatoeba.org/sentences/show/357439) | MUIRIEL | MisterTrouser | CC BY 4.0 |
+| [#361995](https://tatoeba.org/sentences/show/361995) | Wolf | MisterTrouser | CC BY 4.0 |
